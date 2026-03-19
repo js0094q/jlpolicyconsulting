@@ -16,6 +16,7 @@ interface LinkedFeature {
   title: string;
   description: string;
   href?: string;
+  accentColor?: string;
 }
 
 const focusAreas = [
@@ -61,30 +62,35 @@ const featuredInsightCards: LinkedFeature[] = [
     title: "Why Part D Redesign Shifts Liability",
     description:
       "How 2025 and 2026 benefit changes alter visible beneficiary exposure and reshape plan behavior.",
+    accentColor: "var(--color-brand-secondary)",
   },
   {
     slug: "generics-moving-to-higher-tiers-despite-price-decline",
     title: "Generics Moving to Higher Tiers Despite Price Decline",
     description:
       "Why formulary worsening can persist even when same-drug unit prices are stable or lower.",
+    accentColor: "var(--color-brand-accent)",
   },
   {
     slug: "pbm-economics-and-formulary-design",
     title: "PBM Economics and Formulary Design",
     description:
       "A strategic view of how incentives translate into coverage decisions and access friction.",
+    accentColor: "var(--color-brand-primary-soft)",
   },
   {
     slug: "unit-price-vs-patient-cost-misalignment",
     title: "Unit Price vs Patient Cost Misalignment",
     description:
       "Why falling or stable unit cost does not necessarily translate into better patient affordability.",
+    accentColor: "var(--color-brand-support)",
   },
   {
     slug: "mail-order-incentives-in-part-d",
     title: "Mail Order Incentives in Part D",
     description:
       "How network and cost-sharing design can influence dispensing channel behavior and patient steering.",
+    accentColor: "var(--color-brand-primary)",
   },
 ];
 
@@ -93,24 +99,27 @@ const featuredResearchCards: LinkedFeature[] = [
     slug: "tier-migration-commoditized-generics-part-d",
     title: "Tier Migration of Commoditized Generics in Part D",
     description: "A plan-level look at upward tier movement among lower-cost multisource products.",
+    accentColor: "var(--color-brand-secondary)",
   },
   {
     slug: "same-ndc-unit-price-analysis",
     title: "Same-NDC Unit Price Analysis",
     description:
       "A method-focused analysis distinguishing true same-NDC repricing from manufacturer-mix effects.",
+    accentColor: "var(--color-brand-accent)",
   },
   {
     slug: "mapd-vs-pdp-tier-worsening-analysis",
     title: "MA-PD vs PDP Tier Worsening Analysis",
     description:
       "A comparison of whether tier worsening is more concentrated in Medicare Advantage prescription drug plans or stand-alone PDPs.",
+    accentColor: "var(--color-brand-support)",
   },
 ];
 
 function HeroSection({ featuredResearchHref, featuredInsightHref }: { featuredResearchHref: string; featuredInsightHref: string }) {
   return (
-    <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
+    <section className="border-b border-[var(--color-border)] bg-[linear-gradient(180deg,#ffffff_0%,#f3f8fe_100%)] py-16 sm:py-20">
       <Container>
         <p className="kicker">Data-backed reimbursement and formulary analysis</p>
         <h1 className="page-title max-w-5xl">Medicare Part D, Formularies, and Drug Pricing Analytics</h1>
@@ -120,16 +129,10 @@ function HeroSection({ featuredResearchHref, featuredInsightHref }: { featuredRe
           outcomes.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
-          <Link
-            href="/research"
-            className="border border-[var(--color-accent)] bg-[var(--color-accent)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#24384d]"
-          >
+          <Link href="/research" className="button-primary">
             Read the Research
           </Link>
-          <Link
-            href="/insights"
-            className="border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-2.5 text-sm font-semibold text-ink hover:border-[var(--color-accent)]"
-          >
+          <Link href="/insights" className="button-secondary">
             Explore Insights
           </Link>
         </div>
@@ -235,7 +238,11 @@ function FeaturedInsightsSection({ items }: { items: LinkedFeature[] }) {
         </div>
         <div className="mt-8 divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
           {items.map((item) => (
-            <article key={item.slug} className="py-6 sm:py-7">
+            <article
+              key={item.slug}
+              className="border-l-4 py-6 pl-5 sm:py-7 sm:pl-6"
+              style={{ borderLeftColor: item.accentColor ?? "var(--color-border)" }}
+            >
               <h3 className="text-2xl leading-tight text-ink">
                 <Link href={item.href ?? `/insights/${item.slug}`} className="hover:text-[var(--color-accent)]">
                   {item.title}
@@ -272,7 +279,8 @@ function FeaturedResearchSection({ items }: { items: LinkedFeature[] }) {
           {items.map((item) => (
             <article
               key={item.slug}
-              className="border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7"
+              className="border border-t-4 border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7"
+              style={{ borderTopColor: item.accentColor ?? "var(--color-border)" }}
             >
               <h3 className="text-2xl leading-tight text-ink">
                 <Link href={item.href ?? `/research/${item.slug}`} className="hover:text-[var(--color-accent)]">
@@ -365,16 +373,10 @@ function FinalCtaSection() {
             market.
           </p>
           <div className="mt-7 flex flex-wrap gap-4">
-            <Link
-              href="/research"
-              className="border border-[var(--color-accent)] bg-[var(--color-accent)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#24384d]"
-            >
+            <Link href="/research" className="button-primary">
               View Research
             </Link>
-            <Link
-              href="/insights"
-              className="border border-[var(--color-border)] bg-white px-5 py-2.5 text-sm font-semibold text-ink hover:border-[var(--color-accent)]"
-            >
+            <Link href="/insights" className="button-secondary bg-white">
               View Insights
             </Link>
           </div>

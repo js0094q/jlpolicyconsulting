@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/container";
+import { SiteLogo } from "@/components/site-logo";
 import { siteConfig } from "@/lib/site";
 
 export function SiteFooter() {
@@ -7,7 +8,7 @@ export function SiteFooter() {
     <footer className="mt-20 border-t border-[var(--color-border)] bg-[var(--color-surface)]">
       <Container className="grid gap-8 py-12 md:grid-cols-[2fr_1fr_1fr]">
         <div>
-          <h2 className="font-serif text-xl text-ink">{siteConfig.legalName}</h2>
+          <SiteLogo size="sm" />
           <p className="mt-3 max-w-2xl text-sm leading-7 text-[var(--color-muted)]">
             Commentary and analysis on pharmaceutical reimbursement, drug pricing strategy,
             market access, Medicare Part D design, and PBM formulary behavior.

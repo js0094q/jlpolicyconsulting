@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --color-page: #f6f5f2;
-  --color-surface: #fcfbf8;
-  --color-ink: #1f252c;
-  --color-muted: #4d5866;
-  --color-accent: #30465e;
-  --color-accent-soft: #657a8f;
-  --color-border: #d5dbe2;
+  --color-page: #f8fafb;
+  --color-surface: #ffffff;
+  --color-ink: #1a202c;
+  --color-muted: #4a5568;
+  --color-accent: #1e3a5f;
+  --color-accent-soft: #4a90e2;
+  --color-border: #e1e8ed;
+  --color-brand-primary: #1e3a5f;
+  --color-brand-primary-soft: #2c5f8d;
+  --color-brand-secondary: #4a90e2;
+  --color-brand-accent: #3aafb9;
+  --color-brand-support: #f2994a;
   --font-sans: var(--font-ibm-plex-sans);
   --font-serif: var(--font-source-serif);
 }
@@ -20,6 +25,11 @@
   --color-accent: var(--color-accent);
   --color-accent-soft: var(--color-accent-soft);
   --color-border: var(--color-border);
+  --color-brand-primary: var(--color-brand-primary);
+  --color-brand-primary-soft: var(--color-brand-primary-soft);
+  --color-brand-secondary: var(--color-brand-secondary);
+  --color-brand-accent: var(--color-brand-accent);
+  --color-brand-support: var(--color-brand-support);
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
 }
@@ -41,8 +51,8 @@ body {
 }
 
 ::selection {
-  background: #c3cfda;
-  color: #192632;
+  background: #d4e5fb;
+  color: #10233b;
 }
 
 @layer base {
@@ -95,6 +105,14 @@ body {
 
   .editorial-link {
     @apply text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-ink)];
+  }
+
+  .button-primary {
+    @apply border border-[var(--color-brand-primary)] bg-[var(--color-brand-primary)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--color-brand-primary-soft)];
+  }
+
+  .button-secondary {
+    @apply border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-2.5 text-sm font-semibold text-ink hover:border-[var(--color-brand-secondary)];
   }
 
   .tag {
