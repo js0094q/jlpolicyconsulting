@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --color-page: #f6f5f2;
+  --color-surface: #fcfbf8;
+  --color-ink: #1f252c;
+  --color-muted: #4d5866;
+  --color-accent: #30465e;
+  --color-accent-soft: #657a8f;
+  --color-border: #d5dbe2;
+  --font-sans: var(--font-ibm-plex-sans);
+  --font-serif: var(--font-source-serif);
+}
+
+@theme inline {
+  --color-page: var(--color-page);
+  --color-surface: var(--color-surface);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-border: var(--color-border);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans), sans-serif;
+}
+
+::selection {
+  background: #c3cfda;
+  color: #192632;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink);
+    font-family: var(--font-serif), serif;
+    letter-spacing: -0.012em;
+  }
+
+  p {
+    color: var(--color-muted);
+  }
+
+  a {
+    color: var(--color-accent);
+  }
+}
+
+@layer components {
+  .kicker {
+    @apply text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-accent-soft)];
+  }
+
+  .page-title {
+    @apply mt-3 text-4xl leading-tight sm:text-5xl;
+  }
+
+  .page-lede {
+    @apply mt-4 max-w-4xl text-base leading-8 text-[var(--color-muted)];
+  }
+
+  .section-title {
+    @apply mt-2 text-3xl leading-tight sm:text-4xl;
+  }
+
+  .line-list {
+    @apply divide-y divide-[var(--color-border)] border-y border-[var(--color-border)] bg-[var(--color-surface)];
+  }
+
+  .line-item {
+    @apply px-0 py-5 sm:px-2;
+  }
+
+  .editorial-block {
+    @apply border border-[var(--color-border)] bg-[var(--color-surface)] p-7;
+  }
+
+  .editorial-link {
+    @apply text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-ink)];
+  }
+
+  .tag {
+    @apply inline-flex items-center border border-[var(--color-border)] px-2 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-[var(--color-muted)];
+  }
+}
