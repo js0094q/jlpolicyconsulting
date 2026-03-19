@@ -184,7 +184,7 @@ function FocusAreasSection() {
           This platform examines the reimbursement and payer mechanics that materially affect
           pharmaceutical access, pricing strategy, and commercial performance.
         </p>
-        <div className="mt-8 divide-y divide-[var(--color-border)] border-y border-[var(--color-border)] bg-[var(--color-surface)]">
+        <div className="surface-card mt-8 divide-y divide-[var(--color-border)]">
           {focusAreas.map((item) => (
             <article key={item.title} className="px-5 py-6 sm:px-7">
               <h3 className="text-2xl leading-tight text-ink">{item.title}</h3>
@@ -279,7 +279,7 @@ function FeaturedResearchSection({ items }: { items: LinkedFeature[] }) {
           {items.map((item) => (
             <article
               key={item.slug}
-              className="border border-t-4 border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7"
+              className="surface-card border-t-4 p-6 sm:p-7"
               style={{ borderTopColor: item.accentColor ?? "var(--color-border)" }}
             >
               <h3 className="text-2xl leading-tight text-ink">
@@ -365,7 +365,7 @@ function FinalCtaSection() {
   return (
     <section className="py-14 sm:py-16">
       <Container>
-        <div className="border border-[var(--color-border)] bg-[var(--color-surface)] p-7 sm:p-9">
+        <div className="surface-card p-7 sm:p-9">
           <h2 className="section-title">Read the Analysis</h2>
           <p className="mt-4 max-w-4xl text-base leading-8 text-[var(--color-muted)]">
             Explore research and commentary on Medicare Part D, PBM and formulary behavior, drug
