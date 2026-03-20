@@ -10,7 +10,7 @@ export function SiteFooter() {
         <div>
           <SiteLogo size="sm" />
           <p className="mt-3 max-w-2xl text-sm leading-7 text-[var(--color-muted)]">
-            Commentary and analysis on pharmaceutical reimbursement, drug pricing strategy,
+            Firm-led commentary and analysis on pharmaceutical reimbursement, drug pricing strategy,
             market access, Medicare Part D design, and PBM formulary behavior.
           </p>
         </div>

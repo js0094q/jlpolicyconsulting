@@ -5,7 +5,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Contact",
   description:
-    "Contact JL Policy Consulting for consulting inquiries, speaking, writing/commentary opportunities, and professional opportunities.",
+    "Contact JL Policy Consulting for advisory engagements, speaking requests, strategic commentary, and collaboration opportunities.",
   path: "/contact",
 });
 
@@ -14,15 +14,15 @@ export default function ContactPage() {
     <section className="py-16 sm:py-20">
       <Container className="max-w-4xl">
         <p className="kicker">Contact</p>
-        <h1 className="page-title">Consulting and Professional Inquiries</h1>
+        <h1 className="page-title">Advisory and Collaboration Inquiries</h1>
         <p className="page-lede">
-          Contact is welcome for consulting inquiries, speaking opportunities, writing and
-          commentary opportunities, and professional opportunities.
+          JL Policy Consulting welcomes outreach for advisory work, speaking engagements, strategic
+          commentary, and collaboration.
         </p>
 
         <div className="line-list mt-8">
           <article className="line-item">
-            <h2 className="text-2xl text-ink">Consulting inquiries</h2>
+            <h2 className="text-2xl text-ink">Advisory engagements</h2>
             <p className="mt-3 text-base leading-8 text-[var(--color-muted)]">
               Reimbursement strategy, market access, pricing policy interpretation, and payer
               behavior analysis.
@@ -37,7 +37,7 @@ export default function ContactPage() {
           </article>
 
           <article className="line-item">
-            <h2 className="text-2xl text-ink">Writing and commentary</h2>
+            <h2 className="text-2xl text-ink">Strategic commentary</h2>
             <p className="mt-3 text-base leading-8 text-[var(--color-muted)]">
               Contributions related to Medicare Part D, PBM dynamics, pricing strategy, and
               commercialization implications of policy change.
@@ -45,10 +45,10 @@ export default function ContactPage() {
           </article>
 
           <article className="line-item">
-            <h2 className="text-2xl text-ink">Professional opportunities</h2>
+            <h2 className="text-2xl text-ink">Collaboration opportunities</h2>
             <p className="mt-3 text-base leading-8 text-[var(--color-muted)]">
-              Roles and projects in reimbursement, market access, pricing policy, and policy
-              analytics.
+              Cross-functional initiatives and project collaborations in reimbursement, market
+              access, pricing, and policy analytics.
             </p>
           </article>
         </div>

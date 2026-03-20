@@ -4,7 +4,7 @@ export const siteConfig = {
   domain: "jlpolicyconsulting.com",
   url: "https://jlpolicyconsulting.com",
   description:
-    "Policy and analytics for pharmaceutical reimbursement, drug pricing strategy, market access, Medicare Part D, and payer formulary behavior.",
+    "Policy and analytics for pharmaceutical reimbursement, drug pricing strategy, market access, Medicare Part D, and payer formulary behavior using integrated multi-source data.",
   email: "contact@jlpolicyconsulting.com",
   linkedin: "https://www.linkedin.com/in/joseph-stewart",
   navItems: [

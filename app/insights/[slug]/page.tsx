@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: InsightPageProps): Promise<Me
       section: post.category,
       tags: post.tags,
       publishedTime: post.publishDate,
-      authors: ["Joseph Stewart"],
+      authors: [siteConfig.legalName],
       images,
     },
     twitter: {
@@ -76,8 +76,8 @@ export default async function InsightDetailPage({ params }: InsightPageProps) {
     description: post.summary,
     datePublished: post.publishDate,
     author: {
-      "@type": "Person",
-      name: "Joseph Stewart",
+      "@type": "Organization",
+      name: siteConfig.legalName,
     },
     publisher: {
       "@type": "Organization",

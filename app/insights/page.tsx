@@ -6,7 +6,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Insights",
   description:
-    "Short-form interpretation of Medicare Part D, drug pricing strategy, PBM formulary behavior, and market access implications.",
+    "Short-form strategic interpretation of Medicare Part D, drug pricing, PBM formulary behavior, and market access implications.",
   path: "/insights",
 });
 
@@ -20,9 +20,9 @@ export default async function InsightsPage() {
         <p className="kicker">Insights</p>
         <h1 className="page-title">Interpretive Commentary for Reimbursement and Access Decisions</h1>
         <p className="page-lede">
-          Insights are short-form pieces (typically 600–1200 words) focused on interpretation,
-          not data appendices. Each piece is written to support rapid executive reading and
-          LinkedIn-level discussion without losing policy and market specificity.
+          Insights are short-form analyses (typically 600-1200 words) focused on strategic
+          interpretation rather than technical appendices. Each piece is designed for rapid reading
+          while preserving policy and market specificity.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-2">

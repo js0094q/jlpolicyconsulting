@@ -50,10 +50,6 @@ const organizationSchema = {
   email: siteConfig.email,
   sameAs: [siteConfig.linkedin],
   description: siteConfig.description,
-  founder: {
-    "@type": "Person",
-    name: "Joseph Stewart",
-  },
 };
 
 export default function RootLayout({

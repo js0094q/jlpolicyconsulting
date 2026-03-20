@@ -7,7 +7,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Reimbursement, Drug Pricing & Market Access Strategy",
   description:
-    "Commentary and analysis on pharmaceutical reimbursement, drug pricing strategy, market access, Medicare Part D design, and PBM/formulary dynamics linking policy and payer economics to commercial outcomes.",
+    "Firm-led commentary and analysis on pharmaceutical reimbursement, drug pricing, market access, Medicare Part D design, and PBM/formulary dynamics using integrated policy and market data.",
   path: "/",
 });
 
@@ -43,7 +43,7 @@ const focusAreas = [
   {
     title: "Healthcare Data Analysis",
     description:
-      "CMS SPUF and related payer-data analysis to identify plan-level trends, access shifts, and product-specific anomalies.",
+      "Integrated CMS, payer, utilization, and pricing analysis to identify plan-level trends, access shifts, and product-specific anomalies.",
   },
 ] as const;
 
@@ -53,7 +53,7 @@ const strategicQuestions = [
   "What do formulary decisions reveal about PBM economics and access strategy?",
   "Where do pricing trends and patient cost exposure diverge?",
   "How should manufacturers interpret payer behavior before and after loss of exclusivity?",
-  "What signals in public CMS data suggest future access friction or reimbursement pressure?",
+  "What signals across public and client-provided data suggest future access friction or reimbursement pressure?",
 ] as const;
 
 const featuredInsightCards: LinkedFeature[] = [
@@ -159,16 +159,12 @@ function IntroSection() {
   return (
     <section className="border-b border-[var(--color-border)] py-14 sm:py-16">
       <Container>
-        <h2 className="section-title">Homepage Introduction</h2>
+        <h2 className="section-title">Firm Overview</h2>
         <p className="mt-5 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          Joseph Stewart is a reimbursement and health policy strategist focused on how benefit
-          design, formulary behavior, and payer incentives shape real-world pharmaceutical access.
-          Drawing on experience across manufacturer, trade association, consulting, and pharmacy
-          settings, he translates Medicare Part D policy, PBM dynamics, and pricing signals into
-          clear implications for market access strategy, commercialization planning, and stakeholder
-          decision-making. The work is built for readers who need more than headline policy
-          summaries, especially when access friction, tier placement, and patient cost burden are
-          changing faster than visible list-price narratives.
+          JL Policy Consulting provides policy and market access analysis for teams navigating U.S.
+          pharmaceutical reimbursement complexity. Our work combines policy interpretation, payer
+          behavior analysis, and multi-source data integration to support commercialization, pricing,
+          and access decisions with decision-ready clarity.
         </p>
       </Container>
     </section>
@@ -300,23 +296,23 @@ function MethodSection() {
   return (
     <section className="border-b border-[var(--color-border)] py-14 sm:py-16">
       <Container>
-        <h2 className="section-title">Method</h2>
+        <h2 className="section-title">Analytical Method</h2>
         <p className="mt-4 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          The analysis relies heavily on public Medicare Part D formulary, pharmacy network,
-          beneficiary cost, and pricing files, with an emphasis on separating visible product-level
-          pricing changes from true same-NDC pricing behavior across comparable plan records.
+          The analysis integrates policy tracking, payer and formulary data, utilization signals,
+          pricing and GTN analytics, and distribution context to separate noise from strategic
+          signal in reimbursement and access decisions.
         </p>
         <ul className="mt-7 list-disc space-y-2 pl-5 text-base leading-8 text-[var(--color-muted)] marker:text-[var(--color-accent-soft)]">
           <li>
-            Public CMS SPUF plan, formulary, beneficiary cost, pharmacy network, and pricing files
+            Cross-dataset integration across CMS files, payer/formulary records, and utilization inputs
           </li>
           <li>
-            True same-NDC comparison logic to separate repricing from NDC/manufacturer mix shift
+            Longitudinal comparison logic to separate structural trend from one-period disruption
           </li>
           <li>
-            Plan-type comparison across local MA, regional MA, and stand-alone PDP structures
+            Validation of observed effects across plan type, channel, and benefit design dimensions
           </li>
-          <li>Focus on how reimbursement design changes affect access, not just nominal price</li>
+          <li>Interpretation of policy to incentive to behavior chains, not only static metrics</li>
         </ul>
       </Container>
     </section>
@@ -342,19 +338,16 @@ function WhyItMattersSection() {
   );
 }
 
-function AboutSection() {
+function LeadershipSection() {
   return (
     <section className="border-b border-[var(--color-border)] py-14 sm:py-16">
       <Container>
-        <h2 className="section-title">About Joseph Stewart</h2>
+        <h2 className="section-title">Leadership</h2>
         <p className="mt-4 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          Joseph Stewart is a health policy and reimbursement professional with experience spanning
-          pharmaceutical manufacturer strategy, biosimilars policy, consulting, and frontline
-          pharmacy operations. His work has included reimbursement and health policy leadership at
-          Otsuka, biosimilars policy leadership at the Association for Accessible Medicines, and
-          consulting across manufacturers, PBMs, and payers. This background supports a practical
-          analytical approach grounded in how policy, reimbursement, and operations interact in the
-          market.
+          Joseph Stewart leads JL Policy Consulting and brings experience across pharmaceutical
+          manufacturer reimbursement strategy, biosimilars and generics policy, legislative and
+          regulatory analysis, and frontline pharmacy operations. That background supports the
+          firm&apos;s focus on practical, data-grounded interpretation of policy and payer behavior.
         </p>
       </Container>
     </section>
@@ -400,25 +393,19 @@ export default async function HomePage() {
     href: researchHrefBySlug.get(item.slug) ?? `/research/${item.slug}`,
   }));
 
-  const personSchema = {
+  const homepageSchema = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Joseph Stewart",
-    url: siteConfig.url,
-    jobTitle: "Managing Director",
-    worksFor: {
+    "@type": "WebPage",
+    name: `${siteConfig.name} | Reimbursement, Drug Pricing & Market Access Strategy`,
+    url: absoluteUrl("/"),
+    description:
+      "Policy and market analysis covering reimbursement, formulary dynamics, pricing, and market access in U.S. pharmaceuticals.",
+    about: {
       "@type": "Organization",
       name: siteConfig.legalName,
+      url: siteConfig.url,
+      sameAs: [siteConfig.linkedin],
     },
-    sameAs: [siteConfig.linkedin],
-    knowsAbout: [
-      "Pharmaceutical reimbursement",
-      "Drug pricing strategy",
-      "Market access",
-      "Medicare Part D",
-      "PBM formulary behavior",
-      "Payer economics",
-    ],
   };
 
   return (
@@ -440,16 +427,13 @@ export default async function HomePage() {
       <FeaturedResearchSection items={resolvedFeaturedResearch} />
       <MethodSection />
       <WhyItMattersSection />
-      <AboutSection />
+      <LeadershipSection />
       <FinalCtaSection />
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            ...personSchema,
-            mainEntityOfPage: absoluteUrl("/"),
-          }),
+          __html: JSON.stringify(homepageSchema),
         }}
       />
     </>
