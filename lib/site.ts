@@ -4,7 +4,7 @@ export const siteConfig = {
   domain: "jlpolicyconsulting.com",
   url: "https://jlpolicyconsulting.com",
   description:
-    "Policy and analytics for pharmaceutical reimbursement, drug pricing strategy, market access, Medicare Part D, and payer formulary behavior using integrated multi-source data.",
+    "Analysis and advisory at the intersection of pharmaceutical policy, pricing, access, and payer economics.",
   email: "contact@jlpolicyconsulting.com",
   linkedin: "https://www.linkedin.com/in/joseph-stewart",
   navItems: [
@@ -17,16 +17,12 @@ export const siteConfig = {
 } as const;
 
 export const defaultKeywords = [
-  "pharmaceutical reimbursement",
-  "drug pricing strategy",
-  "market access",
-  "Medicare Part D",
-  "PBM formulary behavior",
-  "payer economics",
-  "biosimilars policy",
-  "generics policy",
-  "commercialization implications of policy",
-  "healthcare data analysis",
+  "pharmaceutical reimbursement strategy",
+  "Medicare Part D policy",
+  "PBM formulary dynamics",
+  "drug pricing policy",
+  "market access strategy",
+  "healthcare policy analytics",
 ];
 
 export function absoluteUrl(path: string): string {

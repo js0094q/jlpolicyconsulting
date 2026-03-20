@@ -3,6 +3,7 @@ import { IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { buildOgImageUrl } from "@/lib/og";
 import { defaultKeywords, siteConfig } from "@/lib/site";
 
 const sans = IBM_Plex_Sans({
@@ -22,7 +23,7 @@ const serif = Source_Serif_4({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Pharmaceutical Reimbursement and Market Access`,
+    default: `${siteConfig.name} | Reimbursement, Pricing, and Payer Dynamics`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -32,13 +33,32 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Pharmaceutical Reimbursement and Market Access`,
+    title: `${siteConfig.name} | Reimbursement, Pricing, and Payer Dynamics`,
     description: siteConfig.description,
+    images: [
+      {
+        url: buildOgImageUrl({
+          title: "Reimbursement Strategy, Drug Pricing Policy, and Market Access Insight",
+          subtitle: siteConfig.description,
+          kicker: siteConfig.legalName,
+        }),
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Pharmaceutical Reimbursement and Market Access`,
+    title: `${siteConfig.name} | Reimbursement, Pricing, and Payer Dynamics`,
     description: siteConfig.description,
+    images: [
+      buildOgImageUrl({
+        title: "Reimbursement Strategy, Drug Pricing Policy, and Market Access Insight",
+        subtitle: siteConfig.description,
+        kicker: siteConfig.legalName,
+      }),
+    ],
   },
 };
 

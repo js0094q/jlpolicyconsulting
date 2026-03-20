@@ -33,11 +33,11 @@ function LogoMark({ className }: { className?: string }) {
       className={cn("shrink-0", className)}
       aria-hidden
     >
-      <rect x="10" y="20" width="8" height="60" rx="2" fill="var(--color-brand-primary)" />
-      <rect x="10" y="72" width="25" height="8" rx="2" fill="var(--color-brand-primary)" />
-      <rect x="45" y="20" width="8" height="60" rx="2" fill="var(--color-brand-primary-soft)" />
-      <rect x="45" y="72" width="35" height="8" rx="2" fill="var(--color-brand-primary-soft)" />
-      <circle cx="85" cy="25" r="5" fill="var(--color-brand-secondary)" />
+      <rect x="10" y="20" width="8" height="60" rx="2" fill="var(--color-accent)" />
+      <rect x="10" y="72" width="25" height="8" rx="2" fill="var(--color-accent)" />
+      <rect x="45" y="20" width="8" height="60" rx="2" fill="var(--color-accent-soft)" />
+      <rect x="45" y="72" width="35" height="8" rx="2" fill="var(--color-accent-soft)" />
+      <circle cx="85" cy="25" r="5" fill="var(--color-accent)" />
     </svg>
   );
 }
@@ -51,7 +51,7 @@ export function SiteLogo({ variant = "full", size = "md", className }: SiteLogoP
 
   if (variant === "text") {
     return (
-      <span className={cn("font-serif leading-tight tracking-tight text-[var(--color-brand-primary)]", styles.title, className)}>
+      <span className={cn("font-serif leading-tight tracking-tight text-[var(--color-accent)]", styles.title, className)}>
         JL Policy Consulting
       </span>
     );
@@ -61,10 +61,10 @@ export function SiteLogo({ variant = "full", size = "md", className }: SiteLogoP
     <div className={cn("flex items-center gap-3", className)}>
       <LogoMark className={styles.icon} />
       <div className="leading-none">
-        <p className={cn("font-serif tracking-tight text-[var(--color-brand-primary)]", styles.title)}>
+        <p className={cn("font-serif tracking-tight text-[var(--color-accent)]", styles.title)}>
           JL Policy Consulting
         </p>
-        <p className={cn("mt-1 font-semibold uppercase tracking-[0.14em] text-[var(--color-brand-secondary)]", styles.subtitle)}>
+        <p className={cn("mt-1 font-semibold uppercase tracking-[0.14em] text-[var(--color-accent-soft)]", styles.subtitle)}>
           LLC
         </p>
       </div>

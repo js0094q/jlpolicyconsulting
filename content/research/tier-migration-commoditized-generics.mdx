@@ -1,0 +1,111 @@
+---
+title: "Tier Migration of Commoditized Generics in Medicare Part D"
+summary: "Plan-level analysis shows several mature generics moved into higher tiers across plans despite limited same-NDC unit price change, indicating access design reflects incentives beyond unit cost."
+publishDate: "2026-03-12"
+category: "Healthcare Data Analysis"
+tags:
+  - Medicare Part D
+  - Generic Drugs
+  - Tier Migration
+  - Formulary Strategy
+  - CMS SPUF
+readingTime: "16 min read"
+seoTitle: "Tier Migration of Commoditized Generics in Medicare Part D"
+seoDescription: "Data-backed analysis of tier worsening among mature generics in Part D and what it signals about payer incentives and access design."
+---
+
+## Objective
+
+This analysis evaluates whether mature generic drugs in Medicare Part D experienced net worsening in formulary tier placement between recent quarterly snapshots and whether those shifts aligned with same-NDC unit price changes.
+
+The central question is straightforward: if unit prices remain stable, why does tier position worsen?
+
+## Dataset and Scope
+
+Data sources:
+
+- CMS Part D Formulary, Pharmacy Network, and Pricing Public Use Files (SPUF)
+- Plan-level files for 2025Q4 and 2026Q1
+- NDC-level pricing fields standardized to same-NDC comparisons across quarters
+
+Scope filters:
+
+- mature generics with broad plan presence
+- products with comparable NDC continuity across both quarters
+- observations limited to plans with valid tier records in both snapshots
+
+## Methodology
+
+1. Normalize drug identity at the NDC and ingredient level.
+2. Calculate plan-level tier deltas for each product.
+3. Aggregate weighted and unweighted net higher-tier movement.
+4. Calculate same-NDC unit price change over the same period.
+5. Flag products with meaningful tier worsening and limited unit price change.
+
+### Metric Definitions
+
+| Metric | Definition |
+| --- | --- |
+| Net Higher-Tier Movement | Share-point change in plans placing a product in higher non-preferred tiers |
+| Same-NDC Unit Price Change | Percent change in mean unit price for matched NDCs across quarters |
+| Tier Worsening Event | Product-level movement threshold exceeding pre-set noise band |
+
+## Core Findings
+
+A subset of mature generics showed recurring tier worsening despite limited same-NDC price movement.
+
+| Product | Net Higher-Tier Movement | Same-NDC Unit Price Change |
+| --- | --- | --- |
+| Nortriptyline HCl | +23.6 pp | +0.7% |
+| Alprazolam | +15.2 pp | +1.6% |
+| Morphine Sulfate | +7.0 pp | +3.5% |
+| Dexmethylphenidate HCl | +6.8 pp | -0.1% |
+| Oxycodone HCl | +6.4 pp | +1.5% |
+
+The key interpretation is narrow: **tier position can worsen without meaningful underlying same-NDC price pressure**.
+
+## Interpretation
+
+These files do not prove intent. They do show a recurring pattern consistent with plan optimization behavior that is not reducible to unit price alone.
+
+Mechanisms that are directionally consistent with observed behavior include:
+
+- class-level formulary normalization,
+- utilization management harmonization,
+- channel strategy adjustments,
+- plan bid optimization under revised liability conditions.
+
+## Commercial Implications
+
+For manufacturers and market access teams, the implication is operational.
+
+If analytics only monitor gross price trajectory, access deterioration can be missed until pull-through weakens. Tier movement should be monitored jointly with utilization controls and channel requirements.
+
+## Recommended Monitoring Stack
+
+- Tier Movement Tracker by class and plan segment
+- UM Overlay Tracker for PA, ST, and QL changes
+- Price vs Access Divergence Monitor at same-NDC resolution
+
+### Chart Placeholder
+
+> Placeholder: quarterly tier movement trendline by product with same-NDC unit price overlay.
+
+### Table Placeholder
+
+| Quarter | Product | Higher-Tier Share | PA Rate | Step Therapy Rate | Matched NDC Price Index |
+| --- | --- | --- | --- | --- | --- |
+| 2025Q4 | Example | 18.2% | 21.4% | 10.8% | 100.0 |
+| 2026Q1 | Example | 26.4% | 24.0% | 12.2% | 100.7 |
+
+## Limits
+
+- Quarterly snapshots do not capture intra-quarter policy file edits.
+- Tier codes require consistent mapping across plan designs.
+- Observational files support inference, not intent attribution.
+
+## Bottom Line
+
+Tier migration among mature generics appears as a measurable access signal that cannot be explained by same-NDC unit pricing alone.
+
+Related commentary: [/insights/generics-tier-movement](/insights/generics-tier-movement)

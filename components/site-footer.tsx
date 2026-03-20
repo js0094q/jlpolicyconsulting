@@ -10,13 +10,13 @@ export function SiteFooter() {
         <div>
           <SiteLogo size="sm" />
           <p className="mt-3 max-w-2xl text-sm leading-7 text-[var(--color-muted)]">
-            Firm-led commentary and analysis on pharmaceutical reimbursement, drug pricing strategy,
-            market access, Medicare Part D design, and PBM formulary behavior.
+            Analysis of pharmaceutical reimbursement, drug pricing policy, market access, Medicare
+            Part D benefit design, and payer economics.
           </p>
         </div>
 
         <div>
-          <h3 className="kicker">Navigation</h3>
+          <h3 className="kicker">Sections</h3>
           <ul className="mt-3 space-y-2 text-sm text-[var(--color-accent)]">
             {siteConfig.navItems.map((item) => (
               <li key={item.href}>
@@ -29,7 +29,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h3 className="kicker">Contact</h3>
+          <h3 className="kicker">Professional Contact</h3>
           <ul className="mt-3 space-y-2 text-sm text-[var(--color-accent)]">
             <li>
               <a href={`mailto:${siteConfig.email}`} className="hover:text-ink">

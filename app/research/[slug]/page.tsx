@@ -5,7 +5,8 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { Container } from "@/components/container";
 import { mdxComponents } from "@/components/mdx-components";
-import { formatDisplayDate, getResearch, getResearchBySlug } from "@/lib/content";
+import { formatDisplayDate, getInsights, getResearch, getResearchBySlug } from "@/lib/content";
+import { buildOgImageUrl, OG_IMAGE_HEIGHT, OG_IMAGE_WIDTH } from "@/lib/og";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 interface ResearchPageProps {
@@ -32,7 +33,21 @@ export async function generateMetadata({ params }: ResearchPageProps): Promise<M
   const title = post.seo.title ?? post.title;
   const description = post.seo.description ?? post.summary;
   const canonical = post.seo.canonicalUrl ?? absoluteUrl(post.url);
-  const images = post.seo.ogImage ? [{ url: absoluteUrl(post.seo.ogImage) }] : undefined;
+  const imageUrl = post.seo.ogImage
+    ? absoluteUrl(post.seo.ogImage)
+    : buildOgImageUrl({
+        title,
+        subtitle: description,
+        kicker: "Research Analysis",
+      });
+  const images = [
+    {
+      url: imageUrl,
+      width: OG_IMAGE_WIDTH,
+      height: OG_IMAGE_HEIGHT,
+      alt: title,
+    },
+  ];
 
   return {
     title,
@@ -49,35 +64,37 @@ export async function generateMetadata({ params }: ResearchPageProps): Promise<M
       section: "Research",
       tags: post.tags,
       publishedTime: post.publishDate,
-      authors: [siteConfig.legalName],
+      authors: ["Joseph Stewart"],
       images,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: images?.map((image) => image.url),
+      images: [imageUrl],
     },
   };
 }
 
 export default async function ResearchDetailPage({ params }: ResearchPageProps) {
   const { slug } = await params;
-  const post = await getResearchBySlug(slug);
+  const [post, insightPosts] = await Promise.all([getResearchBySlug(slug), getInsights()]);
 
   if (!post) {
     notFound();
   }
 
+  const relatedInsights = insightPosts.slice(0, 3);
+
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
+    "@type": "Article",
     headline: post.title,
     description: post.summary,
     datePublished: post.publishDate,
     author: {
-      "@type": "Organization",
-      name: siteConfig.legalName,
+      "@type": "Person",
+      name: "Joseph Stewart",
     },
     publisher: {
       "@type": "Organization",
@@ -121,6 +138,30 @@ export default async function ResearchDetailPage({ params }: ResearchPageProps) 
             }}
           />
         </div>
+
+        <section className="mt-10 border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
+          <h2 className="text-2xl leading-tight text-ink">Related Commentary</h2>
+          <p className="mt-3 text-base leading-8 text-[var(--color-muted)]">
+            For shorter interpretation and policy commentary, see recent{" "}
+            <Link href="/insights" className="editorial-link">
+              Insights
+            </Link>
+            . Advisory context is available on{" "}
+            <Link href="/consulting" className="editorial-link">
+              Consulting
+            </Link>
+            .
+          </p>
+          <ul className="mt-4 space-y-2 text-sm leading-7 text-[var(--color-muted)]">
+            {relatedInsights.map((item) => (
+              <li key={item.slug} className="border-b border-[var(--color-border)] pb-2">
+                <Link href={item.url} className="editorial-link">
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
       </Container>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />

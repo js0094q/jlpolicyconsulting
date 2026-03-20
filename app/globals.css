@@ -1,27 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --color-page: #f8fafb;
-  --color-surface: #ffffff;
-  --color-ink: #1a202c;
-  --color-muted: #4a5568;
-  --color-accent: #1e3a5f;
-  --color-accent-soft: #4a90e2;
-  --color-border: #e1e8ed;
-  --color-brand-primary: #1e3a5f;
-  --color-brand-primary-soft: #2c5f8d;
-  --color-brand-secondary: #4a90e2;
-  --color-brand-accent: #3aafb9;
-  --color-brand-support: #f2994a;
+  --color-page: #f6f5f1;
+  --color-surface: #fcfcfa;
+  --color-ink: #1f252d;
+  --color-muted: #3f4a57;
+  --color-accent: #1f3657;
+  --color-accent-soft: #5f7897;
+  --color-border: #d6dde5;
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 12px;
   --space-lg: 16px;
   --space-xl: 24px;
   --space-2xl: 32px;
-  --radius-card: 12px;
-  --radius-input: 8px;
-  --shadow-card: 0 2px 8px rgba(15, 30, 58, 0.08);
+  --radius-card: 0px;
+  --radius-input: 0px;
   --font-sans: var(--font-ibm-plex-sans);
   --font-serif: var(--font-source-serif);
 }
@@ -34,11 +28,6 @@
   --color-accent: var(--color-accent);
   --color-accent-soft: var(--color-accent-soft);
   --color-border: var(--color-border);
-  --color-brand-primary: var(--color-brand-primary);
-  --color-brand-primary-soft: var(--color-brand-primary-soft);
-  --color-brand-secondary: var(--color-brand-secondary);
-  --color-brand-accent: var(--color-brand-accent);
-  --color-brand-support: var(--color-brand-support);
   --space-xs: var(--space-xs);
   --space-sm: var(--space-sm);
   --space-md: var(--space-md);
@@ -47,7 +36,6 @@
   --space-2xl: var(--space-2xl);
   --radius-card: var(--radius-card);
   --radius-input: var(--radius-input);
-  --shadow-card: var(--shadow-card);
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
 }
@@ -69,8 +57,8 @@ body {
 }
 
 ::selection {
-  background: #d4e5fb;
-  color: #10233b;
+  background: #dbe3ed;
+  color: #162940;
 }
 
 @layer base {
@@ -126,18 +114,17 @@ body {
   }
 
   .button-primary {
-    @apply border border-[var(--color-brand-primary)] bg-[var(--color-brand-primary)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--color-brand-primary-soft)];
+    @apply border border-[var(--color-accent)] bg-[var(--color-accent)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--color-accent-soft)];
   }
 
   .button-secondary {
-    @apply border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-2.5 text-sm font-semibold text-ink hover:border-[var(--color-brand-secondary)];
+    @apply border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-2.5 text-sm font-semibold text-ink hover:border-[var(--color-accent-soft)];
   }
 
   .surface-card {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-card);
     background: var(--color-surface);
-    box-shadow: var(--shadow-card);
   }
 
   .tag {

@@ -5,10 +5,7 @@ import { siteConfig } from "@/lib/site";
 
 export function SiteHeader() {
   return (
-    <header
-      className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-surface)]/95 backdrop-blur"
-      style={{ boxShadow: "var(--shadow-card)" }}
-    >
+    <header className="border-b border-[var(--color-border)] bg-[var(--color-surface)]">
       <Container className="py-4">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
@@ -16,7 +13,7 @@ export function SiteHeader() {
               <SiteLogo size="md" />
             </Link>
             <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-accent-soft)]">
-              U.S. Pharmaceutical Reimbursement, Pricing, and Payer Analysis
+              Medicare Part D, PBM Formulary Behavior, and Market Access Analysis
             </p>
           </div>
 
