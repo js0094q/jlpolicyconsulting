@@ -12,8 +12,9 @@ export function SiteHeader() {
             <Link href="/" className="inline-flex" aria-label={`${siteConfig.name} home`}>
               <SiteLogo size="md" />
             </Link>
-            <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-accent-soft)]">
-              Medicare Part D, PBM Formulary Behavior, and Market Access Analysis
+            <p className="mt-2 text-xs font-medium leading-5 text-[var(--color-accent-soft)]">
+              Healthcare Policy and Market Access Intelligence, Grounded in Real-World Data and Use
+              Cases
             </p>
           </div>
 

@@ -3,11 +3,11 @@ import { siteConfig } from "@/lib/site";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Contact",
+  title: "Professional Contact",
   description:
     "For consulting engagements, speaking opportunities, writing and commentary requests, or professional opportunities.",
   path: "/contact",
-  kicker: "Contact",
+  kicker: "Professional Contact",
   keywords: [
     "pharmaceutical reimbursement consulting",
     "market access advisory contact",
@@ -18,27 +18,32 @@ export const metadata = createPageMetadata({
 
 export default function ContactPage() {
   return (
-    <section className="py-16 sm:py-20">
-      <Container className="max-w-4xl">
-        <h1 className="page-title">Contact</h1>
-        <p className="mt-6 text-base leading-8 text-[var(--color-muted)]">
-          For consulting engagements, speaking opportunities, writing and commentary requests, or
-          professional opportunities:
-        </p>
+    <section className="py-14 sm:py-16">
+      <Container className="max-w-6xl">
+        <div className="mx-auto mt-16 max-w-3xl text-center">
+          <h1 className="page-title">Professional Contact</h1>
 
-        <div className="mt-6 space-y-3 text-base leading-8 text-[var(--color-muted)]">
-          <p>
-            Email: <a href={`mailto:${siteConfig.email}`} className="editorial-link">{siteConfig.email}</a>
-          </p>
-          <p>
-            LinkedIn: <a href={siteConfig.linkedin} target="_blank" rel="noreferrer" className="editorial-link">{siteConfig.linkedin}</a>
-          </p>
+          <div className="mt-8 space-y-4 text-base leading-8 text-[var(--color-muted)]">
+            <p>
+              <span className="font-semibold text-ink">Email:</span> {" "}
+              <a href={`mailto:${siteConfig.email}`} className="editorial-link hover:underline">
+                {siteConfig.email}
+              </a>
+            </p>
+
+            <p>
+              <span className="font-semibold text-ink">LinkedIn:</span> {" "}
+              <a
+                href="https://www.linkedin.com/in/joseph-stewart-mph-cpht-309bb5215"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="editorial-link hover:underline"
+              >
+                https://www.linkedin.com/in/joseph-stewart-mph-cpht-309bb5215
+              </a>
+            </p>
+          </div>
         </div>
-
-        <p className="mt-10 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          JL Policy Consulting works with pharmaceutical manufacturers, healthcare organizations,
-          and policy stakeholders on reimbursement strategy and market access analysis.
-        </p>
       </Container>
     </section>
   );

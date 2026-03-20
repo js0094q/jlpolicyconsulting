@@ -6,7 +6,7 @@ export const siteConfig = {
   description:
     "Analysis and advisory at the intersection of pharmaceutical policy, pricing, access, and payer economics.",
   email: "contact@jlpolicyconsulting.com",
-  linkedin: "https://www.linkedin.com/in/joseph-stewart",
+  linkedin: "https://www.linkedin.com/in/joseph-stewart-mph-cpht-309bb5215",
   navItems: [
     { label: "About", href: "/about" },
     { label: "Consulting", href: "/consulting" },

@@ -54,13 +54,13 @@ export default function AboutPage() {
       <Container>
         <h1 className="page-title">About</h1>
         <p className="mt-5 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          Joseph Stewart is a reimbursement and health policy strategist focused on the commercial
-          consequences of pharmaceutical policy design.
-        </p>
-        <p className="mt-4 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          His work spans pharmaceutical manufacturers, trade associations, consulting engagements,
-          and policy advocacy, with a focus on Medicare Part D, payer behavior, formulary strategy,
-          biosimilars, and reimbursement analytics.
+          JL Policy Consulting provides analysis and advisory at the intersection of pharmaceutical
+          policy, payer dynamics, and commercialization strategy. With more than a decade of
+          experience across drug pricing, reimbursement, and market access, the firm supports
+          manufacturers, payers, and stakeholders in navigating complex access and policy
+          environments. Our work spans manufacturer strategy, biosimilars policy, Medicare
+          reimbursement, and healthcare data analytics, with a focus on delivering flexible,
+          data-driven insights tailored to real-world use cases.
         </p>
 
         <section className="mt-12">
