@@ -5,31 +5,39 @@ import { siteConfig } from "@/lib/site";
 
 export function SiteHeader() {
   return (
-    <header className="border-b border-[var(--color-border)] bg-[var(--color-surface)]">
+    <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-page)] backdrop-blur">
       <Container className="py-4">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <Link href="/" className="inline-flex" aria-label={`${siteConfig.name} home`}>
-              <SiteLogo size="md" />
-            </Link>
-            <p className="mt-2 text-xs font-medium leading-5 text-[var(--color-accent-soft)]">
-              Healthcare Policy and Market Access Intelligence, Grounded in Real-World Data and Use
-              Cases
-            </p>
-          </div>
+        <div className="flex items-center justify-between gap-6">
+          <Link href="/" className="inline-flex" aria-label={`${siteConfig.name} home`}>
+            <SiteLogo size="md" />
+          </Link>
 
-          <nav
-            aria-label="Main"
-            className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-[var(--color-accent)]"
-          >
+          <nav aria-label="Main" className="hidden items-center gap-7 md:flex">
             {siteConfig.navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="hover:text-ink">
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-sm text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)] transition-colors hover:text-[var(--color-accent)]"
+              >
                 {item.label}
               </Link>
             ))}
           </nav>
         </div>
+
+        <nav aria-label="Main mobile" className="mt-3 md:hidden">
+          <ul className="flex gap-5 overflow-x-auto pb-1 pr-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--color-muted)]">
+            {siteConfig.navItems.map((item) => (
+              <li key={item.href} className="shrink-0">
+                <Link href={item.href} className="rounded-sm transition-colors hover:text-[var(--color-accent)]">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </Container>
+      <div className="h-px w-full bg-[var(--color-accent-soft)]" />
     </header>
   );
 }

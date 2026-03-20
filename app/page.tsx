@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { Container } from "@/components/container";
-import { formatDisplayDate, getInsights } from "@/lib/content";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Reimbursement Strategy, Drug Pricing Policy, and Market Access Insight",
+  title: "Healthcare Policy and Market Access Intelligence",
   description:
-    "Analysis and advisory at the intersection of pharmaceutical policy, payer economics, and commercialization strategy.",
+    "Reimbursement strategy, drug pricing policy, and market access insight grounded in real-world data and use cases.",
   path: "/",
   kicker: "JL Policy Consulting, LLC",
   keywords: [
@@ -45,14 +44,33 @@ const tierPreviewData = [
   { product: "Dexmethylphenidate HCl", tierShift: 6.8, priceShift: -0.1 },
 ] as const;
 
+const metrics = [
+  { value: "10+", label: "YEARS EXPERIENCE" },
+  { value: "100+", label: "POLICY ANALYSES" },
+  { value: "50+", label: "CLIENT PROJECTS" },
+] as const;
+
 function signed(value: number): string {
   const prefix = value > 0 ? "+" : "";
-  return `${prefix}${value.toFixed(1)}`;
+  return prefix + value.toFixed(1);
 }
 
-export default async function HomePage() {
-  const insights = await getInsights();
-  const featuredInsight = insights[0] ?? null;
+function barWidth(shift: number, maxShift: number): string {
+  const ratio = maxShift <= 0 ? 0 : (shift / maxShift) * 100;
+  const clamped = Math.max(12, Math.min(100, ratio));
+  return clamped.toFixed(1) + "%";
+}
+
+function SectionHeading({ id, children }: { id: string; children: React.ReactNode }) {
+  return (
+    <h2 id={id} className="section-title">
+      {children}
+    </h2>
+  );
+}
+
+export default function HomePage() {
+  const maxShift = Math.max(...tierPreviewData.map((item) => item.tierShift));
 
   const personSchema = {
     "@context": "https://schema.org",
@@ -77,17 +95,24 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="border-b border-[var(--color-border)] py-14 sm:py-16">
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-6xl text-center">
-            <h1 className="font-serif text-4xl leading-tight text-ink sm:text-5xl">
+          <div className="mx-auto max-w-5xl text-center">
+            <h1 className="font-serif text-[clamp(2.35rem,5.1vw,4.4rem)] leading-[1.08] tracking-[-0.02em] text-ink">
               Healthcare Policy and Market Access Intelligence, Grounded in Real-World Data and Use
               Cases
             </h1>
-            <p className="mx-auto mt-5 max-w-3xl whitespace-nowrap text-center text-[clamp(0.48rem,2.5vw,1.125rem)] font-medium leading-tight text-[var(--color-muted)]">
+            <p className="mx-auto mt-7 max-w-4xl text-[0.9rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-muted)] sm:text-[0.95rem] md:whitespace-nowrap">
               Reimbursement Strategy, Drug Pricing Policy, Market Access Insight
             </p>
-            <p className="mx-auto mt-6 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-[var(--color-border)] py-14 sm:py-16">
+        <Container>
+          <div className="mx-auto max-w-4xl">
+            <p className="text-base leading-8 text-[var(--color-muted)]">
               JL Policy Consulting provides analysis and advisory at the intersection of
               pharmaceutical policy, payer dynamics, and commercialization strategy. With more than
               a decade of experience across drug pricing, reimbursement, and market access, the firm
@@ -100,20 +125,20 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <section className="border-b border-[var(--color-border)] py-12 sm:py-14">
+      <section id="consulting" className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <h2 className="section-title">Capabilities</h2>
-          <div className="mt-7 grid grid-cols-1 gap-6 md:grid-cols-2">
-            <ul className="space-y-2 text-base leading-7 text-[var(--color-muted)]">
+          <SectionHeading id="capabilities-heading">Capabilities</SectionHeading>
+          <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+            <ul className="space-y-4" role="list">
               {capabilitiesLeft.map((item) => (
-                <li key={item} className="border-b border-[var(--color-border)] pb-2">
+                <li key={item} className="surface-card px-6 py-5 text-base leading-7 text-[var(--color-ink)]">
                   {item}
                 </li>
               ))}
             </ul>
-            <ul className="space-y-2 text-base leading-7 text-[var(--color-muted)]">
+            <ul className="space-y-4" role="list">
               {capabilitiesRight.map((item) => (
-                <li key={item} className="border-b border-[var(--color-border)] pb-2">
+                <li key={item} className="surface-card px-6 py-5 text-base leading-7 text-[var(--color-ink)]">
                   {item}
                 </li>
               ))}
@@ -122,68 +147,117 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <section className="py-12 sm:py-14">
+      <section id="insights" className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <h2 className="mb-8 text-center text-3xl font-semibold leading-tight text-ink sm:mb-10 sm:text-4xl">
-            Latest Insights
-          </h2>
+          <SectionHeading id="insights-heading">Latest Insights</SectionHeading>
 
-          <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-            <article className="border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7">
-              {featuredInsight ? (
-                <>
-                  <p className="text-xs font-medium uppercase tracking-[0.08em] text-[var(--color-accent-soft)]">
-                    {formatDisplayDate(featuredInsight.publishDate)} · {featuredInsight.category}
-                  </p>
-                  <h3 className="mt-3 text-3xl leading-tight text-ink">
-                    {featuredInsight.title}
-                  </h3>
-                  <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
-                    {featuredInsight.summary}
-                  </p>
-                  <Link href={featuredInsight.url} className="editorial-link mt-6 inline-flex text-sm">
-                    Read Insight
-                  </Link>
-                </>
-              ) : (
-                <p className="text-base leading-8 text-[var(--color-muted)]">
-                  Insights are being prepared. Check back shortly.
-                </p>
-              )}
+          <div className="mt-10 grid grid-cols-1 gap-7 xl:grid-cols-[0.95fr_1.05fr]">
+            <article className="surface-card flex h-full flex-col p-7 sm:p-8">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)]">
+                MARCH 18, 2026 • MEDICARE POLICY
+              </p>
+              <h3 className="mt-5 text-[clamp(1.65rem,2.8vw,2.3rem)] leading-tight text-ink">
+                Why Part D Redesign Changes Where Pressure Shows Up
+              </h3>
+              <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                Part D redesign improves beneficiary protection but shifts how plans manage risk,
+                often through formulary and utilization design.
+              </p>
+              <Link href="/insights/part-d-redesign-liability" className="editorial-link mt-7 inline-flex">
+                Read Insight
+              </Link>
             </article>
 
-            <aside className="border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7">
-              <h3 className="text-xl leading-tight text-ink">Tier Migration vs Unit Price Change</h3>
+            <article className="surface-card p-7 sm:p-8" aria-label="Tier migration analytics highlight">
+              <h3 className="text-[clamp(1.35rem,2.3vw,1.9rem)] leading-tight text-ink">
+                Tier Migration vs Unit Price Change
+              </h3>
               <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">
                 SPUF-derived quarterly view of mature generic products with measurable higher-tier
                 movement against same-NDC unit cost change.
               </p>
 
-              <div className="mt-5 space-y-4">
+              <ul className="mt-6 space-y-4" role="list">
                 {tierPreviewData.map((row) => (
-                  <div key={row.product}>
-                    <div className="flex items-center justify-between gap-3 text-sm text-[var(--color-muted)]">
-                      <span className="truncate">{row.product}</span>
-                      <span className="font-semibold text-ink">{signed(row.tierShift)} pp</span>
+                  <li key={row.product} className="rounded-md border border-[var(--color-border)] px-4 py-3">
+                    <div className="flex items-start justify-between gap-3 text-sm">
+                      <div>
+                        <p className="font-semibold text-[var(--color-ink)]">{row.product}</p>
+                        <p className="mt-1 text-xs text-[var(--color-muted)]">
+                          Same-NDC unit price change: {signed(row.priceShift)}%
+                        </p>
+                      </div>
+                      <p className="font-semibold text-[var(--color-accent)]">{signed(row.tierShift)} pp</p>
                     </div>
-                    <div className="mt-2 h-2 w-full bg-[#e9edf2]">
+                    <div className="mt-3 h-2 w-full rounded-full bg-[#e4ecf8]" aria-hidden>
                       <div
-                        className="h-2 bg-[var(--color-accent)]"
-                        style={{ width: `${Math.min(100, row.tierShift * 3.4)}%` }}
+                        className="h-2 rounded-full bg-[var(--color-accent)]"
+                        style={{ width: barWidth(row.tierShift, maxShift) }}
                       />
                     </div>
-                    <div className="mt-1 text-xs text-[var(--color-muted)]">
-                      Same-NDC unit price change: {signed(row.priceShift)}%
-                    </div>
-                  </div>
+                    <p className="sr-only">
+                      {row.product} net higher-tier movement {signed(row.tierShift)} percentage
+                      points and same-NDC unit price change {signed(row.priceShift)} percent.
+                    </p>
+                  </li>
                 ))}
-              </div>
+              </ul>
 
               <p className="mt-5 text-xs leading-6 text-[var(--color-muted)]">
-                Source framework: CMS Part D SPUF plan-level data (tier level, UNIT_COST, and UM
-                flags including PA/ST/QL).
+                Source framework: CMS Part D SPUF plan-level data (tier level, UNIT_COST, and LM
+                flags including RXCUI_1)
               </p>
-            </aside>
+
+              <Link href="/research/tier-migration-commoditized-generics" className="editorial-link mt-4 inline-flex">
+                View Research
+              </Link>
+            </article>
+          </div>
+        </Container>
+      </section>
+
+      <section id="research" className="border-b border-[var(--color-border)] py-16 sm:py-20">
+        <Container>
+          <div className="mx-auto max-w-4xl text-center">
+            <SectionHeading id="research-heading">Research &amp; Analysis</SectionHeading>
+            <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-[var(--color-muted)]">
+              Our research combines quantitative analysis of healthcare policy data with strategic
+              insights into market dynamics. We translate complex regulatory change into actionable
+              intelligence for pharmaceutical manufacturers and payers.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-[var(--color-border)] py-14 sm:py-16" aria-label="Firm metrics">
+        <Container>
+          <div className="surface-card px-6 py-9 sm:px-10 sm:py-10">
+            <div className="grid gap-9 md:grid-cols-3">
+              {metrics.map((metric) => (
+                <div key={metric.label} className="text-center">
+                  <p className="font-serif text-[clamp(2rem,4.2vw,3rem)] leading-none text-[var(--color-accent)]">
+                    {metric.value}
+                  </p>
+                  <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--color-muted)]">
+                    {metric.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section id="contact" className="py-16 sm:py-20">
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <SectionHeading id="contact-heading">Get in Touch</SectionHeading>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[var(--color-muted)]">
+              Interested in discussing how we can support your market access strategy?
+            </p>
+            <Link href="/contact" className="button-primary mt-8 inline-flex items-center rounded-md px-7 py-3">
+              Contact Us
+            </Link>
           </div>
         </Container>
       </section>

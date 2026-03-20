@@ -3,24 +3,27 @@ import { Container } from "@/components/container";
 import { SiteLogo } from "@/components/site-logo";
 import { siteConfig } from "@/lib/site";
 
+const footerNav = [
+  { label: "About", href: "/about" },
+  { label: "Consulting", href: "/consulting" },
+  { label: "Insights", href: "/insights" },
+  { label: "Research", href: "/research" },
+] as const;
+
 export function SiteFooter() {
   return (
-    <footer className="mt-20 border-t border-[var(--color-border)] bg-[var(--color-surface)]">
-      <Container className="grid gap-8 py-12 md:grid-cols-[2fr_1fr_1fr]">
+    <footer className="mt-12 border-t border-[var(--color-border)] bg-[var(--color-surface)]">
+      <Container className="grid gap-10 py-12 md:grid-cols-[1.6fr_1fr_1fr]">
         <div>
           <SiteLogo size="sm" />
-          <p className="mt-3 max-w-2xl text-sm leading-7 text-[var(--color-muted)]">
-            Analysis of pharmaceutical reimbursement, drug pricing policy, market access, Medicare
-            Part D benefit design, and payer economics.
-          </p>
         </div>
 
         <div>
           <h3 className="kicker">Sections</h3>
-          <ul className="mt-3 space-y-2 text-sm text-[var(--color-accent)]">
-            {siteConfig.navItems.map((item) => (
+          <ul className="mt-4 space-y-2 text-sm text-[var(--color-ink)]">
+            {footerNav.map((item) => (
               <li key={item.href}>
-                <Link className="hover:text-ink" href={item.href}>
+                <Link className="rounded-sm transition-colors hover:text-[var(--color-accent)]" href={item.href}>
                   {item.label}
                 </Link>
               </li>
@@ -30,14 +33,22 @@ export function SiteFooter() {
 
         <div>
           <h3 className="kicker">Professional Contact</h3>
-          <ul className="mt-3 space-y-2 text-sm text-[var(--color-accent)]">
+          <ul className="mt-4 space-y-2 text-sm text-[var(--color-ink)]">
             <li>
-              <a href={`mailto:${siteConfig.email}`} className="hover:text-ink">
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="rounded-sm transition-colors hover:text-[var(--color-accent)]"
+              >
                 {siteConfig.email}
               </a>
             </li>
             <li>
-              <a href={siteConfig.linkedin} target="_blank" rel="noreferrer" className="hover:text-ink">
+              <a
+                href={siteConfig.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-sm transition-colors hover:text-[var(--color-accent)]"
+              >
                 LinkedIn
               </a>
             </li>
@@ -46,7 +57,7 @@ export function SiteFooter() {
       </Container>
 
       <Container className="border-t border-[var(--color-border)] py-5 text-xs text-[var(--color-muted)]">
-        © {new Date().getFullYear()} {siteConfig.legalName}
+        © 2026 JL Policy Consulting LLC. All rights reserved.
       </Container>
     </footer>
   );

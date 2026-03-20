@@ -1,23 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --color-page: #f6f5f1;
-  --color-surface: #fcfcfa;
-  --color-ink: #1f252d;
-  --color-muted: #3f4a57;
-  --color-accent: #1f3657;
-  --color-accent-soft: #5f7897;
-  --color-border: #d6dde5;
+  --color-page: #f4f7fb;
+  --color-surface: #ffffff;
+  --color-ink: #0f1a30;
+  --color-muted: #4f5d78;
+  --color-accent: #1c3f92;
+  --color-accent-soft: #9eb6da;
+  --color-border: #d5dfed;
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 12px;
   --space-lg: 16px;
   --space-xl: 24px;
   --space-2xl: 32px;
-  --radius-card: 0px;
-  --radius-input: 0px;
-  --font-sans: var(--font-ibm-plex-sans);
-  --font-serif: var(--font-source-serif);
+  --radius-card: 14px;
+  --radius-input: 10px;
+  --font-sans:
+    "Public Sans", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-serif:
+    "Source Serif 4", "Iowan Old Style", "Baskerville", "Palatino Linotype", Georgia, serif;
 }
 
 @theme inline {
@@ -49,16 +51,26 @@ body {
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: var(--color-page);
   color: var(--color-ink);
   font-family: var(--font-sans), sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 ::selection {
-  background: #dbe3ed;
+  background: #dbe4f3;
   color: #162940;
+}
+
+:focus-visible {
+  outline: 2px solid #2f62c7;
+  outline-offset: 2px;
 }
 
 @layer base {
@@ -68,7 +80,7 @@ body {
   h4 {
     color: var(--color-ink);
     font-family: var(--font-serif), serif;
-    letter-spacing: -0.012em;
+    letter-spacing: -0.015em;
   }
 
   p {
@@ -82,11 +94,11 @@ body {
 
 @layer components {
   .kicker {
-    @apply text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-accent-soft)];
+    @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-soft)];
   }
 
   .page-title {
-    @apply mt-3 text-4xl leading-tight sm:text-5xl;
+    @apply mt-2 text-4xl leading-tight sm:text-5xl;
   }
 
   .page-lede {
@@ -94,7 +106,7 @@ body {
   }
 
   .section-title {
-    @apply mt-2 text-3xl leading-tight sm:text-4xl;
+    @apply text-center text-[clamp(1.9rem,3.4vw,2.8rem)] leading-tight;
   }
 
   .line-list {
@@ -106,19 +118,19 @@ body {
   }
 
   .editorial-block {
-    @apply border border-[var(--color-border)] bg-[var(--color-surface)] p-7;
+    @apply rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-surface)] p-7;
   }
 
   .editorial-link {
-    @apply text-sm font-semibold text-[var(--color-accent)] hover:text-[var(--color-ink)];
+    @apply text-sm font-semibold text-[var(--color-accent)] transition-colors hover:text-[#2f62c7];
   }
 
   .button-primary {
-    @apply border border-[var(--color-accent)] bg-[var(--color-accent)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--color-accent-soft)];
+    @apply rounded-md border border-[var(--color-accent)] bg-[var(--color-accent)] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#2f62c7];
   }
 
   .button-secondary {
-    @apply border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-2.5 text-sm font-semibold text-ink hover:border-[var(--color-accent-soft)];
+    @apply rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-2.5 text-sm font-semibold text-ink hover:border-[var(--color-accent-soft)];
   }
 
   .surface-card {
@@ -128,6 +140,6 @@ body {
   }
 
   .tag {
-    @apply inline-flex items-center border border-[var(--color-border)] px-2 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-[var(--color-muted)];
+    @apply inline-flex items-center rounded-md border border-[var(--color-border)] px-2 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-[var(--color-muted)];
   }
 }
