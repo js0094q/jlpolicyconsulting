@@ -33,6 +33,7 @@ export interface ArticleMeta {
   title: string;
   summary: string;
   publishDate: string;
+  lastModified: string;
   category: InsightCategory;
   tags: string[];
   readingTime: string;
@@ -162,6 +163,7 @@ function mapToArticleMeta(
   type: ArticleType,
   frontmatter: RawArticleFrontmatter,
   content: string,
+  lastModified: string,
 ): ArticleMeta {
   const publishDate = new Date(frontmatter.publishDate);
 
@@ -174,6 +176,7 @@ function mapToArticleMeta(
     title: frontmatter.title,
     summary: frontmatter.summary,
     publishDate: publishDate.toISOString(),
+    lastModified,
     category: frontmatter.category,
     tags: frontmatter.tags,
     readingTime: createReadingTimeLabel(content, frontmatter.readingTime),
@@ -192,10 +195,10 @@ async function readArticle(type: ArticleType, slug: string): Promise<Article | n
   const filePath = path.join(CONTENT_DIRECTORIES[type], `${slug}.mdx`);
 
   try {
-    const source = await fs.readFile(filePath, "utf-8");
+    const [source, fileStats] = await Promise.all([fs.readFile(filePath, "utf-8"), fs.stat(filePath)]);
     const parsed = matter(source);
     const frontmatter = normalizeFrontmatter(parsed.data, slug);
-    const meta = mapToArticleMeta(slug, type, frontmatter, parsed.content);
+    const meta = mapToArticleMeta(slug, type, frontmatter, parsed.content, fileStats.mtime.toISOString());
 
     return {
       ...meta,
@@ -218,6 +221,7 @@ function toArticleMeta(article: Article): ArticleMeta {
     title: article.title,
     summary: article.summary,
     publishDate: article.publishDate,
+    lastModified: article.lastModified,
     category: article.category,
     tags: article.tags,
     readingTime: article.readingTime,
@@ -252,8 +256,16 @@ export async function getResearch(): Promise<ArticleMeta[]> {
 }
 
 export async function getLatestInsights(count = 3): Promise<ArticleMeta[]> {
-  const insights = await getInsights();
-  return insights.slice(0, count);
+  return getLatestArticles("insight", count);
+}
+
+export async function getLatestResearch(count = 3): Promise<ArticleMeta[]> {
+  return getLatestArticles("research", count);
+}
+
+async function getLatestArticles(type: ArticleType, count: number): Promise<ArticleMeta[]> {
+  const articles = await getArticles(type);
+  return articles.slice(0, count);
 }
 
 export async function getInsightBySlug(slug: string): Promise<Article | null> {

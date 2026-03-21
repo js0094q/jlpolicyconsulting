@@ -7,9 +7,10 @@ Production-ready professional website for **JL Policy Consulting, LLC**.
 - TypeScript
 - Tailwind CSS
 - MDX content model for insights and research
+- File-backed SEO metadata and generated Open Graph images
 
 ## Site Sections
-- Home: positioning + expertise + latest insights
+- Home: positioning + expertise + latest insight + latest research
 - About: professional background and analytical approach
 - Consulting: advisory scope and engagement outputs
 - Insights: policy and reimbursement commentary
@@ -23,11 +24,16 @@ Articles in `content/insights` and `content/research` support:
 - `publishDate`
 - `category`
 - `tags`
-- `readingTime`
-- `seoTitle`
-- `seoDescription`
+- `readingTime` (optional, computed if omitted)
+- `seoTitle` (optional)
+- `seoDescription` (optional)
 - `canonicalUrl` (optional)
 - `ogImage` (optional)
+
+Derived article metadata in the app also includes:
+- `url`
+- `type`
+- `lastModified`
 
 ## Local Development
 ```bash
@@ -58,3 +64,4 @@ npm run build
 
 ## Notes
 - Site blueprint and architecture details are documented in `docs/site-blueprint.md`.
+- `Enhance Branding Implementation Plan/` is a separate archived Vite prototype and is not part of the root Next.js build, lint, or typecheck flow.

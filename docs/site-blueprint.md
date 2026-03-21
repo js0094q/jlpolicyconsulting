@@ -22,17 +22,19 @@
 - TypeScript
 - Tailwind CSS
 - MDX content ingestion via frontmatter + `next-mdx-remote`
-- SEO routes: `app/sitemap.ts`, `app/robots.ts`
+- SEO routes: `app/sitemap.ts`, `app/robots.ts`, `app/api/og/route.tsx`
+- Shared SEO helpers in `lib/seo.ts` and `lib/og.ts`
 
 ## 2) Page Wireframes
 
 ### Home
-- Hero: positioning statement, subheadline, CTA pair.
+- Hero: positioning statement and subheadline.
 - Primary positioning panel: policy + market focus list.
 - Expertise grid.
-- Consulting focus grid.
-- Latest insights cards.
-- Featured research cards.
+- Latest insight feature sourced from the most recent insight.
+- Featured research panel sourced from the most recent research article.
+- Research framing section.
+- Firm metrics strip.
 - Contact CTA block.
 
 ### About
@@ -101,19 +103,23 @@
 
 ### Runtime Features
 - Reading metadata surfaced on cards and post pages.
+- Reading time computed when omitted from frontmatter.
 - Dynamic metadata generation per article.
+- File-backed `lastModified` metadata derived from MDX file timestamps.
 - JSON-LD article schema included on detail pages.
+- Home page feature blocks sourced from the latest content entries instead of hardcoded slugs.
 
 ## 7) SEO Structure
 - Global metadata in `app/layout.tsx`.
 - Page-level metadata for all primary routes.
 - Open Graph and Twitter metadata for article detail pages.
-- Canonical URL support.
+- Canonical URL support with per-article overrides.
 - Structured data:
-  - Organization/service schema at layout level
+  - Organization schema at layout level
   - Person schema on home
-  - Article/ScholarlyArticle schema on detail pages
-- Sitemap generation from static routes + MDX content.
+  - Article schema on detail pages
+- Shared article SEO resolution so metadata and JSON-LD use the same overridden title, description, canonical URL, and OG image values.
+- Sitemap generation from static routes + MDX content, with `lastModified` driven by route file mtimes and article file mtimes.
 - Robots configuration with sitemap pointer.
 
 ## 8) Folder Structure
@@ -121,6 +127,7 @@
 ```text
 app/
   about/page.tsx
+  api/og/route.tsx
   consulting/page.tsx
   contact/page.tsx
   insights/page.tsx
@@ -134,16 +141,20 @@ app/
   robots.ts
   sitemap.ts
 components/
-  article-card.tsx
   container.tsx
+  insight-card.tsx
   mdx-components.tsx
+  research-card.tsx
   site-footer.tsx
   site-header.tsx
+  site-logo.tsx
 content/
   insights/*.mdx
   research/*.mdx
 lib/
   content.ts
+  og.ts
+  seo.ts
   site.ts
   utils.ts
 docs/
@@ -155,3 +166,7 @@ docs/
 - Output: Next.js default
 - Environment variables: none required for current implementation
 - Domain target: `jlpolicyconsulting.com`
+
+## 10) Repo Notes
+- The root production app is the Next.js project at the repository root.
+- `Enhance Branding Implementation Plan/` is a separate Vite prototype kept as reference material and excluded from the root app's lint and typecheck scope.

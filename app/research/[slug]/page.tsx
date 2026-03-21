@@ -6,8 +6,8 @@ import remarkGfm from "remark-gfm";
 import { Container } from "@/components/container";
 import { mdxComponents } from "@/components/mdx-components";
 import { formatDisplayDate, getInsights, getResearch, getResearchBySlug } from "@/lib/content";
-import { buildOgImageUrl, OG_IMAGE_HEIGHT, OG_IMAGE_WIDTH } from "@/lib/og";
-import { absoluteUrl, siteConfig } from "@/lib/site";
+import { resolveArticleSeo } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 interface ResearchPageProps {
   params: Promise<{
@@ -30,48 +30,31 @@ export async function generateMetadata({ params }: ResearchPageProps): Promise<M
     };
   }
 
-  const title = post.seo.title ?? post.title;
-  const description = post.seo.description ?? post.summary;
-  const canonical = post.seo.canonicalUrl ?? absoluteUrl(post.url);
-  const imageUrl = post.seo.ogImage
-    ? absoluteUrl(post.seo.ogImage)
-    : buildOgImageUrl({
-        title,
-        subtitle: description,
-        kicker: "Research Analysis",
-      });
-  const images = [
-    {
-      url: imageUrl,
-      width: OG_IMAGE_WIDTH,
-      height: OG_IMAGE_HEIGHT,
-      alt: title,
-    },
-  ];
+  const seo = resolveArticleSeo(post, "Research Analysis");
 
   return {
-    title,
-    description,
+    title: seo.title,
+    description: seo.description,
     keywords: post.tags,
     alternates: {
-      canonical,
+      canonical: seo.canonical,
     },
     openGraph: {
       type: "article",
-      url: canonical,
-      title,
-      description,
+      url: seo.canonical,
+      title: seo.title,
+      description: seo.description,
       section: "Research",
       tags: post.tags,
       publishedTime: post.publishDate,
       authors: ["Joseph Stewart"],
-      images,
+      images: seo.images,
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
-      images: [imageUrl],
+      title: seo.title,
+      description: seo.description,
+      images: [seo.imageUrl],
     },
   };
 }
@@ -85,13 +68,17 @@ export default async function ResearchDetailPage({ params }: ResearchPageProps) 
   }
 
   const relatedInsights = insightPosts.slice(0, 3);
+  const seo = resolveArticleSeo(post, "Research Analysis");
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: post.title,
-    description: post.summary,
+    headline: seo.title,
+    description: seo.description,
+    url: seo.canonical,
     datePublished: post.publishDate,
+    dateModified: post.lastModified,
+    image: [seo.imageUrl],
     author: {
       "@type": "Person",
       name: "Joseph Stewart",
@@ -100,7 +87,7 @@ export default async function ResearchDetailPage({ params }: ResearchPageProps) 
       "@type": "Organization",
       name: siteConfig.legalName,
     },
-    mainEntityOfPage: absoluteUrl(post.url),
+    mainEntityOfPage: seo.canonical,
   };
 
   return (

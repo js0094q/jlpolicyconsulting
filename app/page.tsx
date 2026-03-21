@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/container";
+import { formatDisplayDate, getLatestInsights, getLatestResearch } from "@/lib/content";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -37,29 +38,11 @@ const capabilitiesRight = [
   "Healthcare Policy Analytics",
 ] as const;
 
-const tierPreviewData = [
-  { product: "Nortriptyline HCl", tierShift: 23.6, priceShift: 0.7 },
-  { product: "Alprazolam", tierShift: 15.2, priceShift: 1.6 },
-  { product: "Morphine Sulfate", tierShift: 7.0, priceShift: 3.5 },
-  { product: "Dexmethylphenidate HCl", tierShift: 6.8, priceShift: -0.1 },
-] as const;
-
 const metrics = [
   { value: "10+", label: "YEARS EXPERIENCE" },
   { value: "100+", label: "POLICY ANALYSES" },
   { value: "50+", label: "CLIENT PROJECTS" },
 ] as const;
-
-function signed(value: number): string {
-  const prefix = value > 0 ? "+" : "";
-  return prefix + value.toFixed(1);
-}
-
-function barWidth(shift: number, maxShift: number): string {
-  const ratio = maxShift <= 0 ? 0 : (shift / maxShift) * 100;
-  const clamped = Math.max(12, Math.min(100, ratio));
-  return clamped.toFixed(1) + "%";
-}
 
 function SectionHeading({ id, children }: { id: string; children: React.ReactNode }) {
   return (
@@ -69,8 +52,11 @@ function SectionHeading({ id, children }: { id: string; children: React.ReactNod
   );
 }
 
-export default function HomePage() {
-  const maxShift = Math.max(...tierPreviewData.map((item) => item.tierShift));
+export default async function HomePage() {
+  const [[featuredInsight], [featuredResearch]] = await Promise.all([
+    getLatestInsights(1),
+    getLatestResearch(1),
+  ]);
 
   const personSchema = {
     "@context": "https://schema.org",
@@ -152,66 +138,91 @@ export default function HomePage() {
           <SectionHeading id="insights-heading">Latest Insights</SectionHeading>
 
           <div className="mt-10 grid grid-cols-1 gap-7 xl:grid-cols-[0.95fr_1.05fr]">
-            <article className="surface-card flex h-full flex-col p-7 sm:p-8">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)]">
-                MARCH 18, 2026 • MEDICARE POLICY
-              </p>
-              <h3 className="mt-5 text-[clamp(1.65rem,2.8vw,2.3rem)] leading-tight text-ink">
-                Why Part D Redesign Changes Where Pressure Shows Up
-              </h3>
-              <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
-                Part D redesign improves beneficiary protection but shifts how plans manage risk,
-                often through formulary and utilization design.
-              </p>
-              <Link href="/insights/part-d-redesign-liability" className="editorial-link mt-7 inline-flex">
-                Read Insight
-              </Link>
-            </article>
+            {featuredInsight ? (
+              <article className="surface-card flex h-full flex-col p-7 sm:p-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)]">
+                  {formatDisplayDate(featuredInsight.publishDate).toUpperCase()} •{" "}
+                  {featuredInsight.category.toUpperCase()}
+                </p>
+                <h3 className="mt-5 text-[clamp(1.65rem,2.8vw,2.3rem)] leading-tight text-ink">
+                  {featuredInsight.title}
+                </h3>
+                <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                  {featuredInsight.summary}
+                </p>
+                <p className="mt-5 text-xs leading-6 text-[var(--color-muted)]">
+                  {featuredInsight.readingTime}
+                </p>
+                <Link href={featuredInsight.url} className="editorial-link mt-7 inline-flex">
+                  Read Insight
+                </Link>
+              </article>
+            ) : (
+              <article className="surface-card flex h-full flex-col p-7 sm:p-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)]">
+                  INSIGHT ARCHIVE
+                </p>
+                <h3 className="mt-5 text-[clamp(1.65rem,2.8vw,2.3rem)] leading-tight text-ink">
+                  Commentary appears here as new insights are published
+                </h3>
+                <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                  Browse the insights archive for recent policy commentary and market access
+                  analysis.
+                </p>
+                <Link href="/insights" className="editorial-link mt-7 inline-flex">
+                  Browse Insights
+                </Link>
+              </article>
+            )}
 
-            <article className="surface-card p-7 sm:p-8" aria-label="Tier migration analytics highlight">
-              <h3 className="text-[clamp(1.35rem,2.3vw,1.9rem)] leading-tight text-ink">
-                Tier Migration vs Unit Price Change
-              </h3>
-              <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">
-                SPUF-derived quarterly view of mature generic products with measurable higher-tier
-                movement against same-NDC unit cost change.
-              </p>
+            {featuredResearch ? (
+              <article className="surface-card flex h-full flex-col p-7 sm:p-8" aria-label="Featured research preview">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="tag">Research Analysis</span>
+                  <span className="tag">{featuredResearch.category}</span>
+                </div>
+                <h3 className="mt-5 text-[clamp(1.35rem,2.3vw,1.9rem)] leading-tight text-ink">
+                  {featuredResearch.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">{featuredResearch.summary}</p>
 
-              <ul className="mt-6 space-y-4" role="list">
-                {tierPreviewData.map((row) => (
-                  <li key={row.product} className="rounded-md border border-[var(--color-border)] px-4 py-3">
-                    <div className="flex items-start justify-between gap-3 text-sm">
-                      <div>
-                        <p className="font-semibold text-[var(--color-ink)]">{row.product}</p>
-                        <p className="mt-1 text-xs text-[var(--color-muted)]">
-                          Same-NDC unit price change: {signed(row.priceShift)}%
-                        </p>
-                      </div>
-                      <p className="font-semibold text-[var(--color-accent)]">{signed(row.tierShift)} pp</p>
-                    </div>
-                    <div className="mt-3 h-2 w-full rounded-full bg-[#e4ecf8]" aria-hidden>
-                      <div
-                        className="h-2 rounded-full bg-[var(--color-accent)]"
-                        style={{ width: barWidth(row.tierShift, maxShift) }}
-                      />
-                    </div>
-                    <p className="sr-only">
-                      {row.product} net higher-tier movement {signed(row.tierShift)} percentage
-                      points and same-NDC unit price change {signed(row.priceShift)} percent.
-                    </p>
-                  </li>
-                ))}
-              </ul>
+                <div className="mt-5 flex flex-wrap gap-3 text-xs text-[var(--color-muted)]">
+                  <time dateTime={featuredResearch.publishDate}>
+                    {formatDisplayDate(featuredResearch.publishDate)}
+                  </time>
+                  <span>•</span>
+                  <span>{featuredResearch.readingTime}</span>
+                </div>
 
-              <p className="mt-5 text-xs leading-6 text-[var(--color-muted)]">
-                Source framework: CMS Part D SPUF plan-level data (tier level, UNIT_COST, and LM
-                flags including RXCUI_1)
-              </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {featuredResearch.tags.slice(0, 3).map((tag) => (
+                    <span key={tag} className="tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
 
-              <Link href="/research/tier-migration-commoditized-generics" className="editorial-link mt-4 inline-flex">
-                View Research
-              </Link>
-            </article>
+                <Link href={featuredResearch.url} className="editorial-link mt-6 inline-flex">
+                  View Research
+                </Link>
+              </article>
+            ) : (
+              <article className="surface-card flex h-full flex-col p-7 sm:p-8" aria-label="Research archive preview">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="tag">Research Analysis</span>
+                </div>
+                <h3 className="mt-5 text-[clamp(1.35rem,2.3vw,1.9rem)] leading-tight text-ink">
+                  Data-backed research appears here as new work is published
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
+                  Browse the research archive for quantitative analysis, structured policy briefs,
+                  and market access studies.
+                </p>
+                <Link href="/research" className="editorial-link mt-6 inline-flex">
+                  View Research
+                </Link>
+              </article>
+            )}
           </div>
         </Container>
       </section>
