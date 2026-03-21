@@ -3,6 +3,7 @@ export const siteConfig = {
   legalName: "JL Policy Consulting, LLC",
   domain: "jlpolicyconsulting.com",
   url: "https://jlpolicyconsulting.com",
+  lastUpdated: "2026-03-20T00:00:00.000Z",
   description:
     "Analysis and advisory at the intersection of pharmaceutical policy, pricing, access, and payer economics.",
   email: "contact@jlpolicyconsulting.com",

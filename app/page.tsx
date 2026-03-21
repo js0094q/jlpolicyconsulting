@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { formatDisplayDate, getLatestInsights, getLatestResearch } from "@/lib/content";
+import { safeJsonLd } from "@/lib/json-ld";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -276,7 +277,7 @@ export default async function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+          __html: safeJsonLd({
             ...personSchema,
             mainEntityOfPage: absoluteUrl("/"),
           }),

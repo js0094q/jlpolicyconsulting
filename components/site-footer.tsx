@@ -11,6 +11,8 @@ const footerNav = [
 ] as const;
 
 export function SiteFooter() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="mt-12 border-t border-[var(--color-border)] bg-[var(--color-surface)]">
       <Container className="grid gap-10 py-12 md:grid-cols-[1.6fr_1fr_1fr]">
@@ -57,7 +59,7 @@ export function SiteFooter() {
       </Container>
 
       <Container className="border-t border-[var(--color-border)] py-5 text-xs text-[var(--color-muted)]">
-        © 2026 JL Policy Consulting LLC. All rights reserved.
+        © {currentYear} JL Policy Consulting LLC. All rights reserved.
       </Container>
     </footer>
   );

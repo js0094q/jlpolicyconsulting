@@ -1,28 +1,48 @@
-import fs from "node:fs/promises";
-import path from "node:path";
 import type { MetadataRoute } from "next";
 import { getInsights, getResearch } from "@/lib/content";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, siteConfig } from "@/lib/site";
 
-const STATIC_ROUTE_FILES = {
-  "/": path.join(process.cwd(), "app", "page.tsx"),
-  "/about": path.join(process.cwd(), "app", "about", "page.tsx"),
-  "/consulting": path.join(process.cwd(), "app", "consulting", "page.tsx"),
-  "/insights": path.join(process.cwd(), "app", "insights", "page.tsx"),
-  "/research": path.join(process.cwd(), "app", "research", "page.tsx"),
-  "/contact": path.join(process.cwd(), "app", "contact", "page.tsx"),
-} as const;
-
-type ChangeFrequency = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
-type StaticRouteEntry = {
-  path: keyof typeof STATIC_ROUTE_FILES;
-  lastModified: Date;
-  changeFrequency: ChangeFrequency;
+const STATIC_ROUTES: Array<{
+  path: string;
+  changeFrequency: NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
   priority: number;
-};
+}> = [
+  {
+    path: "/",
+    changeFrequency: "weekly",
+    priority: 1,
+  },
+  {
+    path: "/about",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
+  {
+    path: "/consulting",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
+  {
+    path: "/insights",
+    changeFrequency: "weekly",
+    priority: 0.7,
+  },
+  {
+    path: "/research",
+    changeFrequency: "weekly",
+    priority: 0.7,
+  },
+  {
+    path: "/contact",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
+];
+
+const STATIC_SITE_LAST_MODIFIED = new Date(siteConfig.lastUpdated);
 
 function latestDate(values: Array<string | Date | undefined>): Date {
-  let latestTimestamp = 0;
+  let latestTimestamp = Number.NaN;
 
   for (const value of values) {
     if (!value) {
@@ -32,75 +52,53 @@ function latestDate(values: Array<string | Date | undefined>): Date {
     const timestamp = value instanceof Date ? value.getTime() : new Date(value).getTime();
 
     if (!Number.isNaN(timestamp)) {
-      latestTimestamp = Math.max(latestTimestamp, timestamp);
+      latestTimestamp = Number.isNaN(latestTimestamp) ? timestamp : Math.max(latestTimestamp, timestamp);
     }
   }
 
-  return latestTimestamp > 0 ? new Date(latestTimestamp) : new Date();
+  return Number.isNaN(latestTimestamp) ? STATIC_SITE_LAST_MODIFIED : new Date(latestTimestamp);
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const staticEntries = Object.entries(STATIC_ROUTE_FILES) as Array<[keyof typeof STATIC_ROUTE_FILES, string]>;
-  const [insights, research, staticRouteDates] = await Promise.all([
-    getInsights(),
-    getResearch(),
-    Promise.all(
-      staticEntries.map(async ([route, filePath]) => [route, (await fs.stat(filePath)).mtime] as const),
-    ),
-  ]);
-  const staticRouteLastModified = new Map(staticRouteDates);
+  const [insights, research] = await Promise.all([getInsights(), getResearch()]);
   const latestInsightUpdate = latestDate(insights.map((post) => post.lastModified));
   const latestResearchUpdate = latestDate(research.map((post) => post.lastModified));
 
-  const staticRouteEntries: StaticRouteEntry[] = [
-    {
-      path: "/",
-      lastModified: latestDate([
-        staticRouteLastModified.get("/"),
-        latestInsightUpdate,
-        latestResearchUpdate,
-      ]),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      path: "/about",
-      lastModified: staticRouteLastModified.get("/about") ?? new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      path: "/consulting",
-      lastModified: staticRouteLastModified.get("/consulting") ?? new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      path: "/insights",
-      lastModified: latestDate([staticRouteLastModified.get("/insights"), latestInsightUpdate]),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      path: "/research",
-      lastModified: latestDate([staticRouteLastModified.get("/research"), latestResearchUpdate]),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      path: "/contact",
-      lastModified: staticRouteLastModified.get("/contact") ?? new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-  ];
+  const staticRoutes: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => {
+    if (route.path === "/") {
+      return {
+        url: absoluteUrl(route.path),
+        lastModified: latestDate([STATIC_SITE_LAST_MODIFIED, latestInsightUpdate, latestResearchUpdate]),
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
+      };
+    }
 
-  const staticRoutes: MetadataRoute.Sitemap = staticRouteEntries.map((route) => ({
-    url: absoluteUrl(route.path),
-    lastModified: route.lastModified,
-    changeFrequency: route.changeFrequency,
-    priority: route.priority,
-  }));
+    if (route.path === "/insights") {
+      return {
+        url: absoluteUrl(route.path),
+        lastModified: latestDate([STATIC_SITE_LAST_MODIFIED, latestInsightUpdate]),
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
+      };
+    }
+
+    if (route.path === "/research") {
+      return {
+        url: absoluteUrl(route.path),
+        lastModified: latestDate([STATIC_SITE_LAST_MODIFIED, latestResearchUpdate]),
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
+      };
+    }
+
+    return {
+      url: absoluteUrl(route.path),
+      lastModified: STATIC_SITE_LAST_MODIFIED,
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
+    };
+  });
 
   const insightRoutes: MetadataRoute.Sitemap = insights.map((post) => ({
     url: absoluteUrl(post.url),

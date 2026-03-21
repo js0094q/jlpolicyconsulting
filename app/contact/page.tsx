@@ -34,12 +34,12 @@ export default function ContactPage() {
             <p>
               <span className="font-semibold text-ink">LinkedIn:</span> {" "}
               <a
-                href="https://www.linkedin.com/in/joseph-stewart-mph-cpht-309bb5215"
+                href={siteConfig.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="editorial-link hover:underline"
               >
-                https://www.linkedin.com/in/joseph-stewart-mph-cpht-309bb5215
+                View Joseph Stewart on LinkedIn
               </a>
             </p>
           </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { safeJsonLd } from "@/lib/json-ld";
 import { buildOgImageUrl } from "@/lib/og";
 import { defaultKeywords, siteConfig } from "@/lib/site";
 
@@ -79,7 +80,7 @@ export default function RootLayout({
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{ __html: safeJsonLd(organizationSchema) }}
         />
       </body>
     </html>

@@ -5,7 +5,8 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { Container } from "@/components/container";
 import { mdxComponents } from "@/components/mdx-components";
-import { formatDisplayDate, getInsightBySlug, getInsights, getResearch } from "@/lib/content";
+import { formatDisplayDate, getInsightBySlug, getInsightSlugs, getLatestResearch } from "@/lib/content";
+import { safeJsonLd } from "@/lib/json-ld";
 import { resolveArticleSeo } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
@@ -16,8 +17,8 @@ interface InsightPageProps {
 }
 
 export async function generateStaticParams() {
-  const insights = await getInsights();
-  return insights.map((post) => ({ slug: post.slug }));
+  const slugs = await getInsightSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: InsightPageProps): Promise<Metadata> {
@@ -61,13 +62,12 @@ export async function generateMetadata({ params }: InsightPageProps): Promise<Me
 
 export default async function InsightDetailPage({ params }: InsightPageProps) {
   const { slug } = await params;
-  const [post, researchPosts] = await Promise.all([getInsightBySlug(slug), getResearch()]);
+  const [post, relatedResearch] = await Promise.all([getInsightBySlug(slug), getLatestResearch(2)]);
 
   if (!post) {
     notFound();
   }
 
-  const relatedResearch = researchPosts.slice(0, 2);
   const seo = resolveArticleSeo(post, "Insight");
 
   const articleSchema = {
@@ -153,7 +153,7 @@ export default async function InsightDetailPage({ params }: InsightPageProps) {
         </section>
       </Container>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }} />
     </article>
   );
 }

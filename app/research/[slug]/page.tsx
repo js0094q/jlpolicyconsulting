@@ -5,7 +5,8 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { Container } from "@/components/container";
 import { mdxComponents } from "@/components/mdx-components";
-import { formatDisplayDate, getInsights, getResearch, getResearchBySlug } from "@/lib/content";
+import { formatDisplayDate, getLatestInsights, getResearchBySlug, getResearchSlugs } from "@/lib/content";
+import { safeJsonLd } from "@/lib/json-ld";
 import { resolveArticleSeo } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
@@ -16,8 +17,8 @@ interface ResearchPageProps {
 }
 
 export async function generateStaticParams() {
-  const posts = await getResearch();
-  return posts.map((post) => ({ slug: post.slug }));
+  const slugs = await getResearchSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: ResearchPageProps): Promise<Metadata> {
@@ -61,13 +62,12 @@ export async function generateMetadata({ params }: ResearchPageProps): Promise<M
 
 export default async function ResearchDetailPage({ params }: ResearchPageProps) {
   const { slug } = await params;
-  const [post, insightPosts] = await Promise.all([getResearchBySlug(slug), getInsights()]);
+  const [post, relatedInsights] = await Promise.all([getResearchBySlug(slug), getLatestInsights(3)]);
 
   if (!post) {
     notFound();
   }
 
-  const relatedInsights = insightPosts.slice(0, 3);
   const seo = resolveArticleSeo(post, "Research Analysis");
 
   const articleSchema = {
@@ -151,7 +151,7 @@ export default async function ResearchDetailPage({ params }: ResearchPageProps) 
         </section>
       </Container>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }} />
     </article>
   );
 }

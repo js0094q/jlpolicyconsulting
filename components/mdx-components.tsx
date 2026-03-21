@@ -12,7 +12,11 @@ export const mdxComponents: MDXComponents = {
     <blockquote className="mt-6 border-l-2 border-[var(--color-accent)] pl-4 text-[var(--color-muted)]">{children}</blockquote>
   ),
   table: ({ children }) => (
-    <table className="mt-6 w-full border-collapse border border-[var(--color-border)] text-sm">{children}</table>
+    <div className="mt-6 overflow-x-auto">
+      <table className="w-full min-w-[640px] border-collapse border border-[var(--color-border)] text-sm">
+        {children}
+      </table>
+    </div>
   ),
   th: ({ children }) => (
     <th className="border border-[var(--color-border)] bg-[#eef2f5] px-3 py-2 text-left font-semibold text-ink">{children}</th>

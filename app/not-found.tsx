@@ -5,9 +5,9 @@ export default function NotFound() {
   return (
     <section className="py-24">
       <Container className="max-w-3xl text-center">
-        <p className="eyebrow">Not Found</p>
+        <p className="kicker">Not Found</p>
         <h1 className="section-title">The requested page does not exist</h1>
-        <p className="section-lede mx-auto">
+        <p className="page-lede mx-auto">
           Return to the homepage to continue exploring reimbursement strategy and policy analysis.
         </p>
         <Link

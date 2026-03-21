@@ -13,17 +13,56 @@ interface PageMetadataInput {
 
 type ArticleSeoSource = Pick<ArticleMeta, "title" | "summary" | "url" | "seo">;
 
+function parseHttpsUrl(value: string): URL | null {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === "https:" ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+function isSiteHost(hostname: string): boolean {
+  return hostname === siteConfig.domain || hostname === `www.${siteConfig.domain}`;
+}
+
+function resolveCanonicalUrl(override: string | undefined, fallback: string): string {
+  if (!override) {
+    return fallback;
+  }
+
+  const parsed = parseHttpsUrl(override);
+
+  if (!parsed) {
+    return fallback;
+  }
+
+  return isSiteHost(parsed.hostname) ? parsed.toString() : fallback;
+}
+
+function resolveOgImageUrl(override: string | undefined, fallback: string): string {
+  if (!override) {
+    return fallback;
+  }
+
+  if (override.startsWith("/")) {
+    return absoluteUrl(override);
+  }
+
+  const parsed = parseHttpsUrl(override);
+  return parsed ? parsed.toString() : fallback;
+}
+
 export function resolveArticleSeo(article: ArticleSeoSource, kicker: string) {
   const title = article.seo.title ?? article.title;
   const description = article.seo.description ?? article.summary;
-  const canonical = article.seo.canonicalUrl ?? absoluteUrl(article.url);
-  const imageUrl = article.seo.ogImage
-    ? absoluteUrl(article.seo.ogImage)
-    : buildOgImageUrl({
-        title,
-        subtitle: description,
-        kicker,
-      });
+  const canonical = resolveCanonicalUrl(article.seo.canonicalUrl, absoluteUrl(article.url));
+  const generatedImageUrl = buildOgImageUrl({
+    title,
+    subtitle: description,
+    kicker,
+  });
+  const imageUrl = resolveOgImageUrl(article.seo.ogImage, generatedImageUrl);
 
   return {
     title,

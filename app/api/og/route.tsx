@@ -1,6 +1,12 @@
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/site";
-import { OG_IMAGE_HEIGHT, OG_IMAGE_WIDTH } from "@/lib/og";
+import {
+  OG_IMAGE_HEIGHT,
+  OG_IMAGE_WIDTH,
+  OG_KICKER_MAX_LENGTH,
+  OG_SUBTITLE_MAX_LENGTH,
+  OG_TITLE_MAX_LENGTH,
+} from "@/lib/og";
 
 export const runtime = "edge";
 
@@ -12,6 +18,8 @@ const muted = "#3f4a57";
 const accent = "#1f3657";
 const accentSoft = "#5f7897";
 
+const OG_CACHE_CONTROL = "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800";
+
 function getParam(value: string | null, fallback: string): string {
   if (!value) {
     return fallback;
@@ -21,15 +29,53 @@ function getParam(value: string | null, fallback: string): string {
   return compacted || fallback;
 }
 
+function parseParam(
+  searchParams: URLSearchParams,
+  key: string,
+  fallback: string,
+  maxLength: number,
+): string | Response {
+  const parsed = getParam(searchParams.get(key), fallback);
+
+  if (parsed.length > maxLength) {
+    return new Response(`${key} exceeds maximum length of ${maxLength} characters`, {
+      status: 400,
+    });
+  }
+
+  return parsed;
+}
+
 export function GET(request: Request) {
   const { searchParams } = new URL(request.url);
 
-  const title = getParam(searchParams.get("title"), "Reimbursement Strategy, Drug Pricing Policy, and Market Access Insight");
-  const subtitle = getParam(
-    searchParams.get("subtitle"),
-    "Analysis and advisory at the intersection of pharmaceutical policy, pricing, access, and payer economics.",
+  const title = parseParam(
+    searchParams,
+    "title",
+    "Reimbursement Strategy, Drug Pricing Policy, and Market Access Insight",
+    OG_TITLE_MAX_LENGTH,
   );
-  const kicker = getParam(searchParams.get("kicker"), "JL Policy Consulting, LLC");
+
+  if (title instanceof Response) {
+    return title;
+  }
+
+  const subtitle = parseParam(
+    searchParams,
+    "subtitle",
+    "Analysis and advisory at the intersection of pharmaceutical policy, pricing, access, and payer economics.",
+    OG_SUBTITLE_MAX_LENGTH,
+  );
+
+  if (subtitle instanceof Response) {
+    return subtitle;
+  }
+
+  const kicker = parseParam(searchParams, "kicker", "JL Policy Consulting, LLC", OG_KICKER_MAX_LENGTH);
+
+  if (kicker instanceof Response) {
+    return kicker;
+  }
 
   return new ImageResponse(
     (
@@ -154,6 +200,9 @@ export function GET(request: Request) {
     {
       width: OG_IMAGE_WIDTH,
       height: OG_IMAGE_HEIGHT,
+      headers: {
+        "Cache-Control": OG_CACHE_CONTROL,
+      },
     },
   );
 }

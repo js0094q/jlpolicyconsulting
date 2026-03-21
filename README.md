@@ -30,6 +30,14 @@ Articles in `content/insights` and `content/research` support:
 - `canonicalUrl` (optional)
 - `ogImage` (optional)
 
+Allowed `category` values:
+- `Medicare Policy`
+- `Drug Pricing`
+- `PBM and Formulary Dynamics`
+- `Biosimilars and Generics`
+- `Healthcare Data Analysis`
+- `Market Access Strategy`
+
 Derived article metadata in the app also includes:
 - `url`
 - `type`
@@ -45,7 +53,14 @@ npm run dev
 ```bash
 npm run lint
 npm run typecheck
+npm run validate:content
+npm run test
 npm run build
+```
+
+Run all checks in sequence:
+```bash
+npm run verify
 ```
 
 ## Vercel Deployment Instructions
@@ -65,3 +80,4 @@ npm run build
 ## Notes
 - Site blueprint and architecture details are documented in `docs/site-blueprint.md`.
 - `Enhance Branding Implementation Plan/` is a separate archived Vite prototype and is not part of the root Next.js build, lint, or typecheck flow.
+- CI gates run from `.github/workflows/ci.yml` on pull requests and pushes to `main`.

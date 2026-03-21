@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
+import { cache } from "react";
 
 export const INSIGHT_CATEGORIES = [
   "Medicare Policy",
@@ -138,7 +139,7 @@ function createReadingTimeLabel(content: string, value?: string): string {
   return `${minutes} min read`;
 }
 
-async function listMdxSlugs(type: ArticleType): Promise<string[]> {
+const listMdxSlugs = cache(async (type: ArticleType): Promise<string[]> => {
   const directory = CONTENT_DIRECTORIES[type];
 
   try {
@@ -156,7 +157,7 @@ async function listMdxSlugs(type: ArticleType): Promise<string[]> {
 
     throw error;
   }
-}
+});
 
 function mapToArticleMeta(
   slug: string,
@@ -191,7 +192,7 @@ function mapToArticleMeta(
   };
 }
 
-async function readArticle(type: ArticleType, slug: string): Promise<Article | null> {
+const readArticle = cache(async (type: ArticleType, slug: string): Promise<Article | null> => {
   const filePath = path.join(CONTENT_DIRECTORIES[type], `${slug}.mdx`);
 
   try {
@@ -213,7 +214,7 @@ async function readArticle(type: ArticleType, slug: string): Promise<Article | n
 
     throw error;
   }
-}
+});
 
 function toArticleMeta(article: Article): ArticleMeta {
   return {
@@ -231,7 +232,11 @@ function toArticleMeta(article: Article): ArticleMeta {
   };
 }
 
-export async function getArticles(type: ArticleType): Promise<ArticleMeta[]> {
+function sortByPublishDateDesc(articles: ArticleMeta[]): ArticleMeta[] {
+  return articles.sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
+}
+
+const getArticlesCached = cache(async (type: ArticleType): Promise<ArticleMeta[]> => {
   const slugs = await listMdxSlugs(type);
 
   const articles = await Promise.all(
@@ -243,8 +248,15 @@ export async function getArticles(type: ArticleType): Promise<ArticleMeta[]> {
 
   return articles
     .filter((article): article is Article => article !== null)
-    .map((article) => toArticleMeta(article))
-    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
+    .map((article) => toArticleMeta(article));
+});
+
+export async function getArticles(type: ArticleType): Promise<ArticleMeta[]> {
+  return sortByPublishDateDesc([...(await getArticlesCached(type))]);
+}
+
+export async function getArticleSlugs(type: ArticleType): Promise<string[]> {
+  return [...(await listMdxSlugs(type))];
 }
 
 export async function getInsights(): Promise<ArticleMeta[]> {
@@ -253,6 +265,14 @@ export async function getInsights(): Promise<ArticleMeta[]> {
 
 export async function getResearch(): Promise<ArticleMeta[]> {
   return getArticles("research");
+}
+
+export async function getInsightSlugs(): Promise<string[]> {
+  return getArticleSlugs("insight");
+}
+
+export async function getResearchSlugs(): Promise<string[]> {
+  return getArticleSlugs("research");
 }
 
 export async function getLatestInsights(count = 3): Promise<ArticleMeta[]> {
