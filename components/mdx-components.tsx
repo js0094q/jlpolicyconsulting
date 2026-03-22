@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { MDXComponents } from "mdx/types";
+import { isSafeExternalHref } from "@/lib/url-safety";
 
 export const mdxComponents: MDXComponents = {
   h2: ({ children }) => <h2 className="mt-12 text-3xl leading-tight text-ink">{children}</h2>,
@@ -35,12 +36,24 @@ export const mdxComponents: MDXComponents = {
       );
     }
 
+    if (href.startsWith("#")) {
+      return (
+        <a className="underline decoration-[var(--color-accent)] decoration-1 underline-offset-4" href={href}>
+          {children}
+        </a>
+      );
+    }
+
+    if (!isSafeExternalHref(href)) {
+      return <span>{children}</span>;
+    }
+
     return (
       <a
         className="underline decoration-[var(--color-accent)] decoration-1 underline-offset-4"
         href={href}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer nofollow"
       >
         {children}
       </a>

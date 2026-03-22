@@ -56,9 +56,25 @@ const CONTENT_DIRECTORIES: Record<ArticleType, string> = {
   insight: path.join(process.cwd(), "content", "insights"),
   research: path.join(process.cwd(), "content", "research"),
 };
+const SAFE_SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function isInsightCategory(category: string): category is InsightCategory {
   return INSIGHT_CATEGORIES.includes(category as InsightCategory);
+}
+
+function isSafeSlug(slug: string): boolean {
+  return SAFE_SLUG_PATTERN.test(slug);
+}
+
+function resolveArticleFilePath(type: ArticleType, slug: string): string {
+  const baseDirectory = path.resolve(CONTENT_DIRECTORIES[type]);
+  const filePath = path.resolve(baseDirectory, `${slug}.mdx`);
+
+  if (!filePath.startsWith(`${baseDirectory}${path.sep}`)) {
+    throw new Error(`Resolved path escaped content directory for slug "${slug}"`);
+  }
+
+  return filePath;
 }
 
 function requiredString(
@@ -147,7 +163,8 @@ const listMdxSlugs = cache(async (type: ArticleType): Promise<string[]> => {
 
     return entries
       .filter((entry) => entry.isFile() && entry.name.endsWith(".mdx"))
-      .map((entry) => entry.name.replace(/\.mdx$/, ""));
+      .map((entry) => entry.name.replace(/\.mdx$/, ""))
+      .filter((slug) => isSafeSlug(slug));
   } catch (error) {
     const maybeErr = error as NodeJS.ErrnoException;
 
@@ -193,7 +210,11 @@ function mapToArticleMeta(
 }
 
 const readArticle = cache(async (type: ArticleType, slug: string): Promise<Article | null> => {
-  const filePath = path.join(CONTENT_DIRECTORIES[type], `${slug}.mdx`);
+  if (!isSafeSlug(slug)) {
+    return null;
+  }
+
+  const filePath = resolveArticleFilePath(type, slug);
 
   try {
     const [source, fileStats] = await Promise.all([fs.readFile(filePath, "utf-8"), fs.stat(filePath)]);

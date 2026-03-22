@@ -34,4 +34,20 @@ describe("resolveArticleSeo", () => {
 
     expect(seo.imageUrl).toBe(absoluteUrl("/custom-og.png"));
   });
+
+  it("falls back when ogImage override host is invalid", () => {
+    const seo = resolveArticleSeo(
+      {
+        title: "Example",
+        summary: "Summary",
+        url: "/insights/example",
+        seo: {
+          ogImage: "https://example.com/og.png",
+        },
+      },
+      "Insight",
+    );
+
+    expect(seo.imageUrl).toContain("/api/og?");
+  });
 });

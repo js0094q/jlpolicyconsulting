@@ -63,6 +63,16 @@ Run all checks in sequence:
 npm run verify
 ```
 
+Security checks:
+```bash
+npm run audit:prod
+```
+
+Additional policy checks:
+```bash
+npm run validate:codeowners
+```
+
 ## Vercel Deployment Instructions
 1. Push this repository to GitHub.
 2. In Vercel, click **Add New Project** and import the repository.
@@ -81,3 +91,6 @@ npm run verify
 - Site blueprint and architecture details are documented in `docs/site-blueprint.md`.
 - `Enhance Branding Implementation Plan/` is a separate archived Vite prototype and is not part of the root Next.js build, lint, or typecheck flow.
 - CI gates run from `.github/workflows/ci.yml` on pull requests and pushes to `main`.
+- Threat model output is tracked in `JLPolicyConsulting-threat-model.md`.
+- Runtime hardening is enforced in `proxy.ts` (nonce CSP, invalid-slug telemetry) and `app/api/og/route.tsx` (public OG validation and route-level rate limiting via `OG_ROUTE_RATE_LIMIT_*`).
+- Configure branch protection to require CODEOWNERS review for protected paths in `.github/CODEOWNERS`.

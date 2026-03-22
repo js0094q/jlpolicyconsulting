@@ -50,7 +50,11 @@ function resolveOgImageUrl(override: string | undefined, fallback: string): stri
   }
 
   const parsed = parseHttpsUrl(override);
-  return parsed ? parsed.toString() : fallback;
+  if (!parsed) {
+    return fallback;
+  }
+
+  return isSiteHost(parsed.hostname) ? parsed.toString() : fallback;
 }
 
 export function resolveArticleSeo(article: ArticleSeoSource, kicker: string) {

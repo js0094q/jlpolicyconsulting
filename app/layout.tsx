@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -58,11 +59,14 @@ const organizationSchema = {
   description: siteConfig.description,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const requestHeaders = await headers();
+  const cspNonce = requestHeaders.get("x-csp-nonce") ?? undefined;
+
   return (
     <html lang="en">
       <body className="min-h-screen bg-page text-ink antialiased">
@@ -79,6 +83,7 @@ export default function RootLayout({
         </div>
 
         <script
+          nonce={cspNonce}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: safeJsonLd(organizationSchema) }}
         />

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import rehypeSanitize from "rehype-sanitize";
 import remarkGfm from "remark-gfm";
 import { Container } from "@/components/container";
 import { mdxComponents } from "@/components/mdx-components";
@@ -15,6 +17,8 @@ interface ResearchPageProps {
     slug: string;
   }>;
 }
+
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const slugs = await getResearchSlugs();
@@ -63,6 +67,8 @@ export async function generateMetadata({ params }: ResearchPageProps): Promise<M
 export default async function ResearchDetailPage({ params }: ResearchPageProps) {
   const { slug } = await params;
   const [post, relatedInsights] = await Promise.all([getResearchBySlug(slug), getLatestInsights(3)]);
+  const requestHeaders = await headers();
+  const cspNonce = requestHeaders.get("x-csp-nonce") ?? undefined;
 
   if (!post) {
     notFound();
@@ -121,6 +127,7 @@ export default async function ResearchDetailPage({ params }: ResearchPageProps) 
             options={{
               mdxOptions: {
                 remarkPlugins: [remarkGfm],
+                rehypePlugins: [rehypeSanitize],
               },
             }}
           />
@@ -151,7 +158,11 @@ export default async function ResearchDetailPage({ params }: ResearchPageProps) 
         </section>
       </Container>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }} />
+      <script
+        nonce={cspNonce}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }}
+      />
     </article>
   );
 }

@@ -1,0 +1,11 @@
+* @josephstewart
+
+# High-risk paths requiring explicit owner review
+/.github/workflows/** @josephstewart
+/content/** @josephstewart
+/components/mdx-components.tsx @josephstewart
+/lib/content.ts @josephstewart
+/lib/security-controls.ts @josephstewart
+/lib/security-events.ts @josephstewart
+/proxy.ts @josephstewart
+/app/api/og/route.tsx @josephstewart

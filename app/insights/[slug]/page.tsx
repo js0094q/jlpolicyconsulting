@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import rehypeSanitize from "rehype-sanitize";
 import remarkGfm from "remark-gfm";
 import { Container } from "@/components/container";
 import { mdxComponents } from "@/components/mdx-components";
@@ -15,6 +17,8 @@ interface InsightPageProps {
     slug: string;
   }>;
 }
+
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const slugs = await getInsightSlugs();
@@ -63,6 +67,8 @@ export async function generateMetadata({ params }: InsightPageProps): Promise<Me
 export default async function InsightDetailPage({ params }: InsightPageProps) {
   const { slug } = await params;
   const [post, relatedResearch] = await Promise.all([getInsightBySlug(slug), getLatestResearch(2)]);
+  const requestHeaders = await headers();
+  const cspNonce = requestHeaders.get("x-csp-nonce") ?? undefined;
 
   if (!post) {
     notFound();
@@ -123,6 +129,7 @@ export default async function InsightDetailPage({ params }: InsightPageProps) {
             options={{
               mdxOptions: {
                 remarkPlugins: [remarkGfm],
+                rehypePlugins: [rehypeSanitize],
               },
             }}
           />
@@ -153,7 +160,11 @@ export default async function InsightDetailPage({ params }: InsightPageProps) {
         </section>
       </Container>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }} />
+      <script
+        nonce={cspNonce}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }}
+      />
     </article>
   );
 }

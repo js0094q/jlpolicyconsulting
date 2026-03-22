@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { headers } from "next/headers";
 import { Container } from "@/components/container";
 import { formatDisplayDate, getLatestInsights, getLatestResearch } from "@/lib/content";
 import { safeJsonLd } from "@/lib/json-ld";
@@ -58,6 +59,8 @@ export default async function HomePage() {
     getLatestInsights(1),
     getLatestResearch(1),
   ]);
+  const requestHeaders = await headers();
+  const cspNonce = requestHeaders.get("x-csp-nonce") ?? undefined;
 
   const personSchema = {
     "@context": "https://schema.org",
@@ -275,6 +278,7 @@ export default async function HomePage() {
       </section>
 
       <script
+        nonce={cspNonce}
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: safeJsonLd({

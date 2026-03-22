@@ -9,9 +9,11 @@
     "lint": "eslint --max-warnings=0",
     "typecheck": "tsc --noEmit",
     "validate:content": "node ./scripts/validate-content.mjs",
+    "validate:codeowners": "node ./scripts/validate-codeowners.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
-    "verify": "npm run lint && npm run typecheck && npm run validate:content && npm run test && npm run build"
+    "audit:prod": "npm audit --omit=dev",
+    "verify": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:codeowners && npm run test && npm run build"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -20,6 +22,7 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "reading-time": "^1.5.0",
+    "rehype-sanitize": "^6.0.0",
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {

@@ -18,19 +18,38 @@ const ALLOWED_CATEGORIES = new Set([
   "Healthcare Data Analysis",
   "Market Access Strategy",
 ]);
+const ALLOWED_SEO_HOSTS = new Set(["jlpolicyconsulting.com", "www.jlpolicyconsulting.com"]);
+const FORBIDDEN_CONTENT_PATTERNS = [
+  {
+    label: "script_tag",
+    pattern: /<script\b/i,
+  },
+  {
+    label: "inline_event_handler",
+    pattern: /\son[a-z]+\s*=/i,
+  },
+  {
+    label: "javascript_url",
+    pattern: /\[[^\]]*]\(\s*javascript:/i,
+  },
+  {
+    label: "mdx_import_export",
+    pattern: /^\s*(import|export)\s/m,
+  },
+];
 
-function isValidHttpsUrl(value) {
+function parseHttpsUrl(value) {
   try {
     const parsed = new URL(value);
-    return parsed.protocol === "https:";
+    return parsed.protocol === "https:" ? parsed : null;
   } catch {
-    return false;
+    return null;
   }
 }
 
 function validateDocument(filePath, source) {
   const issues = [];
-  const { data } = matter(source);
+  const { data, content } = matter(source);
   const name = path.relative(ROOT, filePath);
 
   for (const field of REQUIRED_STRING_FIELDS) {
@@ -57,16 +76,32 @@ function validateDocument(filePath, source) {
     );
   }
 
-  if (typeof data.canonicalUrl === "string" && !isValidHttpsUrl(data.canonicalUrl)) {
-    issues.push(`${name}: canonicalUrl must be an absolute https URL`);
+  if (typeof data.canonicalUrl === "string") {
+    const parsedCanonical = parseHttpsUrl(data.canonicalUrl);
+    if (!parsedCanonical) {
+      issues.push(`${name}: canonicalUrl must be an absolute https URL`);
+    } else if (!ALLOWED_SEO_HOSTS.has(parsedCanonical.hostname)) {
+      issues.push(
+        `${name}: canonicalUrl host must be one of: ${Array.from(ALLOWED_SEO_HOSTS).join(", ")}`,
+      );
+    }
   }
 
-  if (
-    typeof data.ogImage === "string" &&
-    !data.ogImage.startsWith("/") &&
-    !isValidHttpsUrl(data.ogImage)
-  ) {
-    issues.push(`${name}: ogImage must be an absolute https URL or a leading-slash site path`);
+  if (typeof data.ogImage === "string" && !data.ogImage.startsWith("/")) {
+    const parsedOgImage = parseHttpsUrl(data.ogImage);
+    if (!parsedOgImage) {
+      issues.push(`${name}: ogImage must be an absolute https URL or a leading-slash site path`);
+    } else if (!ALLOWED_SEO_HOSTS.has(parsedOgImage.hostname)) {
+      issues.push(
+        `${name}: ogImage host must be one of: ${Array.from(ALLOWED_SEO_HOSTS).join(", ")}`,
+      );
+    }
+  }
+
+  for (const rule of FORBIDDEN_CONTENT_PATTERNS) {
+    if (rule.pattern.test(content)) {
+      issues.push(`${name}: body contains forbidden pattern (${rule.label})`);
+    }
   }
 
   return issues;

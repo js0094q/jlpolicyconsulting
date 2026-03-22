@@ -1,0 +1,69 @@
+---
+title: "Repricing vs Mix Shift in Part D Generic Mover Data"
+summary: "A family-level audit of Q4 2025 to Q1 2026 SPUF movers separates true same-NDC repricing from NDC/manufacturer composition effects."
+publishDate: "2026-03-21"
+category: "Healthcare Data Analysis"
+tags:
+  - Drug Pricing
+  - Generic Drugs
+  - NDC Mix Shift
+  - Repricing
+  - SPUF
+readingTime: "11 min read"
+seoTitle: "Repricing vs Mix Shift in Part D Generic Mover Data"
+seoDescription: "Family-level SPUF audit for Q4 2025 to Q1 2026 shows where apparent generic price movement is true repricing versus NDC/manufacturer mix shift."
+---
+
+Raw quarter-over-quarter mover tables are useful for screening, but they can overstate true repricing when composition changes are not controlled.
+
+## Audit Framework
+
+For `2025Q4` to `2026Q1`, the audit applied:
+
+1. Persistent same-NDC matched medians.
+2. Days-supply stratification.
+3. Driver labeling across categories: `true_repricing`, `ndc_mix_shift`, `duplicate_mapping_issue`, `thin_sample`, and `mixed`.
+
+## Driver Mix Across Family-Level Movers
+
+At family level (`n=57`), driver labels were:
+
+- `22` mixed
+- `12` true repricing
+- `9` duplicate mapping issues
+- `7` NDC mix-shift dominant
+- `7` thin-sample signals
+
+This distribution indicates that only a subset of large raw moves should be interpreted as clean repricing.
+
+## Examples: Signal Survives vs Signal Weakens
+
+### Cases where raw movement weakens after same-NDC control
+
+- rivaroxaban: raw `-34.1%` vs matched `+0.02%`.
+- tolvaptan: raw `-10.5%` vs matched `-0.6%`.
+
+### Cases where repricing remains clear after control
+
+- dapagliflozin: raw and matched both `-68.2%`.
+- meperidine hydrochloride: raw and matched both `+290.1%`.
+- hydrocortisone: raw and matched both `+401.6%`.
+
+Across family rows with both raw and matched values (`n=36`), `5` rows showed raw moves of at least `20%` that shrank to `5%` or less after controls.
+
+## Market Significance Filter
+
+Confirmed repricing should still be filtered by footprint:
+
+- triamcinolone acetonide affected `4,382` plans but only `0.203%` of total generic pricing rows.
+- dapagliflozin showed large matched repricing but only `41` affected plans and `0.000519%` row share.
+
+Large percentages without broad footprint can mis-prioritize action.
+
+## Caveats and Confidence Labels
+
+- `thin_sample` and `duplicate_mapping_issue` rows are hypothesis-generating, not decision-grade.
+- Authorized-generic carve-outs should be separated in core generic narratives.
+- This is a quarter-pair snapshot and does not establish causal intent.
+
+Related reading: [Part D Generics: Higher Tiers Despite Flat Unit Costs](/insights/generic-access-paradox-part-d-2026-q1) and [MA-PD vs PDP in Part D: Where Burden Shifted More](/insights/ma-pd-vs-pdp-cost-burden-shift-2026-q1). For advisory application, see [Consulting Services](/consulting).
