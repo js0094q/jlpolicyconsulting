@@ -25,6 +25,9 @@
     "rehype-sanitize": "^6.0.0",
     "remark-gfm": "^4.0.1"
   },
+  "overrides": {
+    "yaml": "2.8.3"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
