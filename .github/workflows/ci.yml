@@ -119,5 +119,13 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - name: Debug Audit Dependency State
+        run: |
+          echo "Workflow SHA: ${GITHUB_SHA}"
+          sha256sum package-lock.json
+          node -e "const pkg=require('./package.json'); console.log('package.json overrides.yaml =', pkg.overrides?.yaml ?? '<none>')"
+          node -e "const lock=require('./package-lock.json'); console.log('package-lock yaml version =', lock.packages?.['node_modules/yaml']?.version ?? '<missing>')"
+          npm ls yaml vfile-matter next-mdx-remote --depth=4 || true
+
       - name: Audit Production Dependencies
         run: npm audit --omit=dev
