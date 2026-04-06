@@ -169,4 +169,4 @@ docs/
 
 ## 10) Repo Notes
 - The root production app is the Next.js project at the repository root.
-- `Enhance Branding Implementation Plan/` is a separate Vite prototype kept as reference material and excluded from the root app's lint and typecheck scope.
+- `docs/archive/prototypes/enhance-branding-implementation-plan-vite/` is a separate Vite prototype kept as reference material and excluded from the root app's lint and typecheck scope.

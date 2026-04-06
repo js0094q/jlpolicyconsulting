@@ -89,7 +89,7 @@ npm run validate:codeowners
 
 ## Notes
 - Site blueprint and architecture details are documented in `docs/site-blueprint.md`.
-- `Enhance Branding Implementation Plan/` is a separate archived Vite prototype and is not part of the root Next.js build, lint, or typecheck flow.
+- `docs/archive/prototypes/enhance-branding-implementation-plan-vite/` is a separate archived Vite prototype and is not part of the root Next.js build, lint, or typecheck flow.
 - CI gates run from `.github/workflows/ci.yml` on pull requests and pushes to `main`.
 - Threat model output is tracked in `JLPolicyConsulting-threat-model.md`.
 - Runtime hardening is enforced in `proxy.ts` (nonce CSP, invalid-slug telemetry) and `app/api/og/route.tsx` (public OG validation and route-level rate limiting via `OG_ROUTE_RATE_LIMIT_*`).

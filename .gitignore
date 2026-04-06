@@ -29,6 +29,10 @@
 # misc
 .DS_Store
 *.pem
+.uv-cache/
+.venv/
+.venv_*/
+.npm-cache/
 
 # debug
 npm-debug.log*
@@ -49,3 +53,13 @@ next-env.d.ts
 # folders
 output/
 tmp/
+
+# workspace artifacts not used by the website app
+/content/interview-prep/
+/deep-research-report-*.md
+/docs/archive/
+/docs/ops/
+/docs/projects/
+/scripts/__pycache__/
+/scripts/generate_*.py
+*.pyc

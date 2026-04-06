@@ -8,18 +8,18 @@ interface SiteLogoProps {
 
 const logoSizes = {
   sm: {
-    icon: "h-8 w-8 text-sm",
-    title: "text-lg",
+    icon: "h-8 w-8 text-[0.95rem]",
+    title: "text-[1.1rem]",
     subtitle: "text-[10px]",
   },
   md: {
-    icon: "h-10 w-10 text-base",
-    title: "text-xl",
+    icon: "h-10 w-10 text-[1.05rem]",
+    title: "text-[1.3rem]",
     subtitle: "text-[11px]",
   },
   lg: {
-    icon: "h-14 w-14 text-xl",
-    title: "text-3xl",
+    icon: "h-14 w-14 text-[1.3rem]",
+    title: "text-[2rem]",
     subtitle: "text-xs",
   },
 } as const;
@@ -29,7 +29,7 @@ function LogoMark({ className }: { className?: string }) {
     <div
       aria-hidden
       className={cn(
-        "grid place-items-center rounded-md bg-[var(--color-accent)] font-serif font-semibold tracking-tight text-white",
+        "grid place-items-center rounded-sm border border-[color:color-mix(in_srgb,var(--color-rule)_55%,white_45%)] bg-[var(--color-surface-strong)] font-serif font-semibold tracking-[0.02em] text-[var(--color-accent)]",
         className,
       )}
     >
@@ -57,10 +57,15 @@ export function SiteLogo({ variant = "full", size = "md", className }: SiteLogoP
     <div className={cn("flex items-center gap-3", className)}>
       <LogoMark className={styles.icon} />
       <div className="leading-none">
-        <p className={cn("font-serif tracking-tight text-[var(--color-ink)]", styles.title)}>
+        <p className={cn("font-serif tracking-[-0.02em] text-[var(--color-ink)]", styles.title)}>
           JL Policy Consulting
         </p>
-        <p className={cn("mt-1 font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)]", styles.subtitle)}>
+        <p
+          className={cn(
+            "mt-1 font-semibold uppercase tracking-[0.22em] text-[var(--color-accent-soft)]",
+            styles.subtitle,
+          )}
+        >
           LLC
         </p>
       </div>

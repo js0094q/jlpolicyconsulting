@@ -10,7 +10,7 @@ import { defaultKeywords, siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Reimbursement, Pricing, and Payer Dynamics`,
+    default: `${siteConfig.name} | Reimbursement, Provider Economics, and Market Access`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Reimbursement, Pricing, and Payer Dynamics`,
+    title: `${siteConfig.name} | Reimbursement, Provider Economics, and Market Access`,
     description: siteConfig.description,
     images: [
       {
         url: buildOgImageUrl({
-          title: "Reimbursement Strategy, Drug Pricing Policy, and Market Access Insight",
+          title: "Reimbursement Strategy, Provider Economics, and Market Access Insight",
           subtitle: siteConfig.description,
           kicker: siteConfig.legalName,
         }),
@@ -37,11 +37,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Reimbursement, Pricing, and Payer Dynamics`,
+    title: `${siteConfig.name} | Reimbursement, Provider Economics, and Market Access`,
     description: siteConfig.description,
     images: [
       buildOgImageUrl({
-        title: "Reimbursement Strategy, Drug Pricing Policy, and Market Access Insight",
+        title: "Reimbursement Strategy, Provider Economics, and Market Access Insight",
         subtitle: siteConfig.description,
         kicker: siteConfig.legalName,
       }),

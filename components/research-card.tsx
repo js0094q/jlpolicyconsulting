@@ -7,12 +7,12 @@ interface ResearchCardProps {
 
 export function ResearchCard({ article }: ResearchCardProps) {
   return (
-    <article className="editorial-block">
+    <article className="editorial-block border-t-2 border-t-[var(--color-accent)]">
       <div className="flex flex-wrap items-center gap-2">
-        <span className="tag">Research Analysis</span>
+        <span className="tag">Research analysis</span>
         <span className="tag">{article.category}</span>
       </div>
-      <h3 className="mt-4 text-3xl leading-tight text-ink">
+      <h3 className="mt-4 text-[clamp(1.75rem,2.5vw,2.35rem)] leading-tight text-ink">
         <Link href={article.url} className="hover:text-[var(--color-accent)]">
           {article.title}
         </Link>

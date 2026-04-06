@@ -12,7 +12,7 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    "Enhance Branding Implementation Plan/**",
+    "docs/archive/prototypes/enhance-branding-implementation-plan-vite/**",
   ]),
 ]);
 

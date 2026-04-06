@@ -15,13 +15,13 @@ export function InsightCard({ article }: InsightCardProps) {
         <span>•</span>
         <span>{article.category}</span>
       </div>
-      <h3 className="mt-2 text-2xl leading-tight text-ink">
+      <h3 className="mt-3 text-[clamp(1.45rem,2.1vw,2rem)] leading-tight text-ink">
         <Link href={article.url} className="hover:text-[var(--color-accent)]">
           {article.title}
         </Link>
       </h3>
       <p className="mt-3 max-w-4xl text-sm leading-7 text-[var(--color-muted)]">{article.summary}</p>
-      <Link href={article.url} className="editorial-link mt-4 inline-flex">
+      <Link href={article.url} className="editorial-link mt-5 inline-flex">
         Read insight
       </Link>
     </article>

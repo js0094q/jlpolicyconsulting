@@ -5,7 +5,7 @@ export const siteConfig = {
   url: "https://jlpolicyconsulting.com",
   lastUpdated: "2026-03-20T00:00:00.000Z",
   description:
-    "Analysis and advisory at the intersection of pharmaceutical policy, pricing, access, and payer economics.",
+    "Editorial analysis and advisory on reimbursement mechanics, payer behavior, provider economics, and market access.",
   email: "contact@jlpolicyconsulting.com",
   linkedin: "https://www.linkedin.com/in/joseph-stewart-mph-cpht-309bb5215",
   navItems: [

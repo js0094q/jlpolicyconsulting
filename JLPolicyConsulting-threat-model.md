@@ -18,7 +18,7 @@ Top risk themes are: (1) public OG endpoint abuse and availability pressure, (2)
 ## Scope and assumptions
 
 - In scope: `app/**`, `components/**`, `lib/**`, `content/**`, `.github/workflows/**`, `scripts/validate-content.mjs`.
-- Out of scope: `Enhance Branding Implementation Plan/**`.
+- Out of scope: `docs/archive/prototypes/enhance-branding-implementation-plan-vite/**`.
 - Assumption: No authn/authz runtime layer exists in current architecture.
 - Assumption: Public site deployment on Vercel with HTTPS termination at edge.
 - Assumption: MDX content is maintained by trusted contributors, but compromise scenarios remain in scope.

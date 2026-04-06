@@ -28,11 +28,10 @@ export default async function InsightsPage() {
       <Container>
         <h1 className="page-title">Insights</h1>
         <p className="mt-5 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          Commentary and analysis on pharmaceutical reimbursement and policy.
+          Insight pieces interpret reimbursement modeling, provider economics, payer mechanics, launch-access strategy, and market structure in a tighter editorial format.
         </p>
         <p className="mt-3 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          Insight pieces are designed for practical interpretation and LinkedIn expansion. For
-          longer-form data work, see{" "}
+          The focus is practical interpretation: where reimbursement friction appears, how policy timing changes execution, and what commercial teams should notice early. For longer-form analytical work, see{" "}
           <Link href="/research" className="editorial-link">
             Research
           </Link>

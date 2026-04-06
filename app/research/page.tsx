@@ -26,11 +26,10 @@ export default async function ResearchPage() {
       <Container>
         <h1 className="page-title">Research</h1>
         <p className="mt-5 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          Selected analytical work using CMS Part D data and related datasets.
+          Research work focuses on reimbursement modeling, provider economics, payer mechanics, launch-access strategy, and CMS-driven market structure analysis.
         </p>
         <p className="mt-3 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          Research pieces are longer-form and data-backed, with structured methodology and
-          interpretation. For shorter commentary, see{" "}
+          These pieces are longer-form and methodical, designed to show how policy design appears in observable plan behavior, pricing pressure, access friction, and commercial risk. For shorter interpretation, see{" "}
           <Link href="/insights" className="editorial-link">
             Insights
           </Link>

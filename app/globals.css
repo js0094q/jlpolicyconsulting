@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --color-page: #f4f7fb;
-  --color-surface: #ffffff;
-  --color-ink: #0f1a30;
-  --color-muted: #4f5d78;
-  --color-accent: #1c3f92;
-  --color-accent-soft: #4b6687;
-  --color-border: #d5dfed;
+  --color-page: #f7f4ee;
+  --color-surface: #fbf8f2;
+  --color-surface-strong: #f1ece3;
+  --color-ink: #101826;
+  --color-muted: #556377;
+  --color-accent: #173f89;
+  --color-accent-soft: #496693;
+  --color-border: #dad2c4;
+  --color-rule: #173f89;
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 12px;
@@ -17,9 +19,9 @@
   --radius-card: 14px;
   --radius-input: 10px;
   --font-sans:
-    "Public Sans", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --font-serif:
-    "Source Serif 4", "Iowan Old Style", "Baskerville", "Palatino Linotype", Georgia, serif;
+    "Iowan Old Style", "Baskerville", "Palatino Linotype", Georgia, serif;
 }
 
 @theme inline {
@@ -30,6 +32,7 @@
   --color-accent: var(--color-accent);
   --color-accent-soft: var(--color-accent-soft);
   --color-border: var(--color-border);
+  --color-rule: var(--color-rule);
   --space-xs: var(--space-xs);
   --space-sm: var(--space-sm);
   --space-md: var(--space-md);
@@ -61,15 +64,16 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans), sans-serif;
   text-rendering: optimizeLegibility;
+  line-height: 1.55;
 }
 
 ::selection {
-  background: #dbe4f3;
-  color: #162940;
+  background: #dbe3f1;
+  color: #14233a;
 }
 
 :focus-visible {
-  outline: 2px solid #2f62c7;
+  outline: 2px solid var(--color-rule);
   outline-offset: 2px;
 }
 
@@ -80,7 +84,8 @@ body {
   h4 {
     color: var(--color-ink);
     font-family: var(--font-serif), serif;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.02em;
+    font-weight: 500;
   }
 
   p {
@@ -90,15 +95,19 @@ body {
   a {
     color: var(--color-accent);
   }
+
+  main {
+    position: relative;
+  }
 }
 
 @layer components {
   .kicker {
-    @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-soft)];
+    @apply text-[10px] font-semibold uppercase tracking-[0.24em] text-[var(--color-accent-soft)];
   }
 
   .page-title {
-    @apply mt-2 text-4xl leading-tight sm:text-5xl;
+    @apply mt-2 font-serif text-[clamp(2.4rem,4.6vw,4.5rem)] leading-[1.02] tracking-[-0.03em];
   }
 
   .page-lede {
@@ -106,40 +115,60 @@ body {
   }
 
   .section-title {
-    @apply text-center text-[clamp(1.9rem,3.4vw,2.8rem)] leading-tight;
+    @apply text-left text-[clamp(1.55rem,2.9vw,2.45rem)] leading-[1.08] tracking-[-0.02em];
   }
 
   .line-list {
-    @apply divide-y divide-[var(--color-border)] border-y border-[var(--color-border)] bg-[var(--color-surface)];
+    @apply divide-y divide-[var(--color-border)] border-y border-[var(--color-border)] bg-transparent;
   }
 
   .line-item {
-    @apply px-0 py-5 sm:px-2;
+    @apply px-0 py-6 sm:px-1;
   }
 
   .editorial-block {
-    @apply rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-surface)] p-7;
+    @apply border border-[var(--color-border)] bg-[var(--color-surface)] p-7 sm:p-8;
   }
 
   .editorial-link {
-    @apply text-sm font-semibold text-[var(--color-accent)] transition-colors hover:text-[#2f62c7];
+    @apply text-sm font-semibold text-[var(--color-accent)] underline decoration-[rgba(23,63,137,0.24)] decoration-1 underline-offset-4 transition-colors hover:text-[#0f2f67];
   }
 
   .button-primary {
-    @apply rounded-md border border-[var(--color-accent)] bg-[var(--color-accent)] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#2f62c7];
+    @apply rounded-sm border px-5 py-2.5 text-sm font-semibold text-white transition-colors;
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+  }
+
+  .button-primary:hover {
+    background: var(--color-rule);
   }
 
   .button-secondary {
-    @apply rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-2.5 text-sm font-semibold text-ink hover:border-[var(--color-accent-soft)];
+    @apply rounded-sm border border-[var(--color-border)] bg-transparent px-5 py-2.5 text-sm font-semibold text-ink;
+  }
+
+  .button-secondary:hover {
+    border-color: var(--color-accent);
   }
 
   .surface-card {
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-card);
     background: var(--color-surface);
   }
 
   .tag {
-    @apply inline-flex items-center rounded-md border border-[var(--color-border)] px-2 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-[var(--color-muted)];
+    @apply inline-flex items-center border border-[var(--color-border)] px-2 py-1 text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--color-muted)];
+    background: transparent;
+  }
+
+  .editorial-rule {
+    height: 1px;
+    background: var(--color-rule);
+  }
+
+  .paper-panel {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
   }
 }

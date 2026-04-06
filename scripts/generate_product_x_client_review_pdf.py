@@ -43,8 +43,8 @@ from reportlab.platypus import (  # type: ignore[import-not-found]
 )
 
 
-RUN_DATE = "March 30, 2026"
-RUN_DATE_SHORT = "03/30/26"
+RUN_DATE = "April 1, 2026"
+RUN_DATE_SHORT = "04/01/26"
 DOC_TITLE = "Product X Discussion Questions and Answers"
 DOC_SUBTITLE = "Client review PDF"
 AUTHOR = "OpenAI Codex for JL Policy Consulting"
@@ -60,6 +60,29 @@ PALE = colors.HexColor("#F7F9FC")
 PALE_ALT = colors.HexColor("#D9E7F5")
 CARD_BLUE = colors.HexColor("#EFF5FD")
 SUCCESS = colors.HexColor("#0E7490")
+
+DRG_WEIGHTS = {
+    "023": {2020: 5.6171, 2021: 5.6623, 2022: 5.6719, 2023: 5.7314, 2024: 5.6688, 2025: 5.7047, 2026: 5.7303},
+    "024": {2020: 4.0165, 2021: 3.9325, 2022: 3.9390, 2023: 3.9488, 2024: 3.7888, 2025: 3.8014, 2026: 3.9119},
+    "061": {2020: 2.7935, 2021: 2.8882, 2022: 2.8912, 2023: 2.9326, 2024: 2.8028, 2025: 2.7032, 2026: 2.7571},
+    "062": {2020: 2.0112, 2021: 1.9872, 2022: 1.9883, 2023: 1.9172, 2024: 1.8717, 2025: 1.7808, 2026: 1.7572},
+    "063": {2020: 1.6808, 2021: 1.7099, 2022: 1.7097, 2023: 1.5810, 2024: 1.4868, 2025: 1.4047, 2026: 1.4038},
+}
+
+PUBLIC_SOURCES = [
+    ("[S1]", "FY 2020 IPPS Table 5 ZIP", "https://www.cms.gov/medicare/medicare-fee-for-service-payment/acuteinpatientpps/downloads/fy2020-fr-table-5.zip"),
+    ("[S2]", "FY 2021 IPPS Table 5 ZIP", "https://www.cms.gov/files/zip/fy-2021-ipps-fr-table-5.zip"),
+    ("[S3]", "FY 2022 IPPS Table 5 ZIP", "https://www.cms.gov/files/zip/fy2022-ipps-fr-table-5-fy-2022-ms-drgs-relative-weighting-factors-and-geometric-and-arithmetic-mean.zip"),
+    ("[S4]", "FY 2023 IPPS Table 5 ZIP", "https://www.cms.gov/files/zip/fy2023-ipps-fr-table-5.zip"),
+    ("[S5]", "FY 2024 IPPS Table 5 ZIP", "https://www.cms.gov/files/zip/fy2024-ipps-fr-table-5.zip"),
+    ("[S6]", "FY 2025 IPPS Table 5 ZIP", "https://www.cms.gov/files/zip/fy-2025-ipps-final-rule-table-5.zip"),
+    ("[S7]", "FY 2026 IPPS Table 5 ZIP", "https://www.cms.gov/files/zip/fy2026-ipps-fr-table-5.zip"),
+    ("[S8]", "Acute Inpatient PPS Overview", "https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps"),
+    ("[S9]", "CMS IPPS Guide for MedTech", "https://www.cms.gov/cms-guide-medical-technology-companies-and-other-interested-parties/payment/ipps"),
+    ("[S10]", "CMS Outlier Payment Overview", "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/outlier.html"),
+    ("[S11]", "CMS Physician Fee Schedule", "https://www.cms.gov/cms-guide-medical-technology-companies-and-other-interested-parties/payment/physician-fee-schedule"),
+    ("[S12]", "CMS SNF Payment Basics", "https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/EnrollmentResources/provider-resources/snf/"),
+]
 
 
 @dataclass(frozen=True)
@@ -499,6 +522,201 @@ def make_doc_table(rows: tuple[tuple[str, ...], ...], styles) -> Table:
     return table
 
 
+def build_section_iv_supplement(styles) -> list:
+    years = [2020, 2021, 2022, 2023, 2024, 2025, 2026]
+    drgs = ["023", "024", "061", "062", "063"]
+
+    def pct_change(curr: float, prev: float) -> str:
+        return f"{((curr / prev) - 1.0) * 100.0:+.1f}%"
+
+    flows = [
+        Spacer(1, 0.14 * inch),
+        paragraph("Section IV Supplement: EVT Trends and DRG Impact (2020 onward)", styles["SectionHeading"]),
+        paragraph(
+            "Fact: CMS IPPS Table 5 files publish annual MS-DRG relative weights. The table below shows year-by-year values for DRGs 023, 024, 061, 062, and 063 across FY2020 to FY2026. [S1]-[S7]",
+            styles["Body"],
+        ),
+    ]
+
+    trend_header = [paragraph("DRG", styles["TableCell"])] + [paragraph(f"FY{year}", styles["TableCell"]) for year in years]
+    trend_rows = [trend_header]
+    for drg in drgs:
+        row = [paragraph(drg, styles["TableCell"])] + [paragraph(f"{DRG_WEIGHTS[drg][year]:.4f}", styles["TableCell"]) for year in years]
+        trend_rows.append(row)
+    trend_table = Table(trend_rows, colWidths=[42] + [64] * len(years), repeatRows=1)
+    trend_table.setStyle(
+        TableStyle(
+            [
+                ("BACKGROUND", (0, 0), (-1, 0), PALE_ALT),
+                ("TEXTCOLOR", (0, 0), (-1, 0), ACCENT),
+                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [SURFACE, CARD_BLUE]),
+                ("BOX", (0, 0), (-1, -1), 0.7, BORDER),
+                ("INNERGRID", (0, 0), (-1, -1), 0.45, BORDER),
+                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 5),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+                ("TOPPADDING", (0, 0), (-1, -1), 5),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+                ("ALIGN", (1, 1), (-1, -1), "RIGHT"),
+            ]
+        )
+    )
+    flows.extend([trend_table, Spacer(1, 0.1 * inch)])
+
+    yoy_header = [paragraph("DRG", styles["TableCell"])] + [
+        paragraph(f"{years[i - 1]}->{years[i]}", styles["TableCell"]) for i in range(1, len(years))
+    ]
+    yoy_rows = [yoy_header]
+    for drg in drgs:
+        row = [paragraph(drg, styles["TableCell"])]
+        for i in range(1, len(years)):
+            row.append(paragraph(pct_change(DRG_WEIGHTS[drg][years[i]], DRG_WEIGHTS[drg][years[i - 1]]), styles["TableCell"]))
+        yoy_rows.append(row)
+    yoy_table = Table(yoy_rows, colWidths=[56] + [73] * (len(years) - 1), repeatRows=1)
+    yoy_table.setStyle(
+        TableStyle(
+            [
+                ("BACKGROUND", (0, 0), (-1, 0), PALE_ALT),
+                ("TEXTCOLOR", (0, 0), (-1, 0), ACCENT),
+                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [SURFACE, CARD_BLUE]),
+                ("BOX", (0, 0), (-1, -1), 0.7, BORDER),
+                ("INNERGRID", (0, 0), (-1, -1), 0.45, BORDER),
+                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 5),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+                ("TOPPADDING", (0, 0), (-1, -1), 5),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+                ("ALIGN", (1, 1), (-1, -1), "RIGHT"),
+            ]
+        )
+    )
+    flows.extend(
+        [
+            paragraph("Year-over-year change by fiscal year", styles["SubsectionHeading"]),
+            yoy_table,
+            paragraph(
+                "Inference: The trend is mixed rather than a single directional shift. DRG 023 is comparatively stable, DRG 024 declines then rebounds in FY2026, DRG 061 softens after FY2023, and DRGs 062/063 show persistent erosion across later years.",
+                styles["Body"],
+            ),
+            paragraph("Other episode costs: classification, origin, and payment channel", styles["SubsectionHeading"]),
+            paragraph(
+                "Fact: Under IPPS, hospital facility costs for ICU, floor, ancillary, and supplies are bundled into the inpatient MS-DRG payment, with outlier exceptions for unusually high-cost cases. Professional and post-acute services are paid through separate payment systems. [S8]-[S12]",
+                styles["Body"],
+            ),
+        ]
+    )
+
+    other_cost_rows = [
+        [
+            paragraph("Cost bucket", styles["TableCell"]),
+            paragraph("Where it comes from", styles["TableCell"]),
+            paragraph("How Medicare pays it", styles["TableCell"]),
+            paragraph("Episode-spend amount", styles["TableCell"]),
+        ],
+        [
+            paragraph("ICU or neuro-ICU monitoring and nursing", styles["TableCell"]),
+            paragraph("High-acuity post-EVT monitoring, neurologic checks, telemetry, and ICU staffing during initial stabilization.", styles["TableCell"]),
+            paragraph("Bundled into MS-DRG facility payment under IPPS; may trigger outlier support in very high-cost cases.", styles["TableCell"]),
+            paragraph("$12,000", styles["TableCell"]),
+        ],
+        [
+            paragraph("Routine floor days, room and board", styles["TableCell"]),
+            paragraph("Step-down inpatient days after ICU with standard nursing and bed-day overhead.", styles["TableCell"]),
+            paragraph("Bundled into MS-DRG facility payment under IPPS.", styles["TableCell"]),
+            paragraph("$5,000", styles["TableCell"]),
+        ],
+        [
+            paragraph("Ancillary hospital services and consumables", styles["TableCell"]),
+            paragraph("Imaging, labs, pharmacy handling, infusion supplies, and discharge coordination within the index stay.", styles["TableCell"]),
+            paragraph("Bundled into MS-DRG facility payment under IPPS.", styles["TableCell"]),
+            paragraph("$3,000", styles["TableCell"]),
+        ],
+        [
+            paragraph("Physician professional services", styles["TableCell"]),
+            paragraph("Neurology, hospitalist, and interventional professional work during admission.", styles["TableCell"]),
+            paragraph("Paid separately via Physician Fee Schedule / Part B, not part of hospital DRG margin.", styles["TableCell"]),
+            paragraph("$3,500", styles["TableCell"]),
+        ],
+        [
+            paragraph("Post-acute services after discharge", styles["TableCell"]),
+            paragraph("SNF, IRF, LTCH, or home health utilization after the index hospitalization.", styles["TableCell"]),
+            paragraph("Paid under separate post-acute payment systems outside the index MS-DRG.", styles["TableCell"]),
+            paragraph("$9,000", styles["TableCell"]),
+        ],
+    ]
+    other_table = Table(other_cost_rows, colWidths=[102, 137, 178, 78], repeatRows=1)
+    other_table.setStyle(
+        TableStyle(
+            [
+                ("BACKGROUND", (0, 0), (-1, 0), PALE_ALT),
+                ("TEXTCOLOR", (0, 0), (-1, 0), ACCENT),
+                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [SURFACE, CARD_BLUE]),
+                ("BOX", (0, 0), (-1, -1), 0.7, BORDER),
+                ("INNERGRID", (0, 0), (-1, -1), 0.45, BORDER),
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 5),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+                ("TOPPADDING", (0, 0), (-1, -1), 5),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+                ("ALIGN", (3, 1), (3, -1), "RIGHT"),
+            ]
+        )
+    )
+    flows.extend(
+        [
+            other_table,
+            paragraph(
+                "Inference: For hospital margin analysis, only the bundled facility subtotal is compared against DRG payment. For payer total-cost-of-care analysis, physician and post-acute lines should be included even though they are paid through different systems.",
+                styles["Body"],
+            ),
+            paragraph("Illustrative episode-spend scenario (commercial lens)", styles["SubsectionHeading"]),
+        ]
+    )
+    scenario_rows = [
+        [paragraph("Metric", styles["TableCell"]), paragraph("Baseline episode", styles["TableCell"]), paragraph("With Product X (illustrative)", styles["TableCell"]), paragraph("Delta", styles["TableCell"])],
+        [paragraph("Index facility payment (DRG-equivalent)", styles["TableCell"]), paragraph("$30,000", styles["TableCell"]), paragraph("$30,000", styles["TableCell"]), paragraph("$0", styles["TableCell"])],
+        [paragraph("Physician professional claims", styles["TableCell"]), paragraph("$3,500", styles["TableCell"]), paragraph("$2,800", styles["TableCell"]), paragraph("-$700", styles["TableCell"])],
+        [paragraph("Post-acute spend", styles["TableCell"]), paragraph("$9,000", styles["TableCell"]), paragraph("$6,000", styles["TableCell"]), paragraph("-$3,000", styles["TableCell"])],
+        [paragraph("Total payer episode spend (excluding product carve-out)", styles["TableCell"]), paragraph("$42,500", styles["TableCell"]), paragraph("$38,800", styles["TableCell"]), paragraph("-$3,700", styles["TableCell"])],
+    ]
+    scenario_table = Table(scenario_rows, colWidths=[184, 102, 142, 66], repeatRows=1)
+    scenario_table.setStyle(
+        TableStyle(
+            [
+                ("BACKGROUND", (0, 0), (-1, 0), PALE_ALT),
+                ("TEXTCOLOR", (0, 0), (-1, 0), ACCENT),
+                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [SURFACE, CARD_BLUE]),
+                ("BOX", (0, 0), (-1, -1), 0.7, BORDER),
+                ("INNERGRID", (0, 0), (-1, -1), 0.45, BORDER),
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 5),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+                ("TOPPADDING", (0, 0), (-1, -1), 5),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+                ("ALIGN", (1, 1), (-1, -1), "RIGHT"),
+            ]
+        )
+    )
+    flows.extend(
+        [
+            scenario_table,
+            paragraph(
+                "Inference: This episode lens shows how Product X can reduce payer-visible downstream spend through lower professional utilization and reduced post-acute use, even though those dollars are outside the hospital DRG margin construct.",
+                styles["Body"],
+            ),
+            paragraph("Public Sources", styles["SubsectionHeading"]),
+        ]
+    )
+    for ref, title, url in PUBLIC_SOURCES:
+        flows.append(paragraph(f"{ref} {title}: {url}", styles["Body"]))
+
+    return flows
+
+
 def build_story(blocks: list[Block], styles):
     story = [
         Spacer(1, 1.45 * inch),
@@ -577,6 +795,8 @@ def build_story(blocks: list[Block], styles):
             continue
         story.append(paragraph(block.text, styles["Body"]))
 
+    story.extend(build_section_iv_supplement(styles))
+
     return story
 
 
@@ -604,7 +824,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate the Product X client-review PDF.")
     parser.add_argument(
         "--input",
-        default=str(ROOT / "Project_X_Discussion_Questions_Answers.docx"),
+        default=str(ROOT / "output" / "pdf" / "Project_X_Discussion_Questions_Answers.docx"),
         help="Path to the source DOCX.",
     )
     parser.add_argument(
