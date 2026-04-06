@@ -338,7 +338,7 @@ export default async function HomePage() {
             <SectionHeading id="contact-heading" align="center">
               Discuss the reimbursement question underneath the launch plan.
             </SectionHeading>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[var(--color-muted)]">
+            <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-8 text-[var(--color-muted)]">
               JL Policy Consulting supports teams evaluating market access risk, provider economics, formulary pressure, and policy exposure before those issues become commercial surprises.
             </p>
             <Link href="/contact" className="button-primary mt-8 inline-flex items-center rounded-md px-7 py-3">
