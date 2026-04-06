@@ -29,7 +29,7 @@ function LogoMark({ className }: { className?: string }) {
     <div
       aria-hidden
       className={cn(
-        "grid place-items-center rounded-sm border border-[color:color-mix(in_srgb,var(--color-rule)_55%,white_45%)] bg-[var(--color-surface-strong)] font-serif font-semibold tracking-[0.02em] text-[var(--color-accent)]",
+        "grid place-items-center rounded-sm border border-[var(--color-accent)] bg-[var(--color-accent)] font-serif font-semibold tracking-[0.02em] text-white",
         className,
       )}
     >
