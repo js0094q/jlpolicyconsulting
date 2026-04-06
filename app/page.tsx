@@ -73,6 +73,24 @@ const strategicQuestions = [
   "What signals in Part D, PBM, or formulary design indicate commercial pressure ahead?",
 ] as const;
 
+const reimbursementSignalRows = [
+  {
+    step: "01",
+    title: "Reimbursement path",
+    detail: "Coding, payment timing, and coverage rules determine whether access is operationally viable.",
+  },
+  {
+    step: "02",
+    title: "Provider economics",
+    detail: "Margin, site-of-care fit, and channel mechanics often shape uptake more than headline clinical value.",
+  },
+  {
+    step: "03",
+    title: "Adoption outcome",
+    detail: "Products scale when reimbursement, coverage, and provider execution align.",
+  },
+] as const;
+
 function SectionHeading({
   id,
   children,
@@ -125,25 +143,42 @@ export default async function HomePage() {
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.45fr)_minmax(17rem,0.75fr)] lg:items-end">
-            <div className="max-w-4xl">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.12fr)_minmax(18rem,0.88fr)] lg:items-start">
+            <div className="max-w-3xl">
               <p className="kicker">JL Policy Consulting, LLC</p>
-              <h1 className="mt-6 font-serif text-[clamp(2.6rem,5vw,4.8rem)] leading-[1.02] tracking-[-0.025em] text-ink">
-                Reimbursement strategy for decisions that depend on payer mechanics, provider economics, and policy timing.
+              <h1 className="mt-5 max-w-[12ch] font-serif text-[clamp(2.2rem,4vw,3.55rem)] leading-[1.04] tracking-[-0.03em] text-ink">
+                Commercial strategy informed by reimbursement and coverage reality.
               </h1>
-              <p className="mt-6 max-w-3xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
-                JL Policy Consulting helps manufacturers and access teams evaluate how reimbursement structure, formulary behavior, coding timing, and site-of-care economics shape adoption risk.
+              <p className="mt-5 max-w-xl text-[1rem] leading-7 text-[var(--color-muted)]">
+                Policy, payment, and provider economics analysis that shows adoption depends on
+                more than clinical value.
               </p>
             </div>
 
-            <div className="surface-card border-t-2 border-t-[var(--color-accent)] p-6 sm:p-7">
-              <p className="kicker">Current signal</p>
-              <p className="mt-4 font-serif text-2xl leading-tight text-ink">
-                Strongest work sits where policy detail changes commercial outcomes.
-              </p>
-              <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
-                Recent project work emphasizes inpatient reimbursement strategy, provider margin exposure, launch access execution, and reimbursement-readiness modeling.
-              </p>
+            <div className="paper-panel p-4 sm:p-6">
+              <p className="kicker">Current reimbursement signal</p>
+              <div className="mt-4 space-y-0">
+                {reimbursementSignalRows.map((row, index) => (
+                  <div
+                    key={row.title}
+                    className={index === 0 ? "" : "mt-3 border-t border-[var(--color-border)] pt-3 sm:mt-4 sm:pt-4"}
+                  >
+                    <div className="flex items-start gap-3 sm:gap-4">
+                      <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center border border-[var(--color-accent)] text-[9px] font-semibold tracking-[0.16em] text-[var(--color-accent)] sm:h-7 sm:w-7 sm:text-[10px]">
+                        {row.step}
+                      </span>
+                      <div className="min-w-0">
+                        <p className="font-serif text-[1rem] leading-tight text-ink sm:text-[1.05rem]">
+                          {row.title}
+                        </p>
+                        <p className="mt-1.5 text-[0.8rem] leading-5 text-[var(--color-muted)] sm:mt-2 sm:text-sm sm:leading-6">
+                          {row.detail}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </Container>
