@@ -53,10 +53,29 @@ next-env.d.ts
 # folders
 output/
 tmp/
+deliverables/
+visuals/
+abbvie/
 
 # workspace artifacts not used by the website app
 /content/interview-prep/
 /deep-research-report-*.md
+/Abbvie.md
+/JLPolicyConsulting-threat-model.md
+/JSPortolio.md
+/Executive Summary.pdf
+/Provider_Net_Cost_Model_Concept_Proposal_Brief.pdf
+/portfolio_brief.docx
+/portfolio_brief.md
+/portfolio_brief.pdf
+/portfolio_slide_outline.md
+/research_appendix.md
+/interview_talking_points.md
+/joseph_market_access_portfolio_master.md
+/prompt-prefix-file.md
+/*.docx
+/*.pdf
+/*.pptx
 /docs/archive/
 /docs/ops/
 /docs/projects/
