@@ -52,7 +52,7 @@ const consultingAreas = [
 const valuePoints = [
   {
     title: "Translate policy into implications",
-    body: "The work shows how reimbursement and policy changes affect launch assumptions, account economics, and access timing.",
+    body: "The analysis shows how reimbursement and policy changes affect launch assumptions, account economics, and access timing.",
   },
   {
     title: "Clarify risk and opportunity",
@@ -191,7 +191,7 @@ export default function ConsultingPage() {
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <SectionHeading id="value">How the work creates value</SectionHeading>
+          <SectionHeading id="value">How We Create Value</SectionHeading>
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {valuePoints.map((point) => (
               <article key={point.title} className="surface-card p-6 sm:p-7">
@@ -205,7 +205,7 @@ export default function ConsultingPage() {
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <SectionHeading id="engagement">Engagement and work product framing</SectionHeading>
+          <SectionHeading id="engagement">Engagement and Output Framing</SectionHeading>
           <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,0.85fr)] lg:items-start">
             <div className="max-w-3xl">
               <p className="text-base leading-8 text-[var(--color-muted)]">
@@ -215,12 +215,12 @@ export default function ConsultingPage() {
               </p>
               <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
                 The emphasis is on clarity and utility rather than volume. If the question can be
-                answered more directly, the work stays focused there.
+                answered more directly, the advisory stays focused there.
               </p>
             </div>
 
             <div className="surface-card p-6 sm:p-7">
-              <p className="kicker">What the work avoids</p>
+              <p className="kicker">What we avoid</p>
               <ul className="mt-4 space-y-4 text-sm leading-7 text-[var(--color-muted)]">
                 <li className="border-t border-[var(--color-border)] pt-4">Generic advisory language</li>
                 <li className="border-t border-[var(--color-border)] pt-4">Capability lists without decisions</li>

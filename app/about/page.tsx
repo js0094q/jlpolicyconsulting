@@ -128,7 +128,7 @@ export default function AboutPage() {
             <div className="max-w-3xl">
               <p className="kicker">About</p>
               <h1 className="page-title max-w-[13ch]">
-                Analytical perspective built from reimbursement, policy, and market access work.
+                Analytical perspective built from reimbursement, policy, and market access analysis.
               </h1>
               <p className="page-lede">
                 JL Policy Consulting is led by Joseph Stewart and focused on the intersection of
@@ -157,7 +157,7 @@ export default function AboutPage() {
                   how policy actually affects payer and provider decisions.
                 </div>
                 <div className="border-t border-[var(--color-border)] pt-4 text-sm leading-7 text-[var(--color-muted)]">
-                  The result is work that reads cleanly for strategists, policy teams, and
+                  The result is analysis that reads cleanly for strategists, policy teams, and
                   executives who need the implication, not just the interpretation.
                 </div>
               </div>
@@ -213,7 +213,7 @@ export default function AboutPage() {
         <Container>
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,0.82fr)] lg:items-start">
             <div>
-              <SectionHeading id="approach">How the work is approached</SectionHeading>
+              <SectionHeading id="approach">How We Approach What We Do</SectionHeading>
               <div className="mt-10 grid gap-6">
                 {approachPoints.map((point) => (
                   <article key={point.title} className="surface-card p-6 sm:p-7">
@@ -231,7 +231,7 @@ export default function AboutPage() {
                 result into a form that supports a decision.
               </p>
               <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
-                That keeps the work grounded, specific, and easier to use inside commercial or
+                That keeps it grounded, specific, and easier to use inside commercial or
                 policy workflows.
               </p>
             </div>
@@ -270,7 +270,7 @@ export default function AboutPage() {
         <Container>
           <div className="mx-auto max-w-3xl text-center">
             <SectionHeading id="about-cta" align="center">
-              Move from context to the work itself.
+              Move from context to the analysis itself.
             </SectionHeading>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[var(--color-muted)]">
               If the perspective is relevant, the next step is usually Consulting. If you want to
