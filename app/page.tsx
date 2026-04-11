@@ -124,21 +124,19 @@ export default async function HomePage() {
         <Container>
           <div className="mx-auto max-w-4xl text-center">
             <p className="kicker">JL Policy Consulting, LLC</p>
-            <h1 className="mx-auto mt-5 max-w-[15ch] font-serif text-[clamp(2.6rem,4.2vw,3.35rem)] leading-[1.02] tracking-[-0.03em] text-ink">
+            <h1 className="mx-auto mt-5 max-w-[18ch] font-serif text-[clamp(2.6rem,4.2vw,3.35rem)] leading-[1.02] tracking-[-0.03em] text-ink">
               Policy, reimbursement, and market access analysis for commercial and investment
               decisions.
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
-              We help manufacturers, investors, and other healthcare stakeholders interpret
-              federal and commercial payment mechanics, payer behavior, and provider economics so
-              reimbursement and access questions become decision-ready.
+              We help manufacturers, payers, professional societies, patient advocacy groups, and
+              other healthcare stakeholders translate federal and commercial payment mechanics,
+              payer behavior, and provider economics into clear reimbursement and access
+              strategy.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <Link href="/consulting" className="button-primary inline-flex items-center rounded-md px-6 py-3">
-                View Consulting
-              </Link>
-              <Link href="/insights" className="button-secondary inline-flex items-center rounded-md px-6 py-3">
-                Read Insights
+              <Link href="/insights" className="button-primary inline-flex items-center rounded-md px-6 py-3">
+                View Our Work
               </Link>
             </div>
 
@@ -150,38 +148,6 @@ export default async function HomePage() {
                 </article>
               ))}
             </div>
-          </div>
-        </Container>
-      </section>
-
-      <section className="border-b border-[var(--color-border)] py-16 sm:py-20" aria-label="What We Help Solve">
-        <Container>
-          <SectionHeading id="solve-heading">What We Help Solve</SectionHeading>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {problemAreas.map((area) => (
-              <article key={area.title} className="surface-card p-6 sm:p-7">
-                <h3 className="text-[1.35rem] leading-tight text-ink">{area.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{area.summary}</p>
-              </article>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section id="perspective" className="border-b border-[var(--color-border)] py-16 sm:py-20">
-        <Container>
-          <SectionHeading id="perspective-heading">How Our Perspective is Different</SectionHeading>
-          <div className="mx-auto mt-10 max-w-4xl space-y-4 text-base leading-8 text-[var(--color-muted)]">
-            <p>
-              Policy analysis often stops at describing what changed without showing what the
-              change does operationally, logistically, or to the bottom line. We connect policy
-              design, coding and payment mechanics, payer controls, and provider economics so the
-              commercial implication is visible and understandable.
-            </p>
-            <p>
-              We help teams judge launch risk, access friction, and where reimbursement structure
-              matters most so they can protect or recapture value.
-            </p>
           </div>
         </Container>
       </section>
@@ -269,25 +235,49 @@ export default async function HomePage() {
         </Container>
       </section>
 
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20" aria-label="What We Help Solve">
+        <Container>
+          <SectionHeading id="solve-heading">What We Help Solve</SectionHeading>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {problemAreas.map((area) => (
+              <article key={area.title} className="surface-card p-6 sm:p-7">
+                <h3 className="text-[1.35rem] leading-tight text-ink">{area.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{area.summary}</p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section id="perspective" className="border-b border-[var(--color-border)] py-16 sm:py-20">
+        <Container>
+          <SectionHeading id="perspective-heading">How Our Perspective Is Different</SectionHeading>
+          <div className="mx-auto mt-10 max-w-4xl space-y-4 text-left text-base leading-8 text-[var(--color-muted)]">
+            <p>
+              Policy analysis often stops at describing what changed without showing what the
+              change does operationally, logistically, or to the bottom line. We connect policy
+              design, coding and payment mechanics, payer controls, and provider economics so the
+              commercial implication is visible and understandable.
+            </p>
+            <p>
+              We help teams judge launch risk, access friction, and where reimbursement structure
+              matters most so they can protect or recapture value.
+            </p>
+          </div>
+        </Container>
+      </section>
+
       <section id="contact" className="py-16 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-3xl text-center">
-            <SectionHeading id="contact-heading" align="center">
-              Discuss the reimbursement question underneath the launch plan.
-            </SectionHeading>
-            <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-8 text-[var(--color-muted)]">
-              JL Policy Consulting supports teams evaluating market access risk, provider
-              economics, formulary pressure, and policy exposure before those issues become
-              commercial surprises.
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="font-serif text-[clamp(2.05rem,3vw,2.7rem)] leading-[1.08] tracking-[-0.03em] text-ink">
+              Let us help you examine and understand access and reimbursement realities.
             </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <Link href="/contact" className="button-primary inline-flex items-center rounded-md px-7 py-3">
-                Contact Us
-              </Link>
-              <Link href="/insights" className="button-secondary inline-flex items-center rounded-md px-7 py-3">
-                View our Work
-              </Link>
-            </div>
+            <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-[var(--color-muted)]">
+              JL Policy Consulting helps organizations evaluate access and reimbursement through a
+              policy lens, including access risk, provider economics, formulary pressure, and
+              policy landscape assessment, to best equip you to tackle access challenges.
+            </p>
           </div>
         </Container>
       </section>
