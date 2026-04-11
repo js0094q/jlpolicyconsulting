@@ -125,7 +125,7 @@ export default async function HomePage() {
           <div className="mx-auto max-w-4xl text-center">
             <p className="kicker">JL Policy Consulting, LLC</p>
             <h1 className="mx-auto mt-5 max-w-[20ch] font-serif text-[clamp(2.7rem,4.2vw,3.65rem)] leading-[1.02] tracking-[-0.03em] text-ink">
-              Policy, reimbursement, and market access analysis for commercial and investment
+              Policy, reimbursement, and market access analysis for complex health care
               decisions.
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
