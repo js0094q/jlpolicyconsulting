@@ -122,18 +122,18 @@ export default async function HomePage() {
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container className="max-w-[88rem]">
-          <div className="max-w-4xl">
+          <div className="mx-auto max-w-4xl text-center">
             <p className="kicker">JL Policy Consulting, LLC</p>
-            <h1 className="mt-5 max-w-[20ch] font-serif text-[clamp(2.7rem,4.2vw,3.65rem)] leading-[1.02] tracking-[-0.03em] text-ink">
+            <h1 className="mx-auto mt-5 max-w-[20ch] font-serif text-[clamp(2.7rem,4.2vw,3.65rem)] leading-[1.02] tracking-[-0.03em] text-ink">
               Policy, reimbursement, and market access analysis for commercial and investment
               decisions.
             </h1>
-            <p className="mt-5 max-w-2xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
+            <p className="mx-auto mt-5 max-w-2xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
               We help manufacturers, payers, professional societies, patient advocacy groups, and
               other healthcare stakeholders translate federal and commercial payment mechanics,
               payer behavior, and provider economics into clear reimbursement and access strategy.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link href="/insights" className="button-primary inline-flex items-center rounded-md px-6 py-3">
                 View Our Work
               </Link>
