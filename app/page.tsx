@@ -121,25 +121,23 @@ export default async function HomePage() {
   return (
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
-        <Container>
-          <div className="mx-auto max-w-4xl text-center">
+        <Container className="max-w-[88rem]">
+          <div className="max-w-4xl">
             <p className="kicker">JL Policy Consulting, LLC</p>
-            <h1 className="mx-auto mt-5 max-w-[18ch] font-serif text-[clamp(2.6rem,4.2vw,3.35rem)] leading-[1.02] tracking-[-0.03em] text-ink">
+            <h1 className="mt-5 max-w-[20ch] font-serif text-[clamp(2.7rem,4.2vw,3.65rem)] leading-[1.02] tracking-[-0.03em] text-ink">
               Policy, reimbursement, and market access analysis for commercial and investment
               decisions.
             </h1>
-            <p className="mx-auto mt-5 max-w-3xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
+            <p className="mt-5 max-w-2xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
               We help manufacturers, payers, professional societies, patient advocacy groups, and
               other healthcare stakeholders translate federal and commercial payment mechanics,
-              payer behavior, and provider economics into clear reimbursement and access
-              strategy.
+              payer behavior, and provider economics into clear reimbursement and access strategy.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/insights" className="button-primary inline-flex items-center rounded-md px-6 py-3">
                 View Our Work
               </Link>
             </div>
-
             <div className="mt-12 grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-2 xl:grid-cols-4">
               {proofSignals.map((signal) => (
                 <article key={signal.label} className="bg-[var(--color-surface)] px-6 py-6 text-left">
@@ -245,24 +243,6 @@ export default async function HomePage() {
                 <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{area.summary}</p>
               </article>
             ))}
-          </div>
-        </Container>
-      </section>
-
-      <section id="perspective" className="border-b border-[var(--color-border)] py-16 sm:py-20">
-        <Container>
-          <SectionHeading id="perspective-heading">How Our Perspective Is Different</SectionHeading>
-          <div className="mx-auto mt-10 max-w-4xl space-y-4 text-left text-base leading-8 text-[var(--color-muted)]">
-            <p>
-              Policy analysis often stops at describing what changed without showing what the
-              change does operationally, logistically, or to the bottom line. We connect policy
-              design, coding and payment mechanics, payer controls, and provider economics so the
-              commercial implication is visible and understandable.
-            </p>
-            <p>
-              We help teams judge launch risk, access friction, and where reimbursement structure
-              matters most so they can protect or recapture value.
-            </p>
           </div>
         </Container>
       </section>
