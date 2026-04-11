@@ -138,14 +138,19 @@ export default async function HomePage() {
                 View Our Work
               </Link>
             </div>
-            <div className="mt-12 grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-2 xl:grid-cols-4">
-              {proofSignals.map((signal) => (
-                <article key={signal.label} className="bg-[var(--color-surface)] px-6 py-6 text-left">
-                  <p className="font-serif text-[1.55rem] leading-none text-ink">{signal.value}</p>
-                  <p className="mt-3 text-sm leading-7 text-[var(--color-ink)]">{signal.label}</p>
-                </article>
-              ))}
-            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-[var(--color-border)] py-10 sm:py-12">
+        <Container className="max-w-[88rem]">
+          <div className="grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-2 xl:grid-cols-4">
+            {proofSignals.map((signal) => (
+              <article key={signal.label} className="bg-[var(--color-surface)] px-6 py-6 text-left">
+                <p className="font-serif text-[1.55rem] leading-none text-ink">{signal.value}</p>
+                <p className="mt-3 text-sm leading-7 text-[var(--color-ink)]">{signal.label}</p>
+              </article>
+            ))}
           </div>
         </Container>
       </section>
