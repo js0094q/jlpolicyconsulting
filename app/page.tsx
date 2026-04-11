@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { headers } from "next/headers";
 import { Container } from "@/components/container";
-import { HomeProofStrip } from "@/components/home-proof-strip";
 import { formatDisplayDate, getLatestInsights, getLatestResearch } from "@/lib/content";
 import { safeJsonLd } from "@/lib/json-ld";
 import { absoluteUrl, siteConfig } from "@/lib/site";
@@ -123,8 +122,6 @@ export default async function HomePage() {
           </div>
         </Container>
       </section>
-
-      <HomeProofStrip />
 
       <section id="featured-work" className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
