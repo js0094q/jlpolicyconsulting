@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { headers } from "next/headers";
 import { Container } from "@/components/container";
+import { HomeProofStrip } from "@/components/home-proof-strip";
 import { formatDisplayDate, getLatestInsights, getLatestResearch } from "@/lib/content";
 import { safeJsonLd } from "@/lib/json-ld";
 import { absoluteUrl, siteConfig } from "@/lib/site";
@@ -21,25 +22,6 @@ export const metadata = createPageMetadata({
     "provider economics",
   ],
 });
-
-const proofSignals = [
-  {
-    value: "Policy + data",
-    label: "Policy analysis grounded in structural rules and observable market behavior",
-  },
-  {
-    value: "Commercial relevance",
-    label: "Work framed around decisions that affect launch, access, and in-market strategy",
-  },
-  {
-    value: "Cross-functional",
-    label: "Perspective built to be useful to policy, access, and commercialization teams",
-  },
-  {
-    value: "Decision-ready output",
-    label: "Concise deliverables that translate reimbursement issues into action",
-  },
-] as const;
 
 const problemAreas = [
   {
@@ -142,18 +124,7 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <section className="border-b border-[var(--color-border)] py-10 sm:py-12">
-        <Container className="max-w-[88rem]">
-          <div className="grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-2 xl:grid-cols-4">
-            {proofSignals.map((signal) => (
-              <article key={signal.label} className="bg-[var(--color-surface)] px-6 py-6 text-left">
-                <p className="font-serif text-[1.55rem] leading-none text-ink">{signal.value}</p>
-                <p className="mt-3 text-sm leading-7 text-[var(--color-ink)]">{signal.label}</p>
-              </article>
-            ))}
-          </div>
-        </Container>
-      </section>
+      <HomeProofStrip />
 
       <section id="featured-work" className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
