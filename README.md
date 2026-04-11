@@ -2,6 +2,17 @@
 
 Production-ready professional website for **JL Policy Consulting, LLC**.
 
+## Working With Codex
+
+Primary repository instructions live in `AGENTS.md`.
+
+Codex should:
+- avoid scanning the full repository by default,
+- read only files relevant to the task,
+- respect the source / output / archive separation defined in `repo.config.ts`,
+- preserve the active content model and allowed categories,
+- avoid treating archived prototypes as runtime source.
+
 ## Stack
 - Next.js (App Router)
 - TypeScript
@@ -36,7 +47,9 @@ Allowed `category` values:
 - `PBM and Formulary Dynamics`
 - `Biosimilars and Generics`
 - `Healthcare Data Analysis`
-- `Market Access Strategy`
+- `Market Access Strategy`,
+- `Gross-to-Net Modeling,
+- `Reimbursement`
 
 Derived article metadata in the app also includes:
 - `url`

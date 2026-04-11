@@ -103,11 +103,11 @@ body {
 
 @layer components {
   .kicker {
-    @apply text-[10px] font-semibold uppercase tracking-[0.24em] text-[var(--color-accent-soft)];
+    @apply text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--color-accent-soft)] sm:text-[12px];
   }
 
   .page-title {
-    @apply mt-2 font-serif text-[clamp(2.4rem,4.6vw,4.5rem)] leading-[1.02] tracking-[-0.03em];
+    @apply mt-2 font-serif text-[clamp(2.5rem,3.8vw,3rem)] leading-[1.03] tracking-[-0.03em];
   }
 
   .page-lede {
@@ -115,7 +115,7 @@ body {
   }
 
   .section-title {
-    @apply text-left text-[clamp(1.55rem,2.9vw,2.45rem)] leading-[1.08] tracking-[-0.02em];
+    @apply text-left text-[clamp(1.85rem,2.45vw,2.25rem)] leading-[1.08] tracking-[-0.02em];
   }
 
   .line-list {

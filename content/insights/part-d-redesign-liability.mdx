@@ -17,16 +17,23 @@ Medicare Part D redesign is frequently summarized as a beneficiary protection re
 
 That description is accurate, but incomplete.
 
-## What Changed (Observed Policy)
+<KeyTakeaways
+  items={[
+    "Part D redesign changes incentives, not just who pays on paper.",
+    "Plans can respond through tiering, utilization management, and channel design.",
+    "The relevant question is where pressure moves after liability shifts."
+  ]}
+/>
 
-Beginning in CY 2025:
+## What changed
 
-- the benefit structure was simplified,
+Beginning in CY 2025, the benefit structure was simplified and liability shifted across the system:
+
 - beneficiary cost sharing in catastrophic was eliminated,
 - manufacturer liability expanded through the new discount program,
-- and plan liability increased in key phases of the benefit.
+- plan liability increased in key phases of the benefit.
 
-## What the Data Framework Allows You to Observe
+## What the data framework allows you to observe
 
 CMS Part D public files allow direct observation of:
 
@@ -38,20 +45,39 @@ CMS Part D public files allow direct observation of:
 
 These elements define **how plans operationalize policy changes**.
 
-## Where Pressure Shows Up
+<ComparisonTable
+  title="Policy shift and operational response"
+  columns={["Policy change", "Likely plan response", "Commercial implication"]}
+  rows={[
+    [
+      "Liability moves in the benefit",
+      "Plans rework tiering and utilization design",
+      "Access can worsen even if the policy goal is beneficiary protection"
+    ],
+    [
+      "Cost exposure becomes more visible",
+      "Sponsors and plans look for offsetting controls",
+      "Commercial teams need to watch for new access friction signals"
+    ],
+    [
+      "Plan incentives change by segment",
+      "MA-PD and PDP responses can diverge",
+      "A blended market view can hide useful differences"
+    ]
+  ]}
+  note="This is a framework for interpreting behavior, not a claim that every plan responds the same way."
+/>
 
-Policy changes shift liability mathematically.  
+## Where pressure shows up
+
+Policy changes shift liability mathematically.
 Plans respond operationally.
 
-The relevant question is not:
+The relevant question is not who pays more.
 
-> Who pays more?
+It is where behavior changes to offset that shift.
 
-It is:
-
-> Where does behavior change to offset that shift?
-
-## Early Signals to Monitor (Data-Observable)
+## Early signals to monitor
 
 Four signals can be tracked directly using CMS data:
 
@@ -71,28 +97,54 @@ Shifts toward preferred mail or restricted retail networks alter access pathways
 
 Different responses across plan types indicate heterogeneous incentive translation.
 
-## Timing Matters
+<Timeline
+  title="How pressure typically moves"
+  items={[
+    {
+      label: "Policy change",
+      text: "Liability shifts through the redesigned benefit structure."
+    },
+    {
+      label: "Plan reaction",
+      text: "Plans look for offsetting levers in formulary and utilization design."
+    },
+    {
+      label: "Observable signal",
+      text: "Tiering, PA, step therapy, and channel structure reveal where pressure is being absorbed."
+    },
+    {
+      label: "Strategy implication",
+      text: "Commercial teams should monitor access conditions quarter by quarter, not just policy language."
+    }
+  ]}
+/>
 
-SPUF snapshots are quarterly, but underlying plan data updates more frequently.
+## Why it matters
 
-This means:
+<WhyItMatters
+  items={[
+    {
+      label: "Manufacturers",
+      text: "A statutory improvement for beneficiaries can still create more access friction in the parts of the market that matter commercially."
+    },
+    {
+      label: "Plans",
+      text: "Behavioral response is part of the redesign story, so formulary and utilization design deserve as much attention as the benefit summary."
+    },
+    {
+      label: "Policy teams",
+      text: "The useful question is not whether the law changed, but how the market absorbed the new incentive structure."
+    }
+  ]}
+/>
 
-- behavioral response may emerge gradually,
-- early movement may not be visible in annual summaries,
-- quarterly tracking is required to detect transition patterns.
+## Methodology note
 
-## What This Means for Strategy
+<MethodologyNote>
+This is an interpretive framework built from CMS Part D public-use files. It is intended to surface directional patterns in plan behavior, not to prove causality. Quarterly snapshots are useful because they reveal how benefit changes appear in tiering, utilization management, and channel design over time.
+</MethodologyNote>
 
-Part D redesign should be treated as:
-
-- a dynamic system change, not a static policy event,
-- a shift in incentives, not just a shift in liability.
-
-The implication:
-
-> access conditions can change even when statutory design improves beneficiary protection.
-
-## Bottom Line
+## Bottom line
 
 Part D redesign improves the benefit.
 

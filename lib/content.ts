@@ -11,6 +11,8 @@ export const INSIGHT_CATEGORIES = [
   "Biosimilars and Generics",
   "Healthcare Data Analysis",
   "Market Access Strategy",
+  "Gross-to-Net Modeling",
+  "Reimbursement",
 ] as const;
 
 export type InsightCategory = (typeof INSIGHT_CATEGORIES)[number];

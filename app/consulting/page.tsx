@@ -5,7 +5,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Consulting",
   description:
-    "Problem-led advisory on reimbursement strategy, provider economics, Medicare payment, payer controls, and launch-access decisions.",
+    "Structured advisory on reimbursement strategy, Medicare policy, payer dynamics, provider economics, and market access decisions.",
   path: "/consulting",
   kicker: "Consulting",
   keywords: [
@@ -18,81 +18,90 @@ export const metadata = createPageMetadata({
   ],
 });
 
-const problemAreas = [
+const consultingAreas = [
   {
-    title: "Reimbursement and market access strategy",
-    clientDecision:
-      "Whether the access pathway, reimbursement timing, and payer design support a credible launch strategy.",
-    jlPolicyAnalyzes:
-      "Coverage structure, coding pathway, access restrictions, channel implications, formulary pressure, and the operational mechanics that can delay or distort uptake.",
-    deliverable:
-      "Decision memos, reimbursement readiness assessments, launch access framing, and executive briefings built for commercial and market access teams.",
+    title: "Reimbursement strategy",
+    summary:
+      "Structure, timing, and payment mechanics that determine whether access is operationally viable.",
+    forWhom: "For launch, market access, and reimbursement teams evaluating provider and payer readiness.",
+    informs: "Reimbursement planning, account strategy, launch sequencing, and executive decision-making.",
   },
   {
-    title: "Provider economics and site-of-care analysis",
-    clientDecision:
-      "Whether provider adoption works economically across buy-and-bill, hospital outpatient, inpatient, specialty pharmacy, or alternate site-of-care settings.",
-    jlPolicyAnalyzes:
-      "Margin pressure, acquisition cost exposure, 340B dynamics, white-bagging risk, pass-through timing, DRG or OPPS fit, and claim-level friction that changes provider behavior.",
-    deliverable:
-      "Provider net cost models, site-of-care economics analyses, reimbursement execution frameworks, and materials that clarify where margin breaks.",
+    title: "Medicare and drug pricing policy",
+    summary:
+      "Policy shifts that affect Part D design, payment rules, and commercial assumptions.",
+    forWhom: "For leaders tracking CMS changes, pricing pressure, and exposure to policy timing.",
+    informs: "Policy response, scenario planning, and cross-functional communication.",
   },
   {
-    title: "Medicare payment and policy analysis",
-    clientDecision:
-      "How CMS payment rules, coding timing, and public policy shifts change launch timing, access assumptions, or stakeholder exposure.",
-    jlPolicyAnalyzes:
-      "Part D redesign, NTAP eligibility and timing, DRG structure, pass-through status, HCPCS timing, and rule changes that alter reimbursement or utilization incentives.",
-    deliverable:
-      "Policy impact assessments, reimbursement scenario analyses, CMS-focused briefing materials, and implications memos for cross-functional planning.",
+    title: "Market access and payer dynamics",
+    summary:
+      "How plan design, formulary movement, and utilization management alter access in practice.",
+    forWhom: "For payer-facing strategy, government affairs, and commercialization teams.",
+    informs: "Access strategy, evidence framing, and launch risk assessment.",
   },
   {
-    title: "PBM, formulary, and utilization-management dynamics",
-    clientDecision:
-      "How payer behavior is likely to change when cost pressure moves through tiering, restrictions, specialty pathways, and benefit design.",
-    jlPolicyAnalyzes:
-      "Formulary placement, prior authorization, step therapy, coverage criteria, PBM incentives, plan design changes, and the observable access friction these mechanisms create.",
-    deliverable:
-      "Payer dynamic assessments, formulary risk analyses, utilization-management reviews, and strategy briefs tied to likely commercial consequences.",
-  },
-  {
-    title: "Biosimilars, generics, and pricing strategy",
-    clientDecision:
-      "How pricing, reimbursement design, and policy change will affect competitive behavior, tier movement, and market positioning.",
-    jlPolicyAnalyzes:
-      "List-to-net tension, reimbursement incentives, unit-cost pressure, formulary movement, competitor response, and the policy structure behind adoption barriers.",
-    deliverable:
-      "Pricing and reimbursement briefs, market structure analyses, Part D and formulary interpretation, and data-backed decision support for competitive planning.",
+    title: "Biosimilars and commercialization economics",
+    summary:
+      "Pricing, channel, and adoption dynamics that shape competitive uptake and positioning.",
+    forWhom: "For teams working through competitive response and market structure change.",
+    informs: "Pricing, channel strategy, and lifecycle planning.",
   },
 ] as const;
 
-function ProblemBlock({
+const valuePoints = [
+  {
+    title: "Translate policy into implications",
+    body: "The work shows how reimbursement and policy changes affect launch assumptions, account economics, and access timing.",
+  },
+  {
+    title: "Clarify risk and opportunity",
+    body: "Analysis surfaces where coverage friction, payer behavior, or payment mechanics change the commercial path.",
+  },
+  {
+    title: "Support execution",
+    body: "Deliverables are written for working sessions, leadership review, and the teams that need to act on the issue.",
+  },
+] as const;
+
+const deliverables = [
+  "Strategic analysis",
+  "Policy interpretation",
+  "Issue briefs",
+  "Quantitative analysis",
+  "Decision support tools",
+  "Executive briefings",
+] as const;
+
+const credibilityPoints = [
+  "Domain depth across reimbursement, policy, and access.",
+  "Analytical work tied to observable plan and provider behavior.",
+  "Cross-functional relevance for commercial, policy, and market access teams.",
+  "Output designed to be concise, auditable, and decision-ready.",
+] as const;
+
+function ServiceCard({
   title,
-  clientDecision,
-  jlPolicyAnalyzes,
-  deliverable,
+  summary,
+  forWhom,
+  informs,
 }: {
   title: string;
-  clientDecision: string;
-  jlPolicyAnalyzes: string;
-  deliverable: string;
+  summary: string;
+  forWhom: string;
+  informs: string;
 }) {
   return (
-    <article className="surface-card border-t-2 border-t-[var(--color-accent)] p-7 sm:p-8">
-      <h2 className="text-[clamp(1.55rem,2.5vw,2rem)] leading-tight text-ink">{title}</h2>
-      <div className="mt-6 space-y-5">
-        <div className="border-t border-[var(--color-border)] pt-4">
-          <p className="kicker">Client decision</p>
-          <p className="mt-2 text-base leading-8 text-[var(--color-muted)]">{clientDecision}</p>
-        </div>
-        <div className="border-t border-[var(--color-border)] pt-4">
-          <p className="kicker">JL Policy analyzes</p>
-          <p className="mt-2 text-base leading-8 text-[var(--color-muted)]">{jlPolicyAnalyzes}</p>
-        </div>
-        <div className="border-t border-[var(--color-border)] pt-4">
-          <p className="kicker">Deliverable</p>
-          <p className="mt-2 text-base leading-8 text-[var(--color-muted)]">{deliverable}</p>
-        </div>
+    <article className="surface-card p-6 sm:p-7">
+      <h3 className="text-[1.35rem] leading-tight text-ink">{title}</h3>
+      <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{summary}</p>
+      <div className="mt-5 space-y-4 border-t border-[var(--color-border)] pt-4">
+        <p className="text-sm leading-7 text-[var(--color-muted)]">
+          <span className="font-semibold text-ink">Who it is for:</span> {forWhom}
+        </p>
+        <p className="text-sm leading-7 text-[var(--color-muted)]">
+          <span className="font-semibold text-ink">What it informs:</span> {informs}
+        </p>
       </div>
     </article>
   );
@@ -100,34 +109,187 @@ function ProblemBlock({
 
 export default function ConsultingPage() {
   return (
-    <section className="py-16 sm:py-20">
-      <Container>
-        <div className="max-w-4xl">
-          <p className="kicker">Consulting</p>
-          <h1 className="page-title">Advisory framed around the reimbursement problems that determine commercial outcomes.</h1>
-          <p className="mt-5 max-w-4xl text-base leading-8 text-[var(--color-muted)]">
-            JL Policy Consulting is strongest when the question is not generic strategy, but how policy structure, payer mechanics, and provider economics change what is commercially possible.
-          </p>
-        </div>
+    <>
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(18rem,0.92fr)] lg:items-start">
+            <div className="max-w-3xl">
+              <p className="kicker">Consulting</p>
+              <h1 className="page-title max-w-[13ch]">
+                Strategic advisory on reimbursement, market access, and policy decisions.
+              </h1>
+              <p className="page-lede">
+                JL Policy Consulting is strongest when the question is not generic strategy, but
+                how policy structure, payer mechanics, and provider economics change what is
+                commercially possible.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="/contact" className="button-primary inline-flex items-center rounded-md px-6 py-3">
+                  Contact Us
+                </Link>
+                <Link href="/insights" className="button-secondary inline-flex items-center rounded-md px-6 py-3">
+                  Read Insights
+                </Link>
+              </div>
+            </div>
 
-        <div className="mt-12 grid gap-6">
-          {problemAreas.map((area) => (
-            <ProblemBlock key={area.title} {...area} />
-          ))}
-        </div>
+            <div className="paper-panel p-5 sm:p-6">
+              <p className="kicker">Core consulting frame</p>
+              <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
+                Advisory work combines policy interpretation, reimbursement analysis, payer and
+                provider dynamics, and data-driven support for commercialization decisions.
+              </p>
+              <ul className="mt-5 space-y-3 border-t border-[var(--color-border)] pt-4 text-sm leading-7 text-[var(--color-muted)]">
+                <li>Reimbursement strategy</li>
+                <li>Medicare and drug pricing policy</li>
+                <li>Market access and payer dynamics</li>
+                <li>Provider economics and site-of-care behavior</li>
+                <li>Biosimilars, generics, and competitive positioning</li>
+              </ul>
+            </div>
+          </div>
+        </Container>
+      </section>
 
-        <p className="mt-12 max-w-5xl text-base leading-8 text-[var(--color-muted)]">
-          Recent commentary and structured analysis appear in{" "}
-          <Link href="/insights" className="editorial-link">
-            Insights
-          </Link>{" "}
-          and{" "}
-          <Link href="/research" className="editorial-link">
-            Research
-          </Link>
-          , where current work focuses on reimbursement modeling, provider economics, payer mechanics, and launch-access strategy.
-        </p>
-      </Container>
-    </section>
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,0.78fr)] lg:items-start">
+            <div>
+              <SectionHeading id="consulting-overview">Core consulting overview</SectionHeading>
+              <p className="mt-6 max-w-3xl text-base leading-8 text-[var(--color-muted)]">
+                The firm provides targeted advisory on reimbursement strategy, policy
+                interpretation, market access analysis, payer and provider dynamics, and
+                data-driven strategic support. The framing is practical: what changed, why it
+                matters, and what decision it should inform.
+              </p>
+            </div>
+
+            <div className="surface-card p-6 sm:p-7">
+              <p className="kicker">Typical outputs</p>
+              <div className="mt-4 grid gap-2 text-sm leading-7 text-[var(--color-muted)] sm:grid-cols-2">
+                {deliverables.map((item) => (
+                  <div key={item} className="border-t border-[var(--color-border)] pt-3">
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20" aria-label="Consulting areas">
+        <Container>
+          <SectionHeading id="consulting-areas">Consulting areas</SectionHeading>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {consultingAreas.map((area) => (
+              <ServiceCard key={area.title} {...area} />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
+        <Container>
+          <SectionHeading id="value">How the work creates value</SectionHeading>
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            {valuePoints.map((point) => (
+              <article key={point.title} className="surface-card p-6 sm:p-7">
+                <h3 className="text-[1.15rem] leading-tight text-ink">{point.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{point.body}</p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
+        <Container>
+          <SectionHeading id="engagement">Engagement and work product framing</SectionHeading>
+          <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,0.85fr)] lg:items-start">
+            <div className="max-w-3xl">
+              <p className="text-base leading-8 text-[var(--color-muted)]">
+                Engagements are kept concise and practical. Support may include strategic analysis,
+                policy interpretation, issue briefs, quantitative analysis, decision support tools,
+                and executive briefings depending on the question at hand.
+              </p>
+              <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                The emphasis is on clarity and utility rather than volume. If the question can be
+                answered more directly, the work stays focused there.
+              </p>
+            </div>
+
+            <div className="surface-card p-6 sm:p-7">
+              <p className="kicker">What the work avoids</p>
+              <ul className="mt-4 space-y-4 text-sm leading-7 text-[var(--color-muted)]">
+                <li className="border-t border-[var(--color-border)] pt-4">Generic advisory language</li>
+                <li className="border-t border-[var(--color-border)] pt-4">Capability lists without decisions</li>
+                <li className="border-t border-[var(--color-border)] pt-4">Unstructured policy summaries</li>
+              </ul>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-[var(--color-border)] py-12 sm:py-14" aria-label="Credibility strip">
+        <Container>
+          <div className="grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-2 xl:grid-cols-4">
+            {credibilityPoints.map((point) => (
+              <article key={point} className="bg-[var(--color-surface)] px-6 py-6">
+                <p className="text-sm leading-7 text-[var(--color-ink)]">{point}</p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-16 sm:py-20">
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <SectionHeading id="consulting-contact" align="center">
+              Contact for a specific advisory question.
+            </SectionHeading>
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[var(--color-muted)]">
+              If the issue involves reimbursement, access, payer behavior, provider economics, or
+              policy timing, start a conversation and the response will stay focused on the
+              decision that needs support.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <Link href="/contact" className="button-primary inline-flex items-center rounded-md px-7 py-3">
+                Contact Us
+              </Link>
+              <Link href="/research" className="button-secondary inline-flex items-center rounded-md px-7 py-3">
+                Explore Research
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </>
+  );
+}
+
+function SectionHeading({
+  id,
+  children,
+  align = "left",
+}: {
+  id: string;
+  children: string;
+  align?: "left" | "center";
+}) {
+  return (
+    <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
+      <div
+        className={
+          align === "center"
+            ? "mx-auto h-px w-16 bg-[var(--color-accent)]"
+            : "h-px w-16 bg-[var(--color-accent)]"
+        }
+      />
+      <h2 id={id} className="section-title mt-6 text-balance">
+        {children}
+      </h2>
+    </div>
   );
 }

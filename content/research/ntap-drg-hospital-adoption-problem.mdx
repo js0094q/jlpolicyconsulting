@@ -14,15 +14,19 @@ seoTitle: "NTAP, DRG Pressure, and the Hospital Adoption Problem"
 seoDescription: "How inpatient reimbursement timing and DRG fit determine whether a differentiated therapy can be absorbed at launch."
 ---
 
-## Objective
+The inpatient launch problem is usually not clinical. It is sequence.
 
-Inpatient launches are often described in clinical terms long before the payment math is settled.
-That is usually the wrong order.
+If reimbursement lags the product, adoption lags the product.
 
-For hospitals, the relevant question is not whether a therapy is clinically differentiated.
-It is whether the therapy can fit inside the DRG before reimbursement aligns with the cost of use.
+<KeyTakeaways
+  items={[
+    "Hospital adoption depends on reimbursement timing as much as it depends on clinical value.",
+    "NTAP is a bridge, not a marketing milestone.",
+    "A product that cannot fit inside the DRG before payment normalizes creates margin pressure for the facility."
+  ]}
+/>
 
-## The Launch Constraint
+## The launch constraint
 
 Hospital adoption depends on three linked variables:
 
@@ -35,7 +39,7 @@ Hospital adoption depends on three linked variables:
 
 If any one of those pieces is out of sync, launch pressure shifts to the facility instead of the payer.
 
-## Why NTAP Matters
+## Why NTAP matters
 
 NTAP is not a marketing milestone. It is a bridge.
 
@@ -47,21 +51,61 @@ It narrows the gap between:
 
 Without that bridge, hospitals often treat a new inpatient therapy as a margin problem first and a clinical opportunity second.
 
-## What the Analysis Should Show
+<Timeline
+  title="Launch sequence"
+  items={[
+    {
+      label: "Product arrives",
+      text: "The therapy enters the market before reimbursement is fully settled."
+    },
+    {
+      label: "Facility evaluates absorption",
+      text: "Hospitals test whether the product can fit inside the bundled payment structure."
+    },
+    {
+      label: "Reimbursement timing matters",
+      text: "NTAP, coding, and DRG updates do not align on the same schedule."
+    },
+    {
+      label: "Adoption normalizes",
+      text: "Use becomes routine only when reimbursement and cost recovery are aligned."
+    }
+  ]}
+/>
 
-A useful launch review does not stop at the headline DRG.
-It should answer:
+## What the analysis should show
+
+A useful launch review does not stop at the headline DRG. It should answer:
 
 - What is the incremental cost relative to the bundled case payment?
 - How much value can be recovered from shorter LOS, lower downstream utilization, or better discharge disposition?
 - Is the gap temporary because of reimbursement timing, or structural because the price is misaligned?
 
-## Commercial Implication
+## Commercial implication
 
 For a hospital product, adoption risk often comes from the reimbursement sequence rather than the evidence package.
 That sequence is what determines whether early launch is broad, narrow, or delayed.
 
-## Decision Use
+## Why it matters
+
+<WhyItMatters
+  items={[
+    {
+      label: "Manufacturers",
+      text: "Launch pricing and evidence packages need to account for the period before reimbursement normalizes."
+    },
+    {
+      label: "Hospitals",
+      text: "The relevant question is whether the product can be absorbed without creating margin stress during the transition period."
+    },
+    {
+      label: "Policy teams",
+      text: "Timing matters as much as statutory structure because adoption behavior changes before the reimbursement system fully settles."
+    }
+  ]}
+/>
+
+## Methodology note
 
 This lens is most useful when teams are deciding:
 
@@ -69,7 +113,10 @@ This lens is most useful when teams are deciding:
 - whether reimbursement timing needs to be part of the launch narrative,
 - and whether the evidence package should emphasize economic recovery, not just clinical benefit.
 
+<MethodologyNote>
+This piece is a structured interpretation of inpatient reimbursement timing rather than a single-dataset quantitative study. NTAP, coding, and DRG alignment are treated as a sequence problem because facility adoption depends on when the economics become workable, not just on whether the therapy is clinically differentiated.
+</MethodologyNote>
+
 The practical test is simple:
 
 > If reimbursement lags the product, adoption lags the product.
-

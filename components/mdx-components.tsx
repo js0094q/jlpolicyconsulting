@@ -1,8 +1,24 @@
 import Link from "next/link";
 import type { MDXComponents } from "mdx/types";
+import { Callout } from "@/components/content/Callout";
+import { ComparisonTable } from "@/components/content/ComparisonTable";
+import { DataTable } from "@/components/content/DataTable";
+import { Figure } from "@/components/content/Figure";
+import { KeyTakeaways } from "@/components/content/KeyTakeaways";
+import { MethodologyNote } from "@/components/content/MethodologyNote";
+import { Timeline } from "@/components/content/Timeline";
+import { WhyItMatters } from "@/components/content/WhyItMatters";
 import { isSafeExternalHref } from "@/lib/url-safety";
 
 export const mdxComponents: MDXComponents = {
+  KeyTakeaways,
+  WhyItMatters,
+  ComparisonTable,
+  DataTable,
+  Figure,
+  Timeline,
+  MethodologyNote,
+  Callout,
   h2: ({ children }) => <h2 className="mt-12 text-3xl leading-tight text-ink">{children}</h2>,
   h3: ({ children }) => <h3 className="mt-10 text-2xl leading-tight text-ink">{children}</h3>,
   p: ({ children }) => <p className="mt-5 font-serif text-[18px] leading-8 text-[var(--color-muted)]">{children}</p>,

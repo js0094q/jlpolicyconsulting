@@ -7,88 +7,106 @@ import { absoluteUrl, siteConfig } from "@/lib/site";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Reimbursement Strategy, Provider Economics, and Market Access",
+  title: "Health Policy, Reimbursement, and Market Access Advisory",
   description:
-    "Editorial analysis and advisory on reimbursement mechanics, payer behavior, provider economics, and market access strategy.",
+    "JL Policy Consulting helps teams interpret reimbursement mechanics, payer behavior, provider economics, and market access risk.",
   path: "/",
   kicker: "JL Policy Consulting, LLC",
   keywords: [
-    "pharmaceutical reimbursement strategy",
-    "drug pricing policy",
+    "health policy advisory",
+    "reimbursement strategy",
     "market access strategy",
     "Medicare Part D policy",
-    "PBM formulary dynamics",
-    "payer economics",
+    "PBM and formulary dynamics",
+    "provider economics",
   ],
 });
 
 const proofSignals = [
   {
-    value: "10+",
-    label: "Years in reimbursement, pricing, and market access",
+    value: "Policy + data",
+    label: "Policy analysis grounded in structural rules and observable market behavior",
   },
   {
-    value: "100+",
-    label: "Policy analyses spanning CMS, Part D, formulary, and provider economics",
+    value: "Commercial relevance",
+    label: "Work framed around decisions that affect launch, access, and in-market strategy",
   },
   {
-    value: "50+",
-    label: "Client projects across manufacturer strategy and commercialization support",
+    value: "Cross-functional",
+    label: "Perspective built to be useful to policy, access, and commercialization teams",
   },
   {
-    value: "Gross-to-Net",
-    label: "Gross-to-net calculators and reimbursement readiness models for launch planning",
+    value: "Decision-ready output",
+    label: "Concise deliverables that translate reimbursement issues into action",
   },
 ] as const;
 
-const featuredWork = [
+const problemAreas = [
   {
-    title: "NTAP, DRG, and inpatient reimbursement strategy",
+    title: "Medicare reimbursement and policy change",
     summary:
-      "Analysis for launch teams assessing how coding timing, DRG fit, NTAP eligibility, and hospital margin pressure shape early inpatient adoption.",
-    points: [
-      "Launch viability when reimbursement lags clinical uptake",
-      "Hospital exposure under existing DRG payment mechanics",
-      "Strategic readouts built for commercial, access, and investor audiences",
-    ],
-    href: "/research/ntap-drg-hospital-adoption-problem",
+      "CMS decisions, coding timing, and payment design can change launch assumptions before a product reaches normal adoption.",
   },
   {
-    title: "Provider economics, site-of-care strategy, and reimbursement execution",
+    title: "Drug pricing and gross-to-net pressure",
     summary:
-      "Work centered on buy-and-bill economics, white-bagging exposure, 340B dynamics, pass-through timing, and claim friction that can suppress use even when demand is clinically justified.",
-    points: [
-      "Net cost and margin pressure at the site-of-care level",
-      "Channel and specialty pharmacy implications for uptake",
-      "Execution-oriented deliverables for launch and field reimbursement teams",
+      "List-to-net tension, rebate design, and net pricing mechanics affect both commercial planning and market access positioning.",
+  },
+  {
+    title: "PBM, formulary, and payer behavior",
+    summary:
+      "Tiering, prior authorization, step therapy, and benefit design often drive access friction even when the clinical case is strong.",
+  },
+  {
+    title: "Biosimilars, generics, and commercialization economics",
+    summary:
+      "Competitive access, pricing, and channel design shape whether lower-cost alternatives actually gain traction in the market.",
+  },
+] as const;
+
+const consultingAreas = [
+  {
+    title: "Reimbursement strategy",
+    summary:
+      "Structure, timing, and payment mechanics that shape whether coverage is operationally viable.",
+    details: [
+      "For launch and market access teams evaluating provider and payer readiness.",
+      "Informs reimbursement planning, account strategy, and launch sequencing.",
     ],
-    href: "/insights/reimbursement-readiness",
+  },
+  {
+    title: "Medicare and drug pricing policy",
+    summary:
+      "Policy shifts that affect Part D design, payment rules, and commercial assumptions.",
+    details: [
+      "For leaders tracking CMS changes, pricing pressure, and policy exposure.",
+      "Informs policy response, scenario planning, and cross-functional communication.",
+    ],
+  },
+  {
+    title: "Market access and payer dynamics",
+    summary:
+      "How plan design, formulary movement, and utilization management alter access in practice.",
+    details: [
+      "For payer-facing strategy, government affairs, and commercialization teams.",
+      "Informs access strategy, evidence framing, and launch risk assessment.",
+    ],
+  },
+  {
+    title: "Biosimilars and commercialization economics",
+    summary:
+      "Pricing, channel, and adoption dynamics that shape competitive uptake and positioning.",
+    details: [
+      "For teams working through competitive response and market structure change.",
+      "Informs pricing, channel strategy, and lifecycle planning.",
+    ],
   },
 ] as const;
 
-const strategicQuestions = [
-  "How will reimbursement mechanics affect launch adoption once the product reaches provider accounts?",
-  "Where does provider margin break under buy-and-bill, DRG, OPPS, or specialty channel reimbursement?",
-  "How do payer controls shift access even when the clinical case is strong?",
-  "What signals in Part D, PBM, or formulary design indicate commercial pressure ahead?",
-] as const;
-
-const reimbursementSignalRows = [
-  {
-    step: "01",
-    title: "Reimbursement path",
-    detail: "Coding, payment timing, and coverage rules determine whether access is operationally viable.",
-  },
-  {
-    step: "02",
-    title: "Provider economics",
-    detail: "Margin, site-of-care fit, and channel mechanics often shape uptake more than headline clinical value.",
-  },
-  {
-    step: "03",
-    title: "Adoption outcome",
-    detail: "Products scale when reimbursement, coverage, and provider execution align.",
-  },
+const perspectivePoints = [
+  "Policy is read through actual payer, provider, and channel behavior.",
+  "Reimbursement analysis is tied to the commercial decision it informs.",
+  "Outputs are concise enough to use in strategy discussions and executive review.",
 ] as const;
 
 function SectionHeading({
@@ -97,12 +115,18 @@ function SectionHeading({
   align = "left",
 }: {
   id: string;
-  children: React.ReactNode;
+  children: string;
   align?: "left" | "center";
 }) {
   return (
     <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
-      <div className={align === "center" ? "mx-auto h-px w-16 bg-[var(--color-accent)]" : "h-px w-16 bg-[var(--color-accent)]"} />
+      <div
+        className={
+          align === "center"
+            ? "mx-auto h-px w-16 bg-[var(--color-accent)]"
+            : "h-px w-16 bg-[var(--color-accent)]"
+        }
+      />
       <h2 id={id} className="section-title mt-6 text-balance">
         {children}
       </h2>
@@ -143,48 +167,128 @@ export default async function HomePage() {
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.12fr)_minmax(18rem,0.88fr)] lg:items-start">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(18rem,0.92fr)] lg:items-start">
             <div className="max-w-3xl">
               <p className="kicker">JL Policy Consulting, LLC</p>
-              <h1 className="mt-5 max-w-[12ch] font-serif text-[clamp(2.2rem,4vw,3.55rem)] leading-[1.04] tracking-[-0.03em] text-ink">
-                Commercial strategy informed by reimbursement and coverage reality.
+              <h1 className="mt-5 max-w-[13ch] font-serif text-[clamp(2.55rem,4vw,3.1rem)] leading-[1.03] tracking-[-0.03em] text-ink">
+                Policy, reimbursement, and market access analysis for commercial decisions.
               </h1>
-              <p className="mt-5 max-w-xl text-[1rem] leading-7 text-[var(--color-muted)]">
-                Policy, payment, and provider economics analysis that shows adoption depends on
-                more than clinical value.
+              <p className="mt-5 max-w-2xl text-[1rem] leading-7 text-[var(--color-muted)]">
+                The firm helps manufacturers and strategy teams interpret payment mechanics, payer
+                behavior, and provider economics so access questions become decision-ready.
               </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="/consulting" className="button-primary inline-flex items-center rounded-md px-6 py-3">
+                  View Consulting
+                </Link>
+                <Link href="/insights" className="button-secondary inline-flex items-center rounded-md px-6 py-3">
+                  Read Insights
+                </Link>
+              </div>
             </div>
 
-            <div className="paper-panel p-4 sm:p-6">
-              <p className="kicker">Current reimbursement signal</p>
-              <div className="mt-4 space-y-0">
-                {reimbursementSignalRows.map((row, index) => (
-                  <div
-                    key={row.title}
-                    className={index === 0 ? "" : "mt-3 border-t border-[var(--color-border)] pt-3 sm:mt-4 sm:pt-4"}
-                  >
-                    <div className="flex items-start gap-3 sm:gap-4">
-                      <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center border border-[var(--color-accent)] text-[9px] font-semibold tracking-[0.16em] text-[var(--color-accent)] sm:h-7 sm:w-7 sm:text-[10px]">
-                        {row.step}
-                      </span>
-                      <div className="min-w-0">
-                        <p className="font-serif text-[1rem] leading-tight text-ink sm:text-[1.05rem]">
-                          {row.title}
-                        </p>
-                        <p className="mt-1.5 text-[0.8rem] leading-5 text-[var(--color-muted)] sm:mt-2 sm:text-sm sm:leading-6">
-                          {row.detail}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+            <div className="paper-panel p-5 sm:p-6">
+              <p className="kicker">What the work does</p>
+              <div className="mt-4 space-y-4">
+                <div>
+                  <p className="font-serif text-[1.05rem] leading-tight text-ink">
+                    Connect policy mechanics to commercial implications.
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">
+                    The analysis does not stop at interpretation. It shows where reimbursement,
+                    coverage, and channel structure change planning assumptions.
+                  </p>
+                </div>
+                <div className="border-t border-[var(--color-border)] pt-4">
+                  <p className="font-serif text-[1.05rem] leading-tight text-ink">
+                    Focus on the decisions that matter.
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">
+                    Work is built for launch, access, pricing, policy response, and stakeholder
+                    communication.
+                  </p>
+                </div>
+                <div className="border-t border-[var(--color-border)] pt-4">
+                  <p className="font-serif text-[1.05rem] leading-tight text-ink">
+                    Keep the output usable.
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">
+                    Deliverables are concise, structured, and ready for executive review or working
+                    sessions.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </Container>
       </section>
 
-      <section className="border-b border-[var(--color-border)] py-12 sm:py-14" aria-label="Firm proof">
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20" aria-label="What I help solve">
+        <Container>
+          <SectionHeading id="solve-heading">What I help solve</SectionHeading>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {problemAreas.map((area) => (
+              <article key={area.title} className="surface-card p-6 sm:p-7">
+                <h3 className="text-[1.35rem] leading-tight text-ink">{area.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{area.summary}</p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section id="perspective" className="border-b border-[var(--color-border)] py-16 sm:py-20">
+        <Container>
+          <SectionHeading id="perspective-heading">Why this perspective is different</SectionHeading>
+          <div className="mt-10 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+            <div className="max-w-3xl">
+              <p className="text-base leading-8 text-[var(--color-muted)]">
+                Generic policy commentary often stops at describing what changed. This work
+                connects policy design, coding and payment mechanics, payer controls, and provider
+                economics so the commercial implication is visible.
+              </p>
+              <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                The result is analysis that helps teams judge launch risk, access friction, and
+                where reimbursement structure will matter most.
+              </p>
+            </div>
+
+            <div className="surface-card p-6 sm:p-7">
+              <p className="kicker">Perspective points</p>
+              <ul className="mt-4 space-y-4 text-sm leading-7 text-[var(--color-muted)]">
+                {perspectivePoints.map((point) => (
+                  <li key={point} className="border-t border-[var(--color-border)] pt-4 first:border-t-0 first:pt-0">
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section id="consulting-areas" className="border-b border-[var(--color-border)] py-16 sm:py-20">
+        <Container>
+          <SectionHeading id="consulting-areas-heading">Selected consulting areas</SectionHeading>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {consultingAreas.map((area) => (
+              <article key={area.title} className="surface-card p-6 sm:p-7">
+                <h3 className="text-[1.35rem] leading-tight text-ink">{area.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{area.summary}</p>
+                <div className="mt-5 space-y-4 border-t border-[var(--color-border)] pt-4">
+                  {area.details.map((detail) => (
+                    <p key={detail} className="text-sm leading-7 text-[var(--color-muted)]">
+                      {detail}
+                    </p>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-[var(--color-border)] py-12 sm:py-14" aria-label="Credibility strip">
         <Container>
           <div className="grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-2 xl:grid-cols-4">
             {proofSignals.map((signal) => (
@@ -199,135 +303,88 @@ export default async function HomePage() {
 
       <section id="featured-work" className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <SectionHeading id="featured-work-heading">Featured flagship work</SectionHeading>
+          <SectionHeading id="featured-work-heading">Featured insight and research</SectionHeading>
           <p className="mt-6 max-w-3xl text-base leading-8 text-[var(--color-muted)]">
-            The firm&apos;s strongest market signal is concrete reimbursement and access work that connects policy mechanics to launch execution, provider behavior, and commercial exposure.
+            Editorial work shows how the consulting perspective is applied in practice. The focus
+            is specific, selective, and tied to the same reimbursement and access questions that
+            drive client work.
           </p>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            {featuredWork.map((item) => (
-              <article key={item.title} className="surface-card border-t-2 border-t-[var(--color-accent)] p-7 sm:p-8">
-                <p className="kicker">Featured work area</p>
-                <h3 className="mt-4 text-[clamp(1.65rem,2.6vw,2.2rem)] leading-tight text-ink">
-                  {item.title}
-                </h3>
-                <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">{item.summary}</p>
-                <ul className="mt-6 space-y-3 text-sm leading-7 text-[var(--color-ink)]">
-                  {item.points.map((point) => (
-                    <li key={point} className="border-t border-[var(--color-border)] pt-3">
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-                <Link href={item.href} className="editorial-link mt-6 inline-flex">
-                  Read the related piece
-                </Link>
-              </article>
-            ))}
-          </div>
-        </Container>
-      </section>
+            <article className="surface-card flex h-full flex-col border-t-2 border-t-[var(--color-accent)] p-7 sm:p-8">
+              <p className="kicker">Featured insight</p>
+              {featuredInsight ? (
+                <>
+                  <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)]">
+                    {formatDisplayDate(featuredInsight.publishDate).toUpperCase()} • {featuredInsight.category.toUpperCase()}
+                  </p>
+                  <h3 className="mt-4 text-[clamp(1.6rem,2.5vw,2.1rem)] leading-tight text-ink">
+                    {featuredInsight.title}
+                  </h3>
+                  <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                    {featuredInsight.summary}
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-3 text-xs text-[var(--color-muted)]">
+                    <span>{featuredInsight.readingTime}</span>
+                  </div>
+                  <Link href={featuredInsight.url} className="editorial-link mt-7 inline-flex">
+                    Read insight
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <h3 className="mt-4 text-[clamp(1.6rem,2.5vw,2.1rem)] leading-tight text-ink">
+                    Insight archive
+                  </h3>
+                  <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                    Short-form policy commentary appears here as new insight pieces are published.
+                  </p>
+                  <Link href="/insights" className="editorial-link mt-7 inline-flex">
+                    Browse insights
+                  </Link>
+                </>
+              )}
+            </article>
 
-      <section id="questions" className="border-b border-[var(--color-border)] py-16 sm:py-20">
-        <Container>
-          <SectionHeading id="questions-heading">Strategic questions addressed</SectionHeading>
-          <div className="mt-10 grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] lg:grid-cols-2">
-            {strategicQuestions.map((question) => (
-              <article key={question} className="bg-[var(--color-surface)] px-6 py-6 sm:px-7">
-                <p className="font-serif text-[1.35rem] leading-8 text-ink">{question}</p>
-              </article>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section id="insights" className="border-b border-[var(--color-border)] py-16 sm:py-20">
-        <Container>
-          <SectionHeading id="insights-heading">Latest insights and research</SectionHeading>
-          <p className="mt-6 max-w-3xl text-base leading-8 text-[var(--color-muted)]">
-            Recent publication work translates reimbursement structure, payer behavior, and market signals into decision-ready interpretation.
-          </p>
-
-          <div className="mt-10 grid grid-cols-1 gap-7 xl:grid-cols-[0.95fr_1.05fr]">
-            {featuredInsight ? (
-              <article className="surface-card flex h-full flex-col border-t-2 border-t-[var(--color-accent)] p-7 sm:p-8">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)]">
-                  {formatDisplayDate(featuredInsight.publishDate).toUpperCase()} • {featuredInsight.category.toUpperCase()}
-                </p>
-                <h3 className="mt-5 text-[clamp(1.65rem,2.8vw,2.25rem)] leading-tight text-ink">
-                  {featuredInsight.title}
-                </h3>
-                <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
-                  {featuredInsight.summary}
-                </p>
-                <p className="mt-5 text-xs leading-6 text-[var(--color-muted)]">
-                  {featuredInsight.readingTime}
-                </p>
-                <Link href={featuredInsight.url} className="editorial-link mt-7 inline-flex">
-                  Read insight
-                </Link>
-              </article>
-            ) : (
-              <article className="surface-card flex h-full flex-col border-t-2 border-t-[var(--color-accent)] p-7 sm:p-8">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-muted)]">
-                  INSIGHT ARCHIVE
-                </p>
-                <h3 className="mt-5 text-[clamp(1.65rem,2.8vw,2.25rem)] leading-tight text-ink">
-                  Commentary appears here as new insights are published
-                </h3>
-                <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
-                  Browse the insights archive for policy interpretation, launch access commentary, and reimbursement analysis.
-                </p>
-                <Link href="/insights" className="editorial-link mt-7 inline-flex">
-                  Browse insights
-                </Link>
-              </article>
-            )}
-
-            {featuredResearch ? (
-              <article className="surface-card flex h-full flex-col border-t-2 border-t-[var(--color-accent)] p-7 sm:p-8" aria-label="Featured research preview">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="tag">Research analysis</span>
-                  <span className="tag">{featuredResearch.category}</span>
-                </div>
-                <h3 className="mt-5 text-[clamp(1.4rem,2.4vw,2rem)] leading-tight text-ink">
-                  {featuredResearch.title}
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">{featuredResearch.summary}</p>
-                <div className="mt-5 flex flex-wrap gap-3 text-xs text-[var(--color-muted)]">
-                  <time dateTime={featuredResearch.publishDate}>
-                    {formatDisplayDate(featuredResearch.publishDate)}
-                  </time>
-                  <span>•</span>
-                  <span>{featuredResearch.readingTime}</span>
-                </div>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {featuredResearch.tags.slice(0, 3).map((tag) => (
-                    <span key={tag} className="tag">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <Link href={featuredResearch.url} className="editorial-link mt-6 inline-flex">
-                  View research
-                </Link>
-              </article>
-            ) : (
-              <article className="surface-card flex h-full flex-col border-t-2 border-t-[var(--color-accent)] p-7 sm:p-8" aria-label="Research archive preview">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="tag">Research analysis</span>
-                </div>
-                <h3 className="mt-5 text-[clamp(1.4rem,2.4vw,2rem)] leading-tight text-ink">
-                  Data-backed research appears here as new work is published
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
-                  Browse the research archive for reimbursement modeling, payer mechanics, and structured market access studies.
-                </p>
-                <Link href="/research" className="editorial-link mt-6 inline-flex">
-                  View research
-                </Link>
-              </article>
-            )}
+            <article className="surface-card flex h-full flex-col border-t-2 border-t-[var(--color-accent)] p-7 sm:p-8" aria-label="Featured research preview">
+              <p className="kicker">Featured research</p>
+              {featuredResearch ? (
+                <>
+                  <div className="mt-4 flex flex-wrap items-center gap-2">
+                    <span className="tag">Research analysis</span>
+                    <span className="tag">{featuredResearch.category}</span>
+                  </div>
+                  <h3 className="mt-4 text-[clamp(1.6rem,2.5vw,2.1rem)] leading-tight text-ink">
+                    {featuredResearch.title}
+                  </h3>
+                  <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                    {featuredResearch.summary}
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-3 text-xs text-[var(--color-muted)]">
+                    <time dateTime={featuredResearch.publishDate}>
+                      {formatDisplayDate(featuredResearch.publishDate)}
+                    </time>
+                    <span>•</span>
+                    <span>{featuredResearch.readingTime}</span>
+                  </div>
+                  <Link href={featuredResearch.url} className="editorial-link mt-7 inline-flex">
+                    Read research
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <h3 className="mt-4 text-[clamp(1.6rem,2.5vw,2.1rem)] leading-tight text-ink">
+                    Research archive
+                  </h3>
+                  <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                    Longer-form analysis appears here as new research is published.
+                  </p>
+                  <Link href="/research" className="editorial-link mt-7 inline-flex">
+                    Browse research
+                  </Link>
+                </>
+              )}
+            </article>
           </div>
         </Container>
       </section>
@@ -339,11 +396,18 @@ export default async function HomePage() {
               Discuss the reimbursement question underneath the launch plan.
             </SectionHeading>
             <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-8 text-[var(--color-muted)]">
-              JL Policy Consulting supports teams evaluating market access risk, provider economics, formulary pressure, and policy exposure before those issues become commercial surprises.
+              JL Policy Consulting supports teams evaluating market access risk, provider
+              economics, formulary pressure, and policy exposure before those issues become
+              commercial surprises.
             </p>
-            <Link href="/contact" className="button-primary mt-8 inline-flex items-center rounded-md px-7 py-3">
-              Contact
-            </Link>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <Link href="/contact" className="button-primary inline-flex items-center rounded-md px-7 py-3">
+                Contact Us
+              </Link>
+              <Link href="/consulting" className="button-secondary inline-flex items-center rounded-md px-7 py-3">
+                View Consulting
+              </Link>
+            </div>
           </div>
         </Container>
       </section>

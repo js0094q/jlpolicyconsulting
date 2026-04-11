@@ -11,6 +11,8 @@ const eslintConfig = defineConfig([
     ".next/**",
     "out/**",
     "build/**",
+    "deliverables/**",
+    "tmp/**",
     "next-env.d.ts",
     "docs/archive/prototypes/enhance-branding-implementation-plan-vite/**",
   ]),
