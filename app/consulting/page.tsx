@@ -145,8 +145,10 @@ export default function ConsultingPage() {
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <SectionHeading id="value">Why teams use this work</SectionHeading>
-          <ul className="mt-8 max-w-3xl list-disc space-y-4 pl-5">
+          <SectionHeading id="value" align="center">
+            Why teams use this work
+          </SectionHeading>
+          <ul className="mx-auto mt-8 max-w-3xl list-disc space-y-4 pl-5 text-left">
             <li className="text-base leading-8 text-[var(--color-muted)]">
               Connects policy mechanics to real commercial decisions
             </li>
@@ -162,8 +164,10 @@ export default function ConsultingPage() {
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <SectionHeading id="outputs">Typical outputs</SectionHeading>
-          <div className="mt-8 max-w-3xl space-y-4">
+          <SectionHeading id="outputs" align="center">
+            Typical outputs
+          </SectionHeading>
+          <div className="mx-auto mt-8 max-w-3xl space-y-4 text-center">
             <p className="text-base leading-8 text-[var(--color-muted)]">
               Support is scoped around the question at hand and typically delivered as strategic
               analysis, issue briefs, policy interpretation, quantitative review, decision support

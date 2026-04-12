@@ -54,15 +54,15 @@ export default function AboutPage() {
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="max-w-3xl">
+          <div className="mx-auto max-w-4xl text-center">
             <p className="kicker">About</p>
-            <h1 className="page-title max-w-[18ch]">
+            <h1 className="page-title mx-auto max-w-[26ch]">
               Policy, reimbursement, and market access analysis grounded in how rules show up in real payer and provider behavior.
             </h1>
-            <p className="page-lede max-w-3xl">
+            <p className="page-lede mx-auto max-w-4xl">
               JL Policy Consulting is led by Joseph Stewart. The perspective comes from work across manufacturer reimbursement and policy strategy, biosimilars policy, and public policy, and is designed to turn complex reimbursement and market structure questions into usable strategic analysis.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link href="/consulting" className="button-primary inline-flex items-center rounded-md px-6 py-3">
                 View Consulting
               </Link>
@@ -77,7 +77,9 @@ export default function AboutPage() {
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
           <div className="max-w-3xl">
-            <SectionHeading id="professional-perspective">Professional perspective</SectionHeading>
+            <SectionHeading id="professional-perspective" center>
+              Professional perspective
+            </SectionHeading>
             <div className="mt-6 space-y-4 text-base leading-8 text-[var(--color-muted)]">
               <p>
                 The work sits at the intersection of reimbursement mechanics, Medicare policy, payer behavior, provider economics, and commercialization strategy.
@@ -93,7 +95,9 @@ export default function AboutPage() {
       <section className="border-b border-[var(--color-border)] py-12 sm:py-14" aria-label="Credibility strip">
         <Container>
           <div className="max-w-5xl">
-            <SectionHeading id="why-this-perspective-is-useful">Why this perspective is useful</SectionHeading>
+            <SectionHeading id="why-this-perspective-is-useful" center>
+              Why this perspective is useful
+            </SectionHeading>
             <div className="mt-8 grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-3">
               {credibilityPoints.map((point) => (
                 <div key={point} className="bg-[var(--color-surface)] px-6 py-6">
