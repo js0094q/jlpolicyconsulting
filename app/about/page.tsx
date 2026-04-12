@@ -90,7 +90,7 @@ export default function AboutPage() {
 
       <section className="border-b border-[var(--color-border)] py-12 sm:py-14" aria-label="Credibility strip">
         <Container>
-          <div className="max-w-5xl">
+          <div className="mx-auto max-w-5xl text-center">
             <SectionHeading id="why-this-perspective-is-useful" center>
               Why this perspective is useful
             </SectionHeading>
