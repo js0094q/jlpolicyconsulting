@@ -23,7 +23,7 @@ export default async function InsightsPage() {
 
   return (
     <>
-      <section className="border-b border-[var(--color-border)] py-12 sm:py-14 lg:py-16">
+      <section className="py-12 sm:py-14 lg:py-16">
         <Container>
           <div className="mx-auto max-w-5xl lg:max-w-6xl">
             <h1 className="hero-title page-title max-w-[13ch]">Latest Insights</h1>
@@ -31,7 +31,7 @@ export default async function InsightsPage() {
         </Container>
       </section>
 
-      <section className="border-b border-[var(--color-border)] py-12 sm:py-14">
+      <section className="py-12 sm:py-14">
         <Container>
           {insights.length > 0 ? (
             <div className="line-list">
@@ -48,7 +48,6 @@ export default async function InsightsPage() {
           )}
         </Container>
       </section>
-
     </>
   );
 }

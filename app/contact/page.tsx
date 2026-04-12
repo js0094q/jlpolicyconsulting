@@ -33,7 +33,7 @@ function SectionHeading({
 }) {
   return (
     <div className="mx-auto max-w-3xl text-center">
-      <h2 id={id} className="section-title mt-6 text-balance">
+      <h2 id={id} className="section-title mt-6 text-center text-balance">
         {children}
       </h2>
     </div>

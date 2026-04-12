@@ -72,11 +72,11 @@ export default function AboutPage() {
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <div className="max-w-3xl">
+          <div className="mx-auto max-w-3xl text-center">
             <SectionHeading id="professional-perspective" center>
               Professional perspective
             </SectionHeading>
-            <div className="mt-6 space-y-4 text-base leading-8 text-[var(--color-muted)]">
+            <div className="mx-auto mt-6 max-w-3xl space-y-4 text-base leading-8 text-[var(--color-muted)]">
               <p>
                 The work sits at the intersection of reimbursement mechanics, Medicare policy, payer behavior, provider economics, and commercialization strategy.
               </p>
