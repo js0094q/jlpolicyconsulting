@@ -32,9 +32,9 @@ function SectionHeading({
   id: string;
   children: string;
   center?: boolean;
-  }) {
+}) {
   return (
-    <div className={center ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
+    <div className={center ? "w-full text-center" : "w-full"}>
       <h2
         id={id}
         className={`section-title mt-6 text-balance ${center ? "text-center" : ""}`}
@@ -72,11 +72,11 @@ export default function AboutPage() {
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto w-full text-center">
             <SectionHeading id="professional-perspective" center>
               Professional perspective
             </SectionHeading>
-            <div className="mx-auto mt-6 max-w-3xl space-y-4 text-base leading-8 text-[var(--color-muted)]">
+            <div className="mx-auto mt-6 w-full space-y-4 text-base leading-8 text-[var(--color-muted)]">
               <p>
                 The work sits at the intersection of reimbursement mechanics, Medicare policy, payer behavior, provider economics, and commercialization strategy.
               </p>
@@ -107,7 +107,7 @@ export default function AboutPage() {
 
       <section className="py-16 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-5xl text-center lg:max-w-6xl">
+          <div className="mx-auto w-full text-center">
             <SectionHeading id="about-cta" center>
               Move from background to the work itself
             </SectionHeading>
