@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/container";
-import { siteConfig } from "@/lib/site";
 import { createPageMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "Contact",
@@ -46,67 +46,77 @@ export default function ContactPage() {
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,0.82fr)] lg:items-start">
-            <div className="max-w-3xl">
-              <p className="kicker">Professional Contact</p>
-              <h1 className="page-title max-w-[12ch]">Direct contact for consulting and professional inquiries.</h1>
-              <p className="page-lede">
-                Use this page for consulting questions, strategic analysis requests, collaboration,
-                or other professional outreach. The path is intentionally simple.
-              </p>
-            </div>
-
-            <div className="surface-card p-6 sm:p-7">
-              <p className="kicker">Primary contact path</p>
-              <div className="mt-4 space-y-4">
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-accent-soft)]">
-                    Email
-                  </p>
-                  <a href={`mailto:${siteConfig.email}`} className="mt-2 inline-flex text-base text-ink underline decoration-[rgba(23,63,137,0.24)] decoration-1 underline-offset-4 hover:text-[var(--color-accent)]">
-                    {siteConfig.email}
-                  </a>
-                </div>
-                <div className="border-t border-[var(--color-border)] pt-4">
-                  <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-accent-soft)]">
-                    LinkedIn
-                  </p>
-                  <a
-                    href={siteConfig.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 inline-flex text-base text-ink underline decoration-[rgba(23,63,137,0.24)] decoration-1 underline-offset-4 hover:text-[var(--color-accent)]"
-                  >
-                    View Joseph Stewart on LinkedIn
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-3xl">
+            <h1 className="page-title max-w-[10ch]">Contact</h1>
+            <p className="page-lede mt-6">Direct contact for consulting and professional inquiries.</p>
+            <p className="mt-4 max-w-2xl text-base leading-8 text-[var(--color-muted)]">
+              Use this page for consulting questions, strategic analysis requests, collaboration,
+              speaking, writing, or other professional outreach. The path is intentionally simple.
+            </p>
           </div>
         </Container>
       </section>
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,0.76fr)] lg:items-start">
-            <div>
-              <SectionHeading id="contact-context">What to send</SectionHeading>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-[var(--color-muted)]">
-                If you are reaching out about an advisory question, include the business issue,
-                timing, and any relevant policy or market context. That helps keep the response
-                specific and efficient.
-              </p>
-            </div>
+          <div className="max-w-3xl">
+            <SectionHeading id="primary-contact">Primary contact</SectionHeading>
+            <dl className="mt-8 border-y border-[var(--color-border)]">
+              <div className="grid gap-3 py-5 sm:grid-cols-[10rem_minmax(0,1fr)] sm:gap-6">
+                <dt className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-accent-soft)]">
+                  Email
+                </dt>
+                <dd>
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="text-base text-ink underline decoration-[rgba(23,63,137,0.24)] decoration-1 underline-offset-4 hover:text-[var(--color-accent)]"
+                  >
+                    {siteConfig.email}
+                  </a>
+                </dd>
+              </div>
+              <div className="grid gap-3 border-t border-[var(--color-border)] py-5 sm:grid-cols-[10rem_minmax(0,1fr)] sm:gap-6">
+                <dt className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-accent-soft)]">
+                  LinkedIn
+                </dt>
+                <dd>
+                  <a
+                    href={siteConfig.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base text-ink underline decoration-[rgba(23,63,137,0.24)] decoration-1 underline-offset-4 hover:text-[var(--color-accent)]"
+                  >
+                    View Joseph Stewart on LinkedIn
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </Container>
+      </section>
 
-            <div className="surface-card p-6 sm:p-7">
-              <p className="kicker">Appropriate inquiries</p>
-              <ul className="mt-4 space-y-3 text-sm leading-7 text-[var(--color-muted)]">
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
+        <Container>
+          <div className="max-w-3xl">
+            <SectionHeading id="what-to-include">What to include</SectionHeading>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[var(--color-muted)]">
+              If you are reaching out about an advisory question, include the business issue,
+              timing, and any relevant policy or market context. That helps keep the response
+              specific and efficient.
+            </p>
+
+            <div className="mt-10">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-accent-soft)]">
+                Appropriate inquiries
+              </h3>
+              <ul className="mt-4 list-disc space-y-3 pl-5 text-base leading-8 text-[var(--color-muted)]">
                 {inquiryTypes.map((item) => (
-                  <li key={item} className="border-t border-[var(--color-border)] pt-3">
-                    {item}
-                  </li>
+                  <li key={item}>{item}</li>
                 ))}
               </ul>
+              <p className="mt-6 text-base leading-8 text-[var(--color-muted)]">
+                Use email for the fastest response.
+              </p>
             </div>
           </div>
         </Container>
@@ -114,14 +124,12 @@ export default function ContactPage() {
 
       <section className="py-16 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-3xl text-center">
-            <SectionHeading id="contact-cta">Use email for the fastest response.</SectionHeading>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[var(--color-muted)]">
-              The page is intentionally low-friction. If email is easier, use the address above;
-              if LinkedIn is more useful, that path is available too.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <a href={`mailto:${siteConfig.email}`} className="button-primary inline-flex items-center rounded-md px-7 py-3">
+          <div className="max-w-3xl">
+            <div className="flex flex-wrap gap-3">
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="button-primary inline-flex items-center rounded-md px-7 py-3"
+              >
                 Email Directly
               </a>
               <Link href="/consulting" className="button-secondary inline-flex items-center rounded-md px-7 py-3">

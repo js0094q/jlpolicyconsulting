@@ -6,7 +6,7 @@ export const siteConfig = {
   lastUpdated: "2026-03-20T00:00:00.000Z",
   description:
     "Editorial analysis and advisory on reimbursement mechanics, payer behavior, provider economics, and market access.",
-  email: "contact@jlpolicyconsulting.com",
+  email: "Joseph.Stewart@JLPolicyConsulting.com",
   linkedin: "https://www.linkedin.com/in/joseph-stewart-mph-cpht-309bb5215",
   navItems: [
     { label: "About", href: "/about" },
