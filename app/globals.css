@@ -110,6 +110,10 @@ body {
     @apply mt-2 font-serif text-[clamp(2.5rem,3.8vw,3rem)] leading-[1.03] tracking-[-0.03em];
   }
 
+  .hero-title {
+    @apply lg:max-w-[34ch];
+  }
+
   .page-lede {
     @apply mt-4 max-w-4xl text-base leading-8 text-[var(--color-muted)];
   }

@@ -110,9 +110,9 @@ export default function ConsultingPage() {
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="mx-auto max-w-5xl text-center">
+          <div className="mx-auto max-w-5xl text-center lg:max-w-6xl">
             <p className="kicker">Consulting</p>
-            <h1 className="page-title mx-auto max-w-[18ch]">
+            <h1 className="hero-title page-title mx-auto max-w-[18ch]">
               Strategic advisory on reimbursement, market access, and policy decisions.
             </h1>
             <p className="page-lede mx-auto max-w-4xl">
@@ -148,7 +148,7 @@ export default function ConsultingPage() {
           <SectionHeading id="value" align="center">
             Why teams use this work
           </SectionHeading>
-          <ul className="mx-auto mt-8 max-w-3xl list-disc space-y-4 pl-5 text-left">
+          <ul className="mx-auto mt-8 max-w-3xl list-none space-y-4 p-0 text-center">
             <li className="text-base leading-8 text-[var(--color-muted)]">
               Connects policy mechanics to real commercial decisions
             </li>

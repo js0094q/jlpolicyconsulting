@@ -25,8 +25,8 @@ export default async function InsightsPage() {
     <>
       <section className="border-b border-[var(--color-border)] py-12 sm:py-14 lg:py-16">
         <Container>
-          <div className="max-w-3xl">
-            <h1 className="page-title max-w-[13ch]">Latest Insights</h1>
+          <div className="mx-auto max-w-5xl lg:max-w-6xl">
+            <h1 className="hero-title page-title max-w-[13ch]">Latest Insights</h1>
           </div>
         </Container>
       </section>

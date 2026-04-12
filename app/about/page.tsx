@@ -32,17 +32,13 @@ function SectionHeading({
   id: string;
   children: string;
   center?: boolean;
-}) {
+  }) {
   return (
     <div className={center ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
-      <div
-        className={
-          center
-            ? "mx-auto h-px w-16 bg-[var(--color-accent)]"
-            : "h-px w-16 bg-[var(--color-accent)]"
-        }
-      />
-      <h2 id={id} className="section-title mt-6 text-balance">
+      <h2
+        id={id}
+        className={`section-title mt-6 text-balance ${center ? "text-center" : ""}`}
+      >
         {children}
       </h2>
     </div>
@@ -54,9 +50,9 @@ export default function AboutPage() {
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="mx-auto max-w-4xl text-center">
+          <div className="mx-auto max-w-5xl text-center lg:max-w-6xl">
             <p className="kicker">About</p>
-            <h1 className="page-title mx-auto max-w-[26ch]">
+            <h1 className="hero-title page-title mx-auto max-w-[26ch]">
               Policy, reimbursement, and market access analysis grounded in how rules show up in real payer and provider behavior.
             </h1>
             <p className="page-lede mx-auto max-w-4xl">
@@ -111,7 +107,7 @@ export default function AboutPage() {
 
       <section className="py-16 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-5xl text-center lg:max-w-6xl">
             <SectionHeading id="about-cta" center>
               Move from background to the work itself
             </SectionHeading>

@@ -102,14 +102,14 @@ export default async function HomePage() {
   return (
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
-        <Container className="max-w-[88rem]">
-          <div className="mx-auto max-w-4xl text-center">
+        <Container className="max-w-[92rem]">
+          <div className="mx-auto max-w-5xl text-center lg:max-w-6xl">
             <p className="kicker">JL Policy Consulting, LLC</p>
-            <h1 className="mx-auto mt-5 max-w-[20ch] font-serif text-[clamp(2.7rem,4.2vw,3.65rem)] leading-[1.02] tracking-[-0.03em] text-ink">
+            <h1 className="hero-title mx-auto mt-5 max-w-[24ch] font-serif text-[clamp(2.7rem,4.2vw,3.65rem)] leading-[1.02] tracking-[-0.03em] text-ink">
               Policy, reimbursement, and market access analysis for complex health care
               decisions.
             </h1>
-            <p className="mx-auto mt-5 max-w-2xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
+            <p className="mx-auto mt-5 max-w-3xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
               We help manufacturers, payers, professional societies, patient advocacy groups, and
               other healthcare stakeholders translate federal and commercial payment mechanics,
               payer behavior, and provider economics into clear reimbursement and access strategy.
