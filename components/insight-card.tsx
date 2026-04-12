@@ -8,10 +8,8 @@ interface InsightCardProps {
 export function InsightCard({ article }: InsightCardProps) {
   return (
     <article className="line-item">
-      <div className="flex flex-wrap items-center gap-3 text-xs text-[var(--color-muted)]">
+      <div className="flex flex-wrap items-center gap-2 text-xs text-[var(--color-muted)]">
         <time dateTime={article.publishDate}>{formatDisplayDate(article.publishDate)}</time>
-        <span>•</span>
-        <span>{article.readingTime}</span>
         <span>•</span>
         <span>{article.category}</span>
       </div>
