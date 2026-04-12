@@ -107,7 +107,7 @@ function SectionHeading({
             : "h-px w-16 bg-[var(--color-accent)]"
         }
       />
-      <h2 id={id} className="section-title mt-6 text-balance">
+      <h2 id={id} className={`section-title mt-6 text-balance ${align === "center" ? "text-center" : ""}`}>
         {children}
       </h2>
     </div>
