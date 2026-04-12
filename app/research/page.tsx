@@ -7,7 +7,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Research",
   description:
-    "Longer-form analytical work on reimbursement modeling, payer mechanics, market structure, and healthcare data.",
+    "Deeper analysis on reimbursement, policy design, market structure, and access dynamics.",
   path: "/research",
   kicker: "Research",
   keywords: [
@@ -41,7 +41,7 @@ function FeaturedResearchCard({
         <span className="tag">Research analysis</span>
         <span className="tag">{category}</span>
       </div>
-      <h3 className="mt-4 text-[clamp(1.65rem,2.55vw,2.15rem)] leading-tight text-ink">{title}</h3>
+      <h3 className="mt-4 text-[clamp(1.6rem,2.35vw,2.05rem)] leading-tight text-ink">{title}</h3>
       <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">{summary}</p>
       <div className="mt-5 flex flex-wrap gap-3 text-xs text-[var(--color-muted)]">
         <time dateTime={publishDate}>{formatDisplayDate(publishDate)}</time>
@@ -58,90 +58,61 @@ function FeaturedResearchCard({
 export default async function ResearchPage() {
   const posts = await getResearch();
   const [featuredResearch, ...restResearch] = posts;
+  const focusAreas = [
+    "Medicare policy",
+    "Pricing and gross-to-net",
+    "Provider economics",
+    "Formulary and access design",
+    "Healthcare data analysis",
+  ];
 
   return (
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,0.8fr)] lg:items-start">
-            <div className="max-w-3xl">
-              <p className="kicker">Research</p>
-              <h1 className="page-title max-w-[13ch]">Deeper analytical work on reimbursement and market structure.</h1>
-              <p className="page-lede">
-                Research is the more methodical layer of the site. It connects policy shifts to
-                plan behavior, pricing pressure, access friction, and commercial risk.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/insights" className="button-secondary inline-flex items-center rounded-md px-6 py-3">
-                  Explore Insights
-                </Link>
-                <Link href="/consulting" className="button-primary inline-flex items-center rounded-md px-6 py-3">
-                  View Consulting
-                </Link>
-              </div>
-            </div>
-
-            <div className="paper-panel p-5 sm:p-6">
-              <p className="kicker">Method note</p>
-              <ul className="mt-4 space-y-4 text-sm leading-7 text-[var(--color-muted)]">
-                <li className="border-t border-[var(--color-border)] pt-4">Quantitative policy analysis</li>
-                <li className="border-t border-[var(--color-border)] pt-4">Market dynamics and reimbursement interpretation</li>
-                <li className="border-t border-[var(--color-border)] pt-4">Structured reading of healthcare datasets and policy shifts</li>
-              </ul>
-            </div>
+          <div className="max-w-3xl">
+            <h1 className="page-title max-w-[13ch]">Research</h1>
+            <p className="page-lede">
+              Deeper analysis on reimbursement, policy design, market structure, and access
+              dynamics.
+            </p>
+            <p className="mt-4 max-w-4xl text-base leading-8 text-[var(--color-muted)]">
+              These pieces use data, policy mechanics, and structured evidence to answer practical
+              questions about coverage, pricing, provider economics, and commercial risk.
+            </p>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/insights" className="button-secondary inline-flex items-center rounded-md px-6 py-3">
+              Explore Insights
+            </Link>
+            <Link href="/consulting" className="button-primary inline-flex items-center rounded-md px-6 py-3">
+              View Consulting
+            </Link>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-2" aria-label="Research focus areas">
+            {focusAreas.map((area) => (
+              <span key={area} className="tag">
+                {area}
+              </span>
+            ))}
           </div>
         </Container>
       </section>
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,0.76fr)] lg:items-start">
-            <div>
-              <SectionHeading id="research-note">Research framing</SectionHeading>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-[var(--color-muted)]">
-                Research pieces are longer-form, more methodical, and designed to show how policy
-                design appears in observable market behavior. They sit apart from Insights so the
-                site can keep commentary and deeper analysis distinct.
-              </p>
-            </div>
-
-            <div className="surface-card p-6 sm:p-7">
-              <p className="kicker">What this section emphasizes</p>
-              <div className="mt-4 space-y-3 text-sm leading-7 text-[var(--color-muted)]">
-                <p>Evidence quality over volume.</p>
-                <p>Clear connection between method and implication.</p>
-                <p>Clean presentation of the analytical point.</p>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {featuredResearch ? (
-        <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
-          <Container>
-            <SectionHeading id="featured-research">Featured research</SectionHeading>
-            <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(18rem,0.95fr)]">
+          <SectionHeading id="featured-research">Featured research</SectionHeading>
+          {featuredResearch ? (
+            <div className="mt-10 max-w-4xl">
               <FeaturedResearchCard {...featuredResearch} />
-              <article className="surface-card p-6 sm:p-7">
-                <p className="kicker">Why this item is highlighted</p>
-                <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
-                  Featured research is chosen when it gives the clearest read on the site&apos;s
-                  analytical approach and its connection to reimbursement or access questions.
-                </p>
-                <div className="mt-5 space-y-3 border-t border-[var(--color-border)] pt-4 text-sm leading-7 text-[var(--color-muted)]">
-                  <p>Useful as a reference point for the deeper analytical layer of the site.</p>
-                  <p>Helps differentiate research from shorter-form commentary.</p>
-                </div>
-              </article>
             </div>
-          </Container>
-        </section>
-      ) : null}
+          ) : null}
+        </Container>
+      </section>
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <SectionHeading id="research-list">Research grid</SectionHeading>
+          <SectionHeading id="research-list">Research list</SectionHeading>
           {restResearch.length > 0 ? (
             <div className="mt-10 space-y-8">
               {restResearch.map((post) => (
@@ -162,19 +133,18 @@ export default async function ResearchPage() {
         <Container>
           <div className="mx-auto max-w-3xl text-center">
             <SectionHeading id="research-cta" align="center">
-              Need the practical version of the analysis?
+              Looking for a quicker summary view?
             </SectionHeading>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[var(--color-muted)]">
-              Research provides the deeper evidence base. Consulting turns that perspective into
-              advisory support. Contact is the direct path if there is a specific issue to work
-              through.
+              Insights covers the faster interpretive view. Research contains the longer-form
+              analytical work.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <Link href="/contact" className="button-primary inline-flex items-center rounded-md px-7 py-3">
-                Contact Us
+              <Link href="/insights" className="button-primary inline-flex items-center rounded-md px-7 py-3">
+                Explore Insights
               </Link>
-              <Link href="/consulting" className="button-secondary inline-flex items-center rounded-md px-7 py-3">
-                View Consulting
+              <Link href="/contact" className="button-secondary inline-flex items-center rounded-md px-7 py-3">
+                Contact Us
               </Link>
             </div>
           </div>
@@ -202,7 +172,7 @@ function SectionHeading({
             : "h-px w-16 bg-[var(--color-accent)]"
         }
       />
-      <h2 id={id} className="section-title mt-6 text-balance">
+      <h2 id={id} className={`section-title mt-6 text-balance ${align === "center" ? "text-center" : ""}`}>
         {children}
       </h2>
     </div>
