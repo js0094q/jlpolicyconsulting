@@ -110,17 +110,17 @@ export default function ConsultingPage() {
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="max-w-4xl">
+          <div className="mx-auto max-w-5xl text-center">
             <p className="kicker">Consulting</p>
-            <h1 className="page-title max-w-[15ch]">
+            <h1 className="page-title mx-auto max-w-[18ch]">
               Strategic advisory on reimbursement, market access, and policy decisions.
             </h1>
-            <p className="page-lede max-w-3xl">
+            <p className="page-lede mx-auto max-w-4xl">
               JL Policy Consulting helps teams work through the questions that sit between policy
               change and commercial execution, including reimbursement structure, payer behavior,
               provider economics, coding, and launch risk.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link href="/contact" className="button-primary inline-flex items-center rounded-md px-6 py-3">
                 Contact Us
               </Link>
