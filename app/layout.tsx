@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { safeJsonLd } from "@/lib/json-ld";
 import { buildOgImageUrl } from "@/lib/og";
 import { defaultKeywords, siteConfig } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -87,6 +88,7 @@ export default async function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: safeJsonLd(organizationSchema) }}
         />
+        <Analytics />
       </body>
     </html>
   );

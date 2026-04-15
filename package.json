@@ -16,6 +16,7 @@
     "verify": "npm run lint && npm run typecheck && npm run validate:content && npm run validate:codeowners && npm run test && npm run build"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "gray-matter": "^4.0.3",
     "next": "16.1.7",
     "next-mdx-remote": "^6.0.0",
