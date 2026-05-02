@@ -1,0 +1,104 @@
+---
+title: "MA-PD and PDP Diverged in Churn Intensity During the 2026Q1 Transition"
+summary: "In the 2025Q4 to 2026Q1 transition, both MA-PD and PDP showed heavy repricing among matched rows, but MA-PD had materially higher churn intensity. That difference changes how teams should interpret quarter-over-quarter access and pricing signals."
+publishDate: "2026-03-21"
+category: "Medicare Policy"
+tags:
+  - MA-PD
+  - PDP
+  - Medicare Part D
+  - Cost Sharing
+  - SPUF
+readingTime: "11 min read"
+seoTitle: "MA-PD vs PDP in Part D: Churn and Repricing Divergence in 2026Q1"
+seoDescription: "A decomposition-first view of MA-PD versus PDP in the 2025Q4 to 2026Q1 transition, showing that churn intensity diverged even when repricing rates were high in both segments."
+---
+
+## Metadata
+
+- Period analyzed: `2025Q3 to 2025Q4` and `2025Q4 to 2026Q1`
+- Segment definition: Medicare Advantage Prescription Drug plans (`MA-PD`) and stand-alone Prescription Drug Plans (`PDP`) using contract prefix mapping (`H/R` for MA-PD, `S` for PDP)
+- Data grain: contract-level decomposition from published repricing-versus-churn scorecards
+- Primary question: where did quarter-transition pressure show up by segment, and what should be interpreted as composition change versus repricing behavior?
+
+## Executive Summary
+
+Part D commentary often treats MA-PD and PDP as one blended market. That shortcut is risky in high-churn transitions. In the `2025Q4 to 2026Q1` window, both segments showed very high repricing share among matched rows, but MA-PD carried higher churn share of total rows (`40.76%`) than PDP (`32.04%`). In the prior `2025Q3 to 2025Q4` window, churn share was low and similar in both segments (`5.54%` MA-PD, `5.28%` PDP). [4][5]
+
+The operational implication is straightforward: the later window is still useful, but it is composition-sensitive, especially in MA-PD. Teams should not read headline quarter-over-quarter deltas as pure same-product repricing when adds and drops are this large. [4][5]
+
+This does not mean MA-PD is always "worse" or PDP is always "cleaner." It means inferential quality changed sharply between the two windows, and that quality shift was larger in MA-PD. [4][5][6]
+
+## Key Takeaways
+
+- MA-PD and PDP both showed high matched-row repricing in `2025Q4 to 2026Q1`, but MA-PD had higher composition churn. [5]
+- Compared with `2025Q3 to 2025Q4`, churn intensity increased much more than normal in both segments, with the larger jump in MA-PD. [4][5]
+- A decomposition-first read is required before claiming segment-level access tightening or pricing strategy shifts. [4][6]
+- The useful workflow is: pair-quality check, then same-product checks, then segment interpretation. [4][5]
+- Segment-level differences should inform account prioritization, not be collapsed into one national narrative. [5]
+
+## Lead Table
+
+| Window | Segment | Total rows | Matched rows | Repricing share of matched | Churn share of total |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 2025Q3 -> 2025Q4 | MA-PD | 52,837,889 | 49,912,750 | 69.29% | 5.54% |
+| 2025Q3 -> 2025Q4 | PDP | 4,404,988 | 4,172,226 | 74.96% | 5.28% |
+| 2025Q4 -> 2026Q1 | MA-PD | 63,771,121 | 37,780,391 | 95.69% | 40.76% |
+| 2025Q4 -> 2026Q1 | PDP | 4,460,218 | 3,031,274 | 97.00% | 32.04% |
+
+_Source: JL Policy contract-level aggregation of published SPUF repricing-versus-churn scorecards._ [4][5]
+
+## Main Analysis
+
+### 1) What is being observed
+
+The observed pattern is not just "more repricing." The observed pattern is a major shift in pair quality between windows, especially for MA-PD, where add/drop churn rose from `5.54%` to `40.76%` of rows. PDP also moved to a churn-heavy profile, but less sharply (`5.28%` to `32.04%`). [4][5]
+
+That is a concrete change in what the data can support. In low-churn windows, quarter-over-quarter interpretation is more stable at matched-row grain. In high-churn windows, composition effects are large enough to distort simple headline comparisons. [4][5][6]
+
+### 2) Where it is showing up and compared with what
+
+It is showing up in both plan-type segments, but with different magnitudes. Relative to the prior window:
+
+- MA-PD churn share increased by `+35.22` percentage points.
+- PDP churn share increased by `+26.76` percentage points.
+- MA-PD matched-row coverage fell from `49.9M` to `37.8M` despite higher total rows.
+- PDP matched-row coverage also fell, from `4.17M` to `3.03M`. [4][5]
+
+So the right comparator is not only MA-PD versus PDP within one quarter pair. It is each segment versus its own baseline in the prior continuity-rich pair. [4][5]
+
+### 3) What is driving the pattern
+
+The first driver is composition churn, not a single uniform repricing mechanism. High adds and drops mechanically change who is in the panel before any interpretation about persistent same-product movement is made. [4][5]
+
+The second driver is segment structure. MA-PD and PDP are different business environments, so identical policy timing does not require identical observed transition behavior. That is why segment separation is a measurement requirement, not a stylistic preference. [2][3][5]
+
+### 4) What this does and does not prove
+
+This evidence supports a decomposition claim: the `2025Q4 to 2026Q1` transition is composition-sensitive in both segments and more so in MA-PD. [5]
+
+It does not, on its own, prove a uniform strategic intent across sponsors or classes. Further sponsor-level and product-level controls are still required before any intent-level narrative is publishable. [5][6]
+
+## Why It Matters
+
+- Manufacturers: segment-specific access and pricing surveillance should be separated before portfolio conclusions are presented to leadership. [5]
+- Market access and reimbursement teams: account prioritization should weight churn-adjusted signals, not only raw quarter deltas. [4][5]
+- Policy and government affairs teams: post-redesign monitoring should track where management pressure appears by segment, not only in aggregate averages. [2][3]
+- Commercialization leaders: forecast error risk rises when high-churn windows are interpreted as stable trend windows. [4][5][6]
+
+## Conclusion
+
+The `2025Q4 to 2026Q1` transition should not be read as a simple repricing story for either MA-PD or PDP. It is a churn-heavy transition with materially different segment intensity.
+
+A serious reading sequence is: check pair quality, isolate matched behavior, then interpret segment patterns. If that order is skipped, teams can mistake composition turnover for stable strategic movement.
+
+## Sources / Citations
+1. CMS Part D Formulary, Pharmacy Network, and Pricing Information Files (public-use files and monthly releases).
+2. CMS, Final CY 2025 Part D Redesign Program Instructions and related fact sheet materials.
+3. MedPAC, Report to the Congress: Medicare Payment Policy (March 2026), Part D chapter.
+4. `/Volumes/SPUF/cms_partd_pricing_pipeline/data/published/analysis/pricing_signals/2025Q3_to_2025Q4/repricing_vs_churn_scorecard.csv`
+5. `/Volumes/SPUF/cms_partd_pricing_pipeline/data/published/analysis/pricing_signals/2025Q4_to_2026Q1/repricing_vs_churn_scorecard.csv`
+6. `output/exports/spuf-analysis-package/data/analysis_summary.json`
+## Methodology Note
+
+This Insight aggregates contract-level rows from published SPUF scorecards and maps plan type by contract prefix convention (`H/R` as MA-PD, `S` as PDP). Results are observational and designed for surveillance triage, not causal proof of sponsor intent.

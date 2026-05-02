@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SPUF Publication Hub | JL Policy Consulting</title>
+  <style>
+    :root {
+      --bg:#efece5;
+      --ink:#0f1f24;
+      --muted:#4b5f63;
+      --line:#c6d0d2;
+      --accent:#0b5d70;
+      --cream:#f9f7f2;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Source Sans 3","Avenir Next",sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
+    .hero{
+      min-height:100svh;
+      display:grid;
+      align-items:end;
+      background:
+        linear-gradient(120deg, rgba(7,21,27,.82), rgba(7,21,27,.42) 50%, rgba(7,21,27,.78)),
+        url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1900&q=80') center/cover no-repeat;
+      color:#f1f7f8;
+    }
+    .hero-inner{padding:clamp(26px,4vw,68px);max-width:720px;animation:rise .9s ease-out}
+    .brand{letter-spacing:.14em;text-transform:uppercase;font-size:.76rem;opacity:.9;margin-bottom:10px}
+    h1{font-family:"Cormorant Garamond","Iowan Old Style",serif;font-size:clamp(2rem,6vw,4.5rem);line-height:.95;margin:0;max-width:11ch}
+    .hero p{margin:18px 0 0;max-width:48ch;color:#dbe8ea;font-size:clamp(1rem,1.8vw,1.25rem)}
+    .buttons{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 16px;text-decoration:none;border:1px solid rgba(241,247,248,.65);color:#f1f7f8;transition:.2s ease}
+    .btn.primary{background:var(--accent);border-color:var(--accent)}
+    .btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.12)}
+    main{max-width:1120px;margin:0 auto;padding:44px 20px 82px}
+    section{border-top:1px solid var(--line);padding:34px 0}
+    h2{font-family:"Cormorant Garamond","Iowan Old Style",serif;font-size:clamp(1.7rem,3vw,2.7rem);line-height:1;margin:0 0 12px}
+    .lede{color:var(--muted);max-width:70ch;margin:0 0 22px}
+    .thesis{background:var(--cream);padding:20px;border-left:4px solid var(--accent);max-width:76ch}
+    .thesis p{margin:0 0 10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .tile{padding:14px 0;border-bottom:1px solid var(--line)}
+    .tile h3{margin:0 0 6px;font-size:1.03rem}
+    .tile p{margin:0;color:var(--muted)}
+    table{width:100%;border-collapse:collapse;background:#fff}
+    th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:#2f5058}
+    .publish{display:grid;gap:12px}
+    .publish article{background:#fff;border:1px solid var(--line);padding:14px}
+    .publish h3{margin:0 0 6px;font-size:1.05rem}
+    .publish p{margin:0;color:var(--muted)}
+    .doclist a{display:block;color:var(--accent);text-decoration:none;margin:8px 0}
+    .doclist a:hover{text-decoration:underline}
+    @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand">JL Policy Consulting</div>
+      <h1>SPUF publication package, ready for use</h1>
+      <p>A fully written and documented narrative set built around one clear thesis: low-cost generic up-tier movement appears to be used as an economics defense signal in Part D.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#thesis">View Thesis</a>
+        <a class="btn" href="#stories">View Story Set</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="thesis">
+      <h2>Lead thesis and guardrail</h2>
+      <p class="lede">The package is designed for publication-safe commercial interpretation.</p>
+      <div class="thesis">
+        <p><strong>Thesis:</strong> Part D sponsors appear to be moving selected low-cost generics to higher tiers, a pattern consistent with protecting plan economics under pressure.</p>
+        <p><strong>Guardrail:</strong> This is an inference from observed behavior patterns, not direct proof of realized margin increase.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Completed analysis streams</h2>
+      <div class="grid">
+        <div class="tile"><h3>Repricing vs churn decomposition</h3><p>Quarter-pair mechanism split at decision-grade granularity.</p></div>
+        <div class="tile"><h3>Generic tier worsening controls</h3><p>Same-NDC framework to avoid false repricing claims.</p></div>
+        <div class="tile"><h3>Sponsor behavioral clusters</h3><p>Repricing-dominant, churn-dominant, mixed, and watchlist logic.</p></div>
+        <div class="tile"><h3>PBM channel profile</h3><p>Cross-sectional mail-retail posture by PBM and plan type.</p></div>
+        <div class="tile"><h3>Beneficiary-tier linkage</h3><p>Join-heavy linkage of benefit design and formulary tier structure.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Regime shift table</h2>
+      <table>
+        <thead><tr><th>Pair</th><th>Matched share</th><th>Add/drop share</th><th>Interpretive priority</th></tr></thead>
+        <tbody>
+          <tr><td>2025Q3 to 2025Q4</td><td>94.48%</td><td>5.52%</td><td>Baseline continuity window</td></tr>
+          <tr><td>2025Q4 to 2026Q1</td><td>59.81%</td><td>40.19%</td><td>High churn, decomposition required</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="stories">
+      <h2>Written publication set</h2>
+      <div class="publish">
+        <article><h3>Research 1: Are Part D Sponsors Moving Cheap Generics Up-Tier to Protect Economics?</h3><p>Flagship mechanism narrative combining decomposition, tier pressure, and sponsor heterogeneity.</p></article>
+        <article><h3>Research 2: Cheap Generic, Higher Tier, The New Part D Margin-Defense Pattern</h3><p>Concept-level deep dive with same-NDC controls and access-friction framing.</p></article>
+        <article><h3>Insight: Which Sponsors Are Most Likely Using Tier Migration to Defend Margin?</h3><p>Operational watchlist lens for payer strategy teams.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Document package</h2>
+      <p class="lede">All assets are in the SPUF package folder and can be promoted into publication flow.</p>
+      <div class="doclist">
+        <a href="../docs/spuf-policy-brief.docx">spuf-policy-brief.docx</a>
+        <a href="../docs/spuf-policy-brief.pdf">spuf-policy-brief.pdf</a>
+        <a href="../workbooks/spuf-analysis-dashboard.xlsx">spuf-analysis-dashboard.xlsx</a>
+        <a href="../../spuf-site-drafts/research/part-d-sponsor-margin-defense-signals.mdx">research draft 1</a>
+        <a href="../../spuf-site-drafts/research/cheap-generic-higher-tier-pattern.mdx">research draft 2</a>
+        <a href="../../spuf-site-drafts/insights/sponsor-tier-pressure-watchlist.mdx">insight draft</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

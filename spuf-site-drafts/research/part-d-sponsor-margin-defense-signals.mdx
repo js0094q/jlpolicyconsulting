@@ -1,0 +1,81 @@
+---
+title: "Are Part D Sponsors Moving Cheap Generics Up-Tier to Protect Economics?"
+summary: "Recent SPUF comparisons show low-cost generic tier migration alongside high sponsor activity, a pattern consistent with economics protection through access design."
+publishDate: "2026-04-22"
+category: "Healthcare Data Analysis"
+tags:
+  - Part D
+  - Formulary Tier Migration
+  - Market Access
+  - Generic Drugs
+  - Sponsor Strategy
+seoTitle: "Part D Generic Tier Migration and Sponsor Economics Signals"
+seoDescription: "SPUF-based analysis showing low-cost generic tier migration and sponsor-level behavior consistent with economics protection under Part D pressure."
+---
+
+## Executive Summary
+
+The core signal in the latest SPUF comparison window is not just unit-cost movement. It is the combination of high sponsor activity, large panel churn, and tier worsening in selected low-cost generic concepts. Taken together, these patterns are consistent with sponsors using tier placement as an economics lever when direct pricing interpretation is noisy.
+
+That interpretation should be treated as an inference. The data supports behavior that is consistent with economics protection, but does not directly prove realized margin changes.
+
+## Research Question
+
+Are sponsors moving low-cost generics to higher tiers in a way that is consistent with offsetting economics pressure, after controlling for same-NDC pricing and panel churn?
+
+## Lead Evidence
+
+### Pair-level decomposition
+- `2025Q3_to_2025Q4`: matched share `94.48%`, add/drop share `5.52%`
+- `2025Q4_to_2026Q1`: matched share `59.81%`, add/drop share `40.19%`
+
+The second window has much heavier composition shift, which means headline delta statistics can conceal mechanism.
+
+### Generic tier movement under same-NDC controls
+Top low-cost generic concepts continue to show net higher-tier movement under same-NDC controls in the local analysis outputs.
+
+This matters because it reduces a common false narrative, that every access shift is simply a price-shift signal.
+
+### Sponsor-level heterogeneity
+Local sponsor clustering shows four distinct behavioral profiles:
+- repricing_dominant
+- churn_dominant
+- mixed_high_activity
+- mixed_moderate
+
+This supports a targeted strategy lens rather than a single market-average interpretation.
+
+## Main Analysis
+
+### 1) Why decomposition is required
+The two quarter-pair windows are not behaviorally equivalent. A high-continuity window and a high-churn window should not be interpreted with the same narrative template.
+
+### 2) Why cheap-generic tier movement is commercially meaningful
+If low-cost generics move to less favorable tiers while same-NDC prices remain stable, the strategic effect is still real for access teams. Field strategy, payer engagement, and affordability messaging all absorb that change.
+
+### 3) Why sponsor clusters matter
+A sponsor with high churn and high repricing behaves differently from one with strong repricing and low churn. These differences matter for account prioritization, contracting posture, and escalation logic.
+
+## Practical Implications
+
+1. Replace single headline price narratives with decomposition-first reporting.
+2. Add low-cost-generic tier pressure as a standing signal in sponsor surveillance.
+3. Prioritize sponsor watchlists where tier pressure and activity overlap.
+4. Keep all client-facing language explicit on observed versus inferred claims.
+
+## Methodology Note
+
+- Matching grain uses plan and product keys with days-supply controls.
+- Generic tier signal uses same-NDC controls to limit false repricing attribution.
+- Sponsor segmentation uses behavioral buckets from published scorecard outputs.
+- Interpretation is descriptive and inferential, not causal.
+
+## Conclusion
+
+The evidence is strongest when presented as a combined mechanism story: high sponsor activity plus low-cost generic tier migration in a high-churn environment. That pattern is consistent with economics defense behavior and is commercially actionable, provided the margin claim remains explicitly inferential.
+
+## Sources
+
+- `/Volumes/SPUF/cms_partd_pricing_pipeline/data/analysis_full_parquet_metrics.json`
+- `/Volumes/SPUF/cms_partd_pricing_pipeline/data/analysis/generic_qoq/2025Q4_to_2026Q1/*`
+- `/Volumes/SPUF/cms_partd_pricing_pipeline/data/published/analysis/pricing_signals/2025Q4_to_2026Q1/*`

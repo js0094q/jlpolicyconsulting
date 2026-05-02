@@ -1,0 +1,86 @@
+---
+title: "Tier Migration of Commoditized Generics in Medicare Part D"
+summary: "Plan-level Medicare Part D analysis suggests that some commoditized generics moved to less favorable formulary placement, often with higher patient cost exposure, despite limited same-product unit price change, indicating that access design is responding to more than unit cost alone."
+publishDate: "2026-03-12"
+category: "Healthcare Data Analysis"
+tags:
+  - Medicare Part D
+  - Generic Drugs
+  - Tier Migration
+  - Formulary Strategy
+  - CMS SPUF
+readingTime: "16 min read"
+seoTitle: "Tier Migration of Commoditized Generics in Medicare Part D"
+seoDescription: "Data-backed analysis of tier worsening among mature generics in Part D and what it signals about payer incentives and access design."
+---
+
+The headline finding is simple: tier position can worsen even when same-NDC unit prices barely move.
+
+That matters because access design is not reducible to price alone.
+
+<KeyTakeaways
+  items={[
+    "Several commoditized generics moved to higher tiers even when same-NDC unit costs were flat or down.",
+    "Tier movement is an access signal, not a full explanation by itself.",
+    "Pricing-only analysis can miss the operational pressure that shows up in formulary design."
+  ]}
+/>
+
+## What was measured
+
+The analysis evaluated mature generic drugs in Medicare Part D across recent quarterly snapshots and compared:
+
+- plan-level tier placement,
+- same-NDC unit price change,
+- and the direction of movement across plans with valid tier records in both snapshots.
+
+<DataTable
+  title="Illustrative tier and price movement"
+  columns={["Product", "Net higher-tier movement", "Same-NDC unit price change"]}
+  rows={[
+    ["Nortriptyline HCl", "+23.6 pp", "+0.7%"],
+    ["Alprazolam", "+15.2 pp", "+1.6%"],
+    ["Morphine Sulfate", "+7.0 pp", "+3.5%"],
+    ["Dexmethylphenidate HCl", "+6.8 pp", "-0.1%"],
+    ["Oxycodone HCl", "+6.4 pp", "+1.5%"]
+  ]}
+  source="CMS Part D SPUF-derived analysis"
+/>
+
+## How to read the result
+
+The key interpretation is narrow: tier position can worsen without meaningful same-NDC price pressure.
+
+That does not prove intent. It does show a recurring pattern consistent with plan optimization behavior that is not reducible to unit price alone.
+
+The most plausible mechanisms are directional, not proven:
+
+- class-level formulary normalization,
+- utilization management harmonization,
+- channel strategy adjustments,
+- plan bid optimization under revised liability conditions.
+
+## Why it matters
+
+<WhyItMatters
+  items={[
+    {
+      label: "Manufacturers",
+      text: "If analytics only monitor price, access deterioration can be missed until pull-through weakens."
+    },
+    {
+      label: "Market access teams",
+      text: "Tier movement should be monitored alongside prior authorization, step therapy, and channel requirements."
+    },
+    {
+      label: "Policy and strategy teams",
+      text: "Observed access worsening can reflect incentive structure, not just unit-cost movement."
+    }
+  ]}
+/>
+
+## Methodology note
+
+<MethodologyNote>
+This analysis used CMS Part D Formulary, Pharmacy Network, and Pricing Public Use Files for 2025Q4 and 2026Q1. Drug identity was normalized at the NDC and ingredient level, then tier deltas and same-NDC price changes were compared across products with continuity in both quarters. The result is intended as directional evidence of access design behavior, not causal proof.
+</MethodologyNote>

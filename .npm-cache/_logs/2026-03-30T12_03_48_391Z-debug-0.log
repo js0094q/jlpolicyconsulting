@@ -1,0 +1,19 @@
+0 verbose cli /opt/homebrew/Cellar/node/25.8.1_1/bin/node /opt/homebrew/bin/npm
+1 info using npm@11.11.0
+2 info using node@v25.8.1
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/josephstewart/Documents/JLPolicyConsulting/.npmrc
+5 silly config load:file:/Users/josephstewart/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm ls yaml vfile-matter next-mdx-remote
+8 verbose argv "ls" "yaml" "vfile-matter" "next-mdx-remote" "--depth" "4"
+9 verbose logfile logs-max:10 dir:/Users/josephstewart/Documents/JLPolicyConsulting/.npm-cache/_logs/2026-03-30T12_03_48_391Z-
+10 verbose logfile /Users/josephstewart/Documents/JLPolicyConsulting/.npm-cache/_logs/2026-03-30T12_03_48_391Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 verbose cwd /Users/josephstewart/Documents/JLPolicyConsulting
+14 verbose os Darwin 25.4.0
+15 verbose node v25.8.1
+16 verbose npm  v11.11.0
+17 verbose exit 0
+18 info ok

@@ -1,0 +1,40 @@
+{
+  "analysis_date": "2026-04-22",
+  "repricing_churn_pairs": [
+    {
+      "pair": "2025Q3_to_2025Q4",
+      "total_rows": 57242877,
+      "matched_rows": 54084976,
+      "adds": 1708857,
+      "drops": 1449044,
+      "repriced_rows": 37711763,
+      "unchanged_rows": 16373213,
+      "matched_share": 0.944833,
+      "add_drop_share": 0.055167,
+      "repriced_share_of_matched": 0.697269,
+      "unchanged_share_of_matched": 0.302731
+    },
+    {
+      "pair": "2025Q4_to_2026Q1",
+      "total_rows": 68231339,
+      "matched_rows": 40811665,
+      "adds": 12437506,
+      "drops": 14982168,
+      "repriced_rows": 39091959,
+      "unchanged_rows": 1719706,
+      "matched_share": 0.598137,
+      "add_drop_share": 0.401863,
+      "repriced_share_of_matched": 0.957862,
+      "unchanged_share_of_matched": 0.042138
+    }
+  ],
+  "generic_tier_top_count": 25,
+  "sponsor_segment_counts": {
+    "churn_dominant": 111,
+    "mixed_high_activity": 110,
+    "mixed_moderate": 20,
+    "repricing_dominant": 185
+  },
+  "pbm_profile_rows": 15,
+  "beneficiary_tier_rows": 14
+}

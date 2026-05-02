@@ -1,0 +1,131 @@
+---
+title: "Repricing Versus Churn Is the First Quality Gate in Part D Surveillance"
+summary: "Quarter-over-quarter Part D interpretation can fail when composition churn is high. A decomposition-first quality gate prevents teams from misreading panel turnover as persistent repricing or access strategy."
+publishDate: "2026-04-22"
+category: "Healthcare Data Analysis"
+tags:
+  - Part D
+  - Repricing
+  - Churn Decomposition
+  - Sponsor Monitoring
+  - Access Monitoring
+  - Formulary Dynamics
+readingTime: "10 min read"
+seoTitle: "Part D Repricing vs Churn: The Required First Quality Gate"
+seoDescription: "Why decomposition of matched rows versus add/drop churn must be the first step before strategy conclusions in Part D quarter-pair monitoring."
+---
+
+## Metadata
+
+- Windows analyzed: `2025Q3 to 2025Q4` and `2025Q4 to 2026Q1`
+- Decomposition variables: matched rows, add/drop churn rows, repriced share of matched, unchanged share of matched
+- Intended use: surveillance quality gating before sponsor or product interpretation
+- Primary question: is the window continuity-rich enough to support stable interpretation?
+
+## Executive Summary
+
+The first analytical decision in this SPUF (Standardized Part D Public Use File) workflow is not interpretation. It is pair-quality classification.
+
+The two adjacent windows in this package are materially different. The `2025Q3 to 2025Q4` window is continuity-rich (`94.48%` matched; `5.52%` add/drop). The `2025Q4 to 2026Q1` window is churn-heavy (`59.81%` matched; `40.19%` add/drop). [6]
+
+If those windows are presented with one narrative template, teams risk attributing composition turnover to persistent same-product behavior. Decomposition-first reporting is therefore a quality control rule, not a stylistic preference. [4][5][6]
+
+## Key Takeaways
+
+- Window quality differs enough to change inferential reliability. [6]
+- High churn does not invalidate the data; it changes what claims are supportable. [4][5]
+- Matched-row repricing should be interpreted alongside churn share, not in isolation. [4][5][6]
+- High-churn windows are best treated as alerting layers before deeper validation. [5][6]
+- Teams should separate observed movement from inferred mechanism in every publication. [4][5]
+
+## Lead Table
+
+| Quarter pair | Matched share | Add/drop share | Repriced share of matched | Unchanged share of matched |
+| --- | ---: | ---: | ---: | ---: |
+| 2025Q3 -> 2025Q4 | 94.48% | 5.52% | 69.73% | 30.27% |
+| 2025Q4 -> 2026Q1 | 59.81% | 40.19% | 95.79% | 4.21% |
+
+_Source: SPUF analysis package summary and published scorecards._ [4][5][6]
+
+## Main Analysis
+
+### 1) What specifically is being observed
+
+The observed change is a quality shift between adjacent windows, not just movement magnitude. The later pair has roughly seven times the add/drop share of the earlier pair (`40.19%` versus `5.52%`). [6]
+
+That directly affects interpretability. In continuity-rich windows, matched-row interpretation is comparatively stable. In churn-heavy windows, composition effects can dominate first-pass narratives unless explicitly controlled. [4][5][6]
+
+### 2) Where it appears and compared with what
+
+It appears at overall pair level and remains visible in segment and sponsor overlays. The meaningful comparator is not "latest quarter only." It is latest quarter relative to the prior window quality baseline. [4][5][6]
+
+This is why pair-level decomposition should precede sponsor ranking, product ranking, or market-wide messaging.
+
+### 3) What drives the need for a quality gate
+
+Three practical drivers:
+
+- Add/drop churn can change panel composition before same-product movement is assessed. [4][5]
+- Repricing share among matched rows can look extreme in windows where matched coverage shrinks. [5][6]
+- Commercial teams need a confidence label, not only a delta value. [6]
+
+A decomposition-first gate solves this by assigning each window to an interpretation mode: continuity-first or churn-alert.
+
+### 4) Proposed interpretation ladder
+
+1. Compute pair-quality metrics first (matched, add/drop, repriced, unchanged). [6]
+2. Assign confidence mode (`continuity-rich` or `churn-heavy`). [4][5][6]
+3. Run same-NDC and tier overlays only after mode assignment. [7]
+4. Publish observed-versus-inferred statements explicitly. [4][5]
+
+This ladder preserves speed while reducing false strategic claims.
+
+### 5) Publication rules that prevent thin or overstated commentary
+
+A window should fail publication review if it skips any of these controls:
+
+- no stated comparator window,
+- no matched-versus-churn decomposition table,
+- no explicit statement of what the evidence does not prove,
+- no distinction between observed fact and inferred mechanism.
+
+Applying these rules forces analytical discipline. It also improves external trust because readers can see the quality gate before they see the conclusion. [4][5][6]
+
+### 6) Example of how the quality gate changes the conclusion
+
+Without decomposition, a team might read the `2025Q4 to 2026Q1` pair as a clean repricing acceleration story because matched-row repricing is very high (`95.79%`). [6]
+
+With decomposition, the conclusion changes: add/drop churn is also very high (`40.19%`), so the pair should be treated as a churn-alert context where product and sponsor claims require extra controls before publication. [5][6]
+
+This difference is not semantic. It changes execution decisions:
+
+- what gets escalated to leadership,
+- which sponsor rows are treated as high confidence,
+- and which findings are labeled as provisional pending same-NDC and tier-overlay confirmation. [5][7]
+
+For fast-skimming executives, the rule can be summarized in one line: high repricing with low churn supports interpretation, while high repricing with high churn supports triage.
+
+## Why It Matters
+
+- Manufacturers: lifecycle and contracting decisions improve when window quality is reported alongside signal direction. [4][5]
+- Market access and reimbursement teams: reduces false positives from composition-driven movement. [5][6]
+- Policy teams: makes evidence grading transparent when external audiences ask whether observed movement is durable. [2][3]
+- Commercialization leaders: supports stronger governance by attaching confidence to surveillance outputs. [6]
+
+## Conclusion
+
+Repricing-versus-churn decomposition is the first quality gate in Part D surveillance.
+
+Without it, teams can mistake noisy transitions for stable strategy shifts. With it, the same data become more decision-usable: continuity windows support stronger interpretation, and churn-heavy windows support prioritized follow-up with explicit inferential limits.
+
+## Sources / Citations
+1. CMS Part D Formulary, Pharmacy Network, and Pricing Information Files (public-use files and monthly releases).
+2. CMS, Final CY 2025 Part D Redesign Program Instructions and related fact sheet materials.
+3. MedPAC, Report to the Congress: Medicare Payment Policy (March 2026), Part D chapter.
+4. `/Volumes/SPUF/cms_partd_pricing_pipeline/data/published/analysis/pricing_signals/2025Q3_to_2025Q4/repricing_vs_churn_scorecard.csv`
+5. `/Volumes/SPUF/cms_partd_pricing_pipeline/data/published/analysis/pricing_signals/2025Q4_to_2026Q1/repricing_vs_churn_scorecard.csv`
+6. `output/exports/spuf-analysis-package/data/analysis_summary.json`
+7. `output/exports/spuf-analysis-package/data/generic_tier_worsening_top25.csv`
+## Methodology Note
+
+This Insight uses descriptive decomposition outputs and does not estimate causal intent, net margin realization, or patient-level claims outcomes. It is built to improve surveillance quality before deeper sponsor or product investigations.

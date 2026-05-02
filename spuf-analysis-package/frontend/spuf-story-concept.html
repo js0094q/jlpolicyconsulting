@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SPUF Story Concepts | JL Policy Consulting</title>
+  <style>
+    :root {
+      --bg: #f3f1eb;
+      --ink: #102024;
+      --muted: #4f6468;
+      --line: #c7d1d3;
+      --accent: #0d5b6a;
+      --surface: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.45;
+    }
+    .hero {
+      min-height: 100svh;
+      color: #f6fbfc;
+      position: relative;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(110deg, rgba(4,20,25,.78), rgba(7,37,44,.42) 48%, rgba(4,20,25,.76)),
+        url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+    }
+    .hero-inner {
+      max-width: 640px;
+      padding: clamp(24px, 4vw, 64px);
+      transform: translateY(0);
+      animation: rise .8s ease-out;
+    }
+    .brand {
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-size: .75rem;
+      opacity: .92;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0;
+      font-family: "Cormorant Garamond", "Iowan Old Style", serif;
+      font-size: clamp(2rem, 6vw, 4.2rem);
+      line-height: .95;
+      max-width: 9ch;
+    }
+    .hero p {
+      margin: 18px 0 0;
+      font-size: clamp(1rem, 1.7vw, 1.25rem);
+      max-width: 45ch;
+      color: #dce7ea;
+    }
+    .cta-row { margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      border: 1px solid rgba(220,231,234,.65);
+      color: #f6fbfc;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-size: .92rem;
+      transition: transform .2s ease, background-color .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); background: rgba(255,255,255,.1); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); }
+
+    main { max-width: 1100px; margin: 0 auto; padding: 44px 20px 80px; }
+    section { padding: 30px 0; border-top: 1px solid var(--line); }
+    h2 {
+      margin: 0 0 12px;
+      font-family: "Cormorant Garamond", "Iowan Old Style", serif;
+      font-size: clamp(1.6rem, 3vw, 2.5rem);
+      line-height: 1;
+    }
+    .lede { color: var(--muted); max-width: 68ch; margin-bottom: 24px; }
+
+    .analysis-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .analysis-item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+    .analysis-item.show { opacity: 1; transform: translateY(0); }
+    .analysis-item h3 { margin: 0 0 6px; font-size: 1rem; }
+    .analysis-item p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .92rem;
+      background: var(--surface);
+    }
+    th, td {
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      padding: 10px;
+      vertical-align: top;
+    }
+    th { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: #33555c; }
+
+    .storyline {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+    .storyline article {
+      background: linear-gradient(180deg, #fff, #f8fbfb);
+      border: 1px solid var(--line);
+      padding: 16px;
+    }
+    .storyline h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    .storyline p { margin: 0; color: var(--muted); }
+
+    .final-cta {
+      background: #102024;
+      color: #dfeaed;
+      padding: 24px;
+      margin-top: 24px;
+      display: grid;
+      gap: 14px;
+    }
+    .final-cta h2 { color: #fff; margin: 0; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      .hero { min-height: calc(100svh - 0px); }
+      main { padding-top: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand">JL Policy Consulting</div>
+      <h1>Part D signals worth acting on</h1>
+      <p>Five SPUF-backed analysis tracks, refined into publishable stories for payer behavior, formulary movement, and market access strategy.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#stories">Review Story Pipeline</a>
+        <a class="btn" href="#methods">Method Notes</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="analyses">
+      <h2>Executed analysis tracks</h2>
+      <p class="lede">Each stream is grounded in local SPUF artifacts and translated into website-ready editorial direction.</p>
+      <div class="analysis-grid">
+        <div class="analysis-item"><h3>Repricing vs churn decomposition</h3><p>Quarter-pair decomposition separates panel repricing from composition drift.</p></div>
+        <div class="analysis-item"><h3>Generic tier worsening controls</h3><p>Same-NDC controls distinguish access friction from simple unit-cost movement.</p></div>
+        <div class="analysis-item"><h3>Sponsor behavioral segmentation</h3><p>Sponsors grouped into repricing-dominant, churn-dominant, and mixed clusters.</p></div>
+        <div class="analysis-item"><h3>PBM channel profile</h3><p>Cross-sectional mail/retail signatures by PBM and plan type.</p></div>
+        <div class="analysis-item"><h3>Beneficiary and tier linkage</h3><p>Join-heavy linkage between formulary tier structure and beneficiary design fields.</p></div>
+      </div>
+    </section>
+
+    <section id="methods">
+      <h2>Quarter-pair reality check</h2>
+      <p class="lede">The two windows behave differently, which changes how pricing movement should be interpreted.</p>
+      <table>
+        <thead>
+          <tr><th>Pair</th><th>Matched share</th><th>Add/drop share</th><th>Repriced share of matched</th><th>Interpretive posture</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2025Q3 to 2025Q4</td><td>94.48%</td><td>5.52%</td><td>69.73%</td><td>Stable panel, lower composition distortion.</td></tr>
+          <tr><td>2025Q4 to 2026Q1</td><td>59.81%</td><td>40.19%</td><td>95.79%</td><td>High churn regime, decomposition required.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="stories">
+      <h2>Best website stories</h2>
+      <p class="lede">Ranked concepts built for the site’s insight and research model, with practical stakes first.</p>
+      <div class="storyline">
+        <article>
+          <h3>Repricing vs churn in Part D</h3>
+          <p>Flagship research piece, clarifies what changed versus what rotated in and out.</p>
+        </article>
+        <article>
+          <h3>Generic access friction despite stable same-NDC pricing</h3>
+          <p>Research narrative on tier mechanics and access deterioration beyond headline price movement.</p>
+        </article>
+        <article>
+          <h3>Sponsor behavioral clustering</h3>
+          <p>Insight format showing repricing-dominant and churn-dominant sponsor profiles.</p>
+        </article>
+        <article>
+          <h3>Generic coverage contraction signals</h3>
+          <p>Insight with explicit artifact controls and continuity checks.</p>
+        </article>
+        <article>
+          <h3>PBM network and channel fingerprints</h3>
+          <p>Cross-sectional insight framing channel posture by PBM and plan type.</p>
+        </article>
+      </div>
+
+      <div class="final-cta">
+        <h2>Recommended publication sequence</h2>
+        <p>Publish in three waves: flagship decomposition research, generic access research, then sponsor and PBM insights as follow-on commentary.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const items = document.querySelectorAll('.analysis-item');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.25 });
+    items.forEach((el, i) => {
+      el.style.transitionDelay = `${i * 80}ms`;
+      io.observe(el);
+    });
+  </script>
+</body>
+</html>

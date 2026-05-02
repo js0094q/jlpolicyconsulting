@@ -1,0 +1,3686 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<<
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Author (OpenAI Codex for JL Policy Consulting)
+/CreationDate (D\07220260330071859\05504\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220260330072958\05504\04700\047)
+/Subject (\050unspecified\051)
+/Title (Product X Document A\072 Provider Net Cost Model Concept Brief)
+/Trapped (\057False)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 8
+/Kids [ 4 0 R 17 0 R 22 0 R 24 0 R 26 0 R 28 0 R 38 0 R 40 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/C2_0 6 0 R
+/T1_0 14 0 R
+/T1_1 15 0 R
+/T1_2 16 0 R
+>>
+/ProcSet [ /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 4716
+>>
+stream
+0.184 0.337 0.831 rg
+q 1 0 0 1 59.76 737.28 cm
+0 0 m
+17.28 0 l
+20.464 0 23.04 2.576 23.04 5.76 c
+23.04 23.04 l
+23.04 26.224 20.464 28.8 17.28 28.8 c
+0 28.8 l
+-3.184 28.8 -5.76 26.224 -5.76 23.04 c
+-5.76 5.76 l
+-5.76 2.576 -3.184 0 0 0 c
+h
+f*
+Q
+BT
+1 1 1 rg
+/T1_0 12.5 Tf
+61.106 747 Td
+(JL)Tj
+0.184 0.337 0.831 rg
+/T1_0 11.6 Tf
+28.894 7.92 Td
+(JL Policy Consulting)Tj
+0.545 0.588 0.667 rg
+/T1_1 8.5 Tf
+0 -11.16 TD
+(LLC)Tj
+/T1_1 8 Tf
+436.864 11.52 Td
+(03/30/26)Tj
+ET
+0.184 0.337 0.831 RG
+2 w 
+q 1 0 0 1 54 734.4 cm
+0 0 m
+504 0 l
+S
+Q
+q 1 0 0 1 54 61.92 cm
+0 0 m
+504 0 l
+S
+Q
+BT
+/T1_1 7.5 Tf
+54 24.48 Td
+(jlpolicyconsulting.com)Tj
+480.233 0 Td
+(Page 1)Tj
+ET
+q
+1 0 0 1 54 513.36 cm
+0.961 0.969 0.984 rg
+0 192 504 -192 re
+f*
+Q
+BT
+0.075 0.09 0.169 rg
+/T1_2 23 Tf
+146.634 658.36 Td
+(Product X: Provider Net Cost)Tj
+56.529 -29 Td
+(Model Concept Brief)Tj
+0.353 0.408 0.502 rg
+/T1_1 11 Tf
+-12.11 -33 Td
+(Provider economics and access execution brief)Tj
+0.184 0.337 0.831 rg
+/T1_0 8.6 Tf
+-38.95 -22.6 Td
+(Audience: Provider-facing access stakeholders and internal MLR reviewers\)Tj
+0.545 0.588 0.667 rg
+/T1_1 8.8 Tf
+-66.688 -21.2 Td
+(Prepared March 30, 2026. Facts reflect the attached source set and publi\c CMS, HRSA, Medicaid, Medicare, and)Tj
+/C2_0 8.8 Tf
+441.199 0 Td
+<0003>Tj
+/T1_1 8.8 Tf
+-318.677 -12 Td
+(payer policy sources reviewed on March 30, 2026.)Tj
+ET
+q
+1 0 0 1 54 513.36 cm
+1 1 1 RG
+1 w 1 j 1 J 
+q 1 0 0 1 0 192 cm
+0 0 m
+504 0 l
+S
+Q
+Q
+q
+1 0 0 1 54 513.36 cm
+1 1 1 RG
+1 w 1 j 1 J 
+0 0 m
+504 0 l
+S
+Q
+q
+1 0 0 1 54 513.36 cm
+1 1 1 RG
+1 w 1 j 1 J 
+0 0 m
+0 192 l
+S
+Q
+q
+1 0 0 1 54 513.36 cm
+1 1 1 RG
+1 w 1 j 1 J 
+q 1 0 0 1 504 0 cm
+0 0 m
+0 192 l
+S
+Q
+Q
+BT
+0.075 0.09 0.169 rg
+/T1_2 15 Tf
+60 474.84 Td
+(Why the provider model matters)Tj
+0.353 0.408 0.502 rg
+/T1_1 10.1 Tf
+0 -21.1 TD
+(Expanded access experience is not a commercial reimbursement proxy. Unde\r FDA expanded access,)Tj
+0 -14.8 TD
+(manufacturer willingness to supply the investigational drug is the gatek\eeper. In commercial launch, the)Tj
+T*
+(gatekeeper becomes a payer-mediated system of prior authorization, codin\g, sourcing rules, site-of-care)Tj
+T*
+(controls, claim edits, and reimbursement timing.)Tj
+0 -20.8 TD
+(A provider net cost model translates that shift into auditable economics\. The model measures whether a)Tj
+0 -14.8 TD
+(treating center recovers drug acquisition cost and cash exposure after r\eimbursement mechanics are applied.)Tj
+T*
+(It does not rely on a generic allowed amount narrative. It uses the actu\al launch variables that a center will)Tj
+T*
+(face: acquisition price, whether the plan permits buy-and-bill, whether \a 340B price is available, and whether)Tj
+T*
+(Medicaid claim rules are met.)Tj
+0 -20.8 TD
+(The source brief anchors the launch arithmetic at a WAC of $39,000 per 9\00 mg vial administered every two)Tj
+0 -14.8 TD
+(weeks. That one figure is enough to make provider exposure concrete. At \26 administrations per year, gross)Tj
+T*
+(annual drug WAC is $1,014,000 before administration costs or denied clai\ms are counted.)Tj
+0.075 0.09 0.169 rg
+/T1_2 15 Tf
+0 -31.7 TD
+(Commercial payer perspective and treatment of similar products)Tj
+ET
+q
+1 0 0 1 60 143.84 cm
+0.961 0.969 0.984 rg
+0 92.4 492 -34.8 re
+f*
+Q
+q
+1 0 0 1 60 143.84 cm
+1 1 1 rg
+0 57.6 492 -57.6 re
+f*
+Q
+BT
+/T1_0 8.8 Tf
+66 221.44 Td
+(Comparator policy)Tj
+123 0 Td
+(Initial gate)Tj
+123 0 Td
+(Continuation gate)Tj
+123 0 Td
+(Economic signal for)Tj
+0 -11.4 TD
+(adrabetadex)Tj
+0.353 0.408 0.502 rg
+/T1_1 8.8 Tf
+-369 -23.4 Td
+(UnitedHealthcare)Tj
+T*
+(commercial - Miplyffa)Tj
+123 11.4 Td
+(Genetic confirmation, use)Tj
+T*
+(with miglustat, no Aqneursa,)Tj
+T*
+(specialist involvement,)Tj
+T*
+(12-month authorization)Tj
+123 34.2 Td
+(Positive clinical response)Tj
+T*
+(documented on)Tj
+T*
+(NPC-specific scales)Tj
+123 22.8 Td
+(Coverage exists, but)Tj
+T*
+(combination use and)Tj
+T*
+(ongoing response are)Tj
+T*
+(managed tightly.)Tj
+ET
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+0 0 m
+492 0 l
+S
+Q
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 0 57.6 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 123 0 cm
+0 0 m
+0 92.4 l
+S
+Q
+Q
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 246 0 cm
+0 0 m
+0 92.4 l
+S
+Q
+Q
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 369 0 cm
+0 0 m
+0 92.4 l
+S
+Q
+Q
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 0 92.4 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+0 0 m
+0 92.4 l
+S
+Q
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 492 0 cm
+0 0 m
+0 92.4 l
+S
+Q
+Q
+q
+1 0 0 1 60 143.84 cm
+1 j 1 J 
+q 1 0 0 1 0 92.4 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /PUUNFT+Helvetica
+/DescendantFonts 7 0 R
+/Encoding /Identity-H
+/Subtype /Type0
+/ToUnicode 13 0 R
+/Type /Font
+>>
+endobj
+7 0 obj
+[ 8 0 R ]
+endobj
+8 0 obj
+<<
+/BaseFont /PUUNFT+Helvetica
+/CIDSystemInfo 9 0 R
+/CIDToGIDMap /Identity
+/DW 1000
+/FontDescriptor 10 0 R
+/Subtype /CIDFontType2
+/Type /Font
+/W [ 0 [ 634 0 ] 2 4 278 5 [ 355 ] 6 7 556 8 [ 889 667 191 ] 11 12 333 13 [ 389 584 278 333 ] 17 18 278 19 28 556 29 30 278 31 33 584 34 [ 556 1015 ] 36 37 667 38 39 722 40 [ 667 611 778 722 278 500 667 556 833 722 778 667 778 722 667 611 722 667 944 ] 59 60 667 61 [ 611 ] 62 64 278 65 [ 469 556 333 ] 68 69 556 70 [ 500 ] 71 72 556 73 [ 278 ] 74 75 556 76 77 222 78 [ 500 222 833 ] 81 84 556 85 [ 333 500 278 556 500 722 ] 91 93 500 94 [ 334 260 334 584 ] 98 99 667 100 [ 722 667 722 778 722 ] 105 110 556 111 [ 500 ] 112 115 556 116 119 278 120 130 556 131 [ 400 ] 132 134 556 135 [ 350 537 611 ] 138 139 737 141 142 333 143 [ 549 ] 145 [ 778 713 ] 147 149 549 150 [ 556 576 494 713 823 549 274 370 365 768 889 ] 161 162 611 163 [ 333 584 549 556 549 612 ] 169 170 556 172 [ 278 ] 173 174 667 175 [ 778 ] 177 [ 944 556 ] 180 181 333 182 183 222 184 [ 549 494 500 667 167 744 ] 190 191 333 192 193 500 194 [ 556 278 222 333 ] 199 203 667 204 207 278 208 209 778 210 [ 790 778 ] 212 214 722 215 [ 278 ] 216 225 333 226 [ 556 222 667 500 611 500 260 722 556 667 500 667 556 ] 239 240 584 241 243 333 244 246 834 247 [ 556 778 556 278 667 500 722 500 722 500 556 667 556 667 556 667 556 722 500 722 500 722 660 667 556 667 556 667 556 667 556 667 556 778 556 778 556 778 ] 285 286 556 287 [ 722 556 722 556 445 430 400 390 278 222 778 444 500 222 667 500 556 265 556 222 556 263 556 310 722 556 722 556 722 ] 316 317 556 318 [ 778 556 778 556 778 556 722 333 722 333 722 333 667 500 667 500 611 278 611 360 611 320 722 556 722 556 722 556 722 556 722 556 722 556 944 722 667 500 611 500 611 500 667 500 611 278 556 ] 365 379 0 380 [ 722 778 ] 382 383 556 384 [ 222 667 500 722 556 722 333 208 277 333 222 500 278 ] 397 398 556 399 [ 500 556 ] 401 403 0 404 405 278 406 [ 722 556 0 678 662 667 519 701 667 992 666 ] 417 418 722 419 [ 667 687 833 722 778 722 667 722 611 667 855 667 732 651 944 954 833 879 651 722 ] 440 [ 714 ] 441 442 556 443 [ 548 403 606 556 780 500 ] 449 450 583 451 [ 548 574 666 ] 454 457 556 458 460 500 461 [ 832 500 571 538 778 792 611 722 500 510 778 558 667 556 519 403 278 222 500 722 500 278 251 ] 485 [ 845 985 811 222 667 778 556 667 548 500 761 556 667 500 722 ] 500 501 556 502 [ 389 ] 503 535 0 536 [ 278 556 833 333 833 ] 541 542 333 543 544 521 545 [ 251 403 ] 547 548 278 549 [ 500 722 500 ] 552 554 556 555 [ 500 ] 556 557 587 558 559 722 560 [ 567 ] 561 562 667 563 [ 500 574 862 698 755 260 431 278 568 500 150 ] 574 575 333 576 [ 1378 667 323 333 222 333 537 ] 583 584 523 585 586 674 587 [ 333 323 333 ] 591 [ 354 139 ] 593 599 0 600 608 278 609 613 0 614 [ 139 70 333 430 556 ] 619 620 333 621 622 537 623 [ 667 611 556 889 676 ] 628 652 0 653 [ 167 310 ] 655 656 167 657 658 549 659 660 494 661 662 713 663 664 274 665 668 549 669 [ 1122 1011 667 278 556 833 945 667 945 1223 1500 945 667 945 1223 556 ] 685 686 722 687 [ 833 222 444 667 722 500 722 944 1167 722 500 722 944 222 500 556 833 1235 1094 982 981 707 371 1113 867 704 667 556 ] 715 716 278 717 [ 778 556 722 556 722 556 722 556 722 556 722 556 667 556 667 556 ] 734 [ 889 778 556 667 500 778 556 778 556 222 1225 1123 998 778 722 556 667 556 ] 753 [ 889 778 611 667 556 667 556 667 556 667 556 278 222 278 222 778 556 778 556 722 333 722 333 722 556 722 556 722 556 667 556 667 556 778 556 778 556 778 556 778 556 667 500 333 278 667 556 667 556 667 556 667 556 722 500 722 556 722 556 722 556 722 556 722 556 667 556 667 556 667 556 667 556 667 556 611 278 778 556 722 556 722 556 722 556 722 556 722 556 278 222 ] 844 845 278 846 [ 667 500 667 500 667 500 556 222 556 222 556 222 556 222 ] 860 865 833 866 [ 722 556 722 556 722 556 722 556 778 556 778 556 778 556 778 556 667 556 667 556 722 333 722 333 722 333 722 333 667 500 667 500 667 500 667 500 667 500 611 278 611 278 611 278 611 278 722 556 722 556 722 556 722 556 722 556 667 500 667 500 944 722 944 722 944 722 944 722 944 722 667 500 667 500 667 500 611 500 611 500 611 500 556 278 722 500 278 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 ] 993 995 278 996 [ 222 778 556 778 556 778 556 778 556 778 556 778 556 778 556 889 676 889 676 889 676 889 676 889 676 722 556 722 556 862 698 862 698 862 698 862 698 862 698 667 500 667 500 667 500 667 500 667 556 667 556 678 734 ] 1049 1050 565 1051 [ 892 692 678 565 678 565 678 565 1106 858 664 505 734 565 734 565 792 565 734 509 678 509 678 509 678 509 709 560 910 750 ] 1082 [ 889 ] 1083 1084 833 1085 [ 722 333 267 667 722 611 722 667 611 722 778 278 ] 1097 1098 667 1099 [ 889 722 611 778 722 667 611 610 667 722 668 832 778 278 667 ] 1114 1115 611 1116 [ 556 611 556 444 611 612 278 ] 1123 1124 556 1125 [ 611 556 500 ] 1128 1129 611 1130 [ 556 611 500 611 722 556 722 758 278 611 278 267 0 278 ] 1144 1145 178 1146 1147 0 1148 [ 178 349 338 377 384 ] 1153 1154 267 1155 [ 390 423 400 423 901 768 778 ] 1162 1163 222 1164 [ 556 ] 1165 1166 834 1167 1168 556 1169 [ 667 ] 1170 1171 556 1172 [ 667 556 667 556 667 556 ] 1178 1179 278 1180 [ 222 778 556 778 556 778 556 667 500 722 556 500 862 698 751 556 722 556 833 492 547 456 489 351 535 751 556 792 565 778 333 ] 1211 1212 972 1213 [ 1112 ] 1214 1218 0 1219 [ 751 556 792 565 267 338 556 611 500 556 603 607 556 592 605 556 605 267 944 441 333 603 590 646 931 672 528 726 595 590 ] 1249 1250 208 1251 [ 222 191 ] 1253 1255 333 1256 [ 191 ] 1257 1259 333 1260 1261 208 1262 1263 333 1264 1265 278 1266 [ 111 ] 1267 1268 167 1269 [ 221 361 250 ] 1272 1273 278 1274 1277 292 1278 [ 333 ] 1279 1281 292 1282 1283 250 1284 [ 111 292 278 ] 1287 1290 292 1291 [ 333 278 ] 1293 1306 0 1307 [ 278 ] 1308 1310 0 1311 1312 389 1313 [ 856 972 278 1112 972 889 876 ] 1320 1321 278 1322 1327 0 1328 [ 810 ] 1329 1335 278 1336 [ 292 167 292 ] 1339 1340 167 1341 1351 278 1352 [ 292 167 292 ] 1355 1356 167 1357 [ 779 778 ] 1359 1360 556 1361 [ 667 833 750 917 556 973 834 722 667 612 823 ] 1372 1373 833 1374 [ 667 556 667 556 611 778 596 282 426 722 341 403 ] 1386 1387 556 1388 1389 222 1390 [ 556 ] 1391 1398 611 1399 [ 719 712 928 ] 1402 1403 933 1404 [ 944 974 953 ] 1407 1412 556 1413 1414 845 1415 [ 1057 1067 1044 1051 ] 1419 1426 611 1427 1428 900 1429 [ 1112 1122 1100 1106 ] 1433 1434 1145 1435 1442 278 1443 1444 456 1445 [ 667 678 655 662 ] 1449 1450 701 1451 1456 611 1457 1458 956 1459 [ 1167 1178 1155 1162 ] 1463 1470 611 1471 [ 845 1067 1051 1090 ] 1475 1482 758 1483 1484 946 1485 [ 1158 1168 1146 1152 ] 1489 1490 1191 1491 1492 611 1493 1494 556 1495 1496 611 1497 1498 278 1499 1502 611 1503 1504 758 1505 1512 611 1513 [ 1008 1006 1196 1230 1187 1201 1228 1226 ] 1521 1528 611 1529 1530 1178 1531 [ 1390 1400 1377 1384 ] 1535 1536 1423 1537 1544 758 1545 1546 1224 1547 [ 1436 1446 1423 1430 ] 1551 1552 1469 1553 1559 611 1560 1561 667 1562 [ 800 797 958 ] 1565 1569 611 1570 [ 834 832 853 841 1024 ] 1575 1582 278 1583 [ 408 410 ] 1585 1592 611 1593 1594 667 1595 [ 836 884 845 ] 1598 1602 758 1603 [ 919 942 946 958 1059 611 556 611 278 ] 1612 1613 611 1614 [ 758 729 832 841 410 942 884 958 278 611 584 614 621 369 341 556 ] 1630 1645 611 1646 1663 278 1664 1681 611 1682 [ 800 797 719 928 933 712 933 944 800 797 719 928 933 712 933 944 408 ] 1699 1700 410 1701 [ 456 667 655 456 678 662 408 ] 1708 1709 410 1710 [ 456 667 655 456 678 662 836 ] 1717 1718 884 1719 [ 845 1067 1051 845 1067 1051 836 ] 1726 1727 884 1728 [ 845 1067 1051 845 1067 1051 ] 1734 1735 722 1736 [ 778 222 639 667 722 0 665 556 778 556 931 902 737 ] 1749 1752 834 1753 [ 803 611 1017 735 832 722 667 500 950 726 606 349 731 691 722 556 390 606 490 786 601 667 500 611 500 1106 858 664 505 678 509 734 565 734 509 621 509 678 509 709 560 709 560 ] 1796 1797 667 1798 [ 606 436 709 560 774 609 921 701 ] 1806 1807 667 1808 [ 874 663 910 697 910 697 931 712 734 565 556 ] 1819 1820 664 1821 [ 832 607 1042 734 667 500 667 589 500 664 505 743 576 278 678 509 ] 1837 1838 667 1839 [ 722 500 556 611 222 341 611 667 ] 1847 1848 556 1849 [ 667 556 542 222 722 ] 1854 1855 208 1856 1859 333 1860 [ 278 ] 1861 1862 333 1863 [ 687 ] 1864 1865 584 1866 [ 278 584 686 584 ] 1870 1871 278 1872 [ 778 ] 1873 1874 509 1875 [ 667 556 722 833 733 701 ] 1881 1883 722 1884 1886 500 1887 [ 556 724 847 781 390 772 614 566 ] 1895 1898 333 1899 1900 308 1901 1905 412 1906 [ 566 496 546 ] 1909 1910 526 1911 [ 374 414 825 792 645 0 860 614 234 239 ] 1921 1922 170 1923 [ 200 199 373 377 300 ] 1928 1929 292 1930 [ 348 ] 1931 1932 230 1933 [ 989 1186 ] 1935 1936 1149 1937 [ 154 542 ] 1939 1940 692 1941 [ 593 532 ] 1943 1944 230 1945 1946 499 1947 [ 502 429 550 ] 1950 1961 0 1962 1963 549 1964 1965 500 1966 [ 933 537 489 638 791 598 845 1067 1051 ] 1975 1976 667 1977 1978 278 1979 1980 667 1981 [ 502 ] 1982 1984 737 1998 [ 502 111 ] 2000 2002 278 2003 [ 250 278 722 778 722 555 665 611 667 602 720 606 722 833 727 799 1022 ] 2020 2021 665 2022 [ 451 438 451 438 451 438 451 438 365 ] 2031 2033 361 2034 2035 365 2036 2038 361 2039 [ 365 ] 2040 2044 423 2045 [ 312 398 462 470 630 826 445 ] 2052 2060 0 2061 [ 549 500 1278 1056 ] 2065 2067 526 2068 2069 395 2070 [ 417 631 ] 2072 2075 395 2076 2077 370 2078 [ 395 158 355 591 ] 2082 2083 395 2084 [ 355 ] 2085 2087 395 2088 [ 197 395 431 591 355 434 395 434 607 774 593 ] 2099 2100 556 2101 [ 612 610 622 929 395 158 236 395 355 434 395 434 395 521 721 222 546 880 849 604 622 355 614 398 356 357 222 333 222 333 222 333 222 333 655 879 383 682 1094 556 359 ] 2142 2146 556 2147 [ 523 ] 2148 2149 556 2150 2152 475 2153 [ 520 518 569 527 831 539 534 621 847 538 522 972 576 577 736 534 557 739 552 663 557 800 535 736 551 580 566 588 575 580 602 575 518 530 593 530 ] 2189 2190 543 2191 [ 591 734 537 604 ] 2195 2196 556 2197 [ 518 556 527 518 577 568 ] 2203 2204 590 2205 [ 896 579 570 607 912 594 561 1045 ] 2213 2214 608 2215 [ 829 554 588 762 591 729 616 818 582 781 600 608 595 654 ] 2229 2230 613 2231 [ 639 613 573 572 641 596 572 571 613 753 576 595 576 585 644 370 538 569 596 710 741 ] ]
+>>
+endobj
+9 0 obj
+<<
+/Ordering (Identity)
+/Registry (Adobe)
+/Supplement 0
+>>
+endobj
+10 0 obj
+<<
+/Ascent 1122
+/CIDSet 11 0 R
+/CapHeight 717
+/Descent -481
+/Flags 4
+/FontBBox [ -951 -481 1446 1122 ]
+/FontFile2 12 0 R
+/FontName /PUUNFT+Helvetica
+/FontStretch /Normal
+/FontWeight 400
+/ItalicAngle 0
+/StemV 88
+/Type /FontDescriptor
+/XHeight 523
+>>
+endobj
+11 0 obj
+<<
+/Filter /FlateDecode
+/Length 11
+>>
+stream
+H‰š `  ‘ ‘
+endstream
+endobj
+12 0 obj
+<<
+/Filter /FlateDecode
+/Length1 23982
+/Length 7232
+>>
+stream
+H‰Ä—PT×ÇÏ½ï½]f
+ş(¨oûD‘‚H,ˆšuÙEÁÄì*Ñ]~¨¨#„j:Ú«‰®HÍX›Ä0MimkÑ–'q:‹V3Öi’b3šÖf­M:Ó	cÙ11áõ{ßÇqøÃ±{çìùqÏ;÷ÜÏ½og¶eëóµE’(seyF…?¿†øª[[Ô°Ë‰¤¶º-Ï5…}ùQÔÁç6n¯s\[HƒàÆúZMç2ëøGá/¨G œ}_3ë›Z¶ùƒDZæÆÍÕ~’~M”=~v“Û–ğü3UøR7ù›jŸ_“e…¿=œÛ²µvhŞkG›H’ö²ƒ¤)¯)ó‘1=¬¥~ªã4úsƒ¸á¦më†ı-Û·6“"ïq¥ÅÖ#ì•Ø+êf(gÅê¨ÚGÑ°“• ÅË4ƒÈø#äºĞƒÆÇÊ%l¤Éø§”‡ü^!|ğéEÔGèuê&ƒLëéUºÌ©—UÒ)ºÆ¦Ó\ğ–)D+èmfW¨"¿….Ğa:IğLMÁl;K2^€o‡]E»ÑLÊ¡é,å¢j;?7ŞÄlUPÇó¿e?)O2~iü•"hjîÆÌc…ÑM)äFt7cIÒu£â(İuĞÔIçé¶‹2êV£ß¸I³‰T±ƒb7¥nùE£Ãø»1É”‚U}tˆ~Œúİ}Œ˜‹}ƒµ°Cì0·ó]ü”¼G‰üæĞ2ŒBÚL{A —.Ò¿èSv›ÇIÑR‹ô–ñ”ñoÜÁbìRì¤–Z1^ÂhÇÎ0ËdùÌÍv°ï±Ãì=Â+¸‡“oãK¥R¥´]zOn–{”6åUKÔàãŒqÉ¸J±4ÖÑVÚ‰İ] ~ú}Æ$ÔJdI,9ØzŒ {÷²NÖËİ¬õó.ö!»Ån³{\áøÊ[ø!~œ_àïJÒaé5éCé¼DáJ§ò‘%Éú§ÁªÁ}ƒïyÆMã.Ş ²ádTJÈİn¡lú6vñŒnœÚEz‹.›ãŞ¨º
+Ä&²x–ÅJ0JÙJVÇØØiŒsf/ÿå8Écx,Oäå¼Š7ñ ¿ÊR‚”"-—ÖJİ¿‘®I÷¤{²"O’§ÈËä"j“›ä#?•É=òï”\e‰Rª¬QÊ>¥MªV®(×,;-í–ËmË?¬ÉÖÖÍÖ6œÎeÜÙóc^™ÍD÷Y´‰ª™“UÑ÷qÌOAÜ®¶=n¡dãYi§´Œgâ6œ£oá¶¡´Oª¤NãR½›²µô3ÙAÓ”Wp:»(·èËq§şC:÷â88¥V˜ïM9G³ísRæ$Ï•4SûšM1}ZbBüÔ¸Ø¯N™<ibLô“¢ˆŒ°ZYâŒÒ\ZOÕgùty–VX˜.|Í€TÀ§«ŒÍÑUŸ™¦Í´#³î¾L{8Ó>’É¢ÕE´(=MuiªşSSClí*ìNÍ«ê¦]bÚMûIØ6P]qõNUg>Õ¥´Ö]>'Êõâ'HO?,vŠ…uÊ÷ï¨ƒ.=^sºô©šÓœ“’\şİ½Êãr&Øl^Ä*ó`ô´Ñ'íŸP£ÕìÙ©Ê',¥G—ü^ûD­˜T=Vsê±/|÷¥;l¹ÚFMê<©À_, ‚ı…a×'<¼âreù¯Gg{†š=6:ÃíÖj.ò5ªz¤æĞêƒ>À¥2OO¼=Ş¥ù^Ü©ö©¦“Ö·3Ï†İ÷¦/M_*t-ngXÿí;áøïû¢Ì¼‹7 ‹ËF 0±’V„>uµÚ\DC³9â«6‡‚Õ9HÃÇË°Íô“¯sÜ)IW’Šüz |¸zg¸9_£³'rj¼ØƒÏáE¾/½Ë ?ZSƒwG¨|26âŠX’¢ï0ÅAÜÌÛ­&±\œV/Î·Õ5äkq®QøèYŸ¬g»=6]õ"¢Ô´âEº='k÷†˜±'DÎi½IÒ†õ˜NW­Á‰õá¤§!bƒ57M-@áqWÔ ,ª	ªj=.“œdjLÔ½ Xî'ZíŞ„³Öë]ˆ:¢lÖ	zQ¡q¨B£Y¾@RfZ1¶9ËíYåÑÎİîôâp}ûÜ½çõ"kŞH§Ğ;â†zÎBÏóR`ÌW)G”ğƒaO³é}Á`BP¼ca?Äèş€}("³ ˆ†XÀmN4[‚ÉÜ¦ÙĞ–W0ÍÆ•¾Q!zêá„Œ&üut»À$œóˆç‡ğÂqÎ{0áEè9O^üø/Cøé‡¶&¼İÚMÂGD8<„ã"ìz0áôì„—=>Â…c=œğòÑ„‹Ñír“ğŠGD¸d<„KÇExåƒ	»ÑóJAxÕã#\6†pùÃ	¯M¸İ®6	¯yD„ŸaÏ¸{Lx-zö
+ÂëFÛtM8pPzäÈ+Ç öáÈ×F¾í¯7‘ûrÿxWyõƒ‘× çj¼öÿˆ¼nrü)qà¯A¿rÿ{¬”[Ÿ¢ˆŒÉˆèQ?Dø°¥`C[¡%èÈè4"Z“z•èÌyócl1³!¹=ôù_”³Ÿå‡ä’{o"‹…ÿˆ$ğŠ–_Yt‡b"LCÉwMıçs¯İ­ı|vÔËŸÂD>?e™38‡hÃì@ÔËÃu†?o+Å.ˆxîˆğ÷©LnÆŞšÉnFeyÙKÔÁ»¨â”¦Q©|‚*‘Û¿º[<+ò!‡ô<H6Ä)ÙEÈ½%5ES7SGÄº‰µ¦C^Q.ÑZÈO`wË·¨Û’KÕğ;ñÜe™HC¼C<cé2s;0ï¹¦¾D§`ûğœvìlëJ‚N‚xêx®q:C:OÛÄ~±—YĞbï­X#:RˆÑßbÈnvIˆqóØû°şn‡ä™Ï5Ó"ÔÙ‡y‹…€…>&
+™Éæ'Œ«|2äÿ£¼\`¤ªÎ8şí™{gBxˆ("°‘GdåUÙEH -l@Ñ]%(RPÉº¬V­¶1;,	mÄ©¬¦Ô¶ÊBÄ¶H	Æ]¡<hi("»"jTl­Ta½ı}ç;ÎÎ>äŸÿ™sÏã;ç{íÈ³]zÚs0çæ™3!¿•©%‹³Á?q«Ëü,Ùr±:·DÆH¼Ü{¦sXŠ–øÿå¾öÇÎJoĞ»;ÇùÖ9Ñ¥²€ÿİ‘sJl'çà?˜o¸ÊoŒÖú;#_È]|ênâ—rï£ü‡œ/e‚ó©Œróe!ö5õ€=¬ù±±‡¥şgì?Ô¬sV*i7(ÌŞœ+¼+½ú¦£Ûiìw‘öç¬1Kè‰»cd˜¢÷®ºÏ+û¦.ö…,bÌNPGÿUœŸµŸÖ9:ŸµºÙ}vd±ÚùİØÍWğ@à¨sdE¨¯|•µ†;uş¸7¸hûqğı>¼EÇ ÿÇØÕ	c·ØÚ¨±l„µ®Qû3¶œ#ĞYà;÷1ÿ»]æƒçú›¨ßè\õ›pmµ1µUßzFµ©œ3Öød±¿Cí­#÷ÏesüYíOŠl‘JâË™¹ZîDæqÜÉ{Ì9y;Æïùÿ<kŠÿ¹ú¿sµ¬QFo]Íÿ¾Ä&å‡¥F}È®ÏıJ—ğ?è¦ºR?Èeê¿ğt¸ı?%swßêçãßÊ–7øï[]İY6qi¿ñ£ÛPï!·Ø¿¹tÉ¢,Õ`HÓ
+x/øÜ|o*‡?{ÂÕ–²t ÷Vcb©™Âû2wWçŸrnFñaÌ³±0ˆ7"Eğ­¬}#k/Sğ‹Šp-•'¶R†ÄJ$Í>éèµp­‰Åiï<:¹]nflÚ€¾ØO%Ÿ˜jş[
+ú÷£Ÿ3ÒŸvû¶L†óc§èÿ,âÓŞÆ×I/aútüR|8û£Ü…eFŞ%’ŠJ*z2ğww"÷)2&º>ß£ié‡L)¾§ì9•Â¸b3V¤û¢|¾,º‘o³dr¦Ü;hŸaî~öği_†œº×&/¥u?=»îÏîáŞS&é¹ÄÄíşND†!s¾û†ôó9Ï#’âŞßeşÖR»îgÖZbæ»}¤ŸíS[Q[M[yÓäèT ûl¨M4ıì%cGÕÍmGÇÛªµãÖeÙÙ²œ6hºÅr¹»>ØÃä •qºYƒ­µ\£íèrÈ¹Íq¸³"¿IíÛØ¸_íaî¸ÊØÑ³†±¿èï¥PÁ÷y&.ÖÈt›?IK¡û!ñ÷)Yív‘9ÄÏ]‘*ÙÅºoDŸÃòÆÊ­ì_’®‰óçœM&¯Í²ñ¿Ôä½©±;¥4˜Z'WjrÍqùu^i÷—UWµ‰Ö~fİZ“ø"÷Ê.Ótÿ:q£%²
+T™}F^R;õ®ÂÎ–Ëî}as\:ÑNÃ‡Ág œŸw˜Aû(ø«ÕíFPŸ…‹uy¥²˜øºXYAFg¯±y½4ç;£È•£¾YC>cr:cÀuñ¯¥"~¹ThÜ1õÜ*9èn“ƒŞ“£ÆÂcdl×<ÓÖ¾áğpú4×†µ¡Ö~šç57ÄJMÜzÜÖZIïII&JM»YŸÆ»0çií–x_î‹×Ëlï”Œ÷Ş‘»c/H¥sAæÆ?’J÷<ÿ·Èma.DÖÄ6?+Wt.ÖçäT­™´î	ãpss¾ÿZâ°Ü¿$ŞEäjà F·\KsÄ‚Vòx³|Œü•¬;ş\×zşóÿnsÀìVÎ´%{ÿ¬<ßj>Í¬kó›©Ï‚Z$œÿ´ÖÍ-8«Ş0õIGÜÉzDßšÃ2wÿm’Ë…&¶ÚÿÜ×§Ü×sÌ½\É™9æÔ€ıg-¿bùuµYµ»\ÎÊ½­r'îw‡½¿öşÂ:Fyå–¯È­gÚâfuN†ı÷-ô|`¬ñCËaİÓ[»Iæp‹:)ÃFWÒİ¾·z«®Û¬mûo¶ÿ½SÜ‘í=Á>çÛúŒ/_€ıÏÚ×µÿv[ßÃĞçê&“/;à¬÷G[Üü|+åşØ{²)ZM¯–”7˜¼^CB=Èÿ©Y|¿‰Ÿä-ù.:Ÿ-S£]äz;7²[Ê9ÇÿEÑróºÃW¶àí²0úcYáSC‰¬ÏÄÈo}M} ÄäïCVõñ}ØÏqxÿµ]LûeîµRk5ú^Ö‹5^Ó~¾k=V©m;~n´‘¼WÆ|ê¹Ø\Ş9/Ê£ŒYÊü.ÚÏ˜ù`'÷Ò^?Y/3hOà»q/Ó§È§o7¬oÖJÚ@õTbÚš»øÎ>Ğ×Şàv—»tí‡ŸqI’|~¥®™w¬U„µ¶CÒ×yEúFb²6Ò“ÿƒd$(ˆàÿ©àıeØÇòe¡[è¦v©µ¹úoËZp.|„~Ğ/+ÎƒS¬ñP;1,|Ÿ»TÏØ CQ¥yÉÿ·‰‡è1rØ¸H‰üVæGş)]£âD‹©ÇÍXêûRjæj)ÑõÑ÷ ïÏ2DÿĞ?$òÕ@‘¯“®"wŞ‰Ş“ÕI_&DQSœ–ñ´WE_…O˜·ÔcğcÌ©&vM‹¤¸×:©fìÑİ2:6BF{«ÈS‹ˆ¡EøÀŞ ä‰İ¼³¶Ê:Î—’™·õiQ‹ÿv¬GkC§H¦€ÉòZìfpSŞ^¹Éù@÷Ç·Y`¶S&İ,†h-Y†ŞCñ\Ä•3Ì-“"æ$2cÃ¹uÈÂZ¶üU€¦Š —¦¸øœı6İ³ucËZ—7Ê,…ûÔ«^ø~&ş¡Ô=õ—¿xéGŸ¾9W·U_»Y2¦/¸†¶æç|Xó•Ê>’;aydïl XÂ{Åw™ïŞ(=lıPkêQâõëPŒèz¯Œwvá¹øÈ|S«–É<|¼ÒİDİ±MÆêØÜ|}9ÆöÊg²¬Kœ?Ñæmî…WhíbcJ›ˆÕKyìRîáóŞ,ÖƒCøö/‰%U&†´€ÛÀ;Äï5 ,ç½vÆÄ6á7ñ³àkğ8)kÃ¤B¡ñÈb2(-+"¿!î€Ø ™c“ÀL°™·Âf[…ÇE‚y	æ%˜—˜iäİİÌk‚³ÅwK…ÆÑöàmd˜
+æ‚áàâ|)#Kp÷á]Ú{	Ï%s°¿]·#=Æ{Hy¼«”'tï·Á£`3øû1ëµ«s' I|O¢Ÿ$q?IÜOã;qˆù ù@†äÀ½àuæ¿uîÖlPó+p—ÉHw19t«ôkMF|e¤û‚¸Çà=R¥wæGÀ[àpìà_‘©22RL\n©Û:óßäeàşNFz½ØCí»5ıÎç{2şŞŠRG„ú´zõ§ãcÇe•‘yU3·—9cò½iößNîø$¯Oô~ıâşlóI»:ï¬| Ùö)‹Ãàà xÃŞÙi;æ„8œ×‘t¡~5æ„ñÆÄs:úêÒ Œ“l<¸'ˆê8ÔsèßÍÚ£5¢ÆnÉÄÛ±şÆ†vè{|7*6ÇÔpãmíRLn/÷ÆËÍ±³Ò[hQd°òÿì—{P×Ç¿çî¹÷.RBIƒÚË."ë­0> "H A Ñ¯bP(¯ÔG*™ÆÉÃ¦ÕšÒúó˜Æ©ÏA`ÌŒÉ¤qÚdb3Ó6&“	¶	u&3ı'ul"ıe!ÊhóGÿìŞ;ŸııÎïœ³g÷¼ö{àcMÓ§ã¼û"UÚPé6K7©³Ğ^ÆßÇ³ò#, 6›á¾ÀóåÓÖÙVéÅ•š0ï%í
+^òñ<ú>5ìøyÓÖ%Ügc¨S©[©—P¿B-¼…ZùµÌnÚZ¦³åUh3™?›vµò1jåÇ&,¿e–¿€×´m¬gÇ=é¼ß§Øâ}Ç¸ï/ç¹ÎoY)æRkgºŸGÒ„m¥öëã;Øí[Úp9ëõşÔO•:µŠ{I¼O"ßAZgÃSˆPwâ=ş‰$yÀÒ¯O<3Ë©¾Sãcéá¶ÑÏÙñ§EÖú¢oWÇ¿Ï–•HïŒ~¤ô%5T¼‚šfM&õÔˆÒ ô*ÜÛ±ÖZ¿ÇĞ®âÊwo£·Ó
+u°ú•°ö¹ê!uÖpBö£ÀÒ 6ÖóÃùãşR=¿çÚÈæœ60Õ3SäÒäÓÈç3İÄcÜƒˆVLí4	ù¢µq>­C¹œ‡Ÿ*\_£R[hÏ^dPÓ.rû‘
+\z.b:Û0Å0ŠÅ©D"	{©-~ƒh×¿q&q«ßu=È´âË}¯Â;‚Ì°m(KCq‰…(–b:Ïvn)‡p·ÌEìxyí:²R"Skæø6`!ub'uáYÂãÙWmc\«¥®ÿŠöçä1}şÕ2ˆydºœ#‚ú°“:ºÓ´ÀçJMU†tysnZÃö·‡ûÜ§ê›1şàsÜÍu3Ñ+chıägßØÑ‘1&§Ùß¼.[:ÒOf8¥Ÿ•oïµÖxÿˆı²Ò:ÿÅ[ëı<×Ë›<_\@©=OtŸGš§óõY˜«ö…v ÙZÇú[¦=…ãÖue®K7pÅB§	˜ÖjY~®íZ*òµ^$io!ÂÁöÀ¯íÂvöõr›ÜIˆ1¾Î³ÇaF8÷>]‡ìù¦ĞücÅ*¾g$î£_NRÈ…ëK®³/­2q?Ö¹şÊ56ˆuL+f2í§MV¾ª+GíZ­óU9æëÚÑÅX$íRî#Ë¸7Íäœ›Ãõ”aÏşÎ3ÙEdÊkÈğnÂ"–Wm‰Ë¨V÷štÍ*_¸?½(uÎUkÈÎ5ùGÌ•¡^¹Æ³Á‡œ×#œo©ˆt]@¸ëcÜ¡Îk\—¥·³î,î—:Ç.Š{};~­¿Á~kCkØ:Gæ4¢ü\²L¦roó‹´w6LÁj™È9ó*ä|~WÑ®à~V@®Âğ¼Ãt)™…,¯šsèD‡ûm÷¦¾Û–Så:8Şõ´…ÜgU™õä·ä)tÈ~¶µÏJwÈ?qÍî£MDÌ¢?ÄxŸcµÍ *¸¿Wp‘ÆI>÷:r/Ë«±Øª•¾z–r'ı}âe_Ë—ùì¿ Ãğ–p=KG–ş0Ë|b±Õó2cÍ¬×Ï3âÆ°ƒš«B~
+ÏNÖı
+¹o®”ïÙuŞÂV÷i?³ØÁo¶ee7ËîA–;Ïü6c{˜ŞMXÎãaú }Öµì	¾S2J8G·Z}ªúœuÜ*şšícg“ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒÃÿĞßE3Âğ(¼p!ŠÿÀûyÄ.H•‹püÄ²ê·‚ŒùË­°}I¿Êö=ô[lß‹tt±¤aŒ˜èµ}îÄ¶¯1>lû¦€í{è›‡Í´ŒŒÔYé©©óÌÅ--MAóşæ-íÁV³hSíl+AšYÒ¸©¹}sKĞ\¼d¼JFšY®"eÍMíÍ›Ú¬
++V­*-(›:ƒíµÕß–pÌÆ6³Úl64¶±ñ`ÙŞZ]ÜXİú¨Ù\cûì“Uü—¢ å Aöq'¯íhD-ª±’~:­Fë·–şóC¨ˆ¸Åi<gÄ á>øáC4‡'8#^Cî¤ÈëÈ¼)‚3âU,Cæ#e¢Pˆã½ÜŠL³#§±„en¼ÑÀ¤[c@qˆë!qÊÌ¼16/„²@E$›Ì%ÀâXt‰CØE^$ÅNl&Ï½DNx‡Éi±³Wê9b3¦Š¥9Ò(™bÄ†G„„§ÿ q!öÒ ˜‚H\Sz#¶8\¼(^@ñ
+ÅvZŠØ×ço2ª˜u-¤‹hÖUˆÃ½qéÆø¥`$ÄIqÊø,m–ñ·´Kôo&‡$ÍÙ8¦r¾c¼á;hœñ5CäèXÖHÕ9ìk2öÄ…Ä¾^ã—¾`Æî1ÓácÕSÆF·Q—få—t‡\G{æWäDóÄs}—{“Cº`z–¯Ä˜™ö1Ãg3yÓÄœ»Œïûö™ÌŠóå'g’AqDìÇL±¿7q©1@—¯ÛWä_Ğ[û
+SÒCbKÎ¼Â”nar¢¿ÄHô$'Ó¯8ç}Ò»Ö»Ø›îxS¼IŞxï4oŒ­Géwêwèáº®{CâXo¶áG‘Ín9Ú§{twHœ`PŠãVğø«ºÔ]:ô˜Ğèp¿Ú8bBâh”òèœòX'$÷…çRyÒÊˆr©«klÇq	İ…¥èÏ…<Øñ½ÎìØìèEweäİîRuÓ5pû_¬ğõt—­î9â[Ó“®œQßš‰ÌÿRqì×ŞÁK07(^¹¹¯³eC}~0!¿*!?Hªzvv®íéª1Í“ZT†Ù£%UÕÔ®W¶:ØÓ’ÌëÙgì¬¿Ev½ÊîLÈ;‰úüòÕ'ës‚y½9ù	Õykújr[+ojë™‰¶Zsoq³\u³VÕVMå-²+Uvj«RµU©ÚªÉ©±ÚRï™ßX–ÛÖÎÙiæ7›=)e=E<´ºÇ¬^“‡Ìëø  cƒH
+endstream
+endobj
+13 0 obj
+<<
+/Filter /FlateDecode
+/Length 227
+>>
+stream
+H‰\ÁjÃ0†ï~
+ÛC±›]C`trØZ–í[I‹lç·Ÿâ…&°AşÿOü–¾´/-…úÆÑu˜aäç¸°Cèq¤ÎøàòŞ•ÛM6)-p·Î§–†¨êô‡ˆsæÏ>öxTúÊ9Ğ‡¯Kwİ-)}ã„”Á@Ó€ÇA½Ùôn']°SëEy=	óçø\BUúóo=ÎÉ:dK#ªÚH5P¿J5
+ÉÿÓwªÜİrq?‰Û˜Ê÷ş¾qò=x„r³ä);(A¶ğ±¦µõ#À  o‘
+endstream
+endobj
+14 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+15 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+16 0 obj
+<<
+/BaseFont /Times-Bold
+/Encoding /WinAnsiEncoding
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+17 0 obj
+<<
+/Contents 18 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 19 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+18 0 obj
+<<
+/Length 7278
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.184314 .337255 .831373 rg
+n
+59.76 737.28 m
+77.04 737.28 l
+80.22413 737.28 82.8 739.8559 82.8 743.04 c
+82.8 760.32 l
+82.8 763.5041 80.22413 766.08 77.04 766.08 c
+59.76 766.08 l
+56.57587 766.08 54 763.5041 54 760.32 c
+54 743.04 l
+54 739.8559 56.57587 737.28 59.76 737.28 c
+h
+f*
+1 1 1 rg
+BT /F2 12.5 Tf 15 TL ET
+BT 1 0 0 1 61.10625 747 Tm (JL) Tj T* ET
+.184314 .337255 .831373 rg
+BT /F2 11.6 Tf 13.92 TL ET
+BT 1 0 0 1 90 754.92 Tm (JL Policy Consulting) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8.5 Tf 10.2 TL ET
+BT 1 0 0 1 90 743.76 Tm (LLC) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8 Tf 9.6 TL ET
+BT 1 0 0 1 526.864 755.28 Tm (03/30/26) Tj T* ET
+.184314 .337255 .831373 RG
+2 w
+n 54 734.4 m 558 734.4 l S
+n 54 61.92 m 558 61.92 l S
+.545098 .588235 .666667 rg
+BT /F1 7.5 Tf 9 TL ET
+BT 1 0 0 1 54 24.48 Tm (jlpolicyconsulting.com) Tj T* ET
+BT 1 0 0 1 534.2325 24.48 Tm (Page 2) Tj T* ET
+Q
+q
+1 0 0 1 60 452.16 cm
+q
+.960784 .968627 .984314 rg
+n 0 253.2 492 -34.8 re f*
+1 1 1 rg
+n 0 218.4 492 -80.4 re f*
+.980392 .984314 .996078 rg
+n 0 138 492 -69 re f*
+1 1 1 rg
+n 0 69 492 -69 re f*
+.07451 .090196 .168627 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 6 235.8 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 2.6 Tm /F2 8.8 Tf 11.4 TL (Comparator policy) Tj T* ET
+Q
+Q
+q
+1 0 0 1 129 235.8 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 2.6 Tm /F2 8.8 Tf 11.4 TL (Initial gate) Tj T* ET
+Q
+Q
+q
+1 0 0 1 252 235.8 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 2.6 Tm /F2 8.8 Tf 11.4 TL (Continuation gate) Tj T* ET
+Q
+Q
+q
+1 0 0 1 375 224.4 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 14 Tm /F2 8.8 Tf 11.4 TL (Economic signal for) Tj T* (adrabetadex) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 189.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 14 Tm /F1 8.8 Tf 11.4 TL (UnitedHealthcare) Tj T* (commercial - Aqneursa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 129 144 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 59.6 Tm /F1 8.8 Tf 11.4 TL (Genetic confirmation,) Tj T* (neurologic manifestations,) Tj T* (with miglustat or) Tj T* (documented inability to use) Tj T* (miglustat, no Miplyffa,) Tj T* (12-month authorization) Tj T* ET
+Q
+Q
+q
+1 0 0 1 252 178.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 25.4 Tm /F1 8.8 Tf 11.4 TL (Positive clinical response) Tj T* (documented on) Tj T* (NPC-specific scales) Tj T* ET
+Q
+Q
+q
+1 0 0 1 375 166.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 36.8 Tm /F1 8.8 Tf 11.4 TL (The commercial market) Tj T* (already treats NPC therapy) Tj T* (as a managed category, not) Tj T* (an open category.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 120.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL (Louisiana Blue - Miplyffa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 129 75 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 48.2 Tm /F1 8.8 Tf 11.4 TL (Age and weight gate,) Tj T* (genetic confirmation,) Tj T* (ambulatory status, no) Tj T* (adult-onset disease, with) Tj T* (miglustat, no Aqneursa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 252 86.4 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 36.8 Tm /F1 8.8 Tf 11.4 TL (Improvement or stabilization) Tj T* (in ambulation, fine motor) Tj T* (function, swallowing, or) Tj T* (speech) Tj T* ET
+Q
+Q
+q
+1 0 0 1 375 86.4 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 36.8 Tm /F1 8.8 Tf 11.4 TL (Some plans will use) Tj T* (additional functional) Tj T* (restrictions beyond the FDA) Tj T* (label.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL (Aetna - Spinraza / Brineura) Tj T* ET
+Q
+Q
+q
+1 0 0 1 129 28.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 25.4 Tm /F1 8.8 Tf 11.4 TL (Baseline assessments plus) Tj T* (specialist administration) Tj T* (requirements) Tj T* ET
+Q
+Q
+q
+1 0 0 1 252 28.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 25.4 Tm /F1 8.8 Tf 11.4 TL (Positive response or slowed) Tj T* (loss of function from) Tj T* (baseline) Tj T* ET
+Q
+Q
+q
+1 0 0 1 375 6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 48.2 Tm /F1 8.8 Tf 11.4 TL (Intrathecal and) Tj T* (intraventricular analogs) Tj T* (already tie payment to) Tj T* (measurable continuation) Tj T* (rules.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.87451 .898039 .941176 RG
+.35 w
+n 0 218.4 m 492 218.4 l S
+n 123 218.4 m 123 253.2 l S
+n 246 218.4 m 246 253.2 l S
+n 369 218.4 m 369 253.2 l S
+n 0 138 m 492 138 l S
+n 0 69 m 492 69 l S
+n 123 0 m 123 218.4 l S
+n 246 0 m 246 218.4 l S
+n 369 0 m 369 218.4 l S
+.6 w
+n 0 253.2 m 492 253.2 l S
+n 0 218.4 m 0 253.2 l S
+n 0 0 m 0 218.4 l S
+n 492 218.4 m 492 253.2 l S
+n 492 0 m 492 218.4 l S
+n 0 0 m 492 0 l S
+.184314 .337255 .831373 RG
+2 w
+n 0 253.2 m 492 253.2 l S
+Q
+Q
+Q
+q
+1 0 0 1 60 446.4 cm
+Q
+q
+1 0 0 1 60 420.4 cm
+q
+.545098 .588235 .666667 rg
+BT 1 0 0 1 0 13.5 Tm /F4 8.5 Tf 11 TL (The commercial payer takeaway is direct: adrabetadex will launch into a market where high-acuity pediatric neurologic drugs are) Tj T* (covered, but they are covered with explicit utilization management and measurable continuation standards.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 389.4 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 4 Tm /F3 15 Tf 19 TL (340B pricing explained in plain language) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 323.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 49.1 Tm /F1 10.1 Tf 14.8 TL (340B changes provider acquisition cost, not payer coverage criteria. HRSA's core rule is simple: a) Tj T* (manufacturer may not charge a covered entity more than the 340B ceiling price, whether the entity buys) Tj T* (through a wholesaler or directly from the manufacturer. The ceiling price equals Average Manufacturer Price) Tj T* (minus the Unit Rebate Amount.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 258 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 49.1 Tm /F1 10.1 Tf 14.8 TL (The Unit Rebate Amount uses minimum rebate percentages that differ by product type. The current 340B /) Tj T* (Medicaid framework uses 23.1% for most brand-name drugs, 17.1% for qualifying brand-name pediatric drugs) Tj T* (and clotting factor products, and 13.0% for generics. For a new drug, before AMP is available, HRSA requires) Tj T* (manufacturers to estimate the 340B ceiling price using WAC minus the applicable rebate percentage.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 163.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 78.7 Tm /F1 10.1 Tf 14.8 TL (Using the launch WAC in the source brief, a 23.1% new-drug estimate produces a 340B acquisition price of) Tj T* ($29,991 per 900 mg vial. If adrabetadex is ultimately treated as a qualifying pediatric brand drug for this) Tj T* (purpose, the same calculation at 17.1% would imply $32,331 per 900 mg vial. That means the modeled 340B) Tj T* (discount range is $6,669 to $9,009 below WAC on every administration, depending on final program) Tj T* (classification. For centers that qualify for 340B, this is a material provider-economics lever. For the) Tj T* (manufacturer, it is a material gross-to-net drag.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 98 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 49.1 Tm /F1 10.1 Tf 14.8 TL (340B also creates compliance work. HRSA prohibits duplicate discounts, meaning the same unit cannot) Tj T* (generate both a 340B discount and a Medicaid rebate. Covered entities that carve in Medicaid fee-for-service) Tj T* (claims must keep the Medicaid Exclusion File listing accurate and must align carve-in or carve-out status with) Tj T* (actual billing practice.) Tj T* ET
+Q
+Q
+ 
+
+endstream
+endobj
+19 0 obj
+<<
+/F1 15 0 R
+/F2 14 0 R
+/F3 16 0 R
+/F4 20 0 R
+/F5 21 0 R
+>>
+endobj
+20 0 obj
+<<
+/BaseFont /Helvetica-Oblique
+/Encoding /WinAnsiEncoding
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+21 0 obj
+<<
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+22 0 obj
+<<
+/Contents 23 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 19 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+23 0 obj
+<<
+/Length 5483
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.184314 .337255 .831373 rg
+n
+59.76 737.28 m
+77.04 737.28 l
+80.22413 737.28 82.8 739.8559 82.8 743.04 c
+82.8 760.32 l
+82.8 763.5041 80.22413 766.08 77.04 766.08 c
+59.76 766.08 l
+56.57587 766.08 54 763.5041 54 760.32 c
+54 743.04 l
+54 739.8559 56.57587 737.28 59.76 737.28 c
+h
+f*
+1 1 1 rg
+BT /F2 12.5 Tf 15 TL ET
+BT 1 0 0 1 61.10625 747 Tm (JL) Tj T* ET
+.184314 .337255 .831373 rg
+BT /F2 11.6 Tf 13.92 TL ET
+BT 1 0 0 1 90 754.92 Tm (JL Policy Consulting) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8.5 Tf 10.2 TL ET
+BT 1 0 0 1 90 743.76 Tm (LLC) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8 Tf 9.6 TL ET
+BT 1 0 0 1 526.864 755.28 Tm (03/30/26) Tj T* ET
+.184314 .337255 .831373 RG
+2 w
+n 54 734.4 m 558 734.4 l S
+n 54 61.92 m 558 61.92 l S
+.545098 .588235 .666667 rg
+BT /F1 7.5 Tf 9 TL ET
+BT 1 0 0 1 54 24.48 Tm (jlpolicyconsulting.com) Tj T* ET
+BT 1 0 0 1 534.2325 24.48 Tm (Page 3) Tj T* ET
+Q
+q
+1 0 0 1 60 686.36 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 4 Tm /F3 15 Tf 19 TL (How the product behaves in Medicaid and for dual-eligible patients) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 590.56 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 78.7 Tm /F1 10.1 Tf 14.8 TL (Medicaid is the most important access engine in the modeled launch. The internal payer mix is 50% Medicaid.) Tj T* (EPSDT stands for Early and Periodic Screening, Diagnostic, and Treatment. Medicaid.gov states that EPSDT) Tj T* (requires states to cover medically necessary services needed to correct or ameliorate physical or mental) Tj T* -0.109646 Tw (conditions in beneficiaries younger than 21, including Medicaid-coverable services that are not otherwise listed) Tj T* 0 Tw (in the state plan. In practice, that makes pediatric medical necessity the strongest coverage tailwind for) Tj T* (adrabetadex.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 510.56 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 63.9 Tm /F1 10.1 Tf 14.8 TL -0.064585 Tw (EPSDT is a coverage rule, not a single national reimbursement formula. Physician-administered drug payment) Tj T* 0 Tw (remains state-set. Current official state-plan examples show both WAC-based and ASP-based) Tj T* (reimbursement. Colorado reimburses physician-administered drugs in the Medicare ASP Drug Pricing File at) Tj T* (ASP minus 3.3% and reimburses drugs outside that file at WAC. Pennsylvania pays brand) Tj T* (prescriber-administered drugs at the lower of the provider's usual and customary charge or WAC plus 3.2%.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 445.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 49.1 Tm /F1 10.1 Tf 14.8 TL (EPSDT does not remove claim mechanics. Medicaid's Physician Administered Drugs program ties payment) Tj T* (availability and federal matching funds to state collection and submission of utilization data and, for defined) Tj T* (categories, NDC coding. A clinician-administered adrabetadex claim that fails NDC capture or other PAD edits) Tj T* (will not convert cleanly to cash.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 380.16 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 49.1 Tm /F1 10.1 Tf 14.8 TL (Dual-eligible volume is de minimis in the initial infantile-onset launch population because the labeled) Tj T* (population is pediatric. When a dual-eligible beneficiary does receive a Medicare-covered) Tj T* (clinician-administered service, Medicare pays first and Medicaid pays last. Medicaid therefore functions as) Tj T* (secondary wraparound coverage, not as the primary drug payer, for Medicare-covered services.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 314.96 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 49.1 Tm /F1 10.1 Tf 14.8 TL (One operational point is critical in 340B settings: HRSA's Medicaid Exclusion File applies to Medicaid) Tj T* (fee-for-service, not to Medicaid managed care organizations. The model therefore separates Medicaid) Tj T* (fee-for-service, Medicaid managed care, 340B carve-in, and 340B carve-out scenarios instead of averaging) Tj T* (them together.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 283.96 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 4 Tm /F3 15 Tf 19 TL (HCPCS and pass-through status: impact, timing, and required data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 173.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 93.5 Tm /F1 10.1 Tf 14.8 TL (HCPCS coding and OPPS pass-through status determine whether hospital outpatient claims are visible,) Tj T* (payable, and administratively manageable. CMS states that pass-through status is a temporary additional) Tj T* (outpatient payment for qualifying new drugs and biologicals while the agency gathers cost data. CMS also) Tj T* (states that pass-through runs for at least 2 years but not more than 3 years. For providers, the impact is) Tj T* (practical: pass-through can reduce packaging pressure in hospital outpatient departments during early launch,) Tj T* -0.061414 Tw (while the absence of product-specific coding increases use of miscellaneous billing, manual review, and denial) Tj T* 0 Tw (risk.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 108.16 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 49.1 Tm /F1 10.1 Tf 14.8 TL (Pass-through status does not replace payer management. It affects hospital outpatient Medicare payment) Tj T* (mechanics. It does not eliminate prior authorization, commercial medical-benefit controls, white-bagging rules,) Tj T* (or site-of-care edits. For adrabetadex, the operational value is that a clean HCPCS and pass-through path can) Tj T* (make hospital outpatient billing more predictable during the launch period while claims data accumulate.) Tj T* ET
+Q
+Q
+ 
+
+endstream
+endobj
+24 0 obj
+<<
+/Contents 25 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 19 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+25 0 obj
+<<
+/Length 8192
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.184314 .337255 .831373 rg
+n
+59.76 737.28 m
+77.04 737.28 l
+80.22413 737.28 82.8 739.8559 82.8 743.04 c
+82.8 760.32 l
+82.8 763.5041 80.22413 766.08 77.04 766.08 c
+59.76 766.08 l
+56.57587 766.08 54 763.5041 54 760.32 c
+54 743.04 l
+54 739.8559 56.57587 737.28 59.76 737.28 c
+h
+f*
+1 1 1 rg
+BT /F2 12.5 Tf 15 TL ET
+BT 1 0 0 1 61.10625 747 Tm (JL) Tj T* ET
+.184314 .337255 .831373 rg
+BT /F2 11.6 Tf 13.92 TL ET
+BT 1 0 0 1 90 754.92 Tm (JL Policy Consulting) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8.5 Tf 10.2 TL ET
+BT 1 0 0 1 90 743.76 Tm (LLC) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8 Tf 9.6 TL ET
+BT 1 0 0 1 526.864 755.28 Tm (03/30/26) Tj T* ET
+.184314 .337255 .831373 RG
+2 w
+n 54 734.4 m 558 734.4 l S
+n 54 61.92 m 558 61.92 l S
+.545098 .588235 .666667 rg
+BT /F1 7.5 Tf 9 TL ET
+BT 1 0 0 1 54 24.48 Tm (jlpolicyconsulting.com) Tj T* ET
+BT 1 0 0 1 534.2325 24.48 Tm (Page 4) Tj T* ET
+Q
+q
+1 0 0 1 60 616.56 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 78.7 Tm /F1 10.1 Tf 14.8 TL (CMS now requires OPPS pass-through applications through MEARIS. Drug and biological applications are) Tj T* (reviewed quarterly. A complete file received by the first business day of March, June, September, or) Tj T* (December can take effect on July 1, October 1, January 1, or April 1, respectively. Using the current August) Tj T* (17, 2026 PDUFA date, the earliest practical pass-through effective date would be January 1, 2027 if the) Tj T* (approval letter, final label, pricing file, and utilization package are complete in time for the first business day of) Tj T* (September 2026.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 582.96 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 19.6 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 582.96 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 14 17.6 Tm /F1 10 Tf 13.8 TL (The HCPCS and pass-through package will need the FDA approval letter, final label, trade and generic) Tj T* (name, proposed descriptor, dosage form, package size, method of administration, and billing unit logic.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 535.56 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 33.4 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 535.56 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 14 31.4 Tm /F1 10 Tf 13.8 TL (CMS states that the application must also include WAC and AWP, ASP if available, actual hospital cost,) Tj T* (market-availability date, projected utilization by site of care, and the requested HCPCS code or) Tj T* (descriptor.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 488.16 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 33.4 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 488.16 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 14 31.4 Tm /F1 10 Tf 13.8 TL (If product-specific outpatient coding is not active at launch, hospital outpatient claims may need the) Tj T* (interim miscellaneous-code bridge such as C9399 or NOC billing under MAC rules, which is exactly why) Tj T* (the coding file and billing guide must be ready before the first broad claims wave.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 480.4 cm
+Q
+q
+1 0 0 1 60 449.4 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 4 Tm /F3 15 Tf 19 TL (Small provider demo model using public benchmarks and launch inputs) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 398 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 34.3 Tm /F1 10.1 Tf 14.8 TL (The table below isolates drug spread only. It excludes administration revenue, anesthesia, imaging, and) Tj T* (staffing cost because those amounts vary by site and payer. The purpose is to show what happens to provider) Tj T* (economics before procedure revenue is layered in.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 93.8 cm
+q
+.960784 .968627 .984314 rg
+n 0 298.2 492 -69 re f*
+1 1 1 rg
+n 0 229.2 492 -126 re f*
+.980392 .984314 .996078 rg
+n 0 103.2 492 -103.2 re f*
+.07451 .090196 .168627 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 6 280.8 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 2.6 Tm /F2 8.8 Tf 11.4 TL (Scenario) Tj T* ET
+Q
+Q
+q
+1 0 0 1 72.78 258 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 25.4 Tm /F2 8.8 Tf 11.4 TL (Acquisition) Tj T* (cost per) Tj T* (dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 132.696 269.4 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 14 Tm /F2 8.8 Tf 11.4 TL (15% ref) Tj T* (/ dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 177.3712 269.4 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 14 Tm /F2 8.8 Tf 11.4 TL (20% ref) Tj T* (/ dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 222.0464 269.4 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 14 Tm /F2 8.8 Tf 11.4 TL (30% ref) Tj T* (/ dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 266.7216 246.6 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 36.8 Tm /F2 8.8 Tf 11.4 TL (Drug) Tj T* (payment) Tj T* (benchmark) Tj T* (per dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 325.6696 235.2 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 48.2 Tm /F2 8.8 Tf 11.4 TL (Gross) Tj T* (drug) Tj T* (spread) Tj T* (per) Tj T* (dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 370.3448 258 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 25.4 Tm /F2 8.8 Tf 11.4 TL (Annualized) Tj T* (spread at) Tj T* (26 doses) Tj T* ET
+Q
+Q
+q
+1 0 0 1 429.284 280.8 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 2.6 Tm /F2 8.8 Tf 11.4 TL (Interpretation) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 177.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 36.8 Tm /F1 8.8 Tf 11.4 TL (Commercial) Tj T* (buy-and-bill) Tj T* (at 100% of) Tj T* (WAC) Tj T* ET
+Q
+Q
+q
+1 0 0 1 72.78 211.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($39,000) Tj T* ET
+Q
+Q
+q
+1 0 0 1 132.696 211.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($33,150) Tj T* ET
+Q
+Q
+q
+1 0 0 1 177.3712 211.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($31,200) Tj T* ET
+Q
+Q
+q
+1 0 0 1 222.0464 211.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($27,300) Tj T* ET
+Q
+Q
+q
+1 0 0 1 266.7216 211.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($39,000) Tj T* ET
+Q
+Q
+q
+1 0 0 1 325.6696 211.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 370.3448 211.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 429.284 109.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 105.2 Tm /F1 8.8 Tf 11.4 TL (Provider) Tj T* (economics) Tj T* (depend) Tj T* (entirely on) Tj T* (procedure) Tj T* (revenue,) Tj T* (denial) Tj T* (performance,) Tj T* (and payment) Tj T* (speed.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 40.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 48.2 Tm /F1 8.8 Tf 11.4 TL (Medicare Part) Tj T* (B initial sales) Tj T* (benchmark at) Tj T* (103% of) Tj T* (WAC) Tj T* ET
+Q
+Q
+q
+1 0 0 1 72.78 85.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($39,000) Tj T* ET
+Q
+Q
+q
+1 0 0 1 132.696 85.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($33,150) Tj T* ET
+Q
+Q
+q
+1 0 0 1 177.3712 85.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($31,200) Tj T* ET
+Q
+Q
+q
+1 0 0 1 222.0464 85.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($27,300) Tj T* ET
+Q
+Q
+q
+1 0 0 1 266.7216 85.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($40,170) Tj T* ET
+Q
+Q
+q
+1 0 0 1 325.6696 85.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($1,170) Tj T* ET
+Q
+Q
+q
+1 0 0 1 370.3448 85.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($30,420) Tj T* ET
+Q
+Q
+q
+1 0 0 1 429.284 6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 82.4 Tm /F1 8.8 Tf 11.4 TL (Public) Tj T* (benchmark) Tj T* (spread is thin) Tj T* (before) Tj T* (administration) Tj T* (cost and) Tj T* (rework cost) Tj T* (are applied.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.87451 .898039 .941176 RG
+.35 w
+n 0 0 m 492 0 l S
+n 0 229.2 m 492 229.2 l S
+n 0 103.2 m 492 103.2 l S
+n 66.78 0 m 66.78 298.2 l S
+n 126.696 0 m 126.696 298.2 l S
+n 171.3712 0 m 171.3712 298.2 l S
+n 216.0464 0 m 216.0464 298.2 l S
+n 260.7216 0 m 260.7216 298.2 l S
+n 319.6696 0 m 319.6696 298.2 l S
+n 364.3448 0 m 364.3448 298.2 l S
+n 423.284 0 m 423.284 298.2 l S
+.6 w
+n 0 298.2 m 492 298.2 l S
+n 0 0 m 0 298.2 l S
+n 492 0 m 492 298.2 l S
+.184314 .337255 .831373 RG
+2 w
+n 0 298.2 m 492 298.2 l S
+Q
+Q
+Q
+ 
+
+endstream
+endobj
+26 0 obj
+<<
+/Contents 27 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 19 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+27 0 obj
+<<
+/Length 10288
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.184314 .337255 .831373 rg
+n
+59.76 737.28 m
+77.04 737.28 l
+80.22413 737.28 82.8 739.8559 82.8 743.04 c
+82.8 760.32 l
+82.8 763.5041 80.22413 766.08 77.04 766.08 c
+59.76 766.08 l
+56.57587 766.08 54 763.5041 54 760.32 c
+54 743.04 l
+54 739.8559 56.57587 737.28 59.76 737.28 c
+h
+f*
+1 1 1 rg
+BT /F2 12.5 Tf 15 TL ET
+BT 1 0 0 1 61.10625 747 Tm (JL) Tj T* ET
+.184314 .337255 .831373 rg
+BT /F2 11.6 Tf 13.92 TL ET
+BT 1 0 0 1 90 754.92 Tm (JL Policy Consulting) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8.5 Tf 10.2 TL ET
+BT 1 0 0 1 90 743.76 Tm (LLC) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8 Tf 9.6 TL ET
+BT 1 0 0 1 526.864 755.28 Tm (03/30/26) Tj T* ET
+.184314 .337255 .831373 RG
+2 w
+n 54 734.4 m 558 734.4 l S
+n 54 61.92 m 558 61.92 l S
+.545098 .588235 .666667 rg
+BT /F1 7.5 Tf 9 TL ET
+BT 1 0 0 1 54 24.48 Tm (jlpolicyconsulting.com) Tj T* ET
+BT 1 0 0 1 534.2325 24.48 Tm (Page 5) Tj T* ET
+Q
+q
+1 0 0 1 60 429.96 cm
+q
+.960784 .968627 .984314 rg
+n 0 275.4 492 -69 re f*
+1 1 1 rg
+n 0 206.4 492 -80.4 re f*
+.980392 .984314 .996078 rg
+n 0 126 492 -126 re f*
+.07451 .090196 .168627 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 6 258 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 2.6 Tm /F2 8.8 Tf 11.4 TL (Scenario) Tj T* ET
+Q
+Q
+q
+1 0 0 1 72.78 235.2 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 25.4 Tm /F2 8.8 Tf 11.4 TL (Acquisition) Tj T* (cost per) Tj T* (dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 132.696 246.6 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 14 Tm /F2 8.8 Tf 11.4 TL (15% ref) Tj T* (/ dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 177.3712 246.6 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 14 Tm /F2 8.8 Tf 11.4 TL (20% ref) Tj T* (/ dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 222.0464 246.6 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 14 Tm /F2 8.8 Tf 11.4 TL (30% ref) Tj T* (/ dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 266.7216 223.8 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 36.8 Tm /F2 8.8 Tf 11.4 TL (Drug) Tj T* (payment) Tj T* (benchmark) Tj T* (per dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 325.6696 212.4 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 48.2 Tm /F2 8.8 Tf 11.4 TL (Gross) Tj T* (drug) Tj T* (spread) Tj T* (per) Tj T* (dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 370.3448 235.2 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 25.4 Tm /F2 8.8 Tf 11.4 TL (Annualized) Tj T* (spread at) Tj T* (26 doses) Tj T* ET
+Q
+Q
+q
+1 0 0 1 429.284 258 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 2.6 Tm /F2 8.8 Tf 11.4 TL (Interpretation) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 143.4 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 48.2 Tm /F1 8.8 Tf 11.4 TL (340B covered) Tj T* (entity using) Tj T* (the same) Tj T* (103%) Tj T* (benchmark) Tj T* ET
+Q
+Q
+q
+1 0 0 1 72.78 189 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($29,991) Tj T* ET
+Q
+Q
+q
+1 0 0 1 132.696 189 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($33,150) Tj T* ET
+Q
+Q
+q
+1 0 0 1 177.3712 189 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($31,200) Tj T* ET
+Q
+Q
+q
+1 0 0 1 222.0464 189 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($27,300) Tj T* ET
+Q
+Q
+q
+1 0 0 1 266.7216 189 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($40,170) Tj T* ET
+Q
+Q
+q
+1 0 0 1 325.6696 189 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($10,179) Tj T* ET
+Q
+Q
+q
+1 0 0 1 370.3448 189 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($264,654) Tj T* ET
+Q
+Q
+q
+1 0 0 1 429.284 132 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 59.6 Tm /F1 8.8 Tf 11.4 TL (340B changes) Tj T* (the provider) Tj T* (economics) Tj T* (immediately) Tj T* (and) Tj T* (materially.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 85.8 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 25.4 Tm /F1 8.8 Tf 11.4 TL (Commercial) Tj T* (white-baggin) Tj T* (g) Tj T* ET
+Q
+Q
+q
+1 0 0 1 72.78 108.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 132.696 108.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($33,150) Tj T* ET
+Q
+Q
+q
+1 0 0 1 177.3712 108.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($31,200) Tj T* ET
+Q
+Q
+q
+1 0 0 1 222.0464 108.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($27,300) Tj T* ET
+Q
+Q
+q
+1 0 0 1 266.7216 108.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 325.6696 108.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 370.3448 108.6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 429.284 6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 105.2 Tm /F1 8.8 Tf 11.4 TL (The specialty) Tj T* (pharmacy bills) Tj T* (the plan) Tj T* (directly, and) Tj T* (the provider) Tj T* (loses drug) Tj T* (spread while) Tj T* (retaining) Tj T* (operational) Tj T* (work.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.87451 .898039 .941176 RG
+.35 w
+n 0 206.4 m 492 206.4 l S
+n 66.78 206.4 m 66.78 275.4 l S
+n 126.696 206.4 m 126.696 275.4 l S
+n 171.3712 206.4 m 171.3712 275.4 l S
+n 216.0464 206.4 m 216.0464 275.4 l S
+n 260.7216 206.4 m 260.7216 275.4 l S
+n 319.6696 206.4 m 319.6696 275.4 l S
+n 364.3448 206.4 m 364.3448 275.4 l S
+n 423.284 206.4 m 423.284 275.4 l S
+n 0 126 m 492 126 l S
+n 66.78 0 m 66.78 206.4 l S
+n 126.696 0 m 126.696 206.4 l S
+n 171.3712 0 m 171.3712 206.4 l S
+n 216.0464 0 m 216.0464 206.4 l S
+n 260.7216 0 m 260.7216 206.4 l S
+n 319.6696 0 m 319.6696 206.4 l S
+n 364.3448 0 m 364.3448 206.4 l S
+n 423.284 0 m 423.284 206.4 l S
+.6 w
+n 0 275.4 m 492 275.4 l S
+n 0 206.4 m 0 275.4 l S
+n 0 0 m 0 206.4 l S
+n 492 206.4 m 492 275.4 l S
+n 492 0 m 492 206.4 l S
+n 0 0 m 492 0 l S
+.184314 .337255 .831373 RG
+2 w
+n 0 275.4 m 492 275.4 l S
+Q
+Q
+Q
+q
+1 0 0 1 60 424.2 cm
+Q
+q
+1 0 0 1 60 387.2 cm
+q
+.545098 .588235 .666667 rg
+BT 1 0 0 1 0 24.5 Tm /F4 8.5 Tf 11 TL (Benchmark math: the 15% reference price is $39,000 x 0.85 = $33,150 per dose, the 20% reference price is $39,000 x 0.80 =) Tj T* ($31,200, and the 30% reference price is $39,000 x 0.70 = $27,300. The Medicare initial-sales benchmark uses 103% of WAC, or) Tj T* ($40,170. The new-drug 340B estimate uses $39,000 x \(1 - 0.231\) = $29,991.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 337.2 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 23 Tm /F3 15 Tf 19 TL (Operating-margin sensitivity: procedure revenue, denial performance,) Tj T* (payment speed, and labor time) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 271 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 49.1 Tm /F1 10.1 Tf 14.8 TL (Provider economics do not stop at drug spread. A live provider model also needs procedure revenue, clinician) Tj T* (time cost, denial performance, and payment speed because those items determine whether cash actually) Tj T* (turns into margin. The table below adds those operating drivers to the non-340B commercial buy-and-bill) Tj T* (scenario.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 191 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 63.9 Tm /F1 10.1 Tf 14.8 TL (These are demo-model inputs, not fixed national rates. The illustration uses $750 of procedure revenue per) Tj T* (administration, 1.25 hours of physician time costed at the BLS May 2023 pediatrician mean hourly wage of) Tj T* ($98.97, and 3.0 hours of nurse time costed at the BLS December 2024 registered-nurse wages-and-salaries) Tj T* (rate of $50.21. Denial drag is modeled at 0.5% of total billed revenue, and payment-speed cost is modeled as) Tj T* (45 days to payment with an 8% annual carrying-cost proxy on the $39,000 drug acquisition.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 81.2 cm
+q
+.960784 .968627 .984314 rg
+n 0 103.8 492 -46.2 re f*
+1 1 1 rg
+n 0 57.6 492 -57.6 re f*
+.07451 .090196 .168627 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 6 86.4 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 2.6 Tm /F2 8.8 Tf 11.4 TL (Scenario) Tj T* ET
+Q
+Q
+q
+1 0 0 1 69.8408 75 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 14 Tm /F2 8.8 Tf 11.4 TL (Procedure) Tj T* (rev / dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 128.2766 63.6 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 25.4 Tm /F2 8.8 Tf 11.4 TL (Physician) Tj T* (+ nurse) Tj T* (time / dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 186.7125 63.6 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 25.4 Tm /F2 8.8 Tf 11.4 TL (Denial) Tj T* (drag /) Tj T* (dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 245.1483 75 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 14 Tm /F2 8.8 Tf 11.4 TL (Payment-speed) Tj T* (cost / dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 322.1891 63.6 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 25.4 Tm /F2 8.8 Tf 11.4 TL (Mfr) Tj T* (support /) Tj T* (dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 380.625 63.6 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 25.4 Tm /F2 8.8 Tf 11.4 TL (Net op) Tj T* (margin /) Tj T* (dose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 439.0608 63.6 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 25.4 Tm /F2 8.8 Tf 11.4 TL (Annualized) Tj T* (at 26) Tj T* (doses) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 6 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 36.8 Tm /F1 8.8 Tf 11.4 TL (Commercial) Tj T* (buy-and-bill,) Tj T* (no extra) Tj T* (support) Tj T* ET
+Q
+Q
+q
+1 0 0 1 69.8408 40.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($750) Tj T* ET
+Q
+Q
+q
+1 0 0 1 128.2766 40.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($275) Tj T* ET
+Q
+Q
+q
+1 0 0 1 186.7125 40.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($199) Tj T* ET
+Q
+Q
+q
+1 0 0 1 245.1483 40.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($385) Tj T* ET
+Q
+Q
+q
+1 0 0 1 322.1891 40.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL ($0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 380.625 40.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL (-$109) Tj T* ET
+Q
+Q
+q
+1 0 0 1 439.0608 40.2 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.6 Tm /F1 8.8 Tf 11.4 TL (-$2,834) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.87451 .898039 .941176 RG
+.35 w
+n 0 0 m 492 0 l S
+n 0 57.6 m 492 57.6 l S
+n 63.8408 0 m 63.8408 103.8 l S
+n 122.2766 0 m 122.2766 103.8 l S
+n 180.7125 0 m 180.7125 103.8 l S
+n 239.1483 0 m 239.1483 103.8 l S
+n 316.1891 0 m 316.1891 103.8 l S
+n 374.625 0 m 374.625 103.8 l S
+n 433.0608 0 m 433.0608 103.8 l S
+.6 w
+n 0 103.8 m 492 103.8 l S
+n 0 0 m 0 103.8 l S
+n 492 0 m 492 103.8 l S
+.184314 .337255 .831373 RG
+2 w
+n 0 103.8 m 492 103.8 l S
+Q
+Q
+Q
+ 
+
+endstream
+endobj
+28 0 obj
+<<
+/Contents 29 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/C2_0 30 0 R
+/T1_0 14 0 R
+/T1_1 15 0 R
+/T1_2 20 0 R
+/T1_3 16 0 R
+/T1_4 21 0 R
+>>
+/ProcSet [ /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+29 0 obj
+<<
+/Length 6360
+>>
+stream
+0.184 0.337 0.831 rg
+q 1 0 0 1 59.76 737.28 cm
+0 0 m
+17.28 0 l
+20.464 0 23.04 2.576 23.04 5.76 c
+23.04 23.04 l
+23.04 26.224 20.464 28.8 17.28 28.8 c
+0 28.8 l
+-3.184 28.8 -5.76 26.224 -5.76 23.04 c
+-5.76 5.76 l
+-5.76 2.576 -3.184 0 0 0 c
+h
+f*
+Q
+BT
+1 1 1 rg
+/T1_0 12.5 Tf
+61.106 747 Td
+(JL)Tj
+0.184 0.337 0.831 rg
+/T1_0 11.6 Tf
+28.894 7.92 Td
+(JL Policy Consulting)Tj
+0.545 0.588 0.667 rg
+/T1_1 8.5 Tf
+0 -11.16 TD
+(LLC)Tj
+/T1_1 8 Tf
+436.864 11.52 Td
+(03/30/26)Tj
+ET
+0.184 0.337 0.831 RG
+2 w 
+q 1 0 0 1 54 734.4 cm
+0 0 m
+504 0 l
+S
+Q
+q 1 0 0 1 54 61.92 cm
+0 0 m
+504 0 l
+S
+Q
+BT
+/T1_1 7.5 Tf
+54 24.48 Td
+(jlpolicyconsulting.com)Tj
+480.233 0 Td
+(Page 6)Tj
+ET
+q
+1 0 0 1 60 475.56 cm
+0.961 0.969 0.984 rg
+0 229.8 492 -46.2 re
+f*
+Q
+q
+1 0 0 1 60 475.56 cm
+1 1 1 rg
+0 183.6 492 -91.8 re
+f*
+Q
+q
+1 0 0 1 60 475.56 cm
+0.98 0.984 0.996 rg
+0 91.8 492 -91.8 re
+f*
+Q
+BT
+0.075 0.09 0.169 rg
+/T1_0 8.8 Tf
+66 690.56 Td
+(Scenario)Tj
+63.841 0 Td
+(Procedure)Tj
+0 -11.4 TD
+(rev / dose)Tj
+58.436 11.4 Td
+(Physician)Tj
+T*
+[(+)-278 (nurse)]TJ
+T*
+(time / dose)Tj
+58.436 22.8 Td
+(Denial)Tj
+T*
+(drag /)Tj
+T*
+(dose)Tj
+58.436 22.8 Td
+(Payment-speed)Tj
+T*
+(cost / dose)Tj
+77.041 11.4 Td
+(Mfr)Tj
+T*
+(support /)Tj
+T*
+(dose)Tj
+58.436 22.8 Td
+(Net op)Tj
+T*
+(margin /)Tj
+T*
+(dose)Tj
+58.436 22.8 Td
+(Annualized)Tj
+T*
+(at 26)Tj
+T*
+(doses)Tj
+0.353 0.408 0.502 rg
+/T1_1 8.8 Tf
+-433.061 -23.4 Td
+(Commercial)Tj
+T*
+(buy-and-bill)Tj
+T*
+[(+)-278 (5.0%)]TJ
+T*
+(manufacturer)Tj
+T*
+(discount or)Tj
+T*
+(equivalent)Tj
+T*
+(rebate)Tj
+63.841 68.4 Td
+($750)Tj
+58.436 0 Td
+($275)Tj
+58.436 0 Td
+($199)Tj
+58.436 0 Td
+($385)Tj
+77.041 0 Td
+(+$1,950)Tj
+58.436 0 Td
+($1,841)Tj
+58.436 0 Td
+($47,866)Tj
+-433.061 -91.8 Td
+(Commercial)Tj
+T*
+(buy-and-bill)Tj
+0 -11.4 TD
+[(+)-278 (10.0%)]TJ
+0 -11.4 TD
+(manufacturer)Tj
+0 -11.4 TD
+(discount or)Tj
+T*
+(equivalent)Tj
+T*
+(rebate)Tj
+63.841 68.4 Td
+($750)Tj
+58.436 0 Td
+($275)Tj
+58.436 0 Td
+($199)Tj
+58.436 0 Td
+($385)Tj
+77.041 0 Td
+(+$3,900)Tj
+58.436 0 Td
+($3,791)Tj
+58.436 0 Td
+($98,566)Tj
+ET
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 0 183.6 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 63.8408 183.6 cm
+0 0 m
+0 46.2 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 122.2766 183.6 cm
+0 0 m
+0 46.2 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 180.7125 183.6 cm
+0 0 m
+0 46.2 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 239.1483 183.6 cm
+0 0 m
+0 46.2 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 316.1891 183.6 cm
+0 0 m
+0 46.2 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 374.625 183.6 cm
+0 0 m
+0 46.2 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 433.0608 183.6 cm
+0 0 m
+0 46.2 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 0 91.8 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 63.8408 0 cm
+0 0 m
+0 183.6 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 122.2766 0 cm
+0 0 m
+0 183.6 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 180.7125 0 cm
+0 0 m
+0 183.6 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 239.1483 0 cm
+0 0 m
+0 183.6 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 316.1891 0 cm
+0 0 m
+0 183.6 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 374.625 0 cm
+0 0 m
+0 183.6 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 433.0608 0 cm
+0 0 m
+0 183.6 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 0 229.8 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 0 183.6 cm
+0 0 m
+0 46.2 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+0 0 m
+0 183.6 l
+S
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 492 183.6 cm
+0 0 m
+0 46.2 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 492 0 cm
+0 0 m
+0 183.6 l
+S
+Q
+Q
+q
+1 0 0 1 60 475.56 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+0 0 m
+492 0 l
+S
+Q
+q
+1 0 0 1 60 475.56 cm
+1 j 1 J 
+q 1 0 0 1 0 229.8 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+BT
+0.545 0.588 0.667 rg
+/T1_2 8.5 Tf
+60 457.3 Td
+(Illustrative labor math: 1.25 x $98.97 = about $124 of physician time an\d 3.0 x $50.21 = about $151 of nurse time, for about $275)Tj
+0 -11 TD
+(total. Illustrative manufacturer-support math: 5% of a $39,000 WAC equal\s $1,950 per dose and 10% equals $3,900 per dose.)Tj
+0.075 0.09 0.169 rg
+/T1_3 15 Tf
+0 -29.5 TD
+(What the provider model will include)Tj
+0 0 0 rg
+/T1_4 8 Tf
+0 -19 TD
+(l)Tj
+0.353 0.408 0.502 rg
+/T1_1 10 Tf
+32 -2 Td
+(A commercial buy-and-bill scenario, a commercial white-bagging scenario,\ a Medicaid fee-for-service)Tj
+0 -13.8 TD
+(scenario, a Medicaid managed care scenario, and separate 340B carve-in a\nd carve-out scenarios.)Tj
+0 0 0 rg
+/T1_4 8 Tf
+-32 -17.8 Td
+(l)Tj
+0.353 0.408 0.502 rg
+/T1_1 10 Tf
+32 -2 Td
+(Drug acquisition cost, drug payment benchmark, claim-denial sensitivity,\ days-to-payment, and)Tj
+T*
+(claim-cleanliness inputs for NDC capture and documentation completeness.\)Tj
+0 0 0 rg
+/T1_4 8 Tf
+-32 -17.8 Td
+(l)Tj
+0.353 0.408 0.502 rg
+/T1_1 10 Tf
+32 -2 Td
+(A distinct output for provider cash exposure because a center that buys \product at WAC every two)Tj
+T*
+(weeks carries more risk than a center that only bills administration.)Tj
+0 0 0 rg
+/T1_4 8 Tf
+-32 -17.8 Td
+(l)Tj
+0.353 0.408 0.502 rg
+/T1_1 10 Tf
+32 -2 Td
+(A separate assumption set for hospital outpatient departments and physic\ian offices because)Tj
+T*
+(site-of-care policies already differentiate those settings.)Tj
+ET
+/TouchUp_TextEdit MP
+BT
+0.075 0.09 0.169 rg
+/T1_3 15 Tf
+60 242.64 Td
+(Bottom line)Tj
+0.353 0.408 0.502 rg
+/T1_1 10.1 Tf
+0 -21.1 TD
+(The provider model does not prove broad coverage. It proves where provid\er economics break, where they)Tj
+/C2_0 10.1 Tf
+477.757 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-477.757 -14.8 Td
+(remain neutral, and where they become favorable. On the supplied inputs,\ non-340B buy-and-bill economics)Tj
+/C2_0 10.1 Tf
+483.961 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-483.961 -14.8 Td
+(are thin, 340B economics are strong, and white-bagging removes drug spre\ad entirely.)Tj
+ET
+
+endstream
+endobj
+30 0 obj
+<<
+/BaseFont /LBGPBB+Helvetica
+/DescendantFonts 31 0 R
+/Encoding /Identity-H
+/Subtype /Type0
+/ToUnicode 37 0 R
+/Type /Font
+>>
+endobj
+31 0 obj
+[ 32 0 R ]
+endobj
+32 0 obj
+<<
+/BaseFont /LBGPBB+Helvetica
+/CIDSystemInfo 33 0 R
+/CIDToGIDMap /Identity
+/DW 1000
+/FontDescriptor 34 0 R
+/Subtype /CIDFontType2
+/Type /Font
+/W [ 0 [ 634 0 ] 2 4 278 5 [ 355 ] 6 7 556 8 [ 889 667 191 ] 11 12 333 13 [ 389 584 278 333 ] 17 18 278 19 28 556 29 30 278 31 33 584 34 [ 556 1015 ] 36 37 667 38 39 722 40 [ 667 611 778 722 278 500 667 556 833 722 778 667 778 722 667 611 722 667 944 ] 59 60 667 61 [ 611 ] 62 64 278 65 [ 469 556 333 ] 68 69 556 70 [ 500 ] 71 72 556 73 [ 278 ] 74 75 556 76 77 222 78 [ 500 222 833 ] 81 84 556 85 [ 333 500 278 556 500 722 ] 91 93 500 94 [ 334 260 334 584 ] 98 99 667 100 [ 722 667 722 778 722 ] 105 110 556 111 [ 500 ] 112 115 556 116 119 278 120 130 556 131 [ 400 ] 132 134 556 135 [ 350 537 611 ] 138 139 737 141 142 333 143 [ 549 ] 145 [ 778 713 ] 147 149 549 150 [ 556 576 494 713 823 549 274 370 365 768 889 ] 161 162 611 163 [ 333 584 549 556 549 612 ] 169 170 556 172 [ 278 ] 173 174 667 175 [ 778 ] 177 [ 944 556 ] 180 181 333 182 183 222 184 [ 549 494 500 667 167 744 ] 190 191 333 192 193 500 194 [ 556 278 222 333 ] 199 203 667 204 207 278 208 209 778 210 [ 790 778 ] 212 214 722 215 [ 278 ] 216 225 333 226 [ 556 222 667 500 611 500 260 722 556 667 500 667 556 ] 239 240 584 241 243 333 244 246 834 247 [ 556 778 556 278 667 500 722 500 722 500 556 667 556 667 556 667 556 722 500 722 500 722 660 667 556 667 556 667 556 667 556 667 556 778 556 778 556 778 ] 285 286 556 287 [ 722 556 722 556 445 430 400 390 278 222 778 444 500 222 667 500 556 265 556 222 556 263 556 310 722 556 722 556 722 ] 316 317 556 318 [ 778 556 778 556 778 556 722 333 722 333 722 333 667 500 667 500 611 278 611 360 611 320 722 556 722 556 722 556 722 556 722 556 722 556 944 722 667 500 611 500 611 500 667 500 611 278 556 ] 365 379 0 380 [ 722 778 ] 382 383 556 384 [ 222 667 500 722 556 722 333 208 277 333 222 500 278 ] 397 398 556 399 [ 500 556 ] 401 403 0 404 405 278 406 [ 722 556 0 678 662 667 519 701 667 992 666 ] 417 418 722 419 [ 667 687 833 722 778 722 667 722 611 667 855 667 732 651 944 954 833 879 651 722 ] 440 [ 714 ] 441 442 556 443 [ 548 403 606 556 780 500 ] 449 450 583 451 [ 548 574 666 ] 454 457 556 458 460 500 461 [ 832 500 571 538 778 792 611 722 500 510 778 558 667 556 519 403 278 222 500 722 500 278 251 ] 485 [ 845 985 811 222 667 778 556 667 548 500 761 556 667 500 722 ] 500 501 556 502 [ 389 ] 503 535 0 536 [ 278 556 833 333 833 ] 541 542 333 543 544 521 545 [ 251 403 ] 547 548 278 549 [ 500 722 500 ] 552 554 556 555 [ 500 ] 556 557 587 558 559 722 560 [ 567 ] 561 562 667 563 [ 500 574 862 698 755 260 431 278 568 500 150 ] 574 575 333 576 [ 1378 667 323 333 222 333 537 ] 583 584 523 585 586 674 587 [ 333 323 333 ] 591 [ 354 139 ] 593 599 0 600 608 278 609 613 0 614 [ 139 70 333 430 556 ] 619 620 333 621 622 537 623 [ 667 611 556 889 676 ] 628 652 0 653 [ 167 310 ] 655 656 167 657 658 549 659 660 494 661 662 713 663 664 274 665 668 549 669 [ 1122 1011 667 278 556 833 945 667 945 1223 1500 945 667 945 1223 556 ] 685 686 722 687 [ 833 222 444 667 722 500 722 944 1167 722 500 722 944 222 500 556 833 1235 1094 982 981 707 371 1113 867 704 667 556 ] 715 716 278 717 [ 778 556 722 556 722 556 722 556 722 556 722 556 667 556 667 556 ] 734 [ 889 778 556 667 500 778 556 778 556 222 1225 1123 998 778 722 556 667 556 ] 753 [ 889 778 611 667 556 667 556 667 556 667 556 278 222 278 222 778 556 778 556 722 333 722 333 722 556 722 556 722 556 667 556 667 556 778 556 778 556 778 556 778 556 667 500 333 278 667 556 667 556 667 556 667 556 722 500 722 556 722 556 722 556 722 556 722 556 667 556 667 556 667 556 667 556 667 556 611 278 778 556 722 556 722 556 722 556 722 556 722 556 278 222 ] 844 845 278 846 [ 667 500 667 500 667 500 556 222 556 222 556 222 556 222 ] 860 865 833 866 [ 722 556 722 556 722 556 722 556 778 556 778 556 778 556 778 556 667 556 667 556 722 333 722 333 722 333 722 333 667 500 667 500 667 500 667 500 667 500 611 278 611 278 611 278 611 278 722 556 722 556 722 556 722 556 722 556 667 500 667 500 944 722 944 722 944 722 944 722 944 722 667 500 667 500 667 500 611 500 611 500 611 500 556 278 722 500 278 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 ] 993 995 278 996 [ 222 778 556 778 556 778 556 778 556 778 556 778 556 778 556 889 676 889 676 889 676 889 676 889 676 722 556 722 556 862 698 862 698 862 698 862 698 862 698 667 500 667 500 667 500 667 500 667 556 667 556 678 734 ] 1049 1050 565 1051 [ 892 692 678 565 678 565 678 565 1106 858 664 505 734 565 734 565 792 565 734 509 678 509 678 509 678 509 709 560 910 750 ] 1082 [ 889 ] 1083 1084 833 1085 [ 722 333 267 667 722 611 722 667 611 722 778 278 ] 1097 1098 667 1099 [ 889 722 611 778 722 667 611 610 667 722 668 832 778 278 667 ] 1114 1115 611 1116 [ 556 611 556 444 611 612 278 ] 1123 1124 556 1125 [ 611 556 500 ] 1128 1129 611 1130 [ 556 611 500 611 722 556 722 758 278 611 278 267 0 278 ] 1144 1145 178 1146 1147 0 1148 [ 178 349 338 377 384 ] 1153 1154 267 1155 [ 390 423 400 423 901 768 778 ] 1162 1163 222 1164 [ 556 ] 1165 1166 834 1167 1168 556 1169 [ 667 ] 1170 1171 556 1172 [ 667 556 667 556 667 556 ] 1178 1179 278 1180 [ 222 778 556 778 556 778 556 667 500 722 556 500 862 698 751 556 722 556 833 492 547 456 489 351 535 751 556 792 565 778 333 ] 1211 1212 972 1213 [ 1112 ] 1214 1218 0 1219 [ 751 556 792 565 267 338 556 611 500 556 603 607 556 592 605 556 605 267 944 441 333 603 590 646 931 672 528 726 595 590 ] 1249 1250 208 1251 [ 222 191 ] 1253 1255 333 1256 [ 191 ] 1257 1259 333 1260 1261 208 1262 1263 333 1264 1265 278 1266 [ 111 ] 1267 1268 167 1269 [ 221 361 250 ] 1272 1273 278 1274 1277 292 1278 [ 333 ] 1279 1281 292 1282 1283 250 1284 [ 111 292 278 ] 1287 1290 292 1291 [ 333 278 ] 1293 1306 0 1307 [ 278 ] 1308 1310 0 1311 1312 389 1313 [ 856 972 278 1112 972 889 876 ] 1320 1321 278 1322 1327 0 1328 [ 810 ] 1329 1335 278 1336 [ 292 167 292 ] 1339 1340 167 1341 1351 278 1352 [ 292 167 292 ] 1355 1356 167 1357 [ 779 778 ] 1359 1360 556 1361 [ 667 833 750 917 556 973 834 722 667 612 823 ] 1372 1373 833 1374 [ 667 556 667 556 611 778 596 282 426 722 341 403 ] 1386 1387 556 1388 1389 222 1390 [ 556 ] 1391 1398 611 1399 [ 719 712 928 ] 1402 1403 933 1404 [ 944 974 953 ] 1407 1412 556 1413 1414 845 1415 [ 1057 1067 1044 1051 ] 1419 1426 611 1427 1428 900 1429 [ 1112 1122 1100 1106 ] 1433 1434 1145 1435 1442 278 1443 1444 456 1445 [ 667 678 655 662 ] 1449 1450 701 1451 1456 611 1457 1458 956 1459 [ 1167 1178 1155 1162 ] 1463 1470 611 1471 [ 845 1067 1051 1090 ] 1475 1482 758 1483 1484 946 1485 [ 1158 1168 1146 1152 ] 1489 1490 1191 1491 1492 611 1493 1494 556 1495 1496 611 1497 1498 278 1499 1502 611 1503 1504 758 1505 1512 611 1513 [ 1008 1006 1196 1230 1187 1201 1228 1226 ] 1521 1528 611 1529 1530 1178 1531 [ 1390 1400 1377 1384 ] 1535 1536 1423 1537 1544 758 1545 1546 1224 1547 [ 1436 1446 1423 1430 ] 1551 1552 1469 1553 1559 611 1560 1561 667 1562 [ 800 797 958 ] 1565 1569 611 1570 [ 834 832 853 841 1024 ] 1575 1582 278 1583 [ 408 410 ] 1585 1592 611 1593 1594 667 1595 [ 836 884 845 ] 1598 1602 758 1603 [ 919 942 946 958 1059 611 556 611 278 ] 1612 1613 611 1614 [ 758 729 832 841 410 942 884 958 278 611 584 614 621 369 341 556 ] 1630 1645 611 1646 1663 278 1664 1681 611 1682 [ 800 797 719 928 933 712 933 944 800 797 719 928 933 712 933 944 408 ] 1699 1700 410 1701 [ 456 667 655 456 678 662 408 ] 1708 1709 410 1710 [ 456 667 655 456 678 662 836 ] 1717 1718 884 1719 [ 845 1067 1051 845 1067 1051 836 ] 1726 1727 884 1728 [ 845 1067 1051 845 1067 1051 ] 1734 1735 722 1736 [ 778 222 639 667 722 0 665 556 778 556 931 902 737 ] 1749 1752 834 1753 [ 803 611 1017 735 832 722 667 500 950 726 606 349 731 691 722 556 390 606 490 786 601 667 500 611 500 1106 858 664 505 678 509 734 565 734 509 621 509 678 509 709 560 709 560 ] 1796 1797 667 1798 [ 606 436 709 560 774 609 921 701 ] 1806 1807 667 1808 [ 874 663 910 697 910 697 931 712 734 565 556 ] 1819 1820 664 1821 [ 832 607 1042 734 667 500 667 589 500 664 505 743 576 278 678 509 ] 1837 1838 667 1839 [ 722 500 556 611 222 341 611 667 ] 1847 1848 556 1849 [ 667 556 542 222 722 ] 1854 1855 208 1856 1859 333 1860 [ 278 ] 1861 1862 333 1863 [ 687 ] 1864 1865 584 1866 [ 278 584 686 584 ] 1870 1871 278 1872 [ 778 ] 1873 1874 509 1875 [ 667 556 722 833 733 701 ] 1881 1883 722 1884 1886 500 1887 [ 556 724 847 781 390 772 614 566 ] 1895 1898 333 1899 1900 308 1901 1905 412 1906 [ 566 496 546 ] 1909 1910 526 1911 [ 374 414 825 792 645 0 860 614 234 239 ] 1921 1922 170 1923 [ 200 199 373 377 300 ] 1928 1929 292 1930 [ 348 ] 1931 1932 230 1933 [ 989 1186 ] 1935 1936 1149 1937 [ 154 542 ] 1939 1940 692 1941 [ 593 532 ] 1943 1944 230 1945 1946 499 1947 [ 502 429 550 ] 1950 1961 0 1962 1963 549 1964 1965 500 1966 [ 933 537 489 638 791 598 845 1067 1051 ] 1975 1976 667 1977 1978 278 1979 1980 667 1981 [ 502 ] 1982 1984 737 1998 [ 502 111 ] 2000 2002 278 2003 [ 250 278 722 778 722 555 665 611 667 602 720 606 722 833 727 799 1022 ] 2020 2021 665 2022 [ 451 438 451 438 451 438 451 438 365 ] 2031 2033 361 2034 2035 365 2036 2038 361 2039 [ 365 ] 2040 2044 423 2045 [ 312 398 462 470 630 826 445 ] 2052 2060 0 2061 [ 549 500 1278 1056 ] 2065 2067 526 2068 2069 395 2070 [ 417 631 ] 2072 2075 395 2076 2077 370 2078 [ 395 158 355 591 ] 2082 2083 395 2084 [ 355 ] 2085 2087 395 2088 [ 197 395 431 591 355 434 395 434 607 774 593 ] 2099 2100 556 2101 [ 612 610 622 929 395 158 236 395 355 434 395 434 395 521 721 222 546 880 849 604 622 355 614 398 356 357 222 333 222 333 222 333 222 333 655 879 383 682 1094 556 359 ] 2142 2146 556 2147 [ 523 ] 2148 2149 556 2150 2152 475 2153 [ 520 518 569 527 831 539 534 621 847 538 522 972 576 577 736 534 557 739 552 663 557 800 535 736 551 580 566 588 575 580 602 575 518 530 593 530 ] 2189 2190 543 2191 [ 591 734 537 604 ] 2195 2196 556 2197 [ 518 556 527 518 577 568 ] 2203 2204 590 2205 [ 896 579 570 607 912 594 561 1045 ] 2213 2214 608 2215 [ 829 554 588 762 591 729 616 818 582 781 600 608 595 654 ] 2229 2230 613 2231 [ 639 613 573 572 641 596 572 571 613 753 576 595 576 585 644 370 538 569 596 710 741 ] ]
+>>
+endobj
+33 0 obj
+<<
+/Ordering (Identity)
+/Registry (Adobe)
+/Supplement 0
+>>
+endobj
+34 0 obj
+<<
+/Ascent 1122
+/CIDSet 35 0 R
+/CapHeight 717
+/Descent -481
+/Flags 4
+/FontBBox [ -951 -481 1446 1122 ]
+/FontFile2 36 0 R
+/FontName /LBGPBB+Helvetica
+/FontStretch /Normal
+/FontWeight 400
+/ItalicAngle 0
+/StemV 88
+/Type /FontDescriptor
+/XHeight 523
+>>
+endobj
+35 0 obj
+<<
+/Filter /FlateDecode
+/Length 11
+>>
+stream
+H‰š `  ‘ ‘
+endstream
+endobj
+36 0 obj
+<<
+/Filter /FlateDecode
+/Length1 23982
+/Length 7233
+>>
+stream
+H‰Ä—PT×ÇÏ½ï½‚™‚?
+òCßö‰"?•X4+ì"ˆà
+bv•è.¿‚T”J5íÕ¨+R3Ö&1LSZÛZ´åIœÎ¢ÕAÇŒuš¤ØŒ¦µi£µIg:aìĞ11áõ{ßÇqøƒ1{çìùqÏ;÷ÜÏ½og¶yÛ7k(œ|$Qúª²´üüâ©jiVƒ.‹#’ZkŸkúò	¢ğÃÏmŞQë8½®€("ÁÍu5Şêå!ğÃ_T‡@0?â&¾fÕ54oò‰´ôÍ[«¼$ı:‚(cüŒïöÆàü3•øR·xjVüeúBø»ÑÃ…Æm5CónzØB’´Ÿ&…HyEA›ÔRÕrı¹EÜpÒöõÃ~ãmMd£°ûÜBƒÇiIÈ1ö–JìµUuÓ”óbuTí¥Ø‰Šbä4šIdü	rSèÁrãCå
+6Ò`ü[ÊF~>øtõÒ!z•ºÈB'`'Òz™®²zêat†n°4¼e
+ĞJz“Æ5ª¥ãÈo¦Kt”NÓ$<Ó@Ó0ÛÆŒçáÛ`WÒãÇ4‹2é:OY¨ÚFıÆ/Œ×1[JåÔI'ñüï˜ÆOËSŒ_§PZš{0sÍXitÑdJ¡\r"º‡.°é¦QGÑ”îÚé5ê ‹ôÛÍÎuF‹ÑgÜ&Ù8*ÃØÉÎ°ÛR—ü‚ÑnüÓ‰DJÂª:B?Aı.Œ^FÌÁ¾ÁšÙv”Ûøn~FŞ«D~si9Fm¥ı ĞC—é?ô	»Ë£¥©YzÃxÊø/î`v)vRC-û0Ú°§sÌÂÒYs²ìûì({‡'ñrîâßâÛù‡R‰T!íŞ‘›än¥UyÙ>8`œ3®×)Šâi=m£]Øİ%ê£éS&¡VK`Ù,—mÀğ±Wyë`=ÜÉzYïdï³;ì.»Ï>‰OãÉ¼™á'ù%ş¶´I:*½"½/ÈK®t(XBş<X9x`ğm#Û¸mÜÃJVœL.•ĞFòb·”AßÁ.~‰Ñ…S»LoĞUsÜÁÕO÷@ØdÃ°bŒ¶ŠÕ²Mì‡ì,Æ³—ÿqã‘<ŠÇñ2^É¸_ç>)VJ’VHë¤.ŒßJ7¤ûÒ}Y‘§ÈÓäår!µÊò1ŒŸÉ'änù÷J–²T)QÖ*>å€Ò*U)×”–]–6K·å®å_!‰!+C¶†´ât®âÎ^óòÈlº_@[¨ŠÙY%ı §ÑÁ¼äÇíªfûÑc#%ÏJ»¤å<·á}·õí¤Ru”:é]Ü”Í¨å£ŸË¹¯¼„ÓÙMé¸E_Œ#8õÑ)¼'Á‰(y°Ü|ï¬Êšc››47qÎì„YÚ×¬êÌñq±1Ó££¾:mê”É‘ON
+",4Ä¢Èg”âĞò=ª>Û£Ë³µ‚‚Ták^¼£]E(l®zÌ4ul¦™µdÚ‚™¶‘L¡æPNjŠêĞTı-»¦ØºÕ.Ø‡ìš[ÕûM»Ø´›ö“°­V< :¢ëìªÎ<ªCÏo©ó;<v”ëÁO=‘š"~Xl.
+ë”çİY%2zŒfwèÓ5»9'%8¼ÕºsµËaµZİˆ!TêÂ©)›DŸtpRµV}0`£J°¼.]òºuîµ"“õ(Í®G=ÿAôî°åh5©ó„|o?]ğ¼­ğŠÊT”å{İ.íjBôXo¶[£9DÈS¯êaZ®Vç¯÷ .•ººcl1ÍkwëätuO·M7Ô”è]ÙVì¾'uYê2¡³­Ñ»‚úßÆÿĞnæ]¾]T:€‰•´Bô©«Uæ"šÍ_5™ä¯ÊD>n†mnB?y:Ç‘t%¡Ğ«ûÊ†Û¨³›óÔÛ»Ã¦Çˆ=xrİÈ÷ø#cäGhª€p„ZÿGc#Ş¡ˆ%!b€„)zä®`~Øn1Áˆå¢µ:q¾-!_‹vŒ
+ÀhDÏúT}A‘ÓeÕU7JN)
+P˜Óuš±6w€{dï¡0’6nÀtŠ¸j›ìXNj
+IVXóRÔ|ÎwEõ«şÂj¿š¯Öá2É	¦ÆDß‚e.p¢5XÑæ1kÜîÅ¨“&êÈf¿ê‡*Ô›Pàs$¥§a›³®Õ.İgÕmv7N×·×éÒ{qpn7²æt
+½sSôPÏĞóü$ƒUÊP%Ü~ĞÓ¬z¯ßëïXĞ0z0`
+È, ¢æsšS>Ík2·jV´åL3p¥‡oT€z4áE£	İ.2	gNá¬ñ^<.ÂÙ'œƒ³á%ğÒ1„Ÿ~4aÛhÂËĞ­Í$œ;A„óÆCØ>.Â‡ÎGÏAxùã#\0†pá£	¯M¸İ®0	¯œ ÂÅã!\2.Â«NØ‰W	Â«áÒ1„ËMxÍhÂåèvIxí~f<„]ã"ì~8áuèÙ-¯!l‹Õi4aß@iÂ‘WŒAşì£‘o|#Úß`"÷LrïxWyÕÃ‘W£ç*¼æKD^;
+9ş”äâ¯AŸrÿ{B(·>9@¡i’!¡¢>ˆğaKïÁ†– ÃŞ£³xŠhmòYTR Óç/Œ´FÎäÊmÏş¦œÿ4/ ßY,øGdëÇûâ6~%g€"CMcñ÷Lı×[ónÜ«ùlNø‹¡ŸÀC>>e™;8—hÃlø‹Ãu†?¡o*“Å.ˆxÖˆôów©TnÂŞšÈO¹ÊZr³}ÔÎ;©b—â©D>EÈí„_İ%ùËCz>$’)†Ù…È½#5âDS7Q{èLºµf@^R®Ğ:ÈOawÉw¨Ë’EUğ;ğÜU™HC¼]<cé4sÛ1ï¹¦¾Bg`{ğœv'ìŒC” $ñ4Ôññ,ãtšt‘¶‹ıb/³¡ÅŞ[°F6t&¤ 9¢¿%=ìŠã&æ}°`ı="É6Ÿk¢Ô9€ù\<ß;}L2’ÁO×ùT:ÌÿOy¹ÀHUqüÛ;3÷Î0„ğQD`#ÈÊ«²‹ ZØ€¢»KP¤ ’uY­Zm%bvX"ÚˆSYM©m•…ˆm‘»By(ĞÒPD0vEÔ©ØZ©ÂzûûÎ=wœ}:É?ÿ3çÇwÎ÷<Û‘g»ô´ç`ÎÍ92gB~+SK2gƒ=âV—ùY²åbun‰Œ‘
+x¹=÷Lç°<-ñÿË}í•Ş 'vwó­s¢Keÿ»#ç”ØNÎÁ0ßp•ß­õwF¾»ø6ÔİÄ.åŞGù9_ÊçSåæËBìk:ë/ {XóccKıÏØ¨Yç¬TÒnP˜½9WxWz?ôMG·ÓØï"íÏYc–"ĞwÇÈ0Eï]uŸWöM]ìYÄ˜ ş«8?k?­st>ku³ûìÈbµó»±›¯àÀQæÈŠP_!øş*kwêüpop%Ğöãà!ú}x‹Aş±«Æn±µQc'Øk]£ögl78G ³Àwîcş 	<w»ÌÏõ7Q¿Ñ¹ê7áÚjcj;!«¾õŒjS-8g¬ñÉb3~‡Ú[GîŸËæ<ø³Ú'<Ù +"•Ä—12/rµÜ‰Ìã¸“÷˜s0ò$vŒßóÿyÖÿsõçjY£ŒŞºšÿ}‰MÊKú]Ÿû•.áĞMu¥~Ë;ÔáépûJæî¾ÕÏ5Æ¿•-oğß·şºº³lâÒ~ãÿF·¡ŞCn±~)ré’E-XªÁ:‘¦ğ^ğ%¸7øŞT÷„7ª-eé@ï­ÆÄR12…÷eî ¯Î?åÜ ãÃ˜gcaoDŠà[YûFÖ^¦2àáZ*Ol¥‰•Hš}ÒÑkáZ‹ÓŞytr»ÜÌØ´}±ŸJ>1Õü·şôïG?g¤?í÷m™çÇNÑÿ=YÄ¦½-Œ¯“ş^Âôéø¥øp:öG¹9ÊŒ¼K$)”TôdàïîDîSdLt}
+¾GÓÒ™R|OÙs*ÿ„qÅf¬H÷Eù>|Yt#ßfÉäL¹wĞ>ÃÜıìáÓ¾9u¯L^Jë~zvİŸ;ÜÃ½§LÓs‰‰ÛıˆCæ|÷éç5rG$Å½¿Ëü%¬¥vİÏ¬µÄÌ-vûH?Û§¶¢¶š¶ò¦ÉÑ©@÷ÙP›hú9ØKÆª›Û1¶UkÇ­Ë²³e9mĞt‹år;v}°‡ÉA*ãt³;Zk¹FÛÑär›ãpgE~“Ú·±q1¾ÚÃÜq•±£gcÑßK¡‚ïóL\¬‘é66~’–B÷CâïS²Úí"sˆŸ»"U²‹ußˆ>!#4†å•[Ù¿4$]çÏ9›L^›eã©É{RbwJ=h0µN0®Ôäšãòë¼şÒî/«®j­ıÌº´&ñ/Dî•]&¦éşuâFKd¨21úŒ¼¤vê]…-—	ÜûÂæ¸t£†ƒÏ@#8	>:î&0ƒöQğW«Û >ëòJe1ñu±²‚;Œ Ï^
+b;óziÎwF‘+G}³†|>ÆätÆ€ëâ_KEür©Ğ¸cê¹UrĞİ&½&G…Ç&ÈØ®y¦­}Ãááôi¯kC­ı4Ïknˆ•š¸õ¸­µ’Ş“’L”šv³>waÎÓÚ-ñ¾Ü¯—ÙŞ)ï½#wÇ^Jç‚Ì$•îyşo‘ÛÂ\ˆ¬ˆm~V®è\¬ÏÉ©Z3iİÆá0şææ"|ÿµÄa¹=~I*¼‹ÈÔÀAŒn¹–æˆ­äñfùù+Ywü?¸®õüçÿİæ€Ù­œiKöşYy¾Õ|šY×æ7SŸµH8ÿi­›[pV½aê“¸“õˆ¾%4‡eîşÛ$—Mlµÿ¹¯O¹¯ç˜{-¸<“3s8Ì©ûÏZ~Åòëj³jw¹œ•{[åNÜï{;ìı…uŒòË3,_‘[Ï´ÅÍêœûï[şè;øÀXã‡–Ãº§#¶v“ÌáuR†®¤»}oõV]·YÛößlÿ{§¸#Û{‚}Î·õ_¿ û5µ¯kÿí¶¾‡9 #ÎÕM&_vÀYï¶¸ùùVÊı±÷dS´š<_-)o0y½†:…zÿS³ø~?É[ò]t>[¦F»Èõvn*d·”s2ÿ‹¢=åæu‡¯lÁÛeaôÇ²Â+¦†YŸ‰‘ßúšú@‰3Èß‡¬êãû°Ÿãğ0şk»˜öËÜk¥Öjô½¬5k¼¦ı|×z¬RÛvüÜh#y¯ŒùÔs±¹¼s^”G³”ù]´Ÿ1óÁNî¥'¼~ ²^fĞÀwã^¦O‘OßnXß¬•´+€ê©Ä´5wñ} ¯¼Áí.wé>Ú?ã’$ùüJ]3ïY«k=m;‡¤¯óŠôÄdm¤'ÿÉHPÀÿ%RÁûË°73äËB·ĞÿLíRk#rõ9Ş–µà\øı =_ Vœ§Xã¡vbXø>5v©ş±A‡:£Jó’ÿoÑcä<±q‘<ù­ÌüSº:GÅ‰S›±Ô÷¥ÔÌÕR¢ë£ïŞŸeˆ"ş¡Hä«"_'-\Eî<½½'«“0¾Lˆ£¦8-ãi¯Š¾
+Ÿ0o©ÇàÇ˜SMìšIq¯uRÍØ£»etl„ŒöV‘§C‹ğ#¼AÈ»ygm•uœ;/%2/nëÓ¢ÿíX=Ö†N‘L“åÿµØÍà¦¼½r“ó$îo³Àl§LºY1ĞZ²½‡â¹ˆ+g˜[&EÌIdÆ†së…µlù« M.Mpñ9ûmºgëÆ–µ.o”Y
+÷©W½ğıLüC©5zê/ñ"Ò>}s®n«¾v6²dL_pmÍÏù°æ+•}$w2Âò40ÈŞÙ@°„1:÷Šï2ß½QzØú¡ÖÔ£Ä?ê×¡Ñõ^ïìÂ; sñ‘ù¦V-“yøx¥»‰ºc›ŒÕ±¹ùûrŒì•-ÎdY!=4–8¢ÍÛ(Ü®ĞÚÅÆ”6«—òØ¤ÜÃç½Y¬‡ğí_KªLi·wˆßj@9XÎ{íŒ‰=mÂ#n(âgÁ×à-pRÖ&†I…Bã‘ÅdP&ZVD~CÜ±; 2Ç&™`3o…Í&¶
+9ŠóÌK0/1ÓÈ»»=˜3Ög‹ï–
+£íÁÛÈ> 1ÌÃÁ ÅùRF–àîÃ»´÷;Kæ`»nGzŒ÷òxW)OèŞoƒGÁfğ7ö=bÖkW/æN@’øD?Iâ~’¸Ÿ$Æ+::wâóAò€É€{ÁëÌ=ëÜ­Ù æWà.“‘îbrèVé×šŒøÊH÷)pÁ{¤ >JïÌ?
+€·À;à4ØÁ¿"Sed¤˜¸ÜR·uæ¿ÉËÀıŒôz±‡ÚwkúÏ÷dü¼¤õiõêOÇÇË*#3òªfn/sÆä{Óì¿ÜñI^Ÿèüú?Ä3üÙæ“vuŞXÿø ³íS‡Á?Àğ†½³ÓvÌ	;şp8¯#é,BıjÌ	ã‰=6ætô=Ô¥A&ÙxpO:3&Ôq¨çĞ¿›µ;1FkDİ“‰·cıíĞ÷ ùnTl©áÆÛÚ¥˜Ü^î—›cg¥¶<Ñ¢È`åÿÙ/÷ ¨®;ÏŞ³»)¡¤Aír/"u«Œ¨ÈºÁGÄÁğZƒBy¥jRé4N6­Ö”ÖÇ˜Ç4N}cVH0&“Æi“‰ÍLÛ˜L&8Ú&Ô™ÌôŸÔ±‰ô{.mşèŸ½»ó¹¿ßùsî¹÷¼î÷ÀÇ>š¦OÇ÷%<­´¡Òm–nRg¡}Œ¿‹§åX@m6Ã}‘çË'­³­Ò‹«5`ŞÚU¼à)æyô]jØ±ó¦­K¸Ï&P;gR;·P;/¥~‰Zxµòqj™=´5LçËkĞæ26íjåãÔÊŒ[~Ë,=¯h²÷dó~c›÷!ç^¼g¬œç¿e+0—Z;×ı,ÒÆmµ_/ßÁnßÒ†+Y—¨÷§~ªĞ©UÜCHã}RùÒ:FŒÒ¸ãïñO¤Éƒ–6xuü™YNõK·|Ê~Hæ8-²Ö}û»:ö}¶4¨,GŠxkä¥/©¡’Ô4slr©§†•¡¿PáŞõÖú=6W¾ûQêp;­Pç «_	Û9iŸ«Pg÷Gä –XÀÆzŞ18Ü@¦ç÷\ùœÓ¦zfcŠF–|…|†Á	<Â=ˆh%ÔN“O ^ûçÓ¬‘óğS…ëKTh+ïÙ‡jÚEn?2kaÏ%Lg¦B‰&H%ÑbµÅoïú7îÒ$îrÕãÛ®û™Vœg¹÷áUx‡‘õ(J¢²PL\b!Jäı˜Î³›ÄÊAÜ)CH+¯İ@BJäjMßz,¤Nì .<Gx<û¢u”ë5´CÀ_ÑşœÜ7ªÏ¿xN†1L—‚sDPvPG—bšöøÜS©©Ê-ÏcÎ„5l{¸Ï}¬¾cß>Ç\§	cè¹:ŠÖG~ö•eršıÍ{àŠ¥#ıdIRúYùö¾Qc÷Ù/«­ó_²µŞ/p½¼ÎóÅE¬°çÉãîÈòÔb¾>sÕ¾¢Ğ"_ëäXeË´Ÿ`á˜u]E™ëò×¸j¡ÓÇ8Lk5,?	×-…ZÒ´7ãaûá×vcûz¥Mhb”/ìq˜Í½OWç!{¾)4?ÇXñ¾g,î¡¿†d9
+×ç\gŸ[eâ^lpı•kl ˜VÌdÚO›®|UW<‹8ÚõZ+æ«rÌ×µ¡“±XÚeÜG–sošÉ97‡ë)Ç:Ÿıg²KÈ•×‘ãİ‚E,­ÚWP¥î5é[U¾pzqêœ«Ö7škò˜+ÿB½rgƒ÷9¯‡9ß2ëºˆh×‡¸M×¸.WÜÊºó¸_ê»8îõmøµşû­A×u’,¢üY.3¹7úÅÚÛˆCf`­Låœyår>¿+‡iWq?[B®Áğ¼Åô
+2y^5çÒ?„v÷eÚ%Ü›ÚùnÃxPnbL•kçx×ÑqŸUe6’ß’'Ğ.ûØÖ~+İ.ÿÄ5»Ÿ62ş ãy|µ6ı(çş^ÎuxTş§øÜÈİ,¯Æb»zVúêYVÉ]ô#ô‰—}-_ä³ÿ‚|Ã[Ê=ôyyúƒ,ó‘ÅvÏ‹Œ5±^ÏˆSëÇNj®rùÊ=»X÷w(â¾¹Z¾c×yÛİß§ıÄb'¿Ù–•],»yîd>ó›Œíeza9‡éƒôY×²'ùNé(åİnõ©êsÖq«øgh²ÿ7@MˆÂÃğÂ…8şëï§1»!U.¢ñcËªß*2êk,·Êö%ıJÛ÷Ğo¶}/²ÑÉ’BF1b¢Çö]¸ïÙ¾ÆøíK˜¶ï¡o1³rr2gegfÎ3777†Í{›67··…[Ìâ-5³­üYfiÃ–¦¶­ÍasñÒ±*9Yæ)kjlokhÚÒjU(-]
+ŠÂá¶†šªoJ;fC«Ye¶„ëZÙx¸Ölk©ªo®jyØlªûzû(EKÙ3!ş(B˜}ÜÁkPƒ*¬¦_vF«Ğò¥ÿÇü*¢nqÄY1€E¸~øÏá	ÎŠWXqbäUäNˆà¬xË‘‡ùÈ/áx¯´"ÓìÈ>GŞ„õOº5úÅ ‡¸6§ÍÂÇ"(DPLòÉ\,ND§8Œİäy¢¡AìÂVòÙGä¸w„œ»z¤ì[1U,ÆHcMÂ#1:Æx/"<}‡Œ‹‰—ÄÄâ’˜Ò‹¨ÅÑâyñjaˆ—*¶±Ó2Äş^£QÉ¬#h&D³®BéIÊ6Å÷*ë¤!IŠÓÆ'Y³Œ¿eE\¢Çx=="iÎ%1ü–ñšïqÖWo’c£YGıUçˆ¯ÑØ›û{Œ_ú"‚{FM»UO›ı]Fm–•_Úqë1r˜_Œ1æ-H6æú®w§GtÁô,_©13ëc†Ï*fò¦©Á;Œïúö¹ÌJò¦ç’qTÀLq 'u™ÑO—¯Û[ì_ĞÛ{‹2²R#b[p^QF—¿(=Õ_j¤ú—¤§Ó/?ï}Ü»Ş»Ø›íx3¼iŞdï4o‚¯Çé·ë·éÑº®{#âxO¾áÇÏn9Ö«{twDœdPˆVğÄËºÔ]:ô„ÈÈPŸÚ8"âX_œòèœöX'"Nô†N©<ieÄ¹ÔÕ5ºã¸„îÂ2t‹g"ìüNG~b~ü¢;r–ÜêR9á¸õ/Qøº»JÊÖvõ­ëÎVÎˆoİxæ©8úkkç%
+JVoííhŞTWN)¬L)“Êî]»;«MóÔ¦f•avki•Õ5•­
+w7§„º7¥˜§:ên’]§²;R
+N¡®pÍÚSuÁpAOG°£0¥ª`]ou¨¥bB[O·ÕºÉÍBêf-ª­êŠ›dW¨ìjÕV…j«BµU¬¶ÚRïYØPjmãì4JÌîŒ²îâûXÛmV­+ˆˆÃ´ÿG€ ¤lH
+endstream
+endobj
+37 0 obj
+<<
+/Filter /FlateDecode
+/Length 227
+>>
+stream
+H‰\ÁjÃ0†ï~
+ÛC±›]C`trØZ–í[I‹lç·Ÿâ…&°AşÿOü–¾´/-…úÆÑu˜aäç¸°Cèq¤ÎøàòŞ•ÛM6)-p·Î§–†¨êô‡ˆsæÏ>öxTúÊ9Ğ‡¯Kwİ-)}ã„”Á@Ó€ÇA½Ùôn']°SëEy=	óçø\BUúóo=ÎÉ:dK#ªÚH5P¿J5
+ÉÿÓwªÜİrq?‰Û˜Ê÷ş¾qò=x„r³ä);(A¶ğ±¦µõ#À  o‘
+endstream
+endobj
+38 0 obj
+<<
+/Contents 39 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 19 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+39 0 obj
+<<
+/Length 9847
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.184314 .337255 .831373 rg
+n
+59.76 737.28 m
+77.04 737.28 l
+80.22413 737.28 82.8 739.8559 82.8 743.04 c
+82.8 760.32 l
+82.8 763.5041 80.22413 766.08 77.04 766.08 c
+59.76 766.08 l
+56.57587 766.08 54 763.5041 54 760.32 c
+54 743.04 l
+54 739.8559 56.57587 737.28 59.76 737.28 c
+h
+f*
+1 1 1 rg
+BT /F2 12.5 Tf 15 TL ET
+BT 1 0 0 1 61.10625 747 Tm (JL) Tj T* ET
+.184314 .337255 .831373 rg
+BT /F2 11.6 Tf 13.92 TL ET
+BT 1 0 0 1 90 754.92 Tm (JL Policy Consulting) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8.5 Tf 10.2 TL ET
+BT 1 0 0 1 90 743.76 Tm (LLC) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8 Tf 9.6 TL ET
+BT 1 0 0 1 526.864 755.28 Tm (03/30/26) Tj T* ET
+.184314 .337255 .831373 RG
+2 w
+n 54 734.4 m 558 734.4 l S
+n 54 61.92 m 558 61.92 l S
+.545098 .588235 .666667 rg
+BT /F1 7.5 Tf 9 TL ET
+BT 1 0 0 1 54 24.48 Tm (jlpolicyconsulting.com) Tj T* ET
+BT 1 0 0 1 534.2325 24.48 Tm (Page 7) Tj T* ET
+Q
+q
+1 0 0 1 60 686.36 cm
+q
+.07451 .090196 .168627 rg
+BT 1 0 0 1 0 4 Tm /F3 15 Tf 19 TL (Sources) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 657.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 657.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL -0.078781 Tw (JL Policy Consulting. Provider Net Cost Model Concept Brief and Launch Access Reality Addendum for Product X, supplied) Tj T* 0 Tw (PDF, March 2026.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 640.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 640.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Redacted source. Redacted project code internal training deck provided by client, January 2026.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 612.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 612.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (CMS. Part B Drug Payment Limits Overview, published January 2025.) Tj T* (https://www.cms.gov/files/document/part-b-drug-payment-limits-overview.pdf-0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 584.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 584.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (CMS. HCPCS Level II Coding Procedures, last modified March 20, 2026.) Tj T* (https://www.cms.gov/medicare/coding-billing/healthcare-common-procedure-system/level-ii-coding-process) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 545.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 25 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 545.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL (CMS. Pass-Through Payment Status and New Technology APC Assignment, last modified March 19, 2026. https://www.cms.) Tj T* (gov/medicare/payment/prospective-payment-systems/hospital-outpatient/pass-through-payment-status-new-technology-ambu) Tj T* (latory-payment-classification-apc) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 517.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 517.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (CMS. OPPS overview and payment policy guide.) Tj T* (https://www.cms.gov/cms-guide-medical-technology-companies-and-other-interested-parties/payment/opps) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 478.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 25 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 478.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL (CMS. Process and Information Required to Determine Eligibility of Drugs, Biologicals, and Radiopharmaceuticals for) Tj T* (Transitional Pass-Through Status under OPPS. https://www.cms.gov/files/document/determine-eligibility-drugs-biologicals-tra) Tj T* (nsitional-pass-through-payment-under-hospital-outpatient.pdf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 461.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 461.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (HRSA. How is the 340B ceiling price calculated? https://www.hrsa.gov/about/faqs/how-340b-ceiling-price-calculated) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 433.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 433.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (HRSA. New Drug Price Estimation.) Tj T* (https://340bpricingsubmissions.hrsa.gov/Help/Manufacturer/Pricing%20Formulas/New%20Drug%20Price%20Estimation.htm) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 405.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 405.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (HRSA. Duplicate Discount Prohibition / Medicaid Exclusion.) Tj T* (https://www.hrsa.gov/opa/program-requirements/medicaid-exclusion) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 388.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 388.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (340B Health. 340B Program Overview. https://www.340bhealth.org/members/340b-program/overview/) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 360.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 360.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Medicaid.gov. Physician Administered Drugs \(PAD\).) Tj T* (https://www.medicaid.gov/medicaid/prescription-drugs/state-prescription-drug-resources/physician-administered-drugs-pad) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 332.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 332.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Medicaid.gov. Early and Periodic Screening, Diagnostic, and Treatment.) Tj T* (https://www.medicaid.gov/medicaid/benefits/early-and-periodic-screening-diagnostic-and-treatment) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 293.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 25 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 293.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL (Colorado Medicaid State Plan, Attachment 4.19-B. Physician-administered drugs in the Medicare ASP Drug Pricing File are) Tj T* (reimbursed at ASP minus 3.3%; drugs outside the ASP file are reimbursed at WAC. https://hcpf.colorado.gov/sites/hcpf/files/4) Tj T* (_19_B-Methods%20and%20Standards%20for%20Establishing%20Payment%20Rates-Other%20Types%20of%20Care.pdf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 254.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 25 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 254.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL (Pennsylvania Medicaid State Plan, Attachment 4.19-B. Brand prescriber-administered drugs are reimbursed at the lower of) Tj T* (usual and customary charge or WAC plus 3.2%. https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/docs/pu) Tj T* (blications/documents/2023-medicaid-state-plan/0025-Attachment-4.19B.pdf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 226.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 226.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (BLS. Occupational Employment and Wages, May 2023, Pediatricians, General. Mean hourly wage $98.97.) Tj T* (https://www.bls.gov/oes/2023/May/oes291221.htm) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 187.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 25 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 187.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL (BLS. Charting compensation costs during National Nurses Month. December 2024 registered nurse wages and salaries in) Tj T* (health care and social assistance averaged $50.21 per hour.) Tj T* (https://www.bls.gov/opub/ted/2025/charting-compensation-costs-during-national-nurses-month.htm) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 170.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 170.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Medicare.gov. Medicaid and dual eligibility overview. https://www.medicare.gov/basics/costs/help/medicaid) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 142.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 142.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (UnitedHealthcare. Medication sourcing protocol FAQ, June 24, 2025.) Tj T* (https://www.uhcprovider.com/content/dam/provider/docs/public/resources/pharmacy/medication-expansion-sourcing-faq.pdf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 114.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 114.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (UnitedHealthcare. Provider Administered Drugs - Site of Care - Commercial Medical Benefit Drug Policy. https://www.uhcprovi) Tj T* (der.com/content/dam/provider/docs/public/policies/comm-medical-drug/provider-administered-drugs-soc.pdf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 86.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 86.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (UnitedHealthcare. Miplyffa \(arimoclomol\) Prior Authorization / Medical Necessity - Commercial Plans. https://www.uhcprovider) Tj T* (.com/content/dam/provider/docs/public/prior-auth/drugs-pharmacy/commercial/h-p/PA-Med-Nec-Miplyffa.pdf) Tj T* ET
+Q
+Q
+ 
+
+endstream
+endobj
+40 0 obj
+<<
+/Contents 41 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 19 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+41 0 obj
+<<
+/Length 2540
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.184314 .337255 .831373 rg
+n
+59.76 737.28 m
+77.04 737.28 l
+80.22413 737.28 82.8 739.8559 82.8 743.04 c
+82.8 760.32 l
+82.8 763.5041 80.22413 766.08 77.04 766.08 c
+59.76 766.08 l
+56.57587 766.08 54 763.5041 54 760.32 c
+54 743.04 l
+54 739.8559 56.57587 737.28 59.76 737.28 c
+h
+f*
+1 1 1 rg
+BT /F2 12.5 Tf 15 TL ET
+BT 1 0 0 1 61.10625 747 Tm (JL) Tj T* ET
+.184314 .337255 .831373 rg
+BT /F2 11.6 Tf 13.92 TL ET
+BT 1 0 0 1 90 754.92 Tm (JL Policy Consulting) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8.5 Tf 10.2 TL ET
+BT 1 0 0 1 90 743.76 Tm (LLC) Tj T* ET
+.545098 .588235 .666667 rg
+BT /F1 8 Tf 9.6 TL ET
+BT 1 0 0 1 526.864 755.28 Tm (03/30/26) Tj T* ET
+.184314 .337255 .831373 RG
+2 w
+n 54 734.4 m 558 734.4 l S
+n 54 61.92 m 558 61.92 l S
+.545098 .588235 .666667 rg
+BT /F1 7.5 Tf 9 TL ET
+BT 1 0 0 1 54 24.48 Tm (jlpolicyconsulting.com) Tj T* ET
+BT 1 0 0 1 534.2325 24.48 Tm (Page 8) Tj T* ET
+Q
+q
+1 0 0 1 60 683.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 683.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (UnitedHealthcare. Aqneursa \(levacetylleucine\) Prior Authorization / Medical Necessity - Commercial Plans. https://www.uhcpr) Tj T* (ovider.com/content/dam/provider/docs/public/prior-auth/drugs-pharmacy/commercial/a-g/PA-Med-Nec-Aqneursa.pdf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 655.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 655.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Louisiana Blue. Medical Policy 00919: arimoclomol \(Miplyffa\). https://www.bcbsla.com/-/media/Medical%20Policies/2025/02/2) Tj T* (6/21/41/00919%2020250301%20arimoclomol%20Miplyffa_accessible%20pdf.pdf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 638.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 638.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Aetna. Clinical Policy Bulletin 0915: Nusinersen \(Spinraza\). https://www.aetna.com/cpb/medical/data/900_999/0915.html) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60 610.36 cm
+BT /F1 8 Tf 9.6 TL ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F5 8 Tf 9.6 TL (l) Tj /F1 8 Tf 9.6 TL T* ET
+Q
+q
+1 0 0 1 78 610.36 cm
+q
+.352941 .407843 .501961 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Aetna. Clinical Policy Bulletin 0442: Lysosomal Storage Disorder Treatments.) Tj T* (https://www.aetna.com/cpb/medical/data/400_499/0442.html) Tj T* ET
+Q
+Q
+ 
+
+endstream
+endobj
+xref
+0 42
+0000000000 65535 f 
+0000000015 00000 n 
+0000000409 00000 n 
+0000000517 00000 n 
+0000000566 00000 n 
+0000000782 00000 n 
+0000005550 00000 n 
+0000005690 00000 n 
+0000005715 00000 n 
+0000015878 00000 n 
+0000015952 00000 n 
+0000016217 00000 n 
+0000016300 00000 n 
+0000023621 00000 n 
+0000023921 00000 n 
+0000024024 00000 n 
+0000024122 00000 n 
+0000024221 00000 n 
+0000024413 00000 n 
+0000031744 00000 n 
+0000031821 00000 n 
+0000031927 00000 n 
+0000032001 00000 n 
+0000032193 00000 n 
+0000037729 00000 n 
+0000037921 00000 n 
+0000046166 00000 n 
+0000046358 00000 n 
+0000056700 00000 n 
+0000056945 00000 n 
+0000063358 00000 n 
+0000063500 00000 n 
+0000063527 00000 n 
+0000073692 00000 n 
+0000073767 00000 n 
+0000074032 00000 n 
+0000074115 00000 n 
+0000081437 00000 n 
+0000081737 00000 n 
+0000081929 00000 n 
+0000091829 00000 n 
+0000092021 00000 n 
+trailer
+<<
+/Size 42
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+94614
+%%EOF
+1 0 obj<</Author(OpenAI Codex for JL Policy Consulting)/CreationDate(D:20260330071859-04'00')/Creator(\(unspecified\))/Keywords()/ModDate(D:20260408223235-04'00')/Producer(ReportLab PDF Library - \(opensource\))/Subject(\(unspecified\))/Title(Product X Document A: Provider Net Cost Model Concept Brief)/Trapped/#2FFalse>>endobj3 0 obj<</Metadata 44 0 R/Pages 2 0 R/Type/Catalog>>endobj4 0 obj<</Contents 60 0 R/MediaBox[0 0 612 792]/Parent 2 0 R/Resources<</Font<</T1_0 14 0 R/T1_1 15 0 R/T1_2 16 0 R>>/ProcSet[/PDF/Text]>>/Rotate 0/Trans<<>>/Type/Page>>endobj17 0 obj<</Contents 45 0 R/MediaBox[0 0 612 792]/Parent 2 0 R/Resources<</Font<</C2_0 42 0 R/C2_1 43 0 R/T1_0 14 0 R/T1_1 15 0 R/T1_2 20 0 R/T1_3 16 0 R>>/ProcSet[/PDF/Text]>>/Rotate 0/Trans<<>>/Type/Page>>endobj42 0 obj<</BaseFont/NXWBYX+Helvetica-Oblique/DescendantFonts 53 0 R/Encoding/Identity-H/Subtype/Type0/ToUnicode 54 0 R/Type/Font>>endobj43 0 obj<</BaseFont/NXWBYX+Helvetica/DescendantFonts 46 0 R/Encoding/Identity-H/Subtype/Type0/ToUnicode 47 0 R/Type/Font>>endobj44 0 obj<</Length 3767/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.1-c001 79.675d0f7, 2023/06/11-19:21:16        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <dc:format>application/pdf</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>OpenAI Codex for JL Policy Consulting</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:description>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">(unspecified)</rdf:li>
+            </rdf:Alt>
+         </dc:description>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Product X Document A: Provider Net Cost Model Concept Brief</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+         <xmp:CreateDate>2026-03-30T07:18:59-04:00</xmp:CreateDate>
+         <xmp:CreatorTool>(unspecified)</xmp:CreatorTool>
+         <xmp:ModifyDate>2026-04-08T22:32:35-04:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2026-04-08T22:32:35-04:00</xmp:MetadataDate>
+         <pdf:Keywords/>
+         <pdf:Producer>ReportLab PDF Library - (opensource)</pdf:Producer>
+         <pdf:Trapped>/False</pdf:Trapped>
+         <xmpMM:DocumentID>uuid:07900470-0e67-b54d-975b-8f0a86b811a3</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:7f22cd06-3922-6340-b282-daf7cde4efcd</xmpMM:InstanceID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>endstreamendobj45 0 obj<</Length 7161>>stream
+0.184 0.337 0.831 rg
+q 1 0 0 1 59.76 737.28 cm
+0 0 m
+17.28 0 l
+20.464 0 23.04 2.576 23.04 5.76 c
+23.04 23.04 l
+23.04 26.224 20.464 28.8 17.28 28.8 c
+0 28.8 l
+-3.184 28.8 -5.76 26.224 -5.76 23.04 c
+-5.76 5.76 l
+-5.76 2.576 -3.184 0 0 0 c
+h
+f*
+Q
+BT
+1 1 1 rg
+/T1_0 12.5 Tf
+61.106 747 Td
+(JL)Tj
+0.184 0.337 0.831 rg
+/T1_0 11.6 Tf
+28.894 7.92 Td
+(JL Policy Consulting)Tj
+0.545 0.588 0.667 rg
+/T1_1 8.5 Tf
+0 -11.16 TD
+(LLC)Tj
+/T1_1 8 Tf
+436.864 11.52 Td
+(03/30/26)Tj
+ET
+0.184 0.337 0.831 RG
+2 w 
+q 1 0 0 1 54 734.4 cm
+0 0 m
+504 0 l
+S
+Q
+q 1 0 0 1 54 61.92 cm
+0 0 m
+504 0 l
+S
+Q
+BT
+/T1_1 7.5 Tf
+54 24.48 Td
+(jlpolicyconsulting.com)Tj
+480.233 0 Td
+(Page 2)Tj
+ET
+q
+1 0 0 1 60 452.16 cm
+0.961 0.969 0.984 rg
+0 253.2 492 -34.8 re
+f*
+Q
+q
+1 0 0 1 60 452.16 cm
+1 1 1 rg
+0 218.4 492 -80.4 re
+f*
+Q
+q
+1 0 0 1 60 452.16 cm
+0.98 0.984 0.996 rg
+0 138 492 -69 re
+f*
+Q
+q
+1 0 0 1 60 452.16 cm
+1 1 1 rg
+0 69 492 -69 re
+f*
+Q
+BT
+0.075 0.09 0.169 rg
+/T1_0 8.8 Tf
+66 690.56 Td
+(Comparator policy)Tj
+123 0 Td
+(Initial gate)Tj
+123 0 Td
+(Continuation gate)Tj
+123 0 Td
+(Economic signal for)Tj
+0 -11.4 TD
+(adrabetadex)Tj
+0.353 0.408 0.502 rg
+/T1_1 8.8 Tf
+-369 -23.4 Td
+(UnitedHealthcare)Tj
+T*
+(commercial - Aqneursa)Tj
+123 11.4 Td
+(Genetic confirmation,)Tj
+T*
+(neurologic manifestations,)Tj
+T*
+(with miglustat or)Tj
+T*
+(documented inability to use)Tj
+T*
+(miglustat, no Miplyffa,)Tj
+T*
+(12-month authorization)Tj
+123 57 Td
+(Positive clinical response)Tj
+T*
+(documented on)Tj
+T*
+(NPC-specific scales)Tj
+123 22.8 Td
+(The commercial market)Tj
+T*
+(already treats NPC therapy)Tj
+T*
+(as a managed category, not)Tj
+T*
+(an open category.)Tj
+-369 -46.2 Td
+(Louisiana Blue - Miplyffa)Tj
+123 0 Td
+(Age and weight gate,)Tj
+T*
+(genetic confirmation,)Tj
+T*
+(ambulatory status, no)Tj
+T*
+(adult-onset disease, with)Tj
+T*
+(miglustat, no Aqneursa)Tj
+123 45.6 Td
+(Improvement or stabilization)Tj
+T*
+(in ambulation, fine motor)Tj
+T*
+(function, swallowing, or)Tj
+T*
+(speech)Tj
+123 34.2 Td
+(Some plans will use)Tj
+T*
+(additional functional)Tj
+T*
+(restrictions beyond the FDA)Tj
+T*
+(label.)Tj
+-369 -34.8 Td
+(Aetna - Spinraza / Brineura)Tj
+123 0 Td
+(Baseline assessments plus)Tj
+T*
+(specialist administration)Tj
+T*
+(requirements)Tj
+123 22.8 Td
+(Positive response or slowed)Tj
+T*
+(loss of function from)Tj
+T*
+(baseline)Tj
+123 22.8 Td
+(Intrathecal and)Tj
+T*
+(intraventricular analogs)Tj
+T*
+(already tie payment to)Tj
+T*
+(measurable continuation)Tj
+T*
+(rules.)Tj
+ET
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 0 218.4 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 123 218.4 cm
+0 0 m
+0 34.8 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 246 218.4 cm
+0 0 m
+0 34.8 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 369 218.4 cm
+0 0 m
+0 34.8 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 0 138 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 0 69 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 123 0 cm
+0 0 m
+0 218.4 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 246 0 cm
+0 0 m
+0 218.4 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+q 1 0 0 1 369 0 cm
+0 0 m
+0 218.4 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 0 253.2 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 0 218.4 cm
+0 0 m
+0 34.8 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+0 0 m
+0 218.4 l
+S
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 492 218.4 cm
+0 0 m
+0 34.8 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+q 1 0 0 1 492 0 cm
+0 0 m
+0 218.4 l
+S
+Q
+Q
+q
+1 0 0 1 60 452.16 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+0 0 m
+492 0 l
+S
+Q
+q
+1 0 0 1 60 452.16 cm
+1 j 1 J 
+q 1 0 0 1 0 253.2 cm
+0 0 m
+492 0 l
+S
+Q
+Q
+BT
+0.545 0.588 0.667 rg
+/T1_2 8.5 Tf
+60 433.9 Td
+(The commercial payer takeaway is direct: )Tj
+/C2_0 8.5 Tf
+158.723 0 Td
+<00530055005200470058004600570003003B>Tj
+/T1_2 8.5 Tf
+( will launch into a market where high-acuity pediatric neurologic drugs \are)Tj
+/C2_0 8.5 Tf
+312.774 0 Td
+<0003>Tj
+/T1_2 8.5 Tf
+-471.497 -11 Td
+(covered, but they are covered with explicit utilization management and m\easurable continuation standards.)Tj
+0.075 0.09 0.169 rg
+/T1_3 15 Tf
+0 -29.5 TD
+(340B pricing explained in plain language)Tj
+0.353 0.408 0.502 rg
+/T1_1 10.1 Tf
+0 -21.1 TD
+(340B changes provider acquisition cost, not payer coverage criteria. HRS\A's core rule is simple: a)Tj
+/C2_1 10.1 Tf
+436.997 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-436.997 -14.8 Td
+(manufacturer may not charge a covered entity more than the 340B ceiling \price, whether the entity buys)Tj
+/C2_1 10.1 Tf
+463.169 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-463.169 -14.8 Td
+(through a wholesaler or directly from the manufacturer. The ceiling pric\e equals Average Manufacturer Price)Tj
+/C2_1 10.1 Tf
+482.788 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-482.788 -14.8 Td
+(minus the Unit Rebate Amount.)Tj
+0 -20.8 TD
+(The Unit Rebate Amount uses minimum rebate percentages that differ by pr\oduct type. The current 340B /)Tj
+0 -14.8 TD
+(Medicaid framework uses 23.1% for most brand-name drugs, 17.1% for quali\fying brand-name pediatric drugs)Tj
+/C2_1 10.1 Tf
+491.216 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-491.216 -14.8 Td
+(and clotting factor products, and 13.0% for generics. For a new drug, be\fore AMP is available, HRSA requires)Tj
+/C2_1 10.1 Tf
+488.977 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-488.977 -14.8 Td
+(manufacturers to estimate the 340B ceiling price using WAC minus the app\licable rebate percentage.)Tj
+0 -20.8 TD
+(Using the launch WAC in the source brief, a 23.1% new-drug estimate prod\uces a 340B acquisition price of)Tj
+0 -14.8 TD
+($29,991 per 900 mg vial. If adrabetadex is ultimately treated as a quali\fying pediatric brand drug for this)Tj
+/C2_1 10.1 Tf
+461.503 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-461.503 -14.8 Td
+(purpose, the same calculation at 17.1% would imply $32,331 per 900 mg vi\al. That means the modeled 340B)Tj
+/C2_1 10.1 Tf
+487.335 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-487.335 -14.8 Td
+(discount range is $6,669 to $9,009 below WAC on every administration, de\pending on final program)Tj
+/C2_1 10.1 Tf
+446.353 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-446.353 -14.8 Td
+(classification. For centers that qualify for 340B, this is a material pr\ovider-economics lever. For the)Tj
+/C2_1 10.1 Tf
+438.408 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-438.408 -14.8 Td
+(manufacturer, it is a material gross-to-net drag.)Tj
+0 -20.8 TD
+(340B also creates compliance work. HRSA prohibits duplicate discounts, m\eaning the same unit cannot)Tj
+/C2_1 10.1 Tf
+463.164 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-463.164 -14.8 Td
+(generate both a 340B discount and a Medicaid rebate. Covered entities th\at carve in Medicaid fee-for-service)Tj
+/C2_1 10.1 Tf
+487.325 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-487.325 -14.8 Td
+(claims must keep the Medicaid Exclusion File listing accurate and must a\lign carve-in or carve-out status with)Tj
+/C2_1 10.1 Tf
+487.813 0 Td
+<0003>Tj
+/T1_1 10.1 Tf
+-487.813 -14.8 Td
+(actual billing practice.)Tj
+ET
+endstreamendobj46 0 obj[48 0 R]endobj47 0 obj<</Filter/FlateDecode/Length 227>>stream
+H‰\ÁjÃ0†ï~
+ÛC±›]C`trØZ–í[I‹lç·Ÿâ…&°AşÿOü–¾´/-…úÆÑu˜aäç¸°Cèq¤ÎøàòŞ•ÛM6)-p·Î§–†¨êô‡ˆsæÏ>öxTúÊ9Ğ‡¯Kwİ-)}ã„”Á@Ó€ÇA½Ùôn']°SëEy=	óçø\BUúóo=ÎÉ:dK#ªÚH5P¿J5
+ÉÿÓwªÜİrq?‰Û˜Ê÷ş¾qò=x„r³ä);(A¶ğ±¦µõ#À  o‘endstreamendobj48 0 obj<</BaseFont/NXWBYX+Helvetica/CIDSystemInfo 49 0 R/CIDToGIDMap/Identity/DW 1000/FontDescriptor 50 0 R/Subtype/CIDFontType2/Type/Font/W[0[634 0]2 4 278 5[355]6 7 556 8[889 667 191]11 12 333 13[389 584 278 333]17 18 278 19 28 556 29 30 278 31 33 584 34[556 1015]36 37 667 38 39 722 40[667 611 778 722 278 500 667 556 833 722 778 667 778 722 667 611 722 667 944]59 60 667 61[611]62 64 278 65[469 556 333]68 69 556 70[500]71 72 556 73[278]74 75 556 76 77 222 78[500 222 833]81 84 556 85[333 500 278 556 500 722]91 93 500 94[334 260 334 584]98 99 667 100[722 667 722 778 722]105 110 556 111[500]112 115 556 116 119 278 120 130 556 131[400]132 134 556 135[350 537 611]138 139 737 141 142 333 143[549]145[778 713]147 149 549 150[556 576 494 713 823 549 274 370 365 768 889]161 162 611 163[333 584 549 556 549 612]169 170 556 172[278]173 174 667 175[778]177[944 556]180 181 333 182 183 222 184[549 494 500 667 167 744]190 191 333 192 193 500 194[556 278 222 333]199 203 667 204 207 278 208 209 778 210[790 778]212 214 722 215[278]216 225 333 226[556 222 667 500 611 500 260 722 556 667 500 667 556]239 240 584 241 243 333 244 246 834 247[556 778 556 278 667 500 722 500 722 500 556 667 556 667 556 667 556 722 500 722 500 722 660 667 556 667 556 667 556 667 556 667 556 778 556 778 556 778]285 286 556 287[722 556 722 556 445 430 400 390 278 222 778 444 500 222 667 500 556 265 556 222 556 263 556 310 722 556 722 556 722]316 317 556 318[778 556 778 556 778 556 722 333 722 333 722 333 667 500 667 500 611 278 611 360 611 320 722 556 722 556 722 556 722 556 722 556 722 556 944 722 667 500 611 500 611 500 667 500 611 278 556]365 379 0 380[722 778]382 383 556 384[222 667 500 722 556 722 333 208 277 333 222 500 278]397 398 556 399[500 556]401 403 0 404 405 278 406[722 556 0 678 662 667 519 701 667 992 666]417 418 722 419[667 687 833 722 778 722 667 722 611 667 855 667 732 651 944 954 833 879 651 722]440[714]441 442 556 443[548 403 606 556 780 500]449 450 583 451[548 574 666]454 457 556 458 460 500 461[832 500 571 538 778 792 611 722 500 510 778 558 667 556 519 403 278 222 500 722 500 278 251]485[845 985 811 222 667 778 556 667 548 500 761 556 667 500 722]500 501 556 502[389]503 535 0 536[278 556 833 333 833]541 542 333 543 544 521 545[251 403]547 548 278 549[500 722 500]552 554 556 555[500]556 557 587 558 559 722 560[567]561 562 667 563[500 574 862 698 755 260 431 278 568 500 150]574 575 333 576[1378 667 323 333 222 333 537]583 584 523 585 586 674 587[333 323 333]591[354 139]593 599 0 600 608 278 609 613 0 614[139 70 333 430 556]619 620 333 621 622 537 623[667 611 556 889 676]628 652 0 653[167 310]655 656 167 657 658 549 659 660 494 661 662 713 663 664 274 665 668 549 669[1122 1011 667 278 556 833 945 667 945 1223 1500 945 667 945 1223 556]685 686 722 687[833 222 444 667 722 500 722 944 1167 722 500 722 944 222 500 556 833 1235 1094 982 981 707 371 1113 867 704 667 556]715 716 278 717[778 556 722 556 722 556 722 556 722 556 722 556 667 556 667 556]734[889 778 556 667 500 778 556 778 556 222 1225 1123 998 778 722 556 667 556]753[889 778 611 667 556 667 556 667 556 667 556 278 222 278 222 778 556 778 556 722 333 722 333 722 556 722 556 722 556 667 556 667 556 778 556 778 556 778 556 778 556 667 500 333 278 667 556 667 556 667 556 667 556 722 500 722 556 722 556 722 556 722 556 722 556 667 556 667 556 667 556 667 556 667 556 611 278 778 556 722 556 722 556 722 556 722 556 722 556 278 222]844 845 278 846[667 500 667 500 667 500 556 222 556 222 556 222 556 222]860 865 833 866[722 556 722 556 722 556 722 556 778 556 778 556 778 556 778 556 667 556 667 556 722 333 722 333 722 333 722 333 667 500 667 500 667 500 667 500 667 500 611 278 611 278 611 278 611 278 722 556 722 556 722 556 722 556 722 556 667 500 667 500 944 722 944 722 944 722 944 722 944 722 667 500 667 500 667 500 611 500 611 500 611 500 556 278 722 500 278 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556]993 995 278 996[222 778 556 778 556 778 556 778 556 778 556 778 556 778 556 889 676 889 676 889 676 889 676 889 676 722 556 722 556 862 698 862 698 862 698 862 698 862 698 667 500 667 500 667 500 667 500 667 556 667 556 678 734]1049 1050 565 1051[892 692 678 565 678 565 678 565 1106 858 664 505 734 565 734 565 792 565 734 509 678 509 678 509 678 509 709 560 910 750]1082[889]1083 1084 833 1085[722 333 267 667 722 611 722 667 611 722 778 278]1097 1098 667 1099[889 722 611 778 722 667 611 610 667 722 668 832 778 278 667]1114 1115 611 1116[556 611 556 444 611 612 278]1123 1124 556 1125[611 556 500]1128 1129 611 1130[556 611 500 611 722 556 722 758 278 611 278 267 0 278]1144 1145 178 1146 1147 0 1148[178 349 338 377 384]1153 1154 267 1155[390 423 400 423 901 768 778]1162 1163 222 1164[556]1165 1166 834 1167 1168 556 1169[667]1170 1171 556 1172[667 556 667 556 667 556]1178 1179 278 1180[222 778 556 778 556 778 556 667 500 722 556 500 862 698 751 556 722 556 833 492 547 456 489 351 535 751 556 792 565 778 333]1211 1212 972 1213[1112]1214 1218 0 1219[751 556 792 565 267 338 556 611 500 556 603 607 556 592 605 556 605 267 944 441 333 603 590 646 931 672 528 726 595 590]1249 1250 208 1251[222 191]1253 1255 333 1256[191]1257 1259 333 1260 1261 208 1262 1263 333 1264 1265 278 1266[111]1267 1268 167 1269[221 361 250]1272 1273 278 1274 1277 292 1278[333]1279 1281 292 1282 1283 250 1284[111 292 278]1287 1290 292 1291[333 278]1293 1306 0 1307[278]1308 1310 0 1311 1312 389 1313[856 972 278 1112 972 889 876]1320 1321 278 1322 1327 0 1328[810]1329 1335 278 1336[292 167 292]1339 1340 167 1341 1351 278 1352[292 167 292]1355 1356 167 1357[779 778]1359 1360 556 1361[667 833 750 917 556 973 834 722 667 612 823]1372 1373 833 1374[667 556 667 556 611 778 596 282 426 722 341 403]1386 1387 556 1388 1389 222 1390[556]1391 1398 611 1399[719 712 928]1402 1403 933 1404[944 974 953]1407 1412 556 1413 1414 845 1415[1057 1067 1044 1051]1419 1426 611 1427 1428 900 1429[1112 1122 1100 1106]1433 1434 1145 1435 1442 278 1443 1444 456 1445[667 678 655 662]1449 1450 701 1451 1456 611 1457 1458 956 1459[1167 1178 1155 1162]1463 1470 611 1471[845 1067 1051 1090]1475 1482 758 1483 1484 946 1485[1158 1168 1146 1152]1489 1490 1191 1491 1492 611 1493 1494 556 1495 1496 611 1497 1498 278 1499 1502 611 1503 1504 758 1505 1512 611 1513[1008 1006 1196 1230 1187 1201 1228 1226]1521 1528 611 1529 1530 1178 1531[1390 1400 1377 1384]1535 1536 1423 1537 1544 758 1545 1546 1224 1547[1436 1446 1423 1430]1551 1552 1469 1553 1559 611 1560 1561 667 1562[800 797 958]1565 1569 611 1570[834 832 853 841 1024]1575 1582 278 1583[408 410]1585 1592 611 1593 1594 667 1595[836 884 845]1598 1602 758 1603[919 942 946 958 1059 611 556 611 278]1612 1613 611 1614[758 729 832 841 410 942 884 958 278 611 584 614 621 369 341 556]1630 1645 611 1646 1663 278 1664 1681 611 1682[800 797 719 928 933 712 933 944 800 797 719 928 933 712 933 944 408]1699 1700 410 1701[456 667 655 456 678 662 408]1708 1709 410 1710[456 667 655 456 678 662 836]1717 1718 884 1719[845 1067 1051 845 1067 1051 836]1726 1727 884 1728[845 1067 1051 845 1067 1051]1734 1735 722 1736[778 222 639 667 722 0 665 556 778 556 931 902 737]1749 1752 834 1753[803 611 1017 735 832 722 667 500 950 726 606 349 731 691 722 556 390 606 490 786 601 667 500 611 500 1106 858 664 505 678 509 734 565 734 509 621 509 678 509 709 560 709 560]1796 1797 667 1798[606 436 709 560 774 609 921 701]1806 1807 667 1808[874 663 910 697 910 697 931 712 734 565 556]1819 1820 664 1821[832 607 1042 734 667 500 667 589 500 664 505 743 576 278 678 509]1837 1838 667 1839[722 500 556 611 222 341 611 667]1847 1848 556 1849[667 556 542 222 722]1854 1855 208 1856 1859 333 1860[278]1861 1862 333 1863[687]1864 1865 584 1866[278 584 686 584]1870 1871 278 1872[778]1873 1874 509 1875[667 556 722 833 733 701]1881 1883 722 1884 1886 500 1887[556 724 847 781 390 772 614 566]1895 1898 333 1899 1900 308 1901 1905 412 1906[566 496 546]1909 1910 526 1911[374 414 825 792 645 0 860 614 234 239]1921 1922 170 1923[200 199 373 377 300]1928 1929 292 1930[348]1931 1932 230 1933[989 1186]1935 1936 1149 1937[154 542]1939 1940 692 1941[593 532]1943 1944 230 1945 1946 499 1947[502 429 550]1950 1961 0 1962 1963 549 1964 1965 500 1966[933 537 489 638 791 598 845 1067 1051]1975 1976 667 1977 1978 278 1979 1980 667 1981[502]1982 1984 737 1998[502 111]2000 2002 278 2003[250 278 722 778 722 555 665 611 667 602 720 606 722 833 727 799 1022]2020 2021 665 2022[451 438 451 438 451 438 451 438 365]2031 2033 361 2034 2035 365 2036 2038 361 2039[365]2040 2044 423 2045[312 398 462 470 630 826 445]2052 2060 0 2061[549 500 1278 1056]2065 2067 526 2068 2069 395 2070[417 631]2072 2075 395 2076 2077 370 2078[395 158 355 591]2082 2083 395 2084[355]2085 2087 395 2088[197 395 431 591 355 434 395 434 607 774 593]2099 2100 556 2101[612 610 622 929 395 158 236 395 355 434 395 434 395 521 721 222 546 880 849 604 622 355 614 398 356 357 222 333 222 333 222 333 222 333 655 879 383 682 1094 556 359]2142 2146 556 2147[523]2148 2149 556 2150 2152 475 2153[520 518 569 527 831 539 534 621 847 538 522 972 576 577 736 534 557 739 552 663 557 800 535 736 551 580 566 588 575 580 602 575 518 530 593 530]2189 2190 543 2191[591 734 537 604]2195 2196 556 2197[518 556 527 518 577 568]2203 2204 590 2205[896 579 570 607 912 594 561 1045]2213 2214 608 2215[829 554 588 762 591 729 616 818 582 781 600 608 595 654]2229 2230 613 2231[639 613 573 572 641 596 572 571 613 753 576 595 576 585 644 370 538 569 596 710 741]]>>endobj49 0 obj<</Ordering(Identity)/Registry(Adobe)/Supplement 0>>endobj50 0 obj<</Ascent 1122/CIDSet 51 0 R/CapHeight 717/Descent -481/Flags 4/FontBBox[-951 -481 1446 1122]/FontFile2 52 0 R/FontName/NXWBYX+Helvetica/FontStretch/Normal/FontWeight 400/ItalicAngle 0/StemV 88/Type/FontDescriptor/XHeight 523>>endobj51 0 obj<</Filter/FlateDecode/Length 11>>stream
+H‰š `  ‘ ‘endstreamendobj52 0 obj<</Filter/FlateDecode/Length 7231/Length1 23982>>stream
+H‰Ä—PT×ÇÏ½ï½‚™à¯‚üĞ·}¢ÈA%DÍŠ»"¸‚˜]%º,*Ê¥šŒvÇj¢+R3Ö&1LSZÛZ´åIœÎ¢ÕAÇŒuš¤ØŒ¦µ™Fc“ÎtBí/:&&¼~ï[ à80fïœ=?îyçû¹÷íÌ6mû–"ÉOe¬.MŸO¡Ïo Êæ&5ä²x"©¥ºáÙú/'Š<ôìæÕSëó‰¢²Ü\ãóVµ¯ë‡şÂBùQ7ğ5³¦¾iû ?@¤elŞZé%é×QD™ságÖ{·7„æŸ®À—ºÅ[ï{~¡Ï	7z8ß°Í78ï¶¡‡-$IûØ!Rˆ”W•È˜ÒR/Usù¹IÜpÒöC~Ãmd£ˆ{ÜBÇhIØQö¶JìõÕuÓ•sbuTí¡(ØIŠŸbåtšAdü	rCè2ãcå26RoüKÊA~·>ğÔbê¡ƒôu’…ÃN¢ô
+]auÔÍÊé4]gÓi.xË¤Uô3Œ«TMÇßDé¢	x¦¦b¶•%ÏÁ·Á® =Æi&eÑt²Qµ•úŒ_o`¶„Ê¨ƒNàùß1Ÿ’'¿2şJá´5÷`æª±Êè¤I”J¹äDtg‰Ò£†b(İµÑëÔNè¶›6jŒf£×¸E³ñTŠ±“f·¤Nù£Íø»1 I”ŒU=t˜~‚ú=Œ˜ƒ}“5±Ãì·ñİü´¼W‰øæĞ
+Œ|ÚJû@ ›.Ñ¿éSv‡ÇHQR“ô¦ñ¤ñÜÁBìRìÄGÍ/b´bOg™…e°åÌÉv²ï³#ì]ÌË¸‹›oçKÅR¹´CzWn”»”åKä@¿qÖ¸l\£hJ ´vaw©—şKŸ1	µâY"Ëa¹l#†Ÿ½Æ»Y;ëæNÖÃzyû€İfwØ=®ğ	|*OáMü0?Á/òw¤ZéˆôªôÔ//U¸Ò®|dIûó@ÅÀşwŒã–qoP8Yq2¹TL›È‹İ6P&}»ø%F'Ní½IWÌqoTİb“X,›ÏŠ0ŠÙjVÍjÙÙŒóf/ÿã8Á'òhÏKy¯ç~~û¥8)YZ)­—:1~+]—îI÷dE,O•WÈÔ"×ËG1~&—»äß+ÙÊR¥XY§ø•ıJ‹T©\U®[vYZ-]–;–†%…­
+ÛÖ‚Ó¹‚;{aÔË#³™è~>m¡JfgôœF;óR ·«ŠíC”d<#í’VğÜ†óô<nëQÚIû¥rj7ş(uĞ{¸)›QËO?—s)Ay§³›2p‹¾‡qê?¢“x/N€QÊ@™ùŞY•ó4Û6'yNÒìY‰3µ¯[ÕÓâãb§ÅDmê”É“&F=>!ò±ˆğ0‹"KœQªCËó¨ú,.ÏÒòóÓ„¯yğxt¡¼Ñ9ºê1ÓÔÑ™6dVß—ieÚ†3Y”º˜§¥ªMÕß¶kj­_ã‚}Ğ®¹U½Ï´‹Lûi?ÛjÅª#¦Æ®êÌ£:ô¼æš€ÃcG¹nüÄÑci©â‡ÅF‘¢°NË½;kb D†CÕì}šf7ç¤D‡·Jw®q9ìqV«1„J\X#-µVôI&TiU‚6ªğË[îÒ%¯[çQkbŠ­Ùõèç>ŠùÒ²-#&u˜çõò€à@~ÈõÏÛ¯°TEY¾×íÒÙŞÁ&DuöP»>Í!B:UĞrµš@p©ÄÕk‹uh^»['§«kšmšé¤¥vÇìÊ±b÷İiËÒ–	cÙÒûn(ş‡H3ïÒMèÂ’a L¬¤ O]­4ÑĞl–øòeQ 2iø¸¶Y‹~–ëwFJÔ•Ä¯î/j£ÆjÎSgïŠ˜+öàÉu#ßˆZ„e¥©~Âj}ŸŒx#–Ä¨~¦8èá»‚ù!»Ù#–‹ÑjÄù6;}-Æ1" _ =ëSôù…N—UWİ)%µ0HN×)ÆZİAfì’=¡›"HÚ´Ó©âªÕÚ±>œ´T’­°æ¦ªy(œ'îŠPU5O­Áe’M	_À‚¥.p¢µXÑæ6}n÷"ÔIud³NÀ
+uƒêÌ
+(ğ’2R±ÍYN×—î·Çé6»§€ëÛãté=88·Yó†;…ŞY3Øó|ô</Æ‚P•RÔ@	w ò4«ŞÄÄ;òƒŒîØA2€hùæ”_³Æ™Ì­šm¹ÓL\é¡¤'NxáHÂß@·MÂYãD8{,„‰pÎƒ	/FÏ9‚ğ’GGxé(ÂO=œ°m$áeèÖfÎ'ÂËÇBØ>&ÂÎCÏAxÅ£#œ?ŠpÁÃ	¯I¸İ®4	¯'ÂEc!\<&Â«LØ‰WÂká’Q„KNxíHÂeèv­Ixİ8~z,„]c"ì~0áõèÙ-o&l‹Ói$aÿ}@iÜ‘—BşÌÃ‘o‰|Úßh"÷ŒrïXWŒ	yåƒ‘W¡çJÜ÷"¯Jrñ× W9‡ÿ=a´·>%HáéA’!áQA¢^ˆğaKïÃ†ƒ– #Ş§3xŠh]ÊTR 3æ-˜h8’+·?ÿP9÷Ùò \tïd±Ğ‘'–ıãÃMO,î§‰á¦¿©è{¦şËÍ¹×ïú>ŸùRø§p#ÏBOYæÌ!šÀ0ÛùÒP¡Oø[Ê$±"=,}ü=*‘±·F²…%P®²ÜìEjãÔ
+±K	T,Ÿ¤rävÀ/ƒîÏŠ|È¥A=’	É…A
+íäŞ‚ñ¢©©-|İÂZÓ!/+—i=ä§°;åÛÔiÉ¦JøíxîŠL¤!Ş&±t˜¹m˜wŠ\S_¦Ó°=xÎ
+»vfØAJ„N‚x:êøy¶q:]º@ÛÅ~±—YĞbïÍX#:’ÑßÈvYˆqó~Øû±ş‡ä˜Ï5ÒbÔÙù\<ß;}L2’ÉO×ø:ÄÿOy¹ÀHUqüÛ;3÷Î0„ğQD`#ÈÊ«²‹ ZØ€¢»KP¤ ’uY­Zm%bvX"ÚˆSYM©m•…ˆm‘»By(ĞÒPD0vEÔ©ØZ©ÂzûûÎ=wœ}:É?ÿ3çÇwÎ÷<Û‘g»ô´ç`ÎÍ92gB~+SK2gƒ=âV—ùY²åbun‰Œ‘
+x¹=÷Lç°<-ñÿË}í•Ş 'vwó­s¢Keÿ»#ç”ØNÎÁ0ßp•ß­õwF¾»ø6ÔİÄ.åŞGù9_ÊçSåæËBìk:ë/ {XóccKıÏØ¨Yç¬TÒnP˜½9WxWz?ôMG·ÓØï"íÏYc–"ĞwÇÈ0Eï]uŸWöM]ìYÄ˜ ş«8?k?­st>ku³ûìÈbµó»±›¯àÀQæÈŠP_!øş*kwêüpop%Ğöãà!ú}x‹Aş±«Æn±µQc'Øk]£ögl78G ³Àwîcş 	<w»ÌÏõ7Q¿Ñ¹ê7áÚjcj;!«¾õŒjS-8g¬ñÉb3~‡Ú[GîŸËæ<ø³Ú'<Ù +"•Ä—12/rµÜ‰Ìã¸“÷˜s0ò$vŒßóÿyÖÿsõçjY£ŒŞºšÿ}‰MÊKú]Ÿû•.áĞMu¥~Ë;ÔáépûJæî¾ÕÏ5Æ¿•-oğß·şºº³lâÒ~ãÿF·¡ŞCn±~)ré’E-XªÁ:‘¦ğ^ğ%¸7øŞT÷„7ª-eé@ï­ÆÄR12…÷eî ¯Î?åÜ ãÃ˜gcaoDŠà[YûFÖ^¦2àáZ*Ol¥‰•Hš}ÒÑkáZ‹ÓŞytr»ÜÌØ´}±ŸJ>1Õü·şôïG?g¤?í÷m™çÇNÑÿ=YÄ¦½-Œ¯“ş^Âôéø¥øp:öG¹9ÊŒ¼K$)”TôdàïîDîSdLt}
+¾GÓÒ™R|OÙs*ÿ„qÅf¬H÷Eù>|Yt#ßfÉäL¹wĞ>ÃÜıìáÓ¾9u¯L^Jë~zvİŸ;ÜÃ½§LÓs‰‰ÛıˆCæ|÷éç5rG$Å½¿Ëü%¬¥vİÏ¬µÄÌ-vûH?Û§¶¢¶š¶ò¦ÉÑ©@÷ÙP›hú9ØKÆª›Û1¶UkÇ­Ë²³e9mĞt‹år;v}°‡ÉA*ãt³;Zk¹FÛÑär›ãpgE~“Ú·±q1¾ÚÃÜq•±£gcÑßK¡‚ïóL\¬‘é66~’–B÷CâïS²Úí"sˆŸ»"U²‹ußˆ>!#4†å•[Ù¿4$]çÏ9›L^›eã©É{RbwJ=h0µN0®Ôäšãòë¼şÒî/«®j­ıÌº´&ñ/Dî•]&¦éşuâFKd¨21úŒ¼¤vê]…-—	ÜûÂæ¸t£†ƒÏ@#8	>:î&0ƒöQğW«Û >ëòJe1ñu±²‚;Œ Ï^
+b;óziÎwF‘+G}³†|>ÆätÆ€ëâ_KEür©Ğ¸cê¹UrĞİ&½&G…Ç&ÈØ®y¦­}Ãááôi¯kC­ı4Ïknˆ•š¸õ¸­µ’Ş“’L”šv³>waÎÓÚ-ñ¾Ü¯—ÙŞ)ï½#wÇ^Jç‚Ì$•îyşo‘ÛÂ\ˆ¬ˆm~V®è\¬ÏÉ©Z3iİÆá0şææ"|ÿµÄa¹=~I*¼‹ÈÔÀAŒn¹–æˆ­äñfùù+Ywü?¸®õüçÿİæ€Ù­œiKöşYy¾Õ|šY×æ7SŸµH8ÿi­›[pV½aê“¸“õˆ¾%4‡eîşÛ$—Mlµÿ¹¯O¹¯ç˜{-¸<“3s8Ì©ûÏZ~Åòëj³jw¹œ•{[åNÜï{;ìı…uŒòË3,_‘[Ï´ÅÍêœûï[şè;øÀXã‡–Ãº§#¶v“ÌáuR†®¤»}oõV]·YÛößlÿ{§¸#Û{‚}Î·õ_¿ û5µ¯kÿí¶¾‡9 #ÎÕM&_vÀYï¶¸ùùVÊı±÷dS´š<_-)o0y½†:…zÿS³ø~?É[ò]t>[¦F»Èõvn*d·”s2ÿ‹¢=åæu‡¯lÁÛeaôÇ²Â+¦†YŸ‰‘ßúšú@‰3Èß‡¬êãû°Ÿãğ0şk»˜öËÜk¥Öjô½¬5k¼¦ı|×z¬RÛvüÜh#y¯ŒùÔs±¹¼s^”G³”ù]´Ÿ1óÁNî¥'¼~ ²^fĞÀwã^¦O‘OßnXß¬•´+€ê©Ä´5wñ} ¯¼Áí.wé>Ú?ã’$ùüJ]3ïY«k=m;‡¤¯óŠôÄdm¤'ÿÉHPÀÿ%RÁûË°73äËB·ĞÿLíRk#rõ9Ş–µà\øı =_ Vœ§Xã¡vbXø>5v©ş±A‡:£Jó’ÿoÑcä<±q‘<ù­ÌüSº:GÅ‰S›±Ô÷¥ÔÌÕR¢ë£ïŞŸeˆ"ş¡Hä«"_'-\Eî<½½'«“0¾Lˆ£¦8-ãi¯Š¾
+Ÿ0o©ÇàÇ˜SMìšIq¯uRÍØ£»etl„ŒöV‘§C‹ğ#¼AÈ»ygm•uœ;/%2/nëÓ¢ÿíX=Ö†N‘L“åÿµØÍà¦¼½r“ó$îo³Àl§LºY1ĞZ²½‡â¹ˆ+g˜[&EÌIdÆ†së…µlù« M.Mpñ9ûmºgëÆ–µ.o”Y
+÷©W½ğıLüC©5zê/ñ"Ò>}s®n«¾v6²dL_pmÍÏù°æ+•}$w2Âò40ÈŞÙ@°„1:÷Šï2ß½QzØú¡ÖÔ£Ä?ê×¡Ñõ^ïìÂ; sñ‘ù¦V-“yøx¥»‰ºc›ŒÕ±¹ùûrŒì•-ÎdY!=4–8¢ÍÛ(Ü®ĞÚÅÆ”6«—òØ¤ÜÃç½Y¬‡ğí_KªLi·wˆßj@9XÎ{íŒ‰=mÂ#n(âgÁ×à-pRÖ&†I…Bã‘ÅdP&ZVD~CÜ±; 2Ç&™`3o…Í&¶
+9ŠóÌK0/1ÓÈ»»=˜3Ög‹ï–
+£íÁÛÈ> 1ÌÃÁ ÅùRF–àîÃ»´÷;Kæ`»nGzŒ÷òxW)OèŞoƒGÁfğ7ö=bÖkW/æN@’øD?Iâ~’¸Ÿ$Æ+::wâóAò€É€{ÁëÌ=ëÜ­Ù æWà.“‘îbrèVé×šŒøÊH÷)pÁ{¤ >JïÌ?
+€·À;à4ØÁ¿"Sed¤˜¸ÜR·uæ¿ÉËÀıŒôz±‡ÚwkúÏ÷dü¼¤õiõêOÇÇË*#3òªfn/sÆä{Óì¿ÜñI^Ÿèüú?Ä3üÙæ“vuŞXÿø ³íS‡Á?Àğ†½³ÓvÌ	;şp8¯#é,BıjÌ	ã‰=6ætô=Ô¥A&ÙxpO:3&Ôq¨çĞ¿›µ;1FkDİ“‰·cıíĞ÷ ùnTl©áÆÛÚ¥˜Ü^î—›cg¥¶<Ñ¢È`åÿÙ/× *Î3ÿß³ï9gJÔv¹O5€ñA
+‚hÄ"Ä`¸ƒB¹¥jRé4N.6­Ö”ÖË˜Ë4N½c`L&Ó&›™¶1™Lp´M¨3™é—Ô±‰ôÿ.F›ıØ=g~û<ïmßİ÷¶ÿ>Ñ}&.¸/á¥•n³t“Š…ö1ÿ=<#?Ä"j³Yî‹Œ/Ÿ²b[¥×hÀ²µ«xÑSÈxô=jØñxÓÖ%<gc¨S©[©—S¿L-¼Zù8µÌÚZ¦³å5h3Y>—vµòqjåG',¿e–¿ˆWµÇØÎÎ÷¤ó~Ÿ`›÷açY¼g¼ç¿e%˜O­é~I¶•Ú¯ï`÷oiÃUlKÔûS?UêÔ*îa$ñ>‰|iÅ†§¡4îÄ{üIò ¥^›xfÖSc§æÇÒÃm£Ÿqâ9OK¬ıEßş®Ÿ-*Ë ŞıPéKj¨x5Í<›Lê©¥Aè/V¸w`½µ£]å+ßıu¸V¨8ÀWÂ~NÚqÕƒ*ÖpL`™¥l¬ç‡ëÇı¤z~Ï½‘Í5m`ºg.¦É¤É§ÏgšÄ£<ƒˆVDí4ù$¢µq=mÀZ¹ ?U¸¾B¥¶
+Ñ}È ¦]âö#¸ô\ÂLöaŠa‰R‰D.öQ[üÑ®ãMâW¾íZÇ´â<ë} ¯Â;‚Ì°ÇP–†Bâ‹Q$×a&c;7‰”C¸[æ"v¼¾vY
+)‘©5s~°˜:±“ºğaxöeÛ×ki‡¿¢ı9y`LŸù¼b™)×ˆ >ì¤.Æíğ¹§SS•"]Ç¼I{ØşöğœûD}3Æ¿|»¹OcÆÑ1zu­Ÿüìk;:2ÆÔ4Ç›÷ÀKGúÉ,§ô³òís£Öšïr\ÖXñ_¼µß/p¿¼Áøâ"Jìuò„ûÒ<uX¨ÏÁ|u®(´ƒÈÖº8×_ÛRí'X<n]WQêº|W-tú˜€i­–õ§àÚ¡¥"_ëE’ö&"Üìÿ üÚnìàX¯²É‚ã«<{f…óìÓU<d¯7…æç+~À÷ŒÄ}ô×’2Oáú‚ûì«N@Ü®¿rbÓŠÙLûi“•¯ÚŠçE»^kÃBUåºö#t1/’vÏ‘•<›fsÍÍã~Ê°â³¿3&»„LyŞ-XÂºáª/qÕê^Sî±U•Ë Ï§·¥â\µ‡¼áÜ“Ä|ùê•ëŒ>àºázKE¤ë"Â]á¯q_–ÜÎº³x^êœ»(õíøµş:Ç­9®a+Ì!iDù¹d¥LåÙ<æjï l™‚r™È5ó,ÊäB~WÓ®æy¶Œ\ƒáy›é2Y^µæÒ?„÷eÚe<›:øn#xHnbª×Áù®§-à9«êl$¿%O¢Cö³¯ıVºCş‰{v?m"òdı!ægñ9ÊmPÆó½Œûğ¨ü3Nñ¹7{Y_ÍÅvõ¬ôÕ³¬–»è‡è/ÇZ¾Ägÿù†·˜gè9ò8²ô‡Xçc‹í—˜×ÌvıŒ§1o ;©¹Êäç(óìbÛß¡€çæù®İæMlwŸöS‹üf[Vv³î^d¹ãùÌo1o/Ó{ëy<L¤Ï¶–=ÉwJF1×èvkLÕ˜³[åf;ìlrpppppppppppppppppppppppppppppppppø¿A ú;hF.Dñß x?‹Ø©J[VıV“1_c½Õ¶/éWÙ¾‡~‹í{‘.Ö2Œ9&zmß…;ñ¾íkÌ¶}	SÀö=ôÍ#fZFFêœôÔÔæÒ––¦ yóæ–ö`«Y¸¥v®U¾(Í,nÜÒÜ¾µ%h.]>Ş$#Í\«rJ››:Ú›·´YJÊ×åV”
+‚MÁöÆÚêoJO8fc›Ym¶ÛØy°Îlo­®n®n}Äl®¿¹” ë‹
+Ú 
+äwòÚFÔ¢kè7 ƒ¹ÕhıÆÚÿcy•1 ·8ƒ‡â¬ÄÜ?|ˆæôgÅ«l<9ç5dNÊÁYñ
+V"‘2Q)Äù^eåÌ°sÎ`9ëÜ|£)·Æ€â×Bâ´™ÿxcl^¥
+I6™O¥±è‡±›¼@44Š]ØJ&ûˆœğ3bW¯ÔsÄVL+r"¤±6fša¼şCÆÅØËƒb"qILëDØÒpñ‚xu0ÄËHÛ8h)bŸ¿É¨bÑ´.¢YW!ôÆ¥Câ{H”‚m’'ÅiãÓ´9ÆßÒB.Ñk¼‘’4çâ˜Êù–ñºïqÖ×`‘ccEGı!Õæˆ¯ÉØû{_úB‚{ÆL‡MO›ıİF]šU^Ürë52X^–a,XoÌ÷]1îMé‚é9¾bcvÚ»Æ,ŸUÍäMsî2¾ëÛkd²(Î—ŸœIÅQq ³ÅŞÄÆ ]¾n_¡QwHlï+HIK‰m9
+RºıÉ‰şb#Ñ¿,9™~ÙyïŞõŞ¥ŞtoÀ›âMòÆ{gxcôh=J¿S¿C×uİÇ{³Ï 8†lË±>İ£»Câ$3å 8aexE—ºK‡îWGLHëRÓËó„Ä‰¾±¬9†T´
+¢\êê;q\BwazÄ³!v~§3;6;zÉ]Ëònw©štÜş+|=İE¥å=G}=éÊõULş—†c¿ö^‚¹@Ñš­}-›êóƒ	ùU	ùARÕ³«sclOWiÚÔ¢
+Ì-©ª¦v£²ÕÁ–„`^Ï¦„<óTgı-ŠëUqgBŞ)Ôç¯-?UŸÌëíÌéÌO¨Î«è«Ém­œÔ×Ó}µæŞâf¹êf­ª¯šÊ[WªâÕW¥ê«RõU“Scõ¥Ş3¿±4·­«ÓÌo,2{RJ{
+x°¼Ç¬®È‰ÃÌÌëø  a:Jendstreamendobj53 0 obj[55 0 R]endobj54 0 obj<</Filter/FlateDecode/Length 273>>stream
+H‰\‘ÏjÃ0Æï~
+ÛCqš4M!°urØ–í[É‹cç·Ÿc…&á‡ô‰O2¿ÖÏµÑø»eƒ:m”ÃiœDh±×†SPZúâ+aâf™<µéFV–À?Bqònİ£[Ü3şæ:mzØ}]›=ğf¶ö4¨*PØ…A/Â¾ŠGÙ¡V¡®ırš¿ÏÅ"¤‘dF
+'+$:azde¢‚ò¢bhÔ¿ú©ÚN~»³Ğ$iR­”=EÊ/‘NçHçŒ¨ :EÊS¢M)hJ¥D¤+6İ…(î6«ÏpN¸AÎÎ…ıãÍãâëÊÚàı[ìh!¨Öd¿ ü·…Hendstreamendobj55 0 obj<</BaseFont/NXWBYX+Helvetica-Oblique/CIDSystemInfo 56 0 R/CIDToGIDMap/Identity/DW 1000/FontDescriptor 57 0 R/Subtype/CIDFontType2/Type/Font/W[0[634 0]2 4 278 5[355]6 7 556 8[889 667 191]11 12 333 13[389 584 278 333]17 18 278 19 28 556 29 30 278 31 33 584 34[556 1015]36 37 667 38 39 722 40[667 611 778 722 278 500 667 556 833 722 778 667 778 722 667 611 722 667 944]59 60 667 61[611]62 64 278 65[469 556 333]68 69 556 70[500]71 72 556 73[278]74 75 556 76 77 222 78[500 222 833]81 84 556 85[333 500 278 556 500 722]91 93 500 94[334 260 334 584]98 99 667 100[722 667 722 778 722]105 110 556 111[500]112 115 556 116 119 278 120 130 556 131[400]132 134 556 135[350 537 611]138 139 737 141 142 333 143[549]145[778 713]147 149 549 150[556 576 494 713 823 549 274 370 365 768 889]161 162 611 163[333 584 549 556 549 612]169 170 556 172[278]173 174 667 175[778]177[944 556]180 181 333 182 183 222 184[549 494 500 667 167 744]190 191 333 192 193 500 194[556 278 222 333]199 203 667 204 207 278 208 209 778 210[790 778]212 214 722 215[278]216 225 333 226[556 222 667 500 611 500 260 722 556 667 500 667 556]239 240 584 241 243 333 244 246 834 247[556 778 556 278 667 500 722 500 722 500 556 667 556 667 556 667 556 722 500 722 500 722 660 667 556 667 556 667 556 667 556 667 556 778 556 778 556 778]285 286 556 287[722 556 722 556 445 430 400 390 278 222 778 444 500 222 667 500 556 265 556 222 556 281 556 310 722 556 722 556 722]316 317 556 318[778 556 778 556 778 556 722 333 722 333 722 333 667 500 667 500 611 278 611 360 611 320 722 556 722 556 722 556 722 556 722 556 722 556 944 722 667 500 611 500 611 500 667 500 611 278 556]365 379 0 380[722 778]382 383 556 384[222 667 500 722 556 722 333 208 277 333 222 500 278]397 398 556 399[500 556]401 403 0 404 405 278 406[722 556 0]409 410 667 411[722 556 667 611 910 611]417 418 722 419[667 689 889 722 778 722 667 722 556 667 778 611 722 652]433 434 944 435[833 889 667 722 944 724]441 443 556 444[389 593 556 833 500]449 450 556 451[500 596 668]454 456 556 457[611 556 481 500 833 500 556 534]465 466 834 467[611 722 500 556 778 558 611]474 475 556 476[389 278 222 500 722 556 278 222 1024 860 944 778 222 667 763 556 667]493 494 500 495[755 556 667 500 722]500 501 556 502[389]503 535 0 536[278 556 833 333 833]541 542 333 543 544 521 545[251 403]547 548 278 549[500 722 500]552 554 556 555[500]556 557 587 558 559 722 560[567]561 562 667 563[500 574 862 698 755 260 431 278 568 500 150]574 575 333 576[1378 667 323 333 222 333 537]583 584 523 585 586 674 587[333 323 333]591[354 139]593 599 0 600 608 278 609 613 0 614[139 70 333 430 556]619 620 333 621 622 537 623[667 611 556 889 676]628 652 0 653[167 310]655 656 167 657 658 549 659 660 494 661 662 713 663 664 274 665 668 549 669[1122 1011 667 278 556 833 945 667 945 1223 1500 945 667 945 1223 556]685 686 722 687[833 222 444 667 722 500 722 944 1167 722 500 722 944 222 500 556 833 1235 1094 982 981 707 371 1113 867 704 667 556]715 716 278 717[778 556 722 556 722 556 722 556 722 556 722 556 667 556 667 556]734[889 778 556 667 500 778 556 778 556 222 1225 1123 998 778 722 556 667 556]753[889 778 611 667 556 667 556 667 556 667 556 278 222 278 222 778 556 778 556 722 333 722 333 722 556 722 556 722 556 667 556 667 556 778 556 778 556 778 556 778 556 667 500 333 278 667 556 667 556 667 556 667 556 722 500 722 556 722 556 722 556 722 556 722 556 667 556 667 556 667 556 667 556 667 556 611 278 778 556 722 556 722 556 722 556 722 556 722 556 278 222]844 845 278 846[667 500 667 500 667 500 556 222 556 222 556 222 556 222]860 865 833 866[722 556 722 556 722 556 722 556 778 556 778 556 778 556 778 556 667 556 667 556 722 333 722 333 722 333 722 333 667 500 667 500 667 500 667 500 667 500 611 278 611 278 611 278 611 278 722 556 722 556 722 556 722 556 722 556 667 500 667 500 944 722 944 722 944 722 944 722 944 722 667 500 667 500 667 500 611 500 611 500 611 500 556 278 722 500 278 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556 667 556]993 995 278 996[222 778 556 778 556 778 556 778 556 778 556 778 556 778 556 889 676 889 676 889 676 889 676 889 676 722 556 722 556 862 698 862 698 862 698 862 698 862 698 667 500 667 500 667 500 667 500 667 556 667 556 678 734]1049 1050 565 1051[892 692 678 565 678 565 678 565 1106 858 664 505 734 565 734 565 792 565 734 509 678 509 678 509 678 509 709 560 910 750]1082[889]1083 1084 833 1085[722 333 267 667 722 611 722 667 611 722 778 278]1097 1098 667 1099[889 722 611 778 722 667 611 610 667 722 668 832 778 278 667]1114 1115 611 1116[556 611 556 444 611 612 278]1123 1124 556 1125[611 556 500]1128 1129 611 1130[556 611 500 611 722 556 722 758 278 611 278 267 0 278]1144 1145 178 1146 1147 0 1148[178 349 338 377 384]1153 1154 267 1155[390 423 400 423 901 768 778]1162 1163 222 1164[556]1165 1166 834 1167 1168 556 1169[667]1170 1171 556 1172[667 556 667 556 667 556]1178 1179 278 1180[222 778 556 778 556 778 556 667 500 722 556 500 862 698 751 556 722 556 833 492 547 456 489 351 535 751 556 792 565 778 333]1211 1212 972 1213[1112]1214 1218 0 1219[751 556 792 565 267 338 556 611 500 556 603 607 556 592 605 556 605 267 944 441 333 603 590 646 931 672 528 726 595 590]1249 1250 208 1251[222 191]1253 1255 333 1256[191]1257 1259 333 1260 1261 208 1262 1263 333 1264 1265 278 1266[111]1267 1268 167 1269[221 361 250]1272 1273 278 1274 1277 292 1278[333]1279 1281 292 1282 1283 250 1284[111 292 278]1287 1290 292 1291[333 278]1293 1306 0 1307[278]1308 1310 0 1311 1312 389 1313[856 972 278 1112 972 889 876]1320 1321 278 1322 1327 0 1328[810]1329 1335 278 1336[292 167 292]1339 1340 167 1341 1351 278 1352[292 167 292]1355 1356 167 1357[779 778]1359 1360 556 1361[667 833 750 917 556 973 834 722 667 612 823]1372 1373 833 1374[667 556 667 556 611 778 596 282 426 722 341 403]1386 1387 556 1388 1389 222 1390[556]1391 1398 611 1399[719 712 928]1402 1403 933 1404[944 974 953]1407 1412 556 1413 1414 845 1415[1057 1067 1044 1051]1419 1426 611 1427 1428 900 1429[1112 1122 1100 1106]1433 1434 1145 1435 1442 278 1443 1444 456 1445[667 678 655 662]1449 1450 701 1451 1456 611 1457 1458 956 1459[1167 1178 1155 1162]1463 1470 611 1471[845 1067 1051 1090]1475 1482 758 1483 1484 946 1485[1158 1168 1146 1152]1489 1490 1191 1491 1492 611 1493 1494 556 1495 1496 611 1497 1498 278 1499 1502 611 1503 1504 758 1505 1512 611 1513[1008 1006 1196 1230 1187 1201 1228 1226]1521 1528 611 1529 1530 1178 1531[1390 1400 1377 1384]1535 1536 1423 1537 1544 758 1545 1546 1224 1547[1436 1446 1423 1430]1551 1552 1469 1553 1559 611 1560 1561 667 1562[800 797 958]1565 1569 611 1570[834 832 853 841 1024]1575 1582 278 1583[408 410]1585 1592 611 1593 1594 667 1595[836 884 845]1598 1602 758 1603[919 942 946 958 1059 611 556 611 278]1612 1613 611 1614[758 797 832 841 410 942 884 958 278 611 584 614 621 369 341 556]1630 1645 611 1646 1663 278 1664 1681 611 1682[800 797 719 928 933 712 933 944 800 797 719 928 933 712 933 944 408]1699 1700 410 1701[456 667 655 456 678 662 408]1708 1709 410 1710[456 667 655 456 678 662 836]1717 1718 884 1719[845 1067 1051 845 1067 1051 836]1726 1727 884 1728[845 1067 1051 845 1067 1051]1734 1735 722 1736[778 222 639 667 722 0 665 556 778 556 931 902 737]1749 1752 834 1753[667 611 1017 735 832 722 667 500 950 726 606 349 731 691 722 556 390 606 490 786 601 667 500 611 500 1106 858 664 505 678 509 734 565 734 509 621 509 678 509 709 560 709 560]1796 1797 667 1798[606 436 709 560 774 609 921 701]1806 1807 667 1808[874 663 910 697 910 697 931 712 734 565 556]1819 1820 664 1821[832 607 1042 734 667 500 667 589 500 664 505 743 576 278 678 509]1837 1838 667 1839[722 500 556 611 222 341 611 667]1847 1848 556 1849[667 556 542 222 722]1854 1855 208 1856 1859 333 1860[278]1861 1862 333 1863[687]1864 1865 584 1866[278 584 686 584]1870 1871 278 1872[778]1873 1874 509 1875[667 556 722 833 733 701]1881 1883 722 1884 1886 500 1887[556 724 847 781 390 772 614 566]1895 1898 333 1899 1900 308 1901 1905 412 1906[566 496 546]1909 1910 526 1911[374 414 825 792 645 0 860 614 234 239]1921 1922 170 1923[200 199 373 377 300]1928 1929 292 1930[348]1931 1932 230 1933[989 1186]1935 1936 1149 1937[154 542]1939 1940 692 1941[593 532]1943 1944 230 1945 1946 499 1947[502 429 550]1950 1961 0 1962 1963 549 1964 1965 500 1966[933 537 489 638 791 598 845 1067 1051]1975 1976 667 1977 1978 278 1979 1980 667 1981[502]1982 1984 737 1998[502 111]2000 2002 278 2003[250 278 722 778 722 555 665 611 667 602 720 606 722 833 727 799 1022]2020 2021 665 2022[451 438 451 438 451 438 451 438 365]2031 2033 361 2034 2035 365 2036 2038 361 2039[365]2040 2044 423 2045[312 398 462 470 630 826 445]2052 2060 0 2061[549 500 1278 1056]2065 2067 526 2068 2069 395 2070[417 658]2072 2075 395 2076 2077 370 2078[395 158 355 591]2082 2083 395 2084[355]2085 2087 395 2088[197 395 431 591 355 434 395 434 607 774 593]2099 2100 556 2101[612 610 622 929 395 158 236 395 355 434 395 434 395 521 825 222 546 880 849 604 622 355 614 398 356 357 222 333 222 333 222 333 222 333 655 879 383 729 1094 556 359]2142 2146 556 2147[525 541 556]2150 2152 475 2153[520 503 592 636 1030 582 598 769 1034 653 575 1223 592 610 936 593 602 878 553 830 926 843 598 881 569 614 568 630 594 586 640 577 842 518 740 653 598 556 604 936 553]2194 2195 556]>>endobj56 0 obj<</Ordering(Identity)/Registry(Adobe)/Supplement 0>>endobj57 0 obj<</Ascent 1138/CIDSet 58 0 R/CapHeight 717/Descent -481/Flags 68/FontBBox[-933 -481 1571 1138]/FontFile2 59 0 R/FontName/NXWBYX+Helvetica-Oblique/FontStretch/Normal/FontWeight 400/ItalicAngle -12/StemV 88/Type/FontDescriptor/XHeight 523>>endobj58 0 obj<</Filter/FlateDecode/Length 19>>stream
+H‰šÀ Ì¦  Yendstreamendobj59 0 obj<</Filter/FlateDecode/Length 8806/Length1 25385>>stream
+H‰¼W}PT×ÿİûŞÛeESÀ(+ú–'~ „/ƒ²À. (®¢fŸ¢îÊ‡eAM*e¬&q%L¦Öš˜LSÓLcÕ„§¡í®V‡::¦ÓÄbœØ6íLbmìLGÇ¤Õ6‰a_ÏÛº8Ãïpösîyçşîïeö¶n~¦±è€€œÅÕÙyˆ<¿!õÔ¶µÊ—¥ BgCËúæˆ/F¥®ß°­¡ èı‰À#ç€˜_½·îÍM1V q%ø(ÉOì¦É¾æÖ­ş% ÍµaS­ó€¹
+ùËš½[["ó5[èCŞèm®·\Íî%?ÀÇ·l®˜_óaø„o·²—!Ò«R>¡œ…>4pD?Ÿë.l]5è·lÛü4,w¸	¡·ğ„ù ûP{c1£ºÙÒ)cu WŠÃ)i:¤$d‹“(øgøD7Æå¡kúyšo}©
+@††ø¼'{ñ^C7L8„^LÃ¼‚ß¡‰QÃzpÙcD·ˆ âèì¢Ş€·(¿g°Ç0šŞiÆ8šíB:{V;Ùë°oê“1ÏãæPÕ.ÜÀ/ô÷t;–b9ã½ÿ{(ì+¾«ÿ]Áª¹“f.b¡Ş­' %pQt'NSåOŸnE!¡{oà ~‹ëØÁz˜OoÓûô+:‡)¨&Ùv…uÏ‹¯ëÿÔCú$B˜A«z°?£úİ$tHÌÉ¾ËZÙ^¶ÙùŞÃw‰‰RÈ„é('©À&¼ˆbé,ş…¯q“YyœĞ*œ×ÿ­Ç¢’viì¤m$/tÑNÂÄrX)s±íìGTùËàË¹›oá[ù5^%ÔÛ„KÂÓâq±SzEŠ5İÔÏëë‰HÅ*lF;íîúpß@`&–ÂÒY!+akH:Øk,È² sñ^ÖÇóOÙUv“İaÍÇñ¼•ïåGø~7
+û„W…O…ÛB‘È¥ƒÒçRºé/æu¡İ¡¡Bbë+]@lt2%¨ÂZxi·-˜‰ïÓ.Ş!é¦S;‹sÔ	†\E
+»¯ˆ°–ÄòØ"’*¶˜5°Föv‚ätË8¸…ÇóDÂ«ù:ŞÌ;øÇ¤ÉB†°@X)t“¼/\îHâXqœX.Î;Ñ, ù¹xˆ¸ùƒ8G*’ª¤R‡´[ê”j…‹Òe©İÔe:nºiúÂ4Í¼Ğ¼ÉÜiî!l½Ô	ÑˆÉ¬yØˆZ8Ø:öc”²ƒÌËüÔ]ux‘0¶°iX­·åB?L½õuëêšİ¨âOúaáÔ)¨VŞF‰˜ŠıR*v ‡º("ô·—ı(‡£ôÅ8G-Ì-G’˜›tSíÓ3¦O›:%}²’f“'MLMINš`M?îÑ±	ñqcFÇ²Ä˜M’(p†L§Ræ‘µ)Mœ¢TTd¾â¥€7*àÑd
+•ÏÑdO8Mi§Ì†»2í‘LûP&‹“ça^V¦ìTdíC‡"ØÊ%n²_r(ª¬İÛ‹ÂöËa{Ù6½ ;­>‡¬1ìÔÊÚ|~§ÇAå‚v¢`TV¦ñŸÅX£°†RïvŸ•#Ã©%)§6Aq„ç„t§·Ns-q;É6›J1
+-uÓY™Nì]§Ôí	Ø±ÎcXŞ·&xU{ŒZñ3´DÅ¡%>û¹õÿî åìŒšÔxz™·Ş_Fì©ˆ¸Ãóv’WY-SY¾Kukl× c“#·^q!O“¬Y”Åçoò¹Xê>dOr*^‡ªÁå>>Á>!ìde­í…6Ú}0«8«ØmÖöÈøDâõÆ†óÎ~FcåÒ!˜±’2Ÿpjrmx…ÀÎ6>êgÃ_;›ÒèQm³‘ğ”jœzFH×¤ôù^­£z†Ïçir·LH2öà)Q)ßã›KËP~œ"ûoƒP¹q}xÄ;1¥Çİ†a=Ô+4?h·…‰1–³*>ã|Ûœ¾buFÈ7¨10kjy•.·M“U
+0#³2 ‹Ë}Œ±.5Àô]8Rƒ°@X»†¦3VktĞúädeR ÃFÖc™r.3zEöËşùu~¹LöQ3‰éá‘&êıj61Xí&°ŒV´«ÉCf½ªÎ¥:ÙF1\Ç¯R…¦
+Má
+T Ÿ’r2+i›S\î%n­Ã‘¬Ù*µo¯Ë­õÒÁ©*eå!¥q{£u saÎÍ #?R¥šjP	ÕïxŠMëõû“ıÆw,âîØ„£Öá
+Ou(¶ä0ç6ÅF°TƒÓ™ÔÒƒÀã÷g¸ šáY„¶ ÌğìÄğœ‘0<wDŞ›áy„¹Ğ`ø‰‡ÇpÑ0†Ÿ¼?Ãöh†‹	­=ÌpÉb¸t$;FÄ°óŞ—f§ÁpùÃc¸bÃóïÏğ‚h†+	í‚0ÃÃ‹FÂpÕˆ^|o†]„y±Áğ’‡ÇğÒaWßŸáeÑ/'´ËÂ¯x@?5†İ#bX½7Ã+	³j0¼jˆa{²†h†;î"œòš(Êé'r	ıPí£‹› 3éf“ Ëq Ôğã‚t8y‹<²ÌaK yË_`¿tº`ÙÉA0v¶HÀ€.RƒY€^`ôªDVNn~¼-~*i‰ØøöoÒ©oJâ¢;ïÑÕ’~Óš–X¬5ĞVŒbBTu“0İs¹€ÅXŒÀ	ãª!>aÎ	ª±rrmŠ…åeù¦0–ô7täk]¿Ñÿ«ÿoèÿ’ĞçõÏìÿ¯¡·Ñ¯ˆÛÅ*$áT46«±•Z9Á$„¡Àg 
+ŞŠXÅTº4’òÕÅ±tûéÆ(ÒİP¤[ªH÷=ÒjªBù±ìW·Š“éhb‘H:•ti9éS¤ëI·¾@ºŸômÒ_“'³šºLÆ5R>PïB’“Ë”‚)JšÙd6ÏÏ+˜•o•4>+ùyãÅõİÒŠö£ËÓ”•?lùi^weèÚÉ‚¹ÿc½úƒ£ª®ğ¹÷½·6²I ©ä!„@Rqe…¡ƒ€¥Ú2iD°’ ¶F~¬0È@ƒmR
+€" qè&Klšµ‚@)Œ28)H§ÖJv_¿s÷=Øµı£;óÍy÷¼ûë|ç»ç¾!&Ü³O¶M¯ÜV¾yË‡ÕóNµ
+ß'ø6ìş¯#i–uÖèkÂZt=–&#!&QéìH¡+‘‰1™KaGJT9ä0@`€À  0@`€À ä0@`€é^–L3gà¹è2€¤!.dÀ…¸2à¢ÉÀL`>P¬¶PıèúXu£JPªJ¶Ÿå‚Pf—É)©É>‘ãï&˜ß!àW~áŸ¯:UûÙ-@p{¤mkÖÃfíşİ"1ô\Å¼Ó‡¾{ìHÃ%m]æ·eÆW÷­>YøêSñH”ç¹Öı4hbÇ‡cy¶I»I«—Ş¨
+S”öìÈuD®;‘ß®½ÉÀL`>P¬¶(ˆ\Gä˜óyœÌx2ãAf<ÈŒ™ñ 3dÆƒÌx2ãAf<ÈŒÇÉŒ™ñ`#Pä<›3ß=I~IÙ¶“´³½Ò´ÔíÛ§ìÕİÎû#oGşñÑoÅßo—ık¦¾Ô¹«ş/"¡>ì¢›¹Ò"“ôôñÈQoú,–§LK²Ù‘-Ş¹U Š¸ÿgâX‚¦Cœ	âLg‚8Ä™ Îq&ˆ3Aœ	âLg‚8Ä™q&ˆ3•¤¹.{Å›-Ô‹ÒÉTŒ’ÉÇ;•Ï·ğ¹!IæRº]9½óúæi9Úù´¤^-o•Ëî™Ü»eÑÉp]cæ˜ñ3+šù8]µaÁØü‚g›dæâ);ß*İ°ğ‘×OÈs+Æ÷¹š·ÖLœ9>ü©šXrº@K‰ôb,Ëv5¾É²Á#ÆÇ¸;êµùó’`0NfWMUÓtª&Ÿ 	0‘ 	0Q5¼Ï}Ÿ@!Kuß-XQZxº>¯WëŒo¤÷óöôV½y×OšôÂ½C6Jm¿&ç†×«8X×ä£s–Dãàk/º1É“1;MeGê+I[1-Ô¤
+¢nÑ”c¼9ÍçÎÑ¢yñ»¹.ôõ'çø}âhó¨ú¬úµfïä¢®™=2³Çä-™²nUÖ*£$rjMxÌĞäx!Wt‰[ò¤l]Ãû­·Úõƒz!T÷µ¼{Øá¹óåu˜ì0£›OR7´-O“§y§y§y§y§y§áÈÓ€<¤‰+d’¢ ¡G£öñ'û´¿+*E²L[—˜VùöÌ¡Ù³›ÚC9ï]°æÂ=éõÂp`â Ç·•üJv»~|Ó½ù¿<±Zş™cW¿®OÖMKñ9%Æ©ö´ï¬TöÜù»OùóÎ<su—4è¨ú•arõô'DŠ·ƒÍÕq$vSÌ/î%#‰¿†Pd7pUßÔƒ4˜ïÎdÓOÅÏÄ|¢Ó2d]Ó2ÄCzíEß§àkmä±è¿RŠ°£€R`ğ,ğ"ü©°O‹Ñ·ØŠ9 Ë ¼sã²Äp¬•	¬3ÚhP‡çF½]ªG{ÆÖ‰FÁ_‹¹j]!Õ·ï_ã¾Ê¶QWëíbÿi‹§İËÅcğåãù	ÌWˆyò¿Ë€uV;H_êAëˆ‰=˜s6ğc¬ñì,àôÛ	Ëœ,mk1Ş/Æs5Ö_Ê~`.”ƒ“j¼ã ]çÏ°Ïaã4`l á²;ıR6X şb;îL7â¸öoïévPt±Àšûb³·[QÿïñšOŒÁ3Çú(çL¾GŸêèUğÕf\ Ù@yÉxğ´˜¬—Ò2èĞ‹}5šhÚS€eƒÔ¦×ZjÈO“uÙUCËáWQ?ù…Ğä‘àÊ¥©î*ÃüS€àm¸¸ˆ~uÈÇIØEúšƒ½õÁ|×°ÖUÖ™Ãó_{9=÷Ó¡îïc_=TÑ&¾1Ç^ìa4óÎ¹Å‘­F½>)¬gøw*é	½SÖtWÌ»É^§1Æ²ÎÇà7¼…‰4ÃÉ—•ƒø \ Gù£@˜€vw¬ÿÖ­tí°F•N >|•vU´í>ƒÀjŒÇ´xÙÕ ÜÀ<ó¤|nX»¼_gnÖëÛ±¬s‘5u›½¥¯:“ãTÿFÖÛ³Îú·ZŸgÖ§cµ•¢D›#C‡-KÃÙüÎózX[ãÜóÙ3Š­f¬…|şeÎ,üUª=’T¶‚ªùEç·BĞÓ2§\â\ñ9¸Õríàó‹1ï Ö-½Ñv¸»‘è,@®1òcœs¶+i†}^ëÿW«êjƒ“['ïYoÖû!Æ,'ŠŒ 
+G€MÀ3 ş„÷Ã?ö(,.áğ\àC¢ÎãÀjàÀ*Î_LÀ¹T-E=»É—Š9N„¬jé§W¸Æ;5Ï®…ëvı9‡õ*±ş’„7ØçbŸ3|›‘¯¬á…o|^´ıˆ/àgµêíÖeø½
+Å¨ƒ•ÖÔ„	h°Ï
+Ølø¹]±\ãY#1Ô;?­ÄùÏf ×b,Ï“w¹îåVÄ8J—kC×2(IßoÕàÙç
+Adqí(à
+Ó[­ã>j¹¯3{ÜÏÏÚZ‚ş±¶U½»ŸÇYÓØS9ÖÕÕ<< vu…cå6ÇÎë³nÀ'Ö³¾@¾'}/®È:áúØ:x¸®êğùÏTWîÊ x Gj~Àå¡]¶oï‹ù°÷­ÖA^ú¹6D.VÁâoc$3ª—ÎK@øÚé°Èaç><û`«€€R`Ğ3Ú¯3ÇÖÔUà=¢ë‹Î¾ß¶+¢ºì<ı®°b?ÛÁÙè¨Ê¶cùY/@m/ ùRR­6Ìú58˜”!¶.¬Øîü] ”ch¯ÓwánŞ…ÔF;T]¬¦Ä¿¨Äû2}=tó	êïZª?¯¡~6kAjæïıÄ~N²N¢fVÊñ.ÚŠ±We£qgÔ²ŞqïõÑE¥^(…Q&*2)Ô·N˜ÃVİ5§D¢È ¯ıÅ|WıGÜé§æÅÇjP¥6›š™µ~Hø°·7€¿ªİNÛù,ºÓq6fÎ|d° 9à\Ä;€Cğ•Gs>œ ŸğÁh®#wA í×‘;/Àµcğ
+0Ú~f4‰I"CVˆ¶b’Õ¡—Zãø[@ë°<ö}ï|YÈ÷½^Ş¬îôRkø¿X/÷àªª+Œ¯}÷| *ŒŠ:±vJ|S±€
+U|ĞÆ$0I-´Áh¡âÑ
+8N‘GREd,õcQĞj°ˆ¡TÔŠ¢¹ı­}Ï	ñ’øÇ7ßÙûì÷Şk­oiLOì7W$N0W¨ß±z®LŞ–Éáƒ£Ğjš±É3¶½Ño·òà¼dä©ÏŠµ¡j?Õcüë·¦DZkOø€ìIØo­Ës¨ËQÍÇ<ÕnÉÉ­‰52 üHÆ…›å÷şbïì“¡‰ËøàÊ2(…±ok+Ì×gÅTÕLª{b?ûßìX¤>7¹^'äæğ ëÍhàŒ>|¬«TG5ÇYÿëœÚÙğÌ–ã_#gï©¢éüMâ|³ñ´qÜ(¾©6‹´HÜ6<á0Îèq‘öi›Ph.¡1¬ñì³4È!N£Ó3ã2~l÷1¼1¾Å13‹£˜ZñU‘6)x„¾Y}wÙÜ$ö6ËmŸ¯İßIüÃ{üuÄ—g8½;[Ï´Ä‘îx9âipØ…=ÎdAÖû˜Ğ²˜±Ö6#uO[¬¶oí·‘›×IlïJ^ò­“ô®[Ô¶?ÑÛk‰ã7è›ië®[â8´ÅÙwÓ/ÛàCùGKœµ¿R9Şß*Gy÷JïŞôÁğôôZzz©_šş;u±¯mué7ƒ-éÇıé^»ôŞL_4\ÄAğ^9—òi^G¹ˆ~WzÑÙ\%3½IRöGC‰´kô‘‡lÍÚ†“kß—Ú
+:TŞ‡»QÖïş|/ç\«¹Õ®ËÁ¹Œ±Zëù½şÓï¨ı0o›¹„s(Ñ±Ñ—Kä´¹!Óßh~;\Ë¹¼??æŞ/·ñ½Š÷kÚ½Kİr«9ßæ¼"ùÖù†P¿ıFpÁ+™gşI×óRp¬<aûSO{‚“k&V¯¥®ØŒ5%Š8gà;åÔšS•æT×7%nGÊ¹¦î)”¯7SÉ¿RÊa™œ!¯²îè¢kÀ­ÄêÏÈ/ËĞ»ŸYš¹ok­ÙBüÆ5^·âÃâüÔ¾Kµ÷Æ7èÈ{ì7…_~ÔúCîÑıß8Rªİ'Ğõ2ÛÙ £¼şÄ4Ûı] ‹y/3t||Ş[á:93\gÚ'vj^²?ìå89—E¾{5»Ÿ‰St'±)ó6¢)şisŸ	ŞKğ6—šOáMå£İ'¹å27–OÛRo•	ı3M–§FâK{ËDÿmò¨j´È*™n*Íğ¸jOSnn"FvÕàvS.YûZÆºœa*å°Ÿï$ø‡Ó[¶(äS)2ü+­æ5Ùê|Ê;Yâô6CÀ §P> ‹Á*§_¾Tá»œî£íFP!Ûé[(ŸÒÇ‡{8än ,¡O‹·…¾l@O6è›
+ç×€©}_ÄYö„/Êäß×d4çáZ—å!E°ÙÜ®Koçÿ†ÄNSfï©«™º2‚º<pnKú:¸CRìÿKÚÔÖïezÀSŞÅ^tjÈ^>‡ç|òï¿Nïô³pObØLğïà	êÑé}ğB¸Š}× qká§áÀõÁÅÒ7µ}ÊêQbS°,]Ï†¿
+ÍåÔU†5ÆÁNBŞòJìŠ·ÃTNo¡İÉÚ6²Õ;[àçÈ1—X;xM*œK%×ı|FßYÎ²Ls#æê†a?y`»j—È§´ûÏJqˆı‡L
+”WSa-¶½ĞLUÔ‚jSR‰ÛLIb:\1)ë«ZAøsÆÇw$vĞ~?ü\gRÉnfªB}Tkpá™”??ŠŸòûÀùğ<3UùÂÃÒ¤’ôKÒ/I¿d¾]ïÊÖ`÷¨ûco‰UfªúÑÖÎbYŒßñ‡Áyğ/àröWn×—9ûø,£s‰÷×dÍ™ù£qÛºÇD)N´—â$ó'?d¾Éğ<xó¾mçí×8{.9ø÷î'¿ŸƒßÏÁÇ+ÚÚw²–şµ´OÑıçŒ‚ÇÃ¯Ğÿ•&ûnîZ]pRğ[Ó!¸Îa¥ÕnM×§gÔ[)
+› Ø?o‚Äù²<ë}¼Şäûy…ÛÏ¹ıMĞÌİ‰`Ë6.ƒàiSvbî½Ùû-âÿtÖø0\ÉşH¼ï3ºÇøşlöc×Ìzu¶o'İ#q£—ÔØù«äo—lôö™‘ÎWò$ö¼>Š'­Şy[`ü7Õ_‚uÑ™hùE qMô¯U{‹5Ãø~ÕçDş¦Äúõ;øœ¶şÇwi=[Ğ'òêò¬M|ÇÑ=«ÿRßUÒÔÖ¤Õqä ê“ñ·µ~W«ŸÒ|xv²?HÆhŞÉÿ;ô>‰í‡=ñç;äf´ÑŞ~aº3*MäÊ;ş6ôÚPu›ÕMhœpõd†·™ V*ı:™ãO“m´¹]5•{ªÿ*ÜİRüŠ|t6Î7#]’¨“ã‚-r?PVxíĞR¥²<	­\…–™¿Bùnï[ƒF6Âÿs(ÿÄ¯2×¡•÷¡™«à‰ªåÁÑ^¼è¦èıº3ŞV™*õ…¦?k84Wúä Z{³ÿˆ,lä23Šû=Ïoµá@4ó@Ãş'£Ÿ†'
+ÈG?‘Ÿ2Î\öPjsÃçdß)Úı•}\ç)?óæËéª×\(èÙéıĞöŒ­¾~=÷4ÌÚ×v““‰¯¦œkP¯P~i^OßE¿¥h¨ +šf9Ø¾Fg¡!Lo¾{*üÉ²ÚÚoš¡1·Š»I±Ÿ*ùNË
+Íì¹v”ÑÌó$óœnß¹†¿E.å¬±€:eİ›]³ò­ì©VîÖÉÛA_YÁ=ßœƒö­—yŞ4¹ıw'ØÉZV[L”‹n¾éâæ£Ÿòe#˜	®ôÊå2wŸ1Şµø½Y3p¾—¯Ühå9ò74í(¿›¬ùvF°³¨—æ“cêÁpÙa†›³ÌÙe•½ÎÓ×õL_g4¾e(şd¨éãÔĞîCÓİ|(ï…õÒ;™’ã’ç§?o™‹Ñ¹Ce²?]ñ§›½Õr¬w™œLÛ[@'÷ ¤@‰çIww´LD'¢¯†U#ş	Ü—Ñäˆ¤çÃ¿]Ğåÿáß&ïF)£=#,M:…d€wµŒtwI{ÿD¹ ,“¼ÉmjÏqì‰ãEXG.v:.FBÒ»3pW€™‡8]ŸAv{d4·êÈÇÁ2°È‘tü|ä7–Ù÷y‹¬ÁW|Ìû|ÓÚû;èÅjÖ^'øßËæ£ïÈšà©HœÏd:Ó~¶;_úºwÉî|s
+ü1|”{·¼@ıØqvË`g{hy·9‘ïwÁ,puİQ28ÎdŞÍy²Á}F6¹¯Ê{~<Ì—µîCr'g}˜ÎãÁM@5=¼aŸæ•Ñ=tj‡oLh>½7Pív“n7s¡[ »ü~Ò‡ò®L|N½ï|#;oL{Êÿg¿ü‚¢ªâ8şûíİ{1t­å^£Öci$`JÜ5@Òÿ€Æ´»p¥ÖeÙK‡‡|0Æ2u(uÆ|HˆZÂ+ XOiúĞóïƒNfV¾4Ù‹/ô»»;¤¦>ôĞtîÎçœïùıÎ9¿{wçÜ=#¸”ríüÆÆàµ5nP[Ÿ¤i¢÷Òó[0Eß—Ø‹Î¡]¿.’m‘~3&Ò>â¢½éMÊ¹™´DÏg×iß¼J÷s¶
+­°›æiÄ¥S§ğÚÔ½eê:ÅHÕoú”ì:ª?"ÛsÌ
+‡i¤hçSm	‰°Èø¸Ø÷8ƒæY¥;Íìç©óô½µè.@³îø¨¯—Öe2Õ/S-ßÑn£:×ğ<\DZ¯)pÍpŞOÀ[toë®À¯TÛ‰zb$¶³gà«‚rÒ]úÓôÜ§!Aƒec23ÒŞ1ßæÀEq	Œ²ÁÂNÂ+ÆLl—ÁeC!\fû ”p’Î•ãôã*¢°•Î“´~k#å ~7~ }B2ãÜ¦ñAaõßIñ[¬›övÊvÎ²AÜdH'ûA¸i<Ìã†›ôŞ(¢û=}/…Øw0,¼Nó¶ĞïĞNï‡vø#~,Ûõÿ><º2ÚµÃ;O'\{Ê¤*€8Ìáp8‡Ãáp8‡Ãáp8‡Ãáp8‡óŸ©Ü= Ú¥ƒúÔ7M»a›Ö+z½DÄ´Ò¨ÓŒtS\IwÅµ yğõD–@–\8×:˜	·ãZ¹(Æ5#]×FÒM½²­°07'/77_.ñû}Š¼´­ÅßTrykİ"YóØäJok[°Ó¯È%/Èñ!…6yf©jóu½m­íÑ+ª×—ÖT[Ë_H	zëÜ9+=>ï¦åQíÓÙÛ.»å€Òèm§›Rêå`À]¯´¸¯ÊmwŞ¬€jX¥PCµÊ@„¨‚êÀ9°<dóÂ&è ûj¢‘”|Gı/÷W¡ÊŠ£`Àc°ÖŠ“$Ké§Î%ÀFë$Á’{,ãPtå8äG-sâ˜ÄxŠáYÈ¦,Šu:
+.Š}§Eı[°c`'aŞ_â%Ó«ŠŸÉÎ­Ş4‡
+åVŠ‰Å„ÕZBIŠG`qˆĞƒ»¡“ØAì#Ø´ê%aw„‰öQì„yXaObÒšÔ¹RZb’ôŠÆáƒÒ…´Æp.$ÃUœI†„’D<„ïC=HxÌ¸…¾ÒlÜ?dñI.rõ‚Ÿè"ôÑ±7’'MàB03¤1™ÎpDúÉ–#ıhSu‘¾ÈRUŸ§SËş˜tÂtPš45JDÌÕgQµ1½&Ÿ´']Åıi·IEr¼«:L4tDj±ôHõ¶¨¿²GÕõG¤Bò¯³'Iùó¥Å¦kÒÓYªˆÔÎ1UJlg¤§LÑn2Mj¶Ï’0í‘ŠÈ•nrfcØ‡`ˆ˜+¤Q’ô¸Cå–‚_*Ë¶™UÜbÏ/Ëî±”e™-•’Ù²,+‹ôº/…7„B‰'X…l!S˜/<.¤Š³Åq¦8CLEQPñãH±dÃ~Ê
+	û‡D£hPñ2²1ˆŠLÔ‰ ¦ªSW†µí)UÅşáM‘1F•QÅ¡˜iÀ.1M±¨#E§•ºØ¾¦CQÆª¶Ï	§Ï^2«p™ãA…ë®Òúà+MáåUÕá>SM8OS¦šiç?Œ]Á*”R«uùêÎ¡¿¹Á©d8]N…p…»CMiá.,6û5‡Ögº<uMZíVÂşÅnÎpÈƒ¡†û¸4w(Ã1Î5ÕƒvÅ	ÙCÎ·£fÈS¨½+ÖéXÒûLVªMĞbyjïã®ÕÜ-V­«V‹å±{¢±´çtz«JÛƒ”²Ó»\gW…ËWm¨Ëî‡ŠGÈèèøS€ ïŸjßendstreamendobj60 0 obj<</Length 4515>>stream
+q
+1 0 0 1 59.76 737.28 cm
+0.184 0.337 0.831 rg
+0 0 m
+17.28 0 l
+20.464 0 23.04 2.576 23.04 5.76 c
+23.04 23.04 l
+23.04 26.224 20.464 28.8 17.28 28.8 c
+0 28.8 l
+-3.184 28.8 -5.76 26.224 -5.76 23.04 c
+-5.76 5.76 l
+-5.76 2.576 -3.184 0 0 0 c
+h
+f*
+Q
+BT
+1 1 1 rg
+/T1_0 12.5 Tf
+61.106 747 Td
+(JL)Tj
+0.184 0.337 0.831 rg
+/T1_0 11.6 Tf
+28.894 7.92 Td
+(JL Policy Consulting)Tj
+0.545 0.588 0.667 rg
+/T1_1 8.5 Tf
+0 -11.16 TD
+(LLC)Tj
+/T1_1 8 Tf
+436.864 11.52 Td
+(03/30/26)Tj
+ET
+q
+1 0 0 1 54 734.4 cm
+0.184 0.337 0.831 RG
+2 w 
+0 0 m
+504 0 l
+S
+Q
+q
+1 0 0 1 54 61.92 cm
+0.184 0.337 0.831 RG
+2 w 
+0 0 m
+504 0 l
+S
+Q
+BT
+/T1_1 7.5 Tf
+54 24.48 Td
+(jlpolicyconsulting.com)Tj
+480.233 0 Td
+(Page 1)Tj
+ET
+q
+1 0 0 1 54 513.36 cm
+0.961 0.969 0.984 rg
+0 192 504 -192 re
+f*
+Q
+BT
+0.075 0.09 0.169 rg
+/T1_2 23 Tf
+146.634 658.36 Td
+(Product X: Provider Net Cost)Tj
+56.529 -29 Td
+(Model Concept Brief)Tj
+0.353 0.408 0.502 rg
+/T1_1 11 Tf
+-12.11 -33 Td
+(Provider economics and access execution brief)Tj
+0.184 0.337 0.831 rg
+/T1_0 8.6 Tf
+-38.95 -22.6 Td
+(Audience: Provider-facing access stakeholders and internal MLR reviewers\)Tj
+0.545 0.588 0.667 rg
+/T1_1 8.8 Tf
+-66.688 -21.2 Td
+(Prepared March 30, 2026. Facts reflect the attached source set and publi\c CMS, HRSA, Medicaid, Medicare, and)Tj
+122.522 -12 Td
+(payer policy sources reviewed on March 30, 2026.)Tj
+ET
+q
+1 0 0 1 54 705.36 cm
+1 1 1 RG
+1 j 1 J 
+0 0 m
+504 0 l
+S
+Q
+q
+1 0 0 1 54 513.36 cm
+1 1 1 RG
+1 j 1 J 
+0 0 m
+504 0 l
+S
+Q
+q
+1 0 0 1 54 513.36 cm
+1 1 1 RG
+1 j 1 J 
+0 0 m
+0 192 l
+S
+Q
+q
+1 0 0 1 558 513.36 cm
+1 1 1 RG
+1 j 1 J 
+0 0 m
+0 192 l
+S
+Q
+BT
+0.075 0.09 0.169 rg
+/T1_2 15 Tf
+60 474.84 Td
+(Why the provider model matters)Tj
+0.353 0.408 0.502 rg
+/T1_1 10.1 Tf
+0 -21.1 TD
+(Expanded access experience is not a commercial reimbursement proxy. Unde\r FDA expanded access,)Tj
+0 -14.8 TD
+(manufacturer willingness to supply the investigational drug is the gatek\eeper. In commercial launch, the)Tj
+T*
+(gatekeeper becomes a payer-mediated system of prior authorization, codin\g, sourcing rules, site-of-care)Tj
+T*
+(controls, claim edits, and reimbursement timing.)Tj
+0 -20.8 TD
+(A provider net cost model translates that shift into auditable economics\. The model measures whether a)Tj
+0 -14.8 TD
+(treating center recovers drug acquisition cost and cash exposure after r\eimbursement mechanics are applied.)Tj
+T*
+(It does not rely on a generic allowed amount narrative. It uses the actu\al launch variables that a center will)Tj
+T*
+(face: acquisition price, whether the plan permits buy-and-bill, whether \a 340B price is available, and whether)Tj
+T*
+(Medicaid claim rules are met.)Tj
+0 -20.8 TD
+(The source brief anchors the launch arithmetic at a WAC of $39,000 per 9\00 mg vial administered every two)Tj
+0 -14.8 TD
+(weeks. That one figure is enough to make provider exposure concrete. At \26 administrations per year, gross)Tj
+T*
+(annual drug WAC is $1,014,000 before administration costs or denied clai\ms are counted.)Tj
+0.075 0.09 0.169 rg
+/T1_2 15 Tf
+0 -31.7 TD
+(Commercial payer perspective and treatment of similar products)Tj
+ET
+q
+1 0 0 1 60 143.84 cm
+0.961 0.969 0.984 rg
+0 92.4 492 -34.8 re
+f*
+Q
+q
+1 0 0 1 60 143.84 cm
+1 1 1 rg
+0 57.6 492 -57.6 re
+f*
+Q
+BT
+/T1_0 8.8 Tf
+66 221.44 Td
+(Comparator policy)Tj
+123 0 Td
+(Initial gate)Tj
+123 0 Td
+(Continuation gate)Tj
+123 0 Td
+(Economic signal for)Tj
+0 -11.4 TD
+(adrabetadex)Tj
+0.353 0.408 0.502 rg
+/T1_1 8.8 Tf
+-369 -23.4 Td
+(UnitedHealthcare)Tj
+T*
+(commercial - Miplyffa)Tj
+123 11.4 Td
+(Genetic confirmation, use)Tj
+T*
+(with miglustat, no Aqneursa,)Tj
+T*
+(specialist involvement,)Tj
+T*
+(12-month authorization)Tj
+123 34.2 Td
+(Positive clinical response)Tj
+T*
+(documented on)Tj
+T*
+(NPC-specific scales)Tj
+123 22.8 Td
+(Coverage exists, but)Tj
+T*
+(combination use and)Tj
+T*
+(ongoing response are)Tj
+T*
+(managed tightly.)Tj
+ET
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+0 0 m
+492 0 l
+S
+Q
+q
+1 0 0 1 60 201.44 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+0 0 m
+492 0 l
+S
+Q
+q
+1 0 0 1 183 143.84 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+0 0 m
+0 92.4 l
+S
+Q
+q
+1 0 0 1 306 143.84 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+0 0 m
+0 92.4 l
+S
+Q
+q
+1 0 0 1 429 143.84 cm
+0.875 0.898 0.941 RG
+0.35 w 1 j 1 J 
+0 0 m
+0 92.4 l
+S
+Q
+q
+1 0 0 1 60 236.24 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+0 0 m
+492 0 l
+S
+Q
+q
+1 0 0 1 60 143.84 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+0 0 m
+0 92.4 l
+S
+Q
+q
+1 0 0 1 552 143.84 cm
+0.875 0.898 0.941 RG
+0.6 w 1 j 1 J 
+0 0 m
+0 92.4 l
+S
+Q
+q
+1 0 0 1 60 236.24 cm
+0.184 0.337 0.831 RG
+2 w 1 j 1 J 
+0 0 m
+492 0 l
+S
+Q
+endstreamendobjxref
+0 2
+0000000000 65535 f
+0000095533 00000 n
+3 2
+0000095864 00000 n
+0000095925 00000 n
+17 1
+0000096103 00000 n
+42 19
+0000096318 00000 n
+0000096457 00000 n
+0000096588 00000 n
+0000100432 00000 n
+0000107644 00000 n
+0000107669 00000 n
+0000107965 00000 n
+0000117487 00000 n
+0000117556 00000 n
+0000117800 00000 n
+0000117879 00000 n
+0000125194 00000 n
+0000125219 00000 n
+0000125561 00000 n
+0000134854 00000 n
+0000134923 00000 n
+0000135178 00000 n
+0000135265 00000 n
+0000144155 00000 n
+trailer<</Size 61/Root 3 0 R/Info 1 0 R/ID[<D84B3F75CC594D1DBEA9351968A7A9ED><D84B3F75CC594D1DBEA9351968A7A9ED>]/Prev 94614>>startxref148721%%EOF

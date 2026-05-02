@@ -1,0 +1,36 @@
+export const siteConfig = {
+  name: "JL Policy Consulting",
+  legalName: "JL Policy Consulting, LLC",
+  domain: "jlpolicyconsulting.com",
+  url: "https://jlpolicyconsulting.com",
+  lastUpdated: "2026-03-20T00:00:00.000Z",
+  description:
+    "Editorial analysis and advisory on reimbursement mechanics, payer behavior, provider economics, and market access.",
+  email: "Joseph.Stewart@JLPolicyConsulting.com",
+  linkedin: "https://www.linkedin.com/in/joseph-stewart-mph-cpht-309bb5215",
+  navItems: [
+    { label: "About", href: "/about" },
+    { label: "Consulting", href: "/consulting" },
+    { label: "Insights", href: "/insights" },
+    { label: "Research", href: "/research" },
+    { label: "Contact", href: "/contact" },
+  ],
+} as const;
+
+export const defaultKeywords = [
+  "pharmaceutical reimbursement strategy",
+  "Medicare Part D policy",
+  "PBM formulary dynamics",
+  "drug pricing policy",
+  "market access strategy",
+  "healthcare policy analytics",
+];
+
+export function absoluteUrl(path: string): string {
+  if (path.startsWith("http://") || path.startsWith("https://")) {
+    return path;
+  }
+
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  return `${siteConfig.url}${normalizedPath}`;
+}

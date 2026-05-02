@@ -1,0 +1,115 @@
+<svg width="1584" height="396" viewBox="0 0 1584 396" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">JL Policy Consulting LinkedIn banner</title>
+  <desc id="desc">A restrained editorial banner for health policy and reimbursement strategy consulting.</desc>
+
+  <defs>
+    <linearGradient id="softWash" x1="870" y1="34" x2="1532" y2="338" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#DCE5F3" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="panelGlow" x1="1084" y1="96" x2="1408" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F6F8FC"/>
+    </linearGradient>
+    <filter id="shadow" x="1010" y="78" width="440" height="250" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#173F89" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1584" height="396" fill="#F7F5EF"/>
+  <rect x="0" y="0" width="1584" height="396" fill="url(#softWash)"/>
+
+  <g opacity="0.45">
+    <path d="M1100 56H1496" stroke="#D7D3C8" stroke-width="1"/>
+    <path d="M1100 320H1496" stroke="#D7D3C8" stroke-width="1"/>
+    <path d="M1122 80V292" stroke="#D7D3C8" stroke-width="1"/>
+    <path d="M1180 80V292" stroke="#D7D3C8" stroke-width="1"/>
+    <path d="M1238 80V292" stroke="#D7D3C8" stroke-width="1"/>
+    <path d="M1296 80V292" stroke="#D7D3C8" stroke-width="1"/>
+    <path d="M1354 80V292" stroke="#D7D3C8" stroke-width="1"/>
+    <path d="M1412 80V292" stroke="#D7D3C8" stroke-width="1"/>
+  </g>
+
+  <path d="M330 58H1430" stroke="#173F89" stroke-width="1.25"/>
+
+  <text x="360" y="92" fill="#496693" font-family="Avenir Next, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="0.24em">
+    POLICY MECHANICS
+  </text>
+
+  <text x="360" y="146" fill="#101826" font-family="Iowan Old Style, Baskerville, Palatino Linotype, Georgia, serif" font-size="68" font-weight="500" letter-spacing="-0.03em">
+    JL Policy Consulting
+  </text>
+
+  <text x="360" y="198" fill="#101826" font-family="Avenir Next, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="25" font-weight="600" letter-spacing="-0.01em">
+    Health Policy &amp; Reimbursement Strategy
+  </text>
+
+  <text x="360" y="244" fill="#445164" font-family="Avenir Next, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="400">
+    <tspan x="360" dy="0">Coverage, coding, payment, and market access analysis</tspan>
+    <tspan x="360" dy="29">for pharmaceutical strategy.</tspan>
+  </text>
+
+  <text x="360" y="336" fill="#496693" font-family="Avenir Next, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="0.02em">
+    Policy mechanics translated into commercial decisions.
+  </text>
+
+  <g filter="url(#shadow)">
+    <rect x="1086" y="92" width="344" height="226" rx="16" fill="url(#panelGlow)" stroke="#DAD2C4"/>
+  </g>
+
+  <text x="1116" y="124" fill="#496693" font-family="Avenir Next, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="0.22em">
+    ANALYTICAL FRAME
+  </text>
+
+  <text x="1116" y="152" fill="#101826" font-family="Iowan Old Style, Baskerville, Palatino Linotype, Georgia, serif" font-size="22" font-weight="500" letter-spacing="-0.02em">
+    Coverage to access
+  </text>
+
+  <g transform="translate(1116 172)">
+    <rect x="0" y="0" width="284" height="110" rx="12" fill="#FBF8F2" stroke="#DAD2C4"/>
+    <g stroke="#DAD2C8" stroke-width="1">
+      <path d="M0 27H284"/>
+      <path d="M0 54H284"/>
+      <path d="M0 81H284"/>
+    </g>
+
+    <g fill="#101826" font-family="Avenir Next, Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="600">
+      <text x="14" y="18">Coverage</text>
+      <text x="14" y="45">Coding</text>
+      <text x="14" y="72">Payment</text>
+      <text x="14" y="99">Access</text>
+    </g>
+
+    <g fill="#173F89">
+      <rect x="92" y="10" width="82" height="7" rx="3.5"/>
+      <rect x="92" y="37" width="120" height="7" rx="3.5" opacity="0.88"/>
+      <rect x="92" y="64" width="146" height="7" rx="3.5" opacity="0.8"/>
+      <rect x="92" y="91" width="170" height="7" rx="3.5" opacity="0.72"/>
+    </g>
+
+    <g fill="#D8DEE9">
+      <circle cx="248" cy="14" r="4"/>
+      <circle cx="248" cy="41" r="4"/>
+      <circle cx="248" cy="68" r="4"/>
+      <circle cx="248" cy="95" r="4"/>
+    </g>
+  </g>
+
+  <g transform="translate(1366 110)">
+    <rect x="0" y="0" width="48" height="192" rx="12" fill="#FBF8F2" stroke="#DAD2C4"/>
+    <path d="M24 20V170" stroke="#173F89" stroke-width="1.25" stroke-dasharray="7 7" opacity="0.65"/>
+    <circle cx="24" cy="34" r="6" fill="#173F89" fill-opacity="0.18" stroke="#173F89"/>
+    <circle cx="24" cy="80" r="6" fill="#173F89" fill-opacity="0.18" stroke="#173F89"/>
+    <circle cx="24" cy="126" r="6" fill="#173F89" fill-opacity="0.18" stroke="#173F89"/>
+    <circle cx="24" cy="172" r="6" fill="#173F89" fill-opacity="0.18" stroke="#173F89"/>
+  </g>
+
+  <g opacity="0.75">
+    <rect x="1448" y="118" width="70" height="56" rx="12" fill="#FFFFFF" stroke="#DAD2C4"/>
+    <path d="M1462 142H1506" stroke="#173F89" stroke-width="2"/>
+    <path d="M1462 154H1493" stroke="#D8DEE9" stroke-width="2"/>
+    <rect x="1448" y="188" width="70" height="56" rx="12" fill="#FFFFFF" stroke="#DAD2C4"/>
+    <path d="M1462 212H1502" stroke="#173F89" stroke-width="2"/>
+    <path d="M1462 224H1488" stroke="#D8DEE9" stroke-width="2"/>
+  </g>
+</svg>

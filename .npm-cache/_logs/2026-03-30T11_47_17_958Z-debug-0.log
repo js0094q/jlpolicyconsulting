@@ -1,0 +1,626 @@
+0 verbose cli /opt/homebrew/Cellar/node/25.8.1_1/bin/node /opt/homebrew/bin/npm
+1 info using npm@11.11.0
+2 info using node@v25.8.1
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/josephstewart/Documents/JLPolicyConsulting/.npmrc
+5 silly config load:file:/Users/josephstewart/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm audit fix
+8 verbose argv "audit" "fix" "--omit" "dev" "--dry-run"
+9 verbose logfile logs-max:10 dir:/Users/josephstewart/Documents/JLPolicyConsulting/.npm-cache/_logs/2026-03-30T11_47_17_958Z-
+10 verbose logfile /Users/josephstewart/Documents/JLPolicyConsulting/.npm-cache/_logs/2026-03-30T11_47_17_958Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly audit bulk request {
+13 silly audit   '@babel/code-frame': [ '7.29.0' ],
+13 silly audit   '@babel/helper-validator-identifier': [ '7.28.5' ],
+13 silly audit   '@emnapi/runtime': [ '1.9.0' ],
+13 silly audit   '@img/colour': [ '1.1.0' ],
+13 silly audit   '@img/sharp-darwin-arm64': [ '0.34.5' ],
+13 silly audit   '@img/sharp-darwin-x64': [ '0.34.5' ],
+13 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.2.4' ],
+13 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.2.4' ],
+13 silly audit   '@img/sharp-libvips-linux-arm': [ '1.2.4' ],
+13 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.2.4' ],
+13 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.2.4' ],
+13 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.2.4' ],
+13 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.2.4' ],
+13 silly audit   '@img/sharp-libvips-linux-x64': [ '1.2.4' ],
+13 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.2.4' ],
+13 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.2.4' ],
+13 silly audit   '@img/sharp-linux-arm': [ '0.34.5' ],
+13 silly audit   '@img/sharp-linux-arm64': [ '0.34.5' ],
+13 silly audit   '@img/sharp-linux-ppc64': [ '0.34.5' ],
+13 silly audit   '@img/sharp-linux-riscv64': [ '0.34.5' ],
+13 silly audit   '@img/sharp-linux-s390x': [ '0.34.5' ],
+13 silly audit   '@img/sharp-linux-x64': [ '0.34.5' ],
+13 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.34.5' ],
+13 silly audit   '@img/sharp-linuxmusl-x64': [ '0.34.5' ],
+13 silly audit   '@img/sharp-wasm32': [ '0.34.5' ],
+13 silly audit   '@img/sharp-win32-arm64': [ '0.34.5' ],
+13 silly audit   '@img/sharp-win32-ia32': [ '0.34.5' ],
+13 silly audit   '@img/sharp-win32-x64': [ '0.34.5' ],
+13 silly audit   '@mdx-js/mdx': [ '3.1.1' ],
+13 silly audit   '@mdx-js/react': [ '3.1.1' ],
+13 silly audit   '@next/env': [ '16.1.7' ],
+13 silly audit   '@next/swc-darwin-arm64': [ '16.1.7' ],
+13 silly audit   '@next/swc-darwin-x64': [ '16.1.7' ],
+13 silly audit   '@next/swc-linux-arm64-gnu': [ '16.1.7' ],
+13 silly audit   '@next/swc-linux-arm64-musl': [ '16.1.7' ],
+13 silly audit   '@next/swc-linux-x64-gnu': [ '16.1.7' ],
+13 silly audit   '@next/swc-linux-x64-musl': [ '16.1.7' ],
+13 silly audit   '@next/swc-win32-arm64-msvc': [ '16.1.7' ],
+13 silly audit   '@next/swc-win32-x64-msvc': [ '16.1.7' ],
+13 silly audit   '@swc/helpers': [ '0.5.15' ],
+13 silly audit   '@types/debug': [ '4.1.12' ],
+13 silly audit   '@types/estree': [ '1.0.8' ],
+13 silly audit   '@types/estree-jsx': [ '1.0.5' ],
+13 silly audit   '@types/hast': [ '3.0.4' ],
+13 silly audit   '@types/mdast': [ '4.0.4' ],
+13 silly audit   '@types/mdx': [ '2.0.13' ],
+13 silly audit   '@types/ms': [ '2.1.0' ],
+13 silly audit   '@types/react': [ '19.2.14' ],
+13 silly audit   '@types/unist': [ '3.0.3', '2.0.11' ],
+13 silly audit   semver: [ '7.7.4' ],
+13 silly audit   '@ungap/structured-clone': [ '1.3.0' ],
+13 silly audit   acorn: [ '8.16.0' ],
+13 silly audit   'acorn-jsx': [ '5.3.2' ],
+13 silly audit   argparse: [ '1.0.10' ],
+13 silly audit   astring: [ '1.9.0' ],
+13 silly audit   bail: [ '2.0.2' ],
+13 silly audit   'baseline-browser-mapping': [ '2.10.8' ],
+13 silly audit   'caniuse-lite': [ '1.0.30001780' ],
+13 silly audit   ccount: [ '2.0.1' ],
+13 silly audit   'character-entities': [ '2.0.2' ],
+13 silly audit   'character-entities-html4': [ '2.1.0' ],
+13 silly audit   'character-entities-legacy': [ '3.0.0' ],
+13 silly audit   'character-reference-invalid': [ '2.0.1' ],
+13 silly audit   'client-only': [ '0.0.1' ],
+13 silly audit   'collapse-white-space': [ '2.1.0' ],
+13 silly audit   'comma-separated-tokens': [ '2.0.3' ],
+13 silly audit   csstype: [ '3.2.3' ],
+13 silly audit   debug: [ '4.4.3' ],
+13 silly audit   'decode-named-character-reference': [ '1.3.0' ],
+13 silly audit   dequal: [ '2.0.3' ],
+13 silly audit   'detect-libc': [ '2.1.2' ],
+13 silly audit   devlop: [ '1.1.0' ],
+13 silly audit   'esast-util-from-estree': [ '2.0.0' ],
+13 silly audit   'esast-util-from-js': [ '2.0.1' ],
+13 silly audit   'escape-string-regexp': [ '5.0.0' ],
+13 silly audit   esprima: [ '4.0.1' ],
+13 silly audit   'estree-util-attach-comments': [ '3.0.0' ],
+13 silly audit   'estree-util-build-jsx': [ '3.0.1' ],
+13 silly audit   'estree-util-is-identifier-name': [ '3.0.0' ],
+13 silly audit   'estree-util-scope': [ '1.0.0' ],
+13 silly audit   'estree-util-to-js': [ '2.0.0' ],
+13 silly audit   'estree-util-visit': [ '2.0.0' ],
+13 silly audit   'estree-walker': [ '3.0.3' ],
+13 silly audit   extend: [ '3.0.2' ],
+13 silly audit   'extend-shallow': [ '2.0.1' ],
+13 silly audit   'gray-matter': [ '4.0.3' ],
+13 silly audit   'js-yaml': [ '3.14.2' ],
+13 silly audit   'hast-util-sanitize': [ '5.0.2' ],
+13 silly audit   'hast-util-to-estree': [ '3.1.3' ],
+13 silly audit   'hast-util-to-jsx-runtime': [ '2.3.6' ],
+13 silly audit   'hast-util-whitespace': [ '3.0.0' ],
+13 silly audit   'inline-style-parser': [ '0.2.7' ],
+13 silly audit   'is-alphabetical': [ '2.0.1' ],
+13 silly audit   'is-alphanumerical': [ '2.0.1' ],
+13 silly audit   'is-decimal': [ '2.0.1' ],
+13 silly audit   'is-extendable': [ '0.1.1' ],
+13 silly audit   'is-hexadecimal': [ '2.0.1' ],
+13 silly audit   'is-plain-obj': [ '4.1.0' ],
+13 silly audit   'js-tokens': [ '4.0.0' ],
+13 silly audit   'kind-of': [ '6.0.3' ],
+13 silly audit   'longest-streak': [ '3.1.0' ],
+13 silly audit   'markdown-extensions': [ '2.0.0' ],
+13 silly audit   'markdown-table': [ '3.0.4' ],
+13 silly audit   'mdast-util-find-and-replace': [ '3.0.2' ],
+13 silly audit   'mdast-util-from-markdown': [ '2.0.3' ],
+13 silly audit   'mdast-util-gfm': [ '3.1.0' ],
+13 silly audit   'mdast-util-gfm-autolink-literal': [ '2.0.1' ],
+13 silly audit   'mdast-util-gfm-footnote': [ '2.1.0' ],
+13 silly audit   'mdast-util-gfm-strikethrough': [ '2.0.0' ],
+13 silly audit   'mdast-util-gfm-table': [ '2.0.0' ],
+13 silly audit   'mdast-util-gfm-task-list-item': [ '2.0.0' ],
+13 silly audit   'mdast-util-mdx': [ '3.0.0' ],
+13 silly audit   'mdast-util-mdx-expression': [ '2.0.1' ],
+13 silly audit   'mdast-util-mdx-jsx': [ '3.2.0' ],
+13 silly audit   'mdast-util-mdxjs-esm': [ '2.0.1' ],
+13 silly audit   'mdast-util-phrasing': [ '4.1.0' ],
+13 silly audit   'mdast-util-to-hast': [ '13.2.1' ],
+13 silly audit   'mdast-util-to-markdown': [ '2.1.2' ],
+13 silly audit   'mdast-util-to-string': [ '4.0.0' ],
+13 silly audit   micromark: [ '4.0.2' ],
+13 silly audit   'micromark-core-commonmark': [ '2.0.3' ],
+13 silly audit   'micromark-extension-gfm': [ '3.0.0' ],
+13 silly audit   'micromark-extension-gfm-autolink-literal': [ '2.1.0' ],
+13 silly audit   'micromark-extension-gfm-footnote': [ '2.1.0' ],
+13 silly audit   'micromark-extension-gfm-strikethrough': [ '2.1.0' ],
+13 silly audit   'micromark-extension-gfm-table': [ '2.1.1' ],
+13 silly audit   'micromark-extension-gfm-tagfilter': [ '2.0.0' ],
+13 silly audit   'micromark-extension-gfm-task-list-item': [ '2.1.0' ],
+13 silly audit   'micromark-extension-mdx-expression': [ '3.0.1' ],
+13 silly audit   'micromark-extension-mdx-jsx': [ '3.0.2' ],
+13 silly audit   'micromark-extension-mdx-md': [ '2.0.0' ],
+13 silly audit   'micromark-extension-mdxjs': [ '3.0.0' ],
+13 silly audit   'micromark-extension-mdxjs-esm': [ '3.0.0' ],
+13 silly audit   'micromark-factory-destination': [ '2.0.1' ],
+13 silly audit   'micromark-factory-label': [ '2.0.1' ],
+13 silly audit   'micromark-factory-mdx-expression': [ '2.0.3' ],
+13 silly audit   'micromark-factory-space': [ '2.0.1' ],
+13 silly audit   'micromark-factory-title': [ '2.0.1' ],
+13 silly audit   'micromark-factory-whitespace': [ '2.0.1' ],
+13 silly audit   'micromark-util-character': [ '2.1.1' ],
+13 silly audit   'micromark-util-chunked': [ '2.0.1' ],
+13 silly audit   'micromark-util-classify-character': [ '2.0.1' ],
+13 silly audit   'micromark-util-combine-extensions': [ '2.0.1' ],
+13 silly audit   'micromark-util-decode-numeric-character-reference': [ '2.0.2' ],
+13 silly audit   'micromark-util-decode-string': [ '2.0.1' ],
+13 silly audit   'micromark-util-encode': [ '2.0.1' ],
+13 silly audit   'micromark-util-events-to-acorn': [ '2.0.3' ],
+13 silly audit   'micromark-util-html-tag-name': [ '2.0.1' ],
+13 silly audit   'micromark-util-normalize-identifier': [ '2.0.1' ],
+13 silly audit   'micromark-util-resolve-all': [ '2.0.1' ],
+13 silly audit   'micromark-util-sanitize-uri': [ '2.0.1' ],
+13 silly audit   'micromark-util-subtokenize': [ '2.1.0' ],
+13 silly audit   'micromark-util-symbol': [ '2.0.1' ],
+13 silly audit   'micromark-util-types': [ '2.0.2' ],
+13 silly audit   ms: [ '2.1.3' ],
+13 silly audit   nanoid: [ '3.3.11' ],
+13 silly audit   next: [ '16.1.7' ],
+13 silly audit   'next-mdx-remote': [ '6.0.0' ],
+13 silly audit   postcss: [ '8.4.31' ],
+13 silly audit   'parse-entities': [ '4.0.2' ],
+13 silly audit   picocolors: [ '1.1.1' ],
+13 silly audit   'property-information': [ '7.1.0' ],
+13 silly audit   react: [ '19.2.3' ],
+13 silly audit   'react-dom': [ '19.2.3' ],
+13 silly audit   'reading-time': [ '1.5.0' ],
+13 silly audit   'recma-build-jsx': [ '1.0.0' ],
+13 silly audit   'recma-jsx': [ '1.0.1' ],
+13 silly audit   'recma-parse': [ '1.0.0' ],
+13 silly audit   'recma-stringify': [ '1.0.0' ],
+13 silly audit   'rehype-recma': [ '1.0.0' ],
+13 silly audit   'rehype-sanitize': [ '6.0.0' ],
+13 silly audit   'remark-gfm': [ '4.0.1' ],
+13 silly audit   'remark-mdx': [ '3.1.1' ],
+13 silly audit   'remark-parse': [ '11.0.0' ],
+13 silly audit   'remark-rehype': [ '11.1.2' ],
+13 silly audit   'remark-stringify': [ '11.0.0' ],
+13 silly audit   scheduler: [ '0.27.0' ],
+13 silly audit   'section-matter': [ '1.0.0' ],
+13 silly audit   sharp: [ '0.34.5' ],
+13 silly audit   'source-map': [ '0.7.6' ],
+13 silly audit   'source-map-js': [ '1.2.1' ],
+13 silly audit   'space-separated-tokens': [ '2.0.2' ],
+13 silly audit   'sprintf-js': [ '1.0.3' ],
+13 silly audit   'stringify-entities': [ '4.0.4' ],
+13 silly audit   'strip-bom-string': [ '1.0.0' ],
+13 silly audit   'style-to-js': [ '1.1.21' ],
+13 silly audit   'style-to-object': [ '1.0.14' ],
+13 silly audit   'styled-jsx': [ '5.1.6' ],
+13 silly audit   'trim-lines': [ '3.0.1' ],
+13 silly audit   trough: [ '2.2.0' ],
+13 silly audit   tslib: [ '2.8.1' ],
+13 silly audit   unified: [ '11.0.5' ],
+13 silly audit   'unist-util-is': [ '6.0.1' ],
+13 silly audit   'unist-util-position': [ '5.0.0' ],
+13 silly audit   'unist-util-position-from-estree': [ '2.0.0' ],
+13 silly audit   'unist-util-remove': [ '4.0.0' ],
+13 silly audit   'unist-util-stringify-position': [ '4.0.0' ],
+13 silly audit   'unist-util-visit': [ '5.1.0' ],
+13 silly audit   'unist-util-visit-parents': [ '6.0.2' ],
+13 silly audit   vfile: [ '6.0.3' ],
+13 silly audit   'vfile-matter': [ '5.0.1' ],
+13 silly audit   'vfile-message': [ '4.0.3' ],
+13 silly audit   yaml: [ '2.8.2' ],
+13 silly audit   zwitch: [ '2.0.4' ]
+13 silly audit }
+14 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 219ms
+15 silly audit report {
+15 silly audit report   yaml: [
+15 silly audit report     {
+15 silly audit report       id: 1115556,
+15 silly audit report       url: 'https://github.com/advisories/GHSA-48c2-rrv3-qjmp',
+15 silly audit report       title: 'yaml is vulnerable to Stack Overflow via deeply nested YAML collections',
+15 silly audit report       severity: 'moderate',
+15 silly audit report       vulnerable_versions: '>=2.0.0 <2.8.3',
+15 silly audit report       cwe: [Array],
+15 silly audit report       cvss: [Object]
+15 silly audit report     }
+15 silly audit report   ]
+15 silly audit report }
+16 silly packumentCache corgi:https://registry.npmjs.org/yaml cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/yaml 59ms (cache miss)
+18 silly packumentCache corgi:https://registry.npmjs.org/yaml set size:undefined disposed:false
+19 silly packumentCache corgi:https://registry.npmjs.org/vfile-matter cache-miss
+20 silly packumentCache corgi:https://registry.npmjs.org/vite cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/vfile-matter 45ms (cache miss)
+22 silly packumentCache corgi:https://registry.npmjs.org/vfile-matter set size:undefined disposed:false
+23 http fetch GET 200 https://registry.npmjs.org/vite 207ms (cache miss)
+24 silly packumentCache corgi:https://registry.npmjs.org/vite set size:undefined disposed:false
+25 silly idealTree buildDeps
+26 http cache https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.2.1.tgz 0ms (cache hit)
+27 silly tarball no local data for https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.2.1.tgz. Extracting by manifest.
+28 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.2.1.tgz 381ms (cache miss)
+29 silly fetch manifest yaml@^2.0.0
+30 silly packumentCache full:https://registry.npmjs.org/yaml cache-miss
+31 http fetch GET 200 https://registry.npmjs.org/yaml 45ms (cache miss)
+32 silly packumentCache full:https://registry.npmjs.org/yaml set size:undefined disposed:false
+33 silly placeDep ROOT yaml@2.8.3 REPLACE for: vfile-matter@5.0.1 want: ^2.0.0
+34 silly REMOVE node_modules/zod-validation-error
+35 silly REMOVE node_modules/zod
+36 silly REMOVE node_modules/yocto-queue
+37 silly CHANGE node_modules/yaml
+38 silly REMOVE node_modules/yallist
+39 silly REMOVE node_modules/word-wrap
+40 silly REMOVE node_modules/why-is-node-running
+41 silly REMOVE node_modules/which-typed-array
+42 silly REMOVE node_modules/which-collection
+43 silly REMOVE node_modules/which-builtin-type
+44 silly REMOVE node_modules/which-boxed-primitive
+45 silly REMOVE node_modules/which
+46 silly REMOVE node_modules/vitest
+47 silly REMOVE node_modules/vitest/node_modules/picomatch
+48 silly REMOVE node_modules/vite-node
+49 silly REMOVE node_modules/vite
+50 silly REMOVE node_modules/vite/node_modules/picomatch
+51 silly REMOVE node_modules/vite/node_modules/fdir
+52 silly REMOVE node_modules/uri-js
+53 silly REMOVE node_modules/update-browserslist-db
+54 silly REMOVE node_modules/unrs-resolver
+55 silly REMOVE node_modules/undici-types
+56 silly REMOVE node_modules/unbox-primitive
+57 silly REMOVE node_modules/typescript-eslint
+58 silly REMOVE node_modules/typescript
+59 silly REMOVE node_modules/typed-array-length
+60 silly REMOVE node_modules/typed-array-byte-offset
+61 silly REMOVE node_modules/typed-array-byte-length
+62 silly REMOVE node_modules/typed-array-buffer
+63 silly REMOVE node_modules/type-check
+64 silly REMOVE node_modules/tsconfig-paths
+65 silly REMOVE node_modules/tsconfig-paths/node_modules/json5
+66 silly REMOVE node_modules/ts-api-utils
+67 silly REMOVE node_modules/to-regex-range
+68 silly REMOVE node_modules/tinyspy
+69 silly REMOVE node_modules/tinyrainbow
+70 silly REMOVE node_modules/tinypool
+71 silly REMOVE node_modules/tinyglobby
+72 silly REMOVE node_modules/tinyglobby/node_modules/picomatch
+73 silly REMOVE node_modules/tinyglobby/node_modules/fdir
+74 silly REMOVE node_modules/tinyexec
+75 silly REMOVE node_modules/tinybench
+76 silly REMOVE node_modules/tapable
+77 silly REMOVE node_modules/tailwindcss
+78 silly REMOVE node_modules/supports-preserve-symlinks-flag
+79 silly REMOVE node_modules/supports-color
+80 silly REMOVE node_modules/strip-literal
+81 silly REMOVE node_modules/strip-literal/node_modules/js-tokens
+82 silly REMOVE node_modules/strip-json-comments
+83 silly REMOVE node_modules/strip-bom
+84 silly REMOVE node_modules/string.prototype.trimstart
+85 silly REMOVE node_modules/string.prototype.trimend
+86 silly REMOVE node_modules/string.prototype.trim
+87 silly REMOVE node_modules/string.prototype.repeat
+88 silly REMOVE node_modules/string.prototype.matchall
+89 silly REMOVE node_modules/string.prototype.includes
+90 silly REMOVE node_modules/stop-iteration-iterator
+91 silly REMOVE node_modules/std-env
+92 silly REMOVE node_modules/stackback
+93 silly REMOVE node_modules/stable-hash
+94 silly REMOVE node_modules/siginfo
+95 silly REMOVE node_modules/side-channel-weakmap
+96 silly REMOVE node_modules/side-channel-map
+97 silly REMOVE node_modules/side-channel-list
+98 silly REMOVE node_modules/side-channel
+99 silly REMOVE node_modules/shebang-regex
+100 silly REMOVE node_modules/shebang-command
+101 silly REMOVE node_modules/set-proto
+102 silly REMOVE node_modules/set-function-name
+103 silly REMOVE node_modules/set-function-length
+104 silly REMOVE node_modules/semver
+105 silly REMOVE node_modules/safe-regex-test
+106 silly REMOVE node_modules/safe-push-apply
+107 silly REMOVE node_modules/safe-array-concat
+108 silly REMOVE node_modules/run-parallel
+109 silly REMOVE node_modules/rollup
+110 silly REMOVE node_modules/reusify
+111 silly REMOVE node_modules/resolve-pkg-maps
+112 silly REMOVE node_modules/resolve-from
+113 silly REMOVE node_modules/resolve
+114 silly REMOVE node_modules/regexp.prototype.flags
+115 silly REMOVE node_modules/reflect.getprototypeof
+116 silly REMOVE node_modules/react-is
+117 silly REMOVE node_modules/queue-microtask
+118 silly REMOVE node_modules/punycode
+119 silly REMOVE node_modules/prop-types
+120 silly REMOVE node_modules/prelude-ls
+121 silly REMOVE node_modules/postcss
+122 silly REMOVE node_modules/possible-typed-array-names
+123 silly REMOVE node_modules/picomatch
+124 silly REMOVE node_modules/pathval
+125 silly REMOVE node_modules/pathe
+126 silly REMOVE node_modules/path-parse
+127 silly REMOVE node_modules/path-key
+128 silly REMOVE node_modules/path-exists
+129 silly REMOVE node_modules/parent-module
+130 silly REMOVE node_modules/p-locate
+131 silly REMOVE node_modules/p-limit
+132 silly REMOVE node_modules/own-keys
+133 silly REMOVE node_modules/optionator
+134 silly REMOVE node_modules/object.values
+135 silly REMOVE node_modules/object.groupby
+136 silly REMOVE node_modules/object.fromentries
+137 silly REMOVE node_modules/object.entries
+138 silly REMOVE node_modules/object.assign
+139 silly REMOVE node_modules/object-keys
+140 silly REMOVE node_modules/object-inspect
+141 silly REMOVE node_modules/object-assign
+142 silly REMOVE node_modules/node-releases
+143 silly REMOVE node_modules/node-exports-info
+144 silly REMOVE node_modules/natural-compare
+145 silly REMOVE node_modules/napi-postinstall
+146 silly REMOVE node_modules/minimist
+147 silly REMOVE node_modules/minimatch
+148 silly REMOVE node_modules/micromatch
+149 silly REMOVE node_modules/merge2
+150 silly REMOVE node_modules/math-intrinsics
+151 silly REMOVE node_modules/magic-string
+152 silly REMOVE node_modules/lru-cache
+153 silly REMOVE node_modules/loupe
+154 silly REMOVE node_modules/loose-envify
+155 silly REMOVE node_modules/lodash.merge
+156 silly REMOVE node_modules/locate-path
+157 silly REMOVE node_modules/lightningcss-darwin-arm64
+158 silly REMOVE node_modules/lightningcss
+159 silly REMOVE node_modules/levn
+160 silly REMOVE node_modules/language-tags
+161 silly REMOVE node_modules/language-subtag-registry
+162 silly REMOVE node_modules/keyv
+163 silly REMOVE node_modules/jsx-ast-utils
+164 silly REMOVE node_modules/json5
+165 silly REMOVE node_modules/json-stable-stringify-without-jsonify
+166 silly REMOVE node_modules/json-schema-traverse
+167 silly REMOVE node_modules/json-buffer
+168 silly REMOVE node_modules/jsesc
+169 silly REMOVE node_modules/js-yaml
+170 silly REMOVE node_modules/jiti
+171 silly REMOVE node_modules/iterator.prototype
+172 silly REMOVE node_modules/isexe
+173 silly REMOVE node_modules/isarray
+174 silly REMOVE node_modules/is-weakset
+175 silly REMOVE node_modules/is-weakref
+176 silly REMOVE node_modules/is-weakmap
+177 silly REMOVE node_modules/is-typed-array
+178 silly REMOVE node_modules/is-symbol
+179 silly REMOVE node_modules/is-string
+180 silly REMOVE node_modules/is-shared-array-buffer
+181 silly REMOVE node_modules/is-set
+182 silly REMOVE node_modules/is-regex
+183 silly REMOVE node_modules/is-number-object
+184 silly REMOVE node_modules/is-number
+185 silly REMOVE node_modules/is-negative-zero
+186 silly REMOVE node_modules/is-map
+187 silly REMOVE node_modules/is-glob
+188 silly REMOVE node_modules/is-generator-function
+189 silly REMOVE node_modules/is-finalizationregistry
+190 silly REMOVE node_modules/is-extglob
+191 silly REMOVE node_modules/is-date-object
+192 silly REMOVE node_modules/is-data-view
+193 silly REMOVE node_modules/is-core-module
+194 silly REMOVE node_modules/is-callable
+195 silly REMOVE node_modules/is-bun-module
+196 silly REMOVE node_modules/is-bun-module/node_modules/semver
+197 silly REMOVE node_modules/is-boolean-object
+198 silly REMOVE node_modules/is-bigint
+199 silly REMOVE node_modules/is-async-function
+200 silly REMOVE node_modules/is-array-buffer
+201 silly REMOVE node_modules/internal-slot
+202 silly REMOVE node_modules/imurmurhash
+203 silly REMOVE node_modules/import-fresh
+204 silly REMOVE node_modules/ignore
+205 silly REMOVE node_modules/hermes-parser
+206 silly REMOVE node_modules/hermes-estree
+207 silly REMOVE node_modules/hasown
+208 silly REMOVE node_modules/has-tostringtag
+209 silly REMOVE node_modules/has-symbols
+210 silly REMOVE node_modules/has-proto
+211 silly REMOVE node_modules/has-property-descriptors
+212 silly REMOVE node_modules/has-flag
+213 silly REMOVE node_modules/has-bigints
+214 silly REMOVE node_modules/graceful-fs
+215 silly REMOVE node_modules/gopd
+216 silly REMOVE node_modules/globalthis
+217 silly REMOVE node_modules/globals
+218 silly REMOVE node_modules/glob-parent
+219 silly REMOVE node_modules/get-tsconfig
+220 silly REMOVE node_modules/get-symbol-description
+221 silly REMOVE node_modules/get-proto
+222 silly REMOVE node_modules/get-intrinsic
+223 silly REMOVE node_modules/gensync
+224 silly REMOVE node_modules/generator-function
+225 silly REMOVE node_modules/functions-have-names
+226 silly REMOVE node_modules/function.prototype.name
+227 silly REMOVE node_modules/function-bind
+228 silly REMOVE node_modules/fsevents
+229 silly REMOVE node_modules/for-each
+230 silly REMOVE node_modules/flatted
+231 silly REMOVE node_modules/flat-cache
+232 silly REMOVE node_modules/find-up
+233 silly REMOVE node_modules/fill-range
+234 silly REMOVE node_modules/file-entry-cache
+235 silly REMOVE node_modules/fastq
+236 silly REMOVE node_modules/fast-levenshtein
+237 silly REMOVE node_modules/fast-json-stable-stringify
+238 silly REMOVE node_modules/fast-glob
+239 silly REMOVE node_modules/fast-glob/node_modules/glob-parent
+240 silly REMOVE node_modules/fast-deep-equal
+241 silly REMOVE node_modules/expect-type
+242 silly REMOVE node_modules/esutils
+243 silly REMOVE node_modules/estraverse
+244 silly REMOVE node_modules/esrecurse
+245 silly REMOVE node_modules/esquery
+246 silly REMOVE node_modules/espree
+247 silly REMOVE node_modules/eslint-visitor-keys
+248 silly REMOVE node_modules/eslint-scope
+249 silly REMOVE node_modules/eslint-plugin-react-hooks
+250 silly REMOVE node_modules/eslint-plugin-react
+251 silly REMOVE node_modules/eslint-plugin-react/node_modules/resolve
+252 silly REMOVE node_modules/eslint-plugin-jsx-a11y
+253 silly REMOVE node_modules/eslint-plugin-import
+254 silly REMOVE node_modules/eslint-plugin-import/node_modules/debug
+255 silly REMOVE node_modules/eslint-module-utils
+256 silly REMOVE node_modules/eslint-module-utils/node_modules/debug
+257 silly REMOVE node_modules/eslint-import-resolver-typescript
+258 silly REMOVE node_modules/eslint-import-resolver-node
+259 silly REMOVE node_modules/eslint-import-resolver-node/node_modules/debug
+260 silly REMOVE node_modules/eslint-config-next
+261 silly REMOVE node_modules/eslint-config-next/node_modules/globals
+262 silly REMOVE node_modules/eslint
+263 silly REMOVE node_modules/escape-string-regexp
+264 silly REMOVE node_modules/escalade
+265 silly REMOVE node_modules/esbuild
+266 silly REMOVE node_modules/es-to-primitive
+267 silly REMOVE node_modules/es-shim-unscopables
+268 silly REMOVE node_modules/es-set-tostringtag
+269 silly REMOVE node_modules/es-object-atoms
+270 silly REMOVE node_modules/es-module-lexer
+271 silly REMOVE node_modules/es-iterator-helpers
+272 silly REMOVE node_modules/es-errors
+273 silly REMOVE node_modules/es-define-property
+274 silly REMOVE node_modules/es-abstract
+275 silly REMOVE node_modules/enhanced-resolve
+276 silly REMOVE node_modules/emoji-regex
+277 silly REMOVE node_modules/electron-to-chromium
+278 silly REMOVE node_modules/dunder-proto
+279 silly REMOVE node_modules/doctrine
+280 silly REMOVE node_modules/define-properties
+281 silly REMOVE node_modules/define-data-property
+282 silly REMOVE node_modules/deep-is
+283 silly REMOVE node_modules/deep-eql
+284 silly REMOVE node_modules/data-view-byte-offset
+285 silly REMOVE node_modules/data-view-byte-length
+286 silly REMOVE node_modules/data-view-buffer
+287 silly REMOVE node_modules/damerau-levenshtein
+288 silly REMOVE node_modules/cross-spawn
+289 silly REMOVE node_modules/convert-source-map
+290 silly REMOVE node_modules/concat-map
+291 silly REMOVE node_modules/color-name
+292 silly REMOVE node_modules/color-convert
+293 silly REMOVE node_modules/check-error
+294 silly REMOVE node_modules/chalk
+295 silly REMOVE node_modules/chai
+296 silly REMOVE node_modules/callsites
+297 silly REMOVE node_modules/call-bound
+298 silly REMOVE node_modules/call-bind-apply-helpers
+299 silly REMOVE node_modules/call-bind
+300 silly REMOVE node_modules/cac
+301 silly REMOVE node_modules/browserslist
+302 silly REMOVE node_modules/braces
+303 silly REMOVE node_modules/brace-expansion
+304 silly REMOVE node_modules/balanced-match
+305 silly REMOVE node_modules/axobject-query
+306 silly REMOVE node_modules/axe-core
+307 silly REMOVE node_modules/available-typed-arrays
+308 silly REMOVE node_modules/async-function
+309 silly REMOVE node_modules/ast-types-flow
+310 silly REMOVE node_modules/assertion-error
+311 silly REMOVE node_modules/arraybuffer.prototype.slice
+312 silly REMOVE node_modules/array.prototype.tosorted
+313 silly REMOVE node_modules/array.prototype.flatmap
+314 silly REMOVE node_modules/array.prototype.flat
+315 silly REMOVE node_modules/array.prototype.findlastindex
+316 silly REMOVE node_modules/array.prototype.findlast
+317 silly REMOVE node_modules/array-includes
+318 silly REMOVE node_modules/array-buffer-byte-length
+319 silly REMOVE node_modules/aria-query
+320 silly REMOVE node_modules/argparse
+321 silly REMOVE node_modules/ansi-styles
+322 silly REMOVE node_modules/ajv
+323 silly REMOVE node_modules/@vitest/utils
+324 silly REMOVE node_modules/@vitest/spy
+325 silly REMOVE node_modules/@vitest/snapshot
+326 silly REMOVE node_modules/@vitest/runner
+327 silly REMOVE node_modules/@vitest/pretty-format
+328 silly REMOVE node_modules/@vitest/mocker
+329 silly REMOVE node_modules/@vitest/expect
+330 silly REMOVE node_modules/@unrs/resolver-binding-darwin-arm64
+331 silly REMOVE node_modules/@typescript-eslint/visitor-keys
+332 silly REMOVE node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys
+333 silly REMOVE node_modules/@typescript-eslint/utils
+334 silly REMOVE node_modules/@typescript-eslint/typescript-estree
+335 silly REMOVE node_modules/@typescript-eslint/typescript-estree/node_modules/semver
+336 silly REMOVE node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch
+337 silly REMOVE node_modules/@typescript-eslint/typescript-estree/node_modules/brace-expansion
+338 silly REMOVE node_modules/@typescript-eslint/typescript-estree/node_modules/balanced-match
+339 silly REMOVE node_modules/@typescript-eslint/types
+340 silly REMOVE node_modules/@typescript-eslint/type-utils
+341 silly REMOVE node_modules/@typescript-eslint/tsconfig-utils
+342 silly REMOVE node_modules/@typescript-eslint/scope-manager
+343 silly REMOVE node_modules/@typescript-eslint/project-service
+344 silly REMOVE node_modules/@typescript-eslint/parser
+345 silly REMOVE node_modules/@typescript-eslint/eslint-plugin
+346 silly REMOVE node_modules/@typescript-eslint/eslint-plugin/node_modules/ignore
+347 silly REMOVE node_modules/@types/react-dom
+348 silly REMOVE node_modules/@types/node
+349 silly REMOVE node_modules/@types/json5
+350 silly REMOVE node_modules/@types/json-schema
+351 silly REMOVE node_modules/@types/deep-eql
+352 silly REMOVE node_modules/@types/chai
+353 silly REMOVE node_modules/@tybys/wasm-util
+354 silly REMOVE node_modules/@tailwindcss/postcss
+355 silly REMOVE node_modules/@tailwindcss/oxide-darwin-arm64
+356 silly REMOVE node_modules/@tailwindcss/oxide
+357 silly REMOVE node_modules/@tailwindcss/node
+358 silly REMOVE node_modules/@rtsao/scc
+359 silly REMOVE node_modules/@rollup/rollup-darwin-arm64
+360 silly REMOVE node_modules/@nolyfill/is-core-module
+361 silly REMOVE node_modules/@nodelib/fs.walk
+362 silly REMOVE node_modules/@nodelib/fs.stat
+363 silly REMOVE node_modules/@nodelib/fs.scandir
+364 silly REMOVE node_modules/@next/eslint-plugin-next
+365 silly REMOVE node_modules/@napi-rs/wasm-runtime
+366 silly REMOVE node_modules/@jridgewell/trace-mapping
+367 silly REMOVE node_modules/@jridgewell/sourcemap-codec
+368 silly REMOVE node_modules/@jridgewell/resolve-uri
+369 silly REMOVE node_modules/@jridgewell/remapping
+370 silly REMOVE node_modules/@jridgewell/gen-mapping
+371 silly REMOVE node_modules/@humanwhocodes/retry
+372 silly REMOVE node_modules/@humanwhocodes/module-importer
+373 silly REMOVE node_modules/@humanfs/node
+374 silly REMOVE node_modules/@humanfs/core
+375 silly REMOVE node_modules/@eslint/plugin-kit
+376 silly REMOVE node_modules/@eslint/object-schema
+377 silly REMOVE node_modules/@eslint/js
+378 silly REMOVE node_modules/@eslint/eslintrc
+379 silly REMOVE node_modules/@eslint/core
+380 silly REMOVE node_modules/@eslint/config-helpers
+381 silly REMOVE node_modules/@eslint/config-array
+382 silly REMOVE node_modules/@eslint-community/regexpp
+383 silly REMOVE node_modules/@eslint-community/eslint-utils
+384 silly REMOVE node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys
+385 silly REMOVE node_modules/@esbuild/darwin-arm64
+386 silly REMOVE node_modules/@emnapi/wasi-threads
+387 silly REMOVE node_modules/@emnapi/core
+388 silly REMOVE node_modules/@babel/types
+389 silly REMOVE node_modules/@babel/traverse
+390 silly REMOVE node_modules/@babel/template
+391 silly REMOVE node_modules/@babel/parser
+392 silly REMOVE node_modules/@babel/helpers
+393 silly REMOVE node_modules/@babel/helper-validator-option
+394 silly REMOVE node_modules/@babel/helper-string-parser
+395 silly REMOVE node_modules/@babel/helper-module-transforms
+396 silly REMOVE node_modules/@babel/helper-module-imports
+397 silly REMOVE node_modules/@babel/helper-globals
+398 silly REMOVE node_modules/@babel/helper-compilation-targets
+399 silly REMOVE node_modules/@babel/generator
+400 silly REMOVE node_modules/@babel/core
+401 silly REMOVE node_modules/@babel/compat-data
+402 silly REMOVE node_modules/@alloc/quick-lru
+403 verbose cwd /Users/josephstewart/Documents/JLPolicyConsulting
+404 verbose os Darwin 25.4.0
+405 verbose node v25.8.1
+406 verbose npm  v11.11.0
+407 verbose exit 1
+408 verbose code 1

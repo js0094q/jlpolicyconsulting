@@ -1,0 +1,15 @@
+{
+  "scenario": "Base Case: 340B COE HOPD, Buy-and-Bill",
+  "safeScenario": "Base_Case_340B_COE_HOPD_Buy_and_Bill",
+  "dateTag": "2026-05-02",
+  "pngPath": "output/exports/adrabetadex_provider_net_cost_recovery_calculator/ARM_Output_preview.png",
+  "pdfFilename": "Adrabetadex_ARM_Output_Base_Case_340B_COE_HOPD_Buy_and_Bill_2026-05-02.pdf",
+  "workbookPath": "output/exports/adrabetadex_provider_net_cost_recovery_calculator/Adrabetadex_Provider_Net_Cost_Recovery_Calculator.xlsx",
+  "outputSheet": "PDF Output",
+  "cropBoxPx": {
+    "left": 80,
+    "top": 40,
+    "right": 0,
+    "bottom": 0
+  }
+}

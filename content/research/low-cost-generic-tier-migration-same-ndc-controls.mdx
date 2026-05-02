@@ -1,0 +1,115 @@
+---
+title: "Low-Cost Part D Generics and Same-NDC Tier Migration"
+summary: "SPUF quarter-pair comparisons show selected low-cost generics with net higher-tier movement where same-NDC repricing is limited, indicating an access-risk pattern strongest in continuity-aware windows."
+publishDate: "2026-04-22"
+category: "PBM and Formulary Dynamics"
+tags:
+  - Part D
+  - Generic Access
+  - Formulary Tier Migration
+  - Same-NDC Controls
+  - Repricing vs Churn
+  - SPUF Analysis
+readingTime: "14 min read"
+seoTitle: "Low-Cost Part D Generics and Same-NDC Tier Migration"
+seoDescription: "Research treatment of quarter-over-quarter SPUF signals where low-cost generics show tier worsening under limited same-NDC repricing, and the practical implications for access and commercial strategy."
+---
+
+## Research question
+
+Can low-cost generic products in Medicare Part D show meaningful access-pressure signals through tier migration even when same-NDC pricing moves are limited, and how should that signal be interpreted across quarter-pair quality contexts?
+
+## Internal evidence set
+
+- `output/exports/spuf-analysis-package/data/repricing_churn_decomposition.csv`
+- `output/exports/spuf-analysis-package/data/generic_tier_worsening_top25.csv`
+- `output/exports/spuf-analysis-package/data/sponsor_segmentation_summary.csv`
+- `output/exports/spuf-analysis-package/data/beneficiary_tier_linkage_delta_q4_to_q1.csv`
+
+## Method
+
+The analysis applies this sequence:
+
+1. Use decomposition of quarter-pair behavior to determine whether the pair is continuity-rich or churn-heavy.
+2. Restrict the generic tier test to same-NDC comparable rows to reduce misattribution risk.
+3. Evaluate whether directional tier movement aligns with sponsor behavior segmentation and beneficiary-design linkage.
+
+### Quarter-pair decomposition baseline
+
+- `2025Q3 to 2025Q4`
+  - matched share: `94.48%`
+  - add/drop share: `5.52%`
+  - repriced share of matched: `69.73%`
+  - unchanged matched share: `30.27%`
+
+- `2025Q4 to 2026Q1`
+  - matched share: `59.81%`
+  - add/drop share: `40.19%`
+  - repriced share of matched: `95.79%`
+  - unchanged matched share: `4.21%`
+
+The second window is composition-sensitive, so this study uses it as an alerting context rather than a primary causal layer.
+
+## Same-NDC generic movement signal
+
+Top concepts by net higher-tier share with same-NDC controls:
+
+| Rank | Product concept | Net higher-tier share | Same-NDC pct change |
+| --- | --- | ---: | ---: |
+| 1 | hydroxyzine pamoate | 30.8% | -16.4% |
+| 2 | dicyclomine hydrochloride | 30.4% | 19.3% |
+| 3 | nortriptyline hydrochloride | 23.6% | 0.7% |
+| 4 | alprazolam | 15.2% | 1.6% |
+| 5 | hydromorphone hydrochloride | 9.1% | 10.3% |
+
+These rows are strongest where same-NDC movement does not explain the tier effect, indicating possible access-design sensitivity to formulary management.
+
+## Sponsor and beneficiary-context overlays
+
+Segment profile for the `2025Q4 to 2026Q1` cohort:
+
+- repricing_dominant: `185`
+- churn_dominant: `111`
+- mixed_high_activity: `110`
+- mixed_moderate: `20`
+
+Beneficiary-cost linkage remains directional:
+
+| Tier | Plan count delta | Linked formulary NDC rows | Mean deductible-applies share delta |
+| --- | ---: | ---: | ---: |
+| 1 | -117 | -469,640 | -9.42 pp |
+| 2 | -9 | -192,774 | +0.32 pp |
+| 3 | -6 | 28,770 | +16.32 pp |
+| 4 | 17 | -108,280 | +18.52 pp |
+| 5 | 18 | -116,085 | +18.67 pp |
+
+## Key findings
+
+1. **Net higher-tier movement appears in multiple low-cost generic concepts under same-NDC control.**
+2. **The decomposed pair structure materially affects inferential confidence.**
+3. **Sponsor behavior is heterogeneous, so a single “market answer” is analytically weak.**
+4. **Beneficiary-cost linkage is directionally useful but under-specified for exact dollar impact.**
+
+## Inference boundary
+
+- Observed evidence supports a mechanism-consistent signal, not direct causal intent at every sponsor-product row.
+- Exact margins, realized sponsor profit impact, and full patient out-of-pocket amounts are not directly derivable from this extraction without deeper utilization and claims-level normalization.
+
+## Practical implication
+
+A stable price-only monitor is insufficient for this setting.
+
+A stronger product-access monitoring model combines:
+
+- matched repricing decomposition,
+- same-NDC tier movement,
+- sponsor activity class,
+- and benefit-friction checks.
+
+This produces cleaner watchlists and reduces false positives driven by cohort composition.
+
+## Sources
+
+- Internal output files under `output/exports/spuf-analysis-package/data/*`
+- `output/exports/spuf-site-drafts/research/part-d-generic-tier-defensiveness-research.mdx`
+- `output/exports/spuf-site-drafts/research/part-d-generic-tier-defensiveness-research.pdf` and `.docx` companion files for reproducibility trail.

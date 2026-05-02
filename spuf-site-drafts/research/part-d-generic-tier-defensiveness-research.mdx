@@ -1,0 +1,249 @@
+---
+title: "Part D Generic Tier Defensiveness: Decomposition, Generics, and Sponsor Behavior"
+summary: "A full research article integrating SPUF quarter comparisons, same-NDC controls, sponsor segmentation, PBM channel context, and beneficiary-facing signals to test whether generic formulary tier migration functions as a payer economics defense layer."
+publishDate: "2026-04-22"
+category: "PBM and Formulary Dynamics"
+tags:
+  - Part D
+  - Formulary Tier Migration
+  - Repricing vs Churn
+  - Generic Access
+  - Sponsor Segmentation
+  - PBM Network Profile
+seoTitle: "Part D Generics and Tier Migration: Evidence-Based Research"
+seoDescription: "SPUF-based analysis of repricing and churn interactions with same-NDC tier movement in low-cost generics and the implications for payer economics, access policy, and beneficiary friction."
+---
+
+## Executive Summary
+
+The strongest supported story from SPUF is not that Part D sponsors are uniformly increasing prices. The evidence is strongest when the quarter pair is treated as mechanism-rich and decomposed into repricing and panel churn before applying access-policy interpretation.
+
+Across observed windows, low-cost generics repeatedly show net movement to higher tiers when compared under same-NDC controls. This pattern can increase beneficiary friction without clear unit-price movement and is commercially relevant because it can shift utilization and adherence without obvious headline repricing.
+
+The contribution of this long-form treatment is to separate three forces clearly:
+
+- repricing within stable product-plan pairs,
+- panel churn from unmatched add/drop behavior,
+- and tier migration under same-NDC controls.
+
+## Research Question
+
+To what degree can SPUF quarter-over-quarter outputs support the interpretation that Part D sponsors are using low-cost generic tier migration as part of an access-mechanism defense strategy, and where does the data stop short of causal proof?
+
+## Observational Framing and Standards
+
+### Internal evidence set
+
+- `/Users/josephstewart/Documents/JLPolicyConsulting/output/exports/spuf-analysis-package/data/repricing_churn_decomposition.csv`
+- `/Users/josephstewart/Documents/JLPolicyConsulting/output/exports/spuf-analysis-package/data/generic_tier_worsening_top25.csv`
+- `/Users/josephstewart/Documents/JLPolicyConsulting/output/exports/spuf-analysis-package/data/sponsor_segmentation_summary.csv`
+- `/Users/josephstewart/Documents/JLPolicyConsulting/output/exports/spuf-analysis-package/data/sponsor_segmentation_2025Q4_to_2026Q1.csv`
+- `/Users/josephstewart/Documents/JLPolicyConsulting/output/exports/spuf-analysis-package/data/pbm_channel_profile_2026Q1.csv`
+- `/Users/josephstewart/Documents/JLPolicyConsulting/output/exports/spuf-analysis-package/data/beneficiary_tier_linkage_delta_q4_to_q1.csv`
+
+### External policy anchors
+
+- CMS defines formulary design as operationalized by formulary requirements, including tier structures and utilization-management tools such as prior authorization, step therapy, and quantity limits.
+- CMS formulary and Part D governance materials document utilization-management requirements, public posting obligations, and restrictions on mid-year restrictive changes without CMS approval.
+- Medicare Part D plan rules confirm that step therapy/PA are part of standard managed-access logic in Part D plans.
+- ResDAC’s Part D Formulary documentation confirms that CMS-level files include tier ID and UM indicators at plan-drug granularity.
+
+### Analytical logic
+
+1. Use pairwise decomposition to avoid false mechanism inferences.
+2. Apply same-NDC controls when assessing whether tier movement can be attributed to same-product repricing.
+3. Profile sponsors by behavior class before drawing account-level inferences.
+4. Use beneficiary-linkage fields as directional evidence, not final price-level conclusions.
+5. Separate observed signal from inferred strategy in every conclusion.
+
+## Step 1: Decomposition Before Interpretation
+
+### 2025Q3 to 2025Q4
+
+- Matched share: `94.48%`
+- Add/drop share: `5.52%`
+- Repriced share of matched: `69.73%`
+- Unchanged share of matched: `30.27%`
+
+### 2025Q4 to 2026Q1
+
+- Matched share: `59.81%`
+- Add/drop share: `40.19%`
+- Repriced share of matched: `95.79%`
+- Unchanged share of matched: `4.21%`
+
+### What this means
+
+The two windows are not structurally equivalent. The 2025Q4 to 2026Q1 window is much more churn-sensitive and therefore composition-shift prone. A single aggregate claim without decomposition risks attributing churn-driven redesign to product-level pricing behavior.
+
+## Step 2: Same-NDC Tier Movement in Low-Cost Generics
+
+### Top concepts by net higher-tier share (with same-NDC controls)
+
+| Rank | Product concept | Net higher-tier share | Same-NDC pct change (q/q) |
+| --- | --- | ---: | ---: |
+| 1 | hydroxyzine pamoate | 30.8% | -16.4% |
+| 2 | dicyclomine hydrochloride | 30.4% | 19.3% |
+| 3 | nortriptyline hydrochloride | 23.6% | 0.7% |
+| 4 | alprazolam | 15.2% | 1.6% |
+| 5 | hydromorphone hydrochloride | 9.1% | 10.3% |
+| 6 | cyclosporine | 7.5% | 7.9% |
+| 7 | diazepam | 7.1% | 36.0% |
+| 8 | morphine sulfate | 7.0% | 3.5% |
+| 9 | dexmethylphenidate hydrochloride | 6.8% | -0.6% |
+| 10 | clarithromycin | 6.5% | -12.2% |
+
+### Interpretation
+
+Two points stand out:
+
+- High net tier worsening can occur with negative or near-zero same-NDC movement.
+- Signal strength is strongest where repricing and tier movement diverge for the same product/quarter cohort.
+
+## Step 3: Sponsor Segmentation and Heterogeneity
+
+### Segment counts
+
+- repricing_dominant: `185` (43%)
+- churn_dominant: `111` (26%)
+- mixed_high_activity: `110` (26%)
+- mixed_moderate: `20` (5%)
+
+### Representative rows by segment
+
+| Segment | Representative sponsor | Total rows | Churn share of total | Repricing share of matched |
+| --- | --- | ---: | ---: | ---: |
+| churn_dominant | HEALTHSPRING LIFE & HEALTH INSURANCE COMPANY, INC. | 2,361,642 | 49.30% | 97.6% |
+| churn_dominant | MEDCO CONTAINMENT LIFE AND MEDCO CONTAINMENT NY | 1,077,057 | 47.79% | 98.4% |
+| repricing_dominant | UNITEDHEALTHCARE OF WISCONSIN, INC. | 1,703,466 | 24.60% | 99.9% |
+| repricing_dominant | SIERRA HEALTH AND LIFE INSURANCE COMPANY, INC. | 1,255,065 | 24.68% | 99.9% |
+| mixed_high_activity | CARE IMPROVEMENT PLUS SOUTH CENTRAL INSURANCE CO. | 3,140,724 | 32.28% | 99.9% |
+| mixed_moderate | DEVOTED HEALTH PLAN OF NORTH CAROLINA INC | 196,170 | 44.88% | 84.3% |
+
+### Interpretation
+
+Behavior is not monolithic. A sponsor with high churn dominance should not be managed as a simple repricer, and a repricing-heavy sponsor can still produce access-policy implications through tier design.
+
+## Step 4: Mechanism Plausibility and External Consistency
+
+The observed pattern is consistent with a three-part mechanism:
+
+1. CMS governance and benefit design make tiering and formulary controls a faster levers than headline pricing in some settings.
+2. Tier movement that is not matched by same-NDC repricing can still alter beneficiary friction.
+3. Sponsor behavior is account-specific; this is a portfolio-level heterogeneity story, not a universal market rule.
+
+This does not prove motive in each market. It supports a market-practice hypothesis for prioritization and client reporting.
+
+## Step 5: PBM Channel Context at Cross-Section
+
+| PBM | Plan type | Plan count | Avg mail share | PBM mail steering score |
+| --- | --- | ---: | ---: | ---: |
+| Kaiser Permanente | MA-PD | 124 | 4.15% | 29.09 |
+| Express Scripts | PDP | 129 | 0.13% | 0.96 |
+| Express Scripts | MA-PD | 536 | 0.13% | 0.91 |
+| EnvisionRx | MA-PD | 108 | 0.11% | 0.79 |
+| Prime Therapeutics | MA-PD | 583 | 0.07% | 0.50 |
+
+### Interpretation
+
+This profile is practical for surveillance design and partner mapping. It identifies channels where cross-surface behavior may concentrate, but it is not sufficient alone to prove economics motive.
+
+## Step 6: Beneficiary-Tier Linkage as a Secondary Check
+
+| Tier | Plan count delta | Linked formulary NDC row delta | Mean deductible-applies share delta |
+| --- | ---: | ---: | ---: |
+| 1 | -117 | -469,640 | -9.42 pp |
+| 2 | -9 | -192,774 | +0.32 pp |
+| 3 | -6 | 28,770 | +16.32 pp |
+| 4 | 17 | -108,280 | +18.52 pp |
+| 5 | 18 | -116,085 | +18.67 pp |
+
+### Interpretation
+
+The link to beneficiary-facing cost-sharing is suggestive and useful for commercial interpretation, but sparse preferred-cost fields in this extraction window require cautious monetary claims.
+
+## Step 7: Data Completeness and Risk Register
+
+### What the dataset supports well
+
+- Directional tier pressure on low-cost generic concepts.
+- Sponsor-level heterogeneity and behavior clustering.
+- Decomposition of signal quality in high-churn versus high-continuity quarter pair comparisons.
+- Initial channel and benefit-design context for follow-on operational prioritization.
+
+### What the dataset does not support directly
+
+- Exact beneficiary out-of-pocket deltas by plan without richer cost-share and utilization normalization.
+- A causal attribution of margin gains versus mix shift without direct reimbursement reconciliation.
+- Unconditional claims about sponsor intent in every observed tier movement.
+
+## Mechanism Validation Framework
+
+### Strongly supported observations
+
+- Quarterly decomposition changes are real and measurable.
+- Net tier worsening for low-cost generics appears in several concepts even under controls.
+- Sponsor behavior is behaviorally heterogeneous.
+- Cross-sectional PBM context can be mapped to operational follow-up priorities.
+
+### Inference-only layer
+
+- Whether tier movement is primarily margin defense versus product portfolio adaptation.
+- Exact sponsor-level attribution of financial impact.
+- Magnitude of beneficiary out-of-pocket change per plan design without richer cost-share fields.
+
+### Evidence limitations and risk controls
+
+This framework avoids overclaiming by separating observed fields from inferred motive. Primary risks include:
+
+- add/drop composition shocks that reshape cohorts,
+- duplicate or weak manufacturer/NDC mappings,
+- day-supply distribution artifacts,
+- sparse or missing cost-share keys in this extraction.
+
+## Practical implications
+
+### For manufacturers
+
+A strategy that monitors only unit prices will miss part of the market behavior. Tier migration and repricing need parallel surveillance with explicit cohort matching.
+
+### For payers and access teams
+
+Sponsor clusters and same-NDC divergence can guide account prioritization:
+
+- churn-dominant groups may indicate formulary churn and network repositioning,
+- repricing_dominant groups may require pricing and rebasing focus,
+- mixed groups require both.
+
+### For policy and reimbursement strategy professionals
+
+The observed mechanism supports a commercial thesis: access design can function as a defense layer when repricing signals are muted at the same-NDC level.
+
+## Decomposition into smaller outputs
+
+This article can be split into at least three deployable pieces:
+
+- Insight: `Repricing and churn decomposition as the first layer of Part D surveillance`
+- Research: `Low-cost generic tier migration under same-NDC controls`
+- Research/Insight hybrid: `Sponsor behavioral clustering and watchlist design`
+
+### Recommended follow-up for split pieces
+
+- Add richer cost-share fields to quantify beneficiary impact under each segment.
+- Add a second quarter pair with stronger matched continuity.
+- Layer in sponsor UM policy documents and formulary notices for stronger explanatory confidence.
+
+## Conclusion
+
+The evidence supports a disciplined interpretation: in this window, Part D sponsor behavior is better explained by layered mechanism shifts than by a single price signal. The pattern is consistent with generic tier defensiveness in selected settings, especially where same-NDC controls reduce direct repricing attribution.
+
+The publication decision is therefore not whether all sponsors are moving generics up-tier, but how often higher-tier movement occurs alongside stable same-NDC movement and elevated churn pressure. That distinction separates observation from causal narrative.
+
+## Sources
+
+- [CMS: Part D formulary requirements in PACE application materials](https://www.cms.gov/Medicare/Health-Plans/pace/downloads/part_d_app.pdf)
+- [CMS Part D Utilization Management guidance](https://www.cms.gov/Medicare/Prescription-Drug-Coverage/PrescriptionDrugCovContra/Downloads/dwnlds/Chapter7pdf)
+- [Medicare plan rules: step therapy and formulary requirements](https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/plan-rules)
+- [CMS: 2025 Part D bid information and redesign context](https://www.cms.gov/newsroom/fact-sheets/cms-releases-2025-medicare-part-d-bid-information-announces-premium-stabilization-demonstration)
+- [ResDAC: Part D Formulary documentation](https://resdac.org/cms-data/files/part-d-formulary)
+- SPUF analysis outputs listed in the Internal Evidence Set section.

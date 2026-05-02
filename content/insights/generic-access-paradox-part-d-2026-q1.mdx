@@ -1,0 +1,113 @@
+---
+title: "Low-Cost Generics Moved Up Tier Even When Same-NDC Prices Were Flat or Down"
+summary: "In the 2025Q4 to 2026Q1 transition, top low-cost generic movers showed broad net migration to higher tiers while many same-NDC unit prices were flat or declining. That divergence is an access-design signal, not a price-only story."
+publishDate: "2026-03-21"
+category: "PBM and Formulary Dynamics"
+tags:
+  - Medicare Part D
+  - Generic Drugs
+  - Formulary Tiering
+  - Market Access
+  - SPUF
+readingTime: "11 min read"
+seoTitle: "Part D Generics: Tier Worsening Despite Stable Same-NDC Prices"
+seoDescription: "Evidence from 2025Q4 to 2026Q1 SPUF-derived outputs showing low-cost generic tier worsening even when same-NDC unit prices were flat or declining."
+---
+
+## Metadata
+
+- Period analyzed: `2025Q4 to 2026Q1`
+- Unit of analysis: low-cost generic concept rows in the SPUF analysis package top-mover output
+- Comparator: net higher-tier share versus same-NDC quarter-over-quarter unit price change
+- Primary question: can access worsen through tiering when price movement is muted?
+
+## Executive Summary
+
+The observed signal is specific: top low-cost generic movers show positive net migration into higher formulary tiers even when same-NDC (same National Drug Code) unit price change is often small. In the top-25 set, all rows have positive net higher-tier share; the median increase is `4.70` percentage points. [7]
+
+Price and access are therefore not interchangeable indicators. In this window, `16 of 25` rows had same-NDC change of `+2%` or less and still moved net-higher in tier share; `12 of 25` had flat or negative same-NDC movement and still moved net-higher in tier share. [7]
+
+That pattern is consistent with access-design pressure. It is not proof of uniform intent, and it is not a direct out-of-pocket estimate by itself. But it is strong enough to require a monitoring response from teams that currently rely on price-only watchlists. [1][7][6]
+
+## Key Takeaways
+
+- Tier worsening can occur even when same-NDC price movement is muted. [7]
+- The median net higher-tier movement in the top-25 set is meaningful (`+4.70 pp`). [7]
+- Divergence between tier movement and price movement is a surveillance trigger, not background noise. [7]
+- Benefit design overlays can amplify practical burden when higher tiers expand. [6]
+- The right conclusion is "investigate mechanism," not "assume one cause." [7][6]
+
+## Lead Table
+
+| Product concept | Same-NDC QoQ change | Net higher-tier share |
+| --- | ---: | ---: |
+| hydroxyzine pamoate | -16.44% | +30.77 pp |
+| nortriptyline hydrochloride | +0.72% | +23.64 pp |
+| alprazolam | +1.62% | +15.17 pp |
+| chlorpromazine hydrochloride | -0.46% | +5.49 pp |
+| gentamicin sulfate | -0.12% | +4.70 pp |
+
+_Source: SPUF analysis package generic tier mover output._ [7]
+
+## Main Analysis
+
+### 1) What specifically is being observed
+
+The observed pattern is persistent net migration to higher tiers across a ranked low-cost generic mover set, with all `25 of 25` rows positive on net higher-tier share. [7]
+
+This is showing up in mature, familiar generic concepts, not only in one isolated therapeutic corner. That breadth is exactly why the signal deserves attention. [7]
+
+### 2) Where is it showing up, compared with what
+
+It is showing up in a quarter transition where same-NDC price movement is often limited, which is the relevant comparator. If tier movement were mostly a direct unit-price story, we would expect more alignment between same-NDC change and tier worsening than this dataset shows. [7]
+
+Instead, many rows combine low or negative same-NDC change with positive higher-tier migration. That divergence is the core analytical point. [7]
+
+### 3) What is likely driving the pattern
+
+Tier movement can reflect multiple plan-management levers: formulary positioning, class management, and benefit-design responses that are not reducible to one unit-price signal. CMS public files expose these access-design dimensions, but they do not directly encode sponsor intent. [1][7]
+
+Beneficiary-linkage deltas in the same package reinforce the need for caution and context. Deductible-applies share rose most in tiers `3` to `5` (for example, `+16.32 pp` in tier 3 and `+18.67 pp` in tier 5), which is directionally consistent with a burden-sensitive pathway, but not a direct patient-level claim cost model. [6]
+
+### 4) What should be concluded and what should not
+
+A serious reader should conclude that price-only surveillance can miss practical access deterioration. The evidence supports that conclusion directly. [7]
+
+A serious reader should not conclude that every observed tier shift represents the same strategic motive. That claim is not established by this file set alone. [7][6]
+
+### 5) What a serious reader should do next
+
+The next step is not to debate whether the pattern is \"real.\" The pattern is already observed. The next step is to reduce decision error:
+
+- isolate rows where tier worsening recurs across more than one transition,
+- check whether utilization management overlays changed at the same time,
+- separate MA-PD and PDP sponsor behavior before commercial escalation,
+- attach beneficiary pathway context before presenting \"access worsening\" claims,
+- keep a standing divergence tracker where same-NDC price and tier signals disagree. [1][5][7][6]
+
+That workflow turns an observational finding into an operational monitoring product.
+
+## Why It Matters
+
+- Manufacturers: product teams can be "right" on unit-price stability and still miss access erosion at tier level. [7]
+- Market access and reimbursement teams: pull-through risk can increase before it appears in high-level coverage labels. [1][7]
+- Policy and government affairs teams: affordability policy discussions should track operational access design, not only list or unit-price trends. [2][3]
+- Commercial leaders: launch and lifecycle assumptions need separate monitors for price movement and access movement. [7][6]
+
+## Conclusion
+
+This quarter transition shows a repeatable divergence: low-cost generics moved up tier even when same-NDC prices were frequently flat or down.
+
+That does not settle motive. It does settle the monitoring standard. Teams should treat price and access as separate signals and escalate rows where the two diverge materially.
+
+## Sources / Citations
+1. CMS Part D Formulary, Pharmacy Network, and Pricing Information Files (public-use files and monthly releases).
+2. CMS, Final CY 2025 Part D Redesign Program Instructions and related fact sheet materials.
+3. MedPAC, Report to the Congress: Medicare Payment Policy (March 2026), Part D chapter.
+4. `output/exports/spuf-analysis-package/data/analysis_summary.json`
+5. `/Volumes/SPUF/cms_partd_pricing_pipeline/data/published/analysis/pricing_signals/2025Q4_to_2026Q1/repricing_vs_churn_scorecard.csv`
+6. `output/exports/spuf-analysis-package/data/beneficiary_tier_linkage_delta_q4_to_q1.csv`
+7. `output/exports/spuf-analysis-package/data/generic_tier_worsening_top25.csv`
+## Methodology Note
+
+The generic mover table is an SPUF-derived surveillance artifact. It is best used as a triage layer: identify divergence rows, then test them with class context, sponsor context, and utilization controls before making strategy claims.
