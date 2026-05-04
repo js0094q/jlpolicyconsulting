@@ -1,6 +1,6 @@
 ---
-title: "MA-PD and PDP Diverged in Churn Intensity During the 2026Q1 Transition"
-summary: "In the 2025Q4 to 2026Q1 transition, both MA-PD and PDP showed heavy repricing among matched rows, but MA-PD had materially higher churn intensity. That difference changes how teams should interpret quarter-over-quarter access and pricing signals."
+title: "MA-PD and PDP Signals Should Not Be Read Through One Patient Access Lens"
+summary: "The same drug can feel different to a beneficiary depending on whether coverage sits in MA-PD or a stand-alone PDP, because plan type can affect formulary management, pharmacy network, medical-benefit coordination, and annual plan choice."
 publishDate: "2026-03-21"
 category: "Medicare Policy"
 tags:
@@ -8,97 +8,73 @@ tags:
   - PDP
   - Medicare Part D
   - Cost Sharing
-  - SPUF
-readingTime: "11 min read"
-seoTitle: "MA-PD vs PDP in Part D: Churn and Repricing Divergence in 2026Q1"
-seoDescription: "A decomposition-first view of MA-PD versus PDP in the 2025Q4 to 2026Q1 transition, showing that churn intensity diverged even when repricing rates were high in both segments."
+readingTime: "8 min read"
+seoTitle: "MA-PD vs PDP in Part D: Why Patient Access Signals Need Segment Context"
+seoDescription: "A patient-centered Part D article on why MA-PD and stand-alone PDP access signals should be interpreted with plan-type context."
 ---
 
-## Metadata
+MA-PD and stand-alone PDP plans both provide Part D drug coverage, but a beneficiary may experience them differently. The same medicine can sit inside different formulary rules, pharmacy networks, exception processes, and broader benefit designs depending on plan type.
 
-- Period analyzed: `2025Q3 to 2025Q4` and `2025Q4 to 2026Q1`
-- Segment definition: Medicare Advantage Prescription Drug plans (`MA-PD`) and stand-alone Prescription Drug Plans (`PDP`) using contract prefix mapping (`H/R` for MA-PD, `S` for PDP)
-- Data grain: contract-level decomposition from published repricing-versus-churn scorecards
-- Primary question: where did quarter-transition pressure show up by segment, and what should be interpreted as composition change versus repricing behavior?
-
-## Executive Summary
-
-Part D commentary often treats MA-PD and PDP as one blended market. That shortcut is risky in high-churn transitions. In the `2025Q4 to 2026Q1` window, both segments showed very high repricing share among matched rows, but MA-PD carried higher churn share of total rows (`40.76%`) than PDP (`32.04%`). In the prior `2025Q3 to 2025Q4` window, churn share was low and similar in both segments (`5.54%` MA-PD, `5.28%` PDP). [4][5]
-
-The operational implication is straightforward: the later window is still useful, but it is composition-sensitive, especially in MA-PD. Teams should not read headline quarter-over-quarter deltas as pure same-product repricing when adds and drops are this large. [4][5]
-
-This does not mean MA-PD is always "worse" or PDP is always "cleaner." It means inferential quality changed sharply between the two windows, and that quality shift was larger in MA-PD. [4][5][6]
+That distinction matters because annual plan choice is not only a premium decision. It can affect where the patient fills prescriptions, whether prior authorization or step therapy applies, how drug coverage interacts with medical benefits, and how easily the patient can resolve an access problem.
 
 ## Key Takeaways
 
-- MA-PD and PDP both showed high matched-row repricing in `2025Q4 to 2026Q1`, but MA-PD had higher composition churn. [5]
-- Compared with `2025Q3 to 2025Q4`, churn intensity increased much more than normal in both segments, with the larger jump in MA-PD. [4][5]
-- A decomposition-first read is required before claiming segment-level access tightening or pricing strategy shifts. [4][6]
-- The useful workflow is: pair-quality check, then same-product checks, then segment interpretation. [4][5]
-- Segment-level differences should inform account prioritization, not be collapsed into one national narrative. [5]
+- MA-PD and PDP plans share the Part D framework, but the patient pathway can differ by plan type, network, formulary management, and benefit design.
+- CMS public Part D files include plan information with formulary, beneficiary cost, pharmacy network, and pricing data, which supports segment-level access monitoring. [3]
+- KFF reports that, among Part D enrollees in 2025, a larger share was enrolled in MA-PD than stand-alone PDP plans. [7]
+- Patients may not understand why the same drug pathway feels different across plan options, so access analysis should not rely on premium or coverage status alone.
 
-## Lead Table
+## Why plan type matters to the patient
 
-| Window | Segment | Total rows | Matched rows | Repricing share of matched | Churn share of total |
-| --- | --- | ---: | ---: | ---: | ---: |
-| 2025Q3 -> 2025Q4 | MA-PD | 52,837,889 | 49,912,750 | 69.29% | 5.54% |
-| 2025Q3 -> 2025Q4 | PDP | 4,404,988 | 4,172,226 | 74.96% | 5.28% |
-| 2025Q4 -> 2026Q1 | MA-PD | 63,771,121 | 37,780,391 | 95.69% | 40.76% |
-| 2025Q4 -> 2026Q1 | PDP | 4,460,218 | 3,031,274 | 97.00% | 32.04% |
+A stand-alone PDP is primarily a prescription-drug plan for beneficiaries in traditional Medicare. An MA-PD plan combines medical and drug coverage inside Medicare Advantage. That difference can change how the beneficiary encounters the drug benefit.
 
-_Source: JL Policy contract-level aggregation of published SPUF repricing-versus-churn scorecards._ [4][5]
+For one patient, the access issue may be a pharmacy-network rule. For another, it may be coordination between a drug claim and medical-benefit management. For another, it may be a prior authorization process that feels different from the process in the prior year's plan.
 
-## Main Analysis
+The patient-level question is not whether MA-PD or PDP is better in the abstract. It is whether the plan type changes the practical path to the medicine.
 
-### 1) What is being observed
+## Where the experience can diverge
 
-The observed pattern is not just "more repricing." The observed pattern is a major shift in pair quality between windows, especially for MA-PD, where add/drop churn rose from `5.54%` to `40.76%` of rows. PDP also moved to a churn-heavy profile, but less sharply (`5.28%` to `32.04%`). [4][5]
+| Access element | Patient-facing question | Why segment context matters |
+| --- | --- | --- |
+| Formulary tier | What will the patient pay at the pharmacy? | Tier and cost-sharing design may differ by plan and plan type. [3][5] |
+| Prior authorization or step therapy | Does the patient have to wait for approval or try another drug first? | Plan rules can turn coverage into an exception or documentation process. [4][6] |
+| Pharmacy network | Can the patient use the preferred pharmacy or must the prescription be rerouted? | Network strategy can affect travel, caregiver coordination, and refill reliability. [3] |
+| Medical-benefit coordination | Does the drug pathway interact with provider-administered care or broader MA management? | MA-PD sits inside a broader medical-and-drug product. |
+| Annual plan choice | Will next year's plan make the same medicine easier or harder to use? | Premium alone may not reveal access friction. |
 
-That is a concrete change in what the data can support. In low-churn windows, quarter-over-quarter interpretation is more stable at matched-row grain. In high-churn windows, composition effects are large enough to distort simple headline comparisons. [4][5][6]
+The same drug can therefore produce different patient work. One beneficiary may fill smoothly. Another may need a prescriber statement, exception request, pharmacy switch, or benefit clarification.
 
-### 2) Where it is showing up and compared with what
+## How redesign changes the reading
 
-It is showing up in both plan-type segments, but with different magnitudes. Relative to the prior window:
+The Part D redesign improves financial protection and changes financing responsibility. CMS and KFF describe the 2026 environment as including an indexed out-of-pocket cap and changed responsibilities across beneficiaries, plans, manufacturers, and Medicare. [1][2][7]
 
-- MA-PD churn share increased by `+35.22` percentage points.
-- PDP churn share increased by `+26.76` percentage points.
-- MA-PD matched-row coverage fell from `49.9M` to `37.8M` despite higher total rows.
-- PDP matched-row coverage also fell, from `4.17M` to `3.03M`. [4][5]
+Those changes apply across Part D, but they do not erase plan-type context. A blended Part D average can hide where patients are more likely to face higher counter costs, pharmacy routing problems, or utilization management. Segment-level monitoring is the way to find those patient-facing differences.
 
-So the right comparator is not only MA-PD versus PDP within one quarter pair. It is each segment versus its own baseline in the prior continuity-rich pair. [4][5]
+Medicare.gov also explains that patients can face deductibles, copayments, and coinsurance, and that costs vary by plan. [5] That makes plan choice a practical access decision, not only an enrollment transaction.
 
-### 3) What is driving the pattern
+## What teams should do
 
-The first driver is composition churn, not a single uniform repricing mechanism. High adds and drops mechanically change who is in the panel before any interpretation about persistent same-product movement is made. [4][5]
+Manufacturers should build MA-PD and PDP views separately before drawing broad conclusions. If patient burden is concentrated in one segment, support materials, account engagement, and field reimbursement guidance should reflect that.
 
-The second driver is segment structure. MA-PD and PDP are different business environments, so identical policy timing does not require identical observed transition behavior. That is why segment separation is a measurement requirement, not a stylistic preference. [2][3][5]
+Payers and plans should make patient-facing rules clear enough for beneficiaries, caregivers, pharmacists, and prescribers to navigate. Prior authorization, step therapy, quantity limits, and exceptions are already difficult for many patients. Confusion across plan types can add avoidable burden.
 
-### 4) What this does and does not prove
-
-This evidence supports a decomposition claim: the `2025Q4 to 2026Q1` transition is composition-sensitive in both segments and more so in MA-PD. [5]
-
-It does not, on its own, prove a uniform strategic intent across sponsors or classes. Further sponsor-level and product-level controls are still required before any intent-level narrative is publishable. [5][6]
-
-## Why It Matters
-
-- Manufacturers: segment-specific access and pricing surveillance should be separated before portfolio conclusions are presented to leadership. [5]
-- Market access and reimbursement teams: account prioritization should weight churn-adjusted signals, not only raw quarter deltas. [4][5]
-- Policy and government affairs teams: post-redesign monitoring should track where management pressure appears by segment, not only in aggregate averages. [2][3]
-- Commercialization leaders: forecast error risk rises when high-churn windows are interpreted as stable trend windows. [4][5][6]
+Policy teams should describe beneficiary experience with segment precision. The patient may not care whether the access problem is categorized as plan type, network, tier, or utilization management. The patient cares whether the medicine can be obtained without surprise, delay, or repeated calls.
 
 ## Conclusion
 
-The `2025Q4 to 2026Q1` transition should not be read as a simple repricing story for either MA-PD or PDP. It is a churn-heavy transition with materially different segment intensity.
+MA-PD and PDP signals belong in the same Part D conversation, but they should not be collapsed into one patient-access story.
 
-A serious reading sequence is: check pair quality, isolate matched behavior, then interpret segment patterns. If that order is skipped, teams can mistake composition turnover for stable strategic movement.
+The practical test is whether plan type changes the patient's pharmacy path, cost exposure, approval process, or continuity of therapy. If it does, segment context is not a technical detail. It is the access story.
 
 ## Sources / Citations
-1. CMS Part D Formulary, Pharmacy Network, and Pricing Information Files (public-use files and monthly releases).
-2. CMS, Final CY 2025 Part D Redesign Program Instructions and related fact sheet materials.
-3. MedPAC, Report to the Congress: Medicare Payment Policy (March 2026), Part D chapter.
-4. `/Volumes/SPUF/cms_partd_pricing_pipeline/data/published/analysis/pricing_signals/2025Q3_to_2025Q4/repricing_vs_churn_scorecard.csv`
-5. `/Volumes/SPUF/cms_partd_pricing_pipeline/data/published/analysis/pricing_signals/2025Q4_to_2026Q1/repricing_vs_churn_scorecard.csv`
-6. `output/exports/spuf-analysis-package/data/analysis_summary.json`
+1. CMS, Medicare Part D Improvements: https://www.cms.gov/priorities/medicare-prescription-drug-affordability/overview/medicare-part-d-improvements
+2. CMS, Final CY 2026 Part D Redesign Program Instructions: https://www.cms.gov/files/document/final-cy-2026-part-d-redesign-program-instruction.pdf
+3. CMS, Prescription Drug Plan Formulary, Pharmacy Network, and Pricing Information Files: https://www.cms.gov/research-statistics-data-and-systems/files-for-order/nonidentifiabledatafiles/prescriptiondrugplanformularypharmacynetworkandpricinginformationfiles
+4. Medicare.gov, Drug plan rules: https://www.medicare.gov/health-drug-plans/part-d/what-plans-cover/plan-rules
+5. Medicare.gov, How much does Medicare drug coverage cost?: https://www.medicare.gov/drug-coverage-part-d/costs-for-medicare-drug-coverage/copaymentcoinsurance-in-drug-plans
+6. CMS, Part D Exceptions: https://www.cms.gov/medicare/appeals-grievances/prescription-drug/exceptions
+7. KFF, A Current Snapshot of the Medicare Part D Prescription Drug Benefit: https://www.kff.org/medicare/issue-brief/a-current-snapshot-of-the-medicare-part-d-prescription-drug-benefit/
+
 ## Methodology Note
 
-This Insight aggregates contract-level rows from published SPUF scorecards and maps plan type by contract prefix convention (`H/R` as MA-PD, `S` as PDP). Results are observational and designed for surveillance triage, not causal proof of sponsor intent.
+This Insight uses public CMS, Medicare.gov, and KFF source material. Patient implications are stated as access risks that can vary by plan type and plan design.

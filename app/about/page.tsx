@@ -61,13 +61,13 @@ export default function AboutPage() {
           <div className="mx-auto max-w-5xl text-center lg:max-w-6xl">
             <p className="kicker">About</p>
             <h1 className="hero-title page-title mx-auto max-w-[25ch]">
-              Trustworthy policy and reimbursement analysis from someone who works at the point where
-              rules meet market behavior.
+              Policy and reimbursement analysis grounded in how coverage rules operate in practice.
             </h1>
             <p className="page-lede mx-auto max-w-4xl">
-              JL Policy Consulting is led by Joseph Stewart. The firm translates Medicare,
-              reimbursement, and market access questions into analysis that is clear enough for
-              working teams and specific enough to shape commercial decisions.
+              JL Policy Consulting translates Medicare, reimbursement, and market access complexity
+              into structured, decision-ready analysis. The work connects regulatory frameworks,
+              coding and payment mechanics, and payer behavior to the commercial realities that
+              determine access, adoption, and financial viability.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link

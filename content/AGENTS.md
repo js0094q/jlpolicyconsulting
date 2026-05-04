@@ -13,4 +13,5 @@ Applies to `content/**`.
 - Use lowercase hyphenated slugs.
 - Do not add MDX imports, exports, script tags, inline event handlers, or unsafe links.
 - Use sources for factual policy, reimbursement, and market claims. Do not invent citations.
+- Ensure length and styling are sufficient.
 - Run `npm run validate:content` after content changes.

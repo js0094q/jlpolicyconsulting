@@ -1,0 +1,7 @@
+# High-risk website surfaces require owner review.
+/.github/workflows/** @js0094q
+/content/** @js0094q
+/components/mdx-components.tsx @js0094q
+/app/api/og/route.tsx @js0094q
+/proxy.ts @js0094q
+/lib/security-controls.ts @js0094q

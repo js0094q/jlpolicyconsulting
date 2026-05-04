@@ -2,7 +2,12 @@ node_modules/
 .next/
 dist/
 build/
+.DS_Store
+.npm-cache/
+.uv-cache/
+.venv/
+.venv-*/
+.venv_*/
+.env*
+/*.pdf
 node_modules/
-.next/
-dist/
-build/
