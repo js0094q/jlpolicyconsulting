@@ -3,49 +3,90 @@ import { Container } from "@/components/container";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "About",
+  title: "About JL Policy Consulting | Policy and Reimbursement Analysis",
   description:
-    "JL Policy Consulting is led by Joseph Stewart and focused on reimbursement, policy, and market access analysis that informs commercial decisions.",
+    "JL Policy Consulting provides Medicare, reimbursement, market access, and policy analysis grounded in payer behavior, provider economics, and commercial decision-making.",
   path: "/about",
   kicker: "About",
   keywords: [
     "Joseph Stewart",
     "health policy consulting",
+    "Medicare reimbursement",
     "reimbursement strategy",
-    "Medicare Part D",
-    "PBM formulary behavior",
+    "market access consulting",
+    "provider economics",
     "drug pricing",
-    "market access analytics",
+    "PBM formulary behavior",
   ],
 });
 
-const expertiseThemes = [
-  "Medicare policy and reimbursement mechanics",
-  "Drug pricing, gross-to-net, and formulary pressure",
-  "PBM behavior, benefit design, and access friction",
-  "Biosimilars, generics, and commercialization strategy",
+const experienceItems = [
+  {
+    title: "Manufacturer, policy, and trade association experience",
+    body: "Experience across settings where reimbursement, access, and policy questions have to be interpreted for real commercial decisions.",
+  },
+  {
+    title: "Policy read through market behavior",
+    body: "Work informed by both statutory and regulatory interpretation and the operational realities that shape payer, provider, and channel behavior.",
+  },
+  {
+    title: "Decision-ready output",
+    body: "Analysis designed to be concise, scoped, and commercially usable rather than academic, theoretical, or unnecessarily complex.",
+  },
 ] as const;
 
-const credibilityPoints = [
-  "Experience across manufacturer, policy, and trade association settings",
-  "Work grounded in both structural policy reading and observable market behavior",
-  "Deliverables designed to be concise, decision-ready, and commercially relevant",
+const approachSteps = [
+  {
+    title: "Read the rule",
+    body: "Identify the reimbursement, coverage, coding, pricing, or access mechanism at issue.",
+  },
+  {
+    title: "Test the incentives",
+    body: "Evaluate how payers, providers, manufacturers, or channel actors are likely to respond.",
+  },
+  {
+    title: "Translate the implication",
+    body: "Turn the policy issue into a practical decision framework for launch, access, reimbursement, or commercialization.",
+  },
+] as const;
+
+const expertiseThemes = [
+  "Medicare reimbursement and coverage policy",
+  "Drug pricing, gross-to-net dynamics, and access pressure",
+  "PBM behavior, formulary strategy, and utilization management",
+  "Provider economics and buy-and-bill reimbursement dynamics",
+  "Biosimilars, generics, and commercialization strategy",
+  "Market access and reimbursement-focused policy analysis",
+] as const;
+
+const proofPoints = [
+  "Experience across policy and commercial contexts",
+  "Focus on Medicare, reimbursement, access, pricing, and provider economics",
+  "Outputs designed for working teams and executive decision-making",
+  "Analysis grounded in practical market behavior, not abstract commentary",
 ] as const;
 
 function SectionHeading({
   id,
   children,
-  center = false,
+  align = "left",
 }: {
   id: string;
   children: string;
-  center?: boolean;
+  align?: "left" | "center";
 }) {
   return (
-    <div className={center ? "w-full text-center" : "w-full"}>
+    <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
+      <div
+        className={
+          align === "center"
+            ? "mx-auto h-px w-16 bg-[var(--color-accent)]"
+            : "h-px w-16 bg-[var(--color-accent)]"
+        }
+      />
       <h2
         id={id}
-        className={`section-title mt-6 text-balance ${center ? "text-center" : ""}`}
+        className={`section-title mt-6 text-balance ${align === "center" ? "text-center" : ""}`}
       >
         {children}
       </h2>
@@ -58,18 +99,19 @@ export default function AboutPage() {
     <>
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="mx-auto max-w-5xl text-center lg:max-w-6xl">
+          <div className="max-w-5xl">
             <p className="kicker">About</p>
-            <h1 className="hero-title page-title mx-auto max-w-[25ch]">
-              Policy and reimbursement analysis grounded in how coverage rules operate in practice.
+            <h1 className="hero-title page-title max-w-[24ch]">
+              Policy and reimbursement analysis grounded in how coverage, pricing, and access
+              decisions work in practice.
             </h1>
-            <p className="page-lede mx-auto max-w-4xl">
-              JL Policy Consulting translates Medicare, reimbursement, and market access complexity
-              into structured, decision-ready analysis. The work connects regulatory frameworks,
-              coding and payment mechanics, and payer behavior to the commercial realities that
-              determine access, adoption, and financial viability.
+            <p className="page-lede max-w-3xl">
+              JL Policy Consulting is led by Joseph Stewart. The firm translates Medicare,
+              reimbursement, and market access complexity into analysis that is commercially
+              relevant, operationally grounded, and usable by working teams making strategic
+              decisions.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/consulting"
                 className="button-primary inline-flex items-center rounded-md px-6 py-3"
@@ -89,36 +131,72 @@ export default function AboutPage() {
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <div className="mx-auto w-full text-center">
-            <SectionHeading id="professional-positioning" center>
+          <div className="grid gap-8 border-t border-[var(--color-border)] pt-10 lg:grid-cols-[0.42fr_0.58fr] lg:gap-14">
+            <SectionHeading id="professional-positioning">
               Professional positioning
             </SectionHeading>
-            <div className="mx-auto mt-6 w-full space-y-4 text-base leading-8 text-[var(--color-muted)]">
+            <div className="max-w-3xl space-y-4 text-base leading-8 text-[var(--color-muted)]">
               <p>
-                The work sits at the intersection of reimbursement mechanics, Medicare policy, payer
+                The work sits at the intersection of Medicare policy, reimbursement mechanics, payer
                 behavior, provider economics, and commercialization strategy.
               </p>
               <p>
-                The value is not policy commentary for its own sake. It is analysis built to clarify
-                what a rule, pricing change, coding issue, or access constraint means for launch
-                planning, market access, and commercial decision-making.
+                The focus is not policy commentary for its own sake. It is translating regulatory
+                change, coding dynamics, pricing pressure, and access constraints into practical
+                implications for launch planning, reimbursement strategy, and market access
+                execution.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      <section className="border-b border-[var(--color-border)] py-12 sm:py-14" aria-label="Credibility strip">
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-5xl text-center">
-            <SectionHeading id="experience-and-perspective" center>
+          <div className="mx-auto max-w-5xl">
+            <SectionHeading id="experience-and-perspective" align="center">
               Experience and perspective
             </SectionHeading>
-            <div className="mt-8 grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-3">
-              {credibilityPoints.map((point) => (
-                <div key={point} className="bg-[var(--color-surface)] px-6 py-6">
-                  <p className="text-sm leading-7 text-[var(--color-ink)]">{point}</p>
-                </div>
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
+              {experienceItems.map((item) => (
+                <article key={item.title} className="surface-card p-6 sm:p-7">
+                  <h3 className="text-[1.05rem] leading-tight text-ink">{item.title}</h3>
+                  <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">{item.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
+        <Container>
+          <div className="paper-panel p-7 sm:p-10 lg:p-12">
+            <div className="grid gap-8 lg:grid-cols-[0.42fr_0.58fr] lg:gap-14">
+              <SectionHeading id="how-the-work-is-approached">
+                How the work is approached
+              </SectionHeading>
+              <div className="max-w-3xl space-y-4 text-base leading-8 text-[var(--color-muted)]">
+                <p>
+                  The process is straightforward: understand the policy, evaluate the incentives it
+                  creates, and translate the downstream implications into actionable commercial and
+                  access considerations.
+                </p>
+                <p>
+                  That often means connecting reimbursement policy and coverage mechanics to provider
+                  adoption, payer management behavior, channel dynamics, pricing pressure, or
+                  operational risk, then narrowing the issue to the specific decisions a team needs
+                  to make.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-3">
+              {approachSteps.map((step) => (
+                <article key={step.title} className="bg-[var(--color-page)] px-6 py-6">
+                  <h3 className="text-[1rem] leading-tight text-ink">{step.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{step.body}</p>
+                </article>
               ))}
             </div>
           </div>
@@ -128,36 +206,19 @@ export default function AboutPage() {
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
           <div className="mx-auto max-w-5xl">
-            <SectionHeading id="how-the-work-is-approached" center>
-              How the work is approached
+            <SectionHeading id="selected-expertise-themes" align="center">
+              Selected expertise themes
             </SectionHeading>
-            <div className="mx-auto mt-8 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-              <article className="surface-card p-7 text-left sm:p-8">
-                <p className="text-base leading-8 text-[var(--color-muted)]">
-                  The approach is straightforward, read the policy, test the incentives, and then
-                  translate the result into what it means for access, reimbursement, and commercial
-                  execution.
-                </p>
-                <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
-                  That usually means connecting statutory or regulatory change to payer behavior,
-                  provider economics, channel design, or pricing pressure, then narrowing the issue to
-                  the decisions a team actually has to make.
-                </p>
-              </article>
-
-              <article className="surface-card p-7 text-left sm:p-8">
-                <h3 className="text-[1.1rem] leading-tight text-ink">Selected expertise themes</h3>
-                <ul className="mt-5 grid gap-4">
-                  {expertiseThemes.map((theme) => (
-                    <li
-                      key={theme}
-                      className="border-t border-[var(--color-border)] pt-4 text-sm leading-7 text-[var(--color-muted)]"
-                    >
-                      {theme}
-                    </li>
-                  ))}
-                </ul>
-              </article>
+            <p className="mx-auto mt-6 max-w-3xl text-center text-base leading-8 text-[var(--color-muted)]">
+              The firm&apos;s work focuses on the policy and reimbursement questions most likely to
+              affect access strategy, provider economics, and commercial execution.
+            </p>
+            <div className="mt-10 grid gap-px border border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-2 lg:grid-cols-3">
+              {expertiseThemes.map((theme) => (
+                <div key={theme} className="bg-[var(--color-surface)] px-6 py-5">
+                  <p className="text-sm leading-7 text-[var(--color-ink)]">{theme}</p>
+                </div>
+              ))}
             </div>
           </div>
         </Container>
@@ -165,17 +226,30 @@ export default function AboutPage() {
 
       <section className="border-b border-[var(--color-border)] py-16 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-5xl text-center">
-            <SectionHeading id="proof-and-credibility" center>
-              Proof and credibility
-            </SectionHeading>
-            <div className="mt-8 grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-3">
-              {[
-                "Experience working across policy and commercial contexts that require the same issue to be read from multiple angles.",
-                "Analysis built to support real decision-making, not to create more noise around the decision.",
-                "A focus on clarity, disciplined scope, and policy-literate output that can be used by working teams.",
-              ].map((point) => (
-                <div key={point} className="bg-[var(--color-surface)] px-6 py-6">
+          <div className="paper-panel mx-auto max-w-5xl p-7 sm:p-10 lg:p-12">
+            <div className="grid gap-8 lg:grid-cols-[0.48fr_0.52fr] lg:gap-12">
+              <div>
+                <SectionHeading id="why-this-perspective-matters">
+                  Why this perspective matters
+                </SectionHeading>
+              </div>
+              <div className="space-y-4 text-base leading-8 text-[var(--color-muted)]">
+                <p>
+                  Many reimbursement and policy questions are not purely legal, clinical, or
+                  commercial. They sit between those domains. The practical question is often not
+                  only what the rule says, but how it changes incentives, operating behavior, and
+                  financial exposure.
+                </p>
+                <p>
+                  JL Policy Consulting is built around that translation layer: converting policy and
+                  reimbursement complexity into analysis that helps teams understand what is likely
+                  to matter, where friction may emerge, and which decisions require attention.
+                </p>
+              </div>
+            </div>
+            <div className="mt-10 grid gap-px border-y border-[var(--color-border)] bg-[var(--color-border)] md:grid-cols-2">
+              {proofPoints.map((point) => (
+                <div key={point} className="bg-[var(--color-page)] px-6 py-5">
                   <p className="text-sm leading-7 text-[var(--color-ink)]">{point}</p>
                 </div>
               ))}
@@ -187,12 +261,12 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20">
         <Container>
           <div className="mx-auto max-w-4xl text-center">
-            <SectionHeading id="about-cta" center>
+            <SectionHeading id="about-cta" align="center">
               Move from background to the work itself
             </SectionHeading>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[var(--color-muted)]">
-              Consulting shows how this perspective is applied to reimbursement, policy, access,
-              and commercialization questions.
+              The Consulting section shows how this perspective is applied to reimbursement, policy,
+              market access, and commercialization strategy questions.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link
