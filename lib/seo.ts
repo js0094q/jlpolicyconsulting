@@ -91,7 +91,8 @@ export function createPageMetadata({
   keywords,
   kicker,
 }: PageMetadataInput): Metadata {
-  const url = absoluteUrl(path);
+  const canonical = absoluteUrl(path);
+  const url = canonical;
   const imageUrl = buildOgImageUrl({
     title,
     subtitle: description,
@@ -103,7 +104,7 @@ export function createPageMetadata({
     description,
     keywords,
     alternates: {
-      canonical: path,
+      canonical,
     },
     openGraph: {
       type: "website",

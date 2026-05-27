@@ -6,6 +6,11 @@ interface SlidingWindowEntry {
   resetAt: number;
 }
 
+interface EdgeRateLimitStoreEntry {
+  count: number;
+  resetAt: number;
+}
+
 interface SecurityState {
   windows: Map<string, SlidingWindowEntry>;
 }
@@ -163,6 +168,104 @@ export function consumeRateLimit(
     resetAt: existing.resetAt,
     used: existing.count,
   };
+}
+
+function parseEdgeRateLimitEntry(payload: string): EdgeRateLimitStoreEntry | null {
+  try {
+    const parsed = JSON.parse(payload) as EdgeRateLimitStoreEntry;
+
+    if (typeof parsed?.count !== "number" || typeof parsed?.resetAt !== "number") {
+      return null;
+    }
+
+    const count = Number.parseInt(String(parsed.count), 10);
+    const resetAt = Number.parseInt(String(parsed.resetAt), 10);
+
+    if (Number.isNaN(count) || Number.isNaN(resetAt)) {
+      return null;
+    }
+
+    return { count, resetAt };
+  } catch {
+    return null;
+  }
+}
+
+async function consumeEdgeCacheRateLimit(
+  cacheNamespace: string,
+  key: string,
+  limit: number,
+  windowMs: number,
+  now: number,
+): Promise<RateLimitDecision> {
+  if (limit < 1 || windowMs < 1) {
+    return consumeRateLimit(key, limit, windowMs, now);
+  }
+
+  try {
+    const cacheStore = typeof caches === "undefined" ? null : await caches.open(cacheNamespace);
+
+    if (!cacheStore) {
+      return consumeRateLimit(key, limit, windowMs, now);
+    }
+
+    const cacheKey = new Request(`https://rate-limit-cache.local/${encodeURIComponent(key)}`);
+    const cached = await cacheStore.match(cacheKey);
+    const existing = cached ? parseEdgeRateLimitEntry(await cached.text()) : null;
+
+    const effectiveWindowMs = Math.max(windowMs, 1);
+    let count = 1;
+    let resetAt = now + effectiveWindowMs;
+
+    if (existing && existing.resetAt > now) {
+      count = existing.count + 1;
+      resetAt = existing.resetAt;
+    }
+
+    const allowed = count <= limit;
+    const remaining = Math.max(limit - count, 0);
+    const cachePayload = JSON.stringify({ count, resetAt });
+    const maxAge = Math.max(1, Math.floor((resetAt - now) / 1000));
+
+    await cacheStore.put(
+      cacheKey,
+      new Response(cachePayload, {
+        headers: {
+          "Cache-Control": `public, max-age=${maxAge}`,
+          "Content-Type": "application/json",
+        },
+      }),
+    );
+
+    return {
+      allowed,
+      remaining,
+      resetAt,
+      used: count,
+    };
+  } catch {
+    return consumeRateLimit(key, limit, windowMs, now);
+  }
+}
+
+export async function consumeDistributedRateLimit(
+  key: string,
+  limit: number,
+  windowMs: number,
+  now = Date.now(),
+): Promise<RateLimitDecision> {
+  const backend = process.env.OG_RATE_LIMIT_BACKEND?.toLowerCase();
+  const useEdgeCache = backend ? backend === "edge-cache" : true;
+
+  if (!useEdgeCache) {
+    return consumeRateLimit(key, limit, windowMs, now);
+  }
+
+  if (typeof caches === "undefined") {
+    return consumeRateLimit(key, limit, windowMs, now);
+  }
+
+  return consumeEdgeCacheRateLimit("og-route-rate-limit", key, limit, windowMs, now);
 }
 
 export function createCspNonce(): string {

@@ -3,9 +3,9 @@ import { Container } from "@/components/container";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Consulting",
+  title: "Consulting | Reimbursement, Policy, and Market Access",
   description:
-    "Strategic advisory on reimbursement, Medicare policy, payer dynamics, provider economics, and market access decisions.",
+    "Applied advisory on reimbursement, Medicare policy, payer dynamics, provider economics, and market access decisions.",
   path: "/consulting",
   kicker: "Consulting",
   keywords: [
@@ -137,12 +137,11 @@ export default function ConsultingPage() {
           <div className="mx-auto max-w-5xl text-center lg:max-w-6xl">
             <p className="kicker">Consulting</p>
             <h1 className="hero-title page-title mx-auto max-w-[21ch]">
-              Reimbursement and access advisory for policy-sensitive decisions.
+              Reimbursement and access advisory for policy-sensitive commercial decisions.
             </h1>
             <p className="page-lede mx-auto max-w-4xl">
-              Advisory for teams that need a specific read on reimbursement, payer behavior,
-              provider economics, coding, and launch risk before a policy issue becomes an
-              operating problem.
+              Advisory support when a policy signal, pricing change, or access constraint needs to be
+              translated into operational decisions before it escalates into a launch delay.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link

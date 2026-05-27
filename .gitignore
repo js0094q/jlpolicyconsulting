@@ -11,3 +11,7 @@ build/
 .env*
 /*.pdf
 node_modules/
+.vercel
+.env*.local
+output/
+tsconfig.tsbuildinfo

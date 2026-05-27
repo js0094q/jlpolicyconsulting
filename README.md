@@ -81,6 +81,19 @@ Security checks:
 npm run audit:prod
 ```
 
+Dependency refresh and update cadence:
+```bash
+npm audit --omit=dev --audit-level=high
+npm audit --omit=dev
+npm audit fix --dry-run
+npm update
+```
+
+When advisories are identified:
+- Align major framework versions together (for example `next` and `eslint-config-next`).
+- Update `package-lock.json`, then run `npm run verify` before merging.
+- Keep dependency refreshes tied to a short rollback plan and a security/sign-off note.
+
 Additional policy checks:
 ```bash
 npm run validate:codeowners
@@ -106,4 +119,6 @@ npm run validate:codeowners
 - CI gates run from `.github/workflows/ci.yml` on pull requests and pushes to `main`.
 - Threat model output is tracked in `docs/security/threat-model.md`.
 - Runtime hardening is enforced in `proxy.ts` (nonce CSP, invalid-slug telemetry) and `app/api/og/route.tsx` (public OG validation and route-level rate limiting via `OG_ROUTE_RATE_LIMIT_*`).
+- `/api/og` abuse control must include platform-level limits (Vercel Edge Config/WAF or API gateway token bucket) in front of the app-level limiter, because in-process limiter state is edge-instance local.
+- For production, set `OG_RATE_LIMIT_BACKEND=edge-cache` to enforce `/api/og` limits from platform-shared edge cache state.
 - Configure branch protection to require CODEOWNERS review for protected paths in `.github/CODEOWNERS`.

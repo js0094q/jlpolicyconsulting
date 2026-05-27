@@ -9,7 +9,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Health Policy, Reimbursement, and Market Access Advisory",
   description:
-    "JL Policy Consulting helps teams connect reimbursement mechanics, payer behavior, provider economics, and market access reality to commercial decisions.",
+    "JL Policy Consulting translates reimbursement mechanics, payer behavior, provider economics, and market access signals into decision-ready commercial actions.",
   path: "/",
   kicker: "JL Policy Consulting, LLC",
   keywords: [
@@ -90,7 +90,7 @@ export default async function HomePage() {
           <div className="mx-auto max-w-5xl text-center lg:max-w-6xl">
             <p className="kicker">JL Policy Consulting, LLC</p>
             <h1 className="hero-title mx-auto mt-5 max-w-[23ch] font-serif text-[clamp(2.7rem,4.2vw,3.65rem)] leading-[1.02] tracking-[-0.03em] text-ink">
-              Commercial strategy informed by reimbursement and coverage reality.
+              Commercial strategy should be anchored in reimbursement and coverage reality.
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
               We help manufacturers, payers, professional societies, and patient advocates turn
@@ -102,7 +102,7 @@ export default async function HomePage() {
                 View Consulting
               </Link>
               <Link href="/contact" className="button-secondary inline-flex items-center rounded-md px-6 py-3">
-                Contact
+                Start a fit check
               </Link>
             </div>
           </div>
@@ -121,8 +121,8 @@ export default async function HomePage() {
                   behavior, provider economics, and commercialization.
                 </p>
                 <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--color-muted)]">
-                  The goal is to show where access friction is likely to appear, what it means for
-                  launch planning, and which decisions need to be made next.
+                  The outcome is a clear map of where access friction is likely to appear, what it means
+                  for launch planning, and which decisions should be made first.
                 </p>
               </article>
 

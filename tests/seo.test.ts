@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { resolveArticleSeo } from "@/lib/seo";
+import { createPageMetadata, resolveArticleSeo } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
 
 describe("resolveArticleSeo", () => {
@@ -49,5 +49,15 @@ describe("resolveArticleSeo", () => {
     );
 
     expect(seo.imageUrl).toContain("/api/og?");
+  });
+
+  it("uses absolute canonical URL in page metadata", () => {
+    const metadata = createPageMetadata({
+      title: "Example",
+      description: "Example description",
+      path: "/insights/example",
+    });
+
+    expect(metadata.alternates?.canonical).toBe(absoluteUrl("/insights/example"));
   });
 });

@@ -1,6 +1,10 @@
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/site";
-import { type RateLimitDecision, consumeRateLimit, getRequestIdentity } from "@/lib/security-controls";
+import {
+  type RateLimitDecision,
+  consumeDistributedRateLimit,
+  getRequestIdentity,
+} from "@/lib/security-controls";
 import { recordSecurityEvent } from "@/lib/security-events";
 import {
   OG_IMAGE_HEIGHT,
@@ -143,13 +147,13 @@ function parseParam(
   return parsed;
 }
 
-export function GET(request: Request) {
+export async function GET(request: Request) {
   const startedAt = performance.now();
   const url = new URL(request.url);
   const { searchParams } = url;
   const { maxRequests, windowMs } = getOgRateLimitConfig();
   const identity = getRequestIdentity(request.headers);
-  const rateDecision = consumeRateLimit(`og-route:${identity}`, maxRequests, windowMs);
+  const rateDecision = await consumeDistributedRateLimit(`og-route:${identity}`, maxRequests, windowMs);
   const rateHeaders = buildRateLimitHeaders(rateDecision, maxRequests);
 
   if (!rateDecision.allowed) {

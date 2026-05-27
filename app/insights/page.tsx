@@ -5,9 +5,9 @@ import { formatDisplayDate, getInsights } from "@/lib/content";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Policy, Reimbursement, and Market Access Insights",
+  title: "Reimbursement and Market Access Insights",
   description:
-    "Short-form commentary on Medicare policy, drug pricing, PBM behavior, reimbursement, and market access decisions.",
+    "Short-form analysis on reimbursement policy, drug pricing, PBM behavior, and market access execution.",
   path: "/insights",
   kicker: "Insights",
   keywords: [
@@ -32,12 +32,11 @@ export default async function InsightsPage() {
             <div className="max-w-3xl">
               <p className="kicker">Insights</p>
               <h1 className="hero-title page-title mt-5 max-w-[18ch]">
-                Policy and reimbursement commentary for commercial teams
+                Policy and reimbursement commentary that improves decisions
               </h1>
               <p className="mt-5 max-w-2xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
-                Short-form analysis on Medicare policy, drug pricing, PBM behavior, coverage,
-                coding, and provider economics. The emphasis is on what changes in practice, not
-                just what changes in statute or guidance.
+                Short-form analysis on Medicare policy, drug pricing, PBM behavior, coverage, and provider
+                economics. The focus is on what moves in practice, not only what moves in statute.
               </p>
             </div>
           </div>
@@ -125,8 +124,8 @@ export default async function InsightsPage() {
                 <p className="kicker">Need applied analysis?</p>
                 <h2 className="section-title mt-4">Turn policy questions into a next step.</h2>
                 <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
-                  JL Policy Consulting supports reimbursement strategy, market access analysis, and
-                  policy interpretation for manufacturers and other healthcare stakeholders.
+                  JL Policy Consulting turns policy and reimbursement shifts into practical direction for
+                  manufacturers and other healthcare stakeholders.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link href="/consulting" className="button-primary inline-flex items-center rounded-md px-6 py-3">

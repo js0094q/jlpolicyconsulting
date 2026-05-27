@@ -3,9 +3,9 @@ import { Container } from "@/components/container";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "About JL Policy Consulting | Policy and Reimbursement Analysis",
+  title: "About JL Policy Consulting | Reimbursement Policy Advisory",
   description:
-    "JL Policy Consulting provides Medicare, reimbursement, market access, and policy analysis grounded in payer behavior, provider economics, and commercial decision-making.",
+    "JL Policy Consulting translates Medicare policy, reimbursement mechanics, and market access dynamics into practical commercial decisions.",
   path: "/about",
   kicker: "About",
   keywords: [
@@ -102,14 +102,12 @@ export default function AboutPage() {
           <div className="max-w-5xl">
             <p className="kicker">About</p>
             <h1 className="hero-title page-title max-w-[24ch]">
-              Policy and reimbursement analysis grounded in how coverage, pricing, and access
-              decisions work in practice.
+              Policy and reimbursement analysis designed for access, pricing, and execution decisions
+              in practice.
             </h1>
             <p className="page-lede max-w-3xl">
-              JL Policy Consulting is led by Joseph Stewart. The firm translates Medicare,
-              reimbursement, and market access complexity into analysis that is commercially
-              relevant, operationally grounded, and usable by working teams making strategic
-              decisions.
+              JL Policy Consulting is a firm focused on how reimbursement, policy, and provider
+              economics affect launch quality, pricing sustainability, and patient access.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link

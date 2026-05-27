@@ -7,7 +7,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Policy, Reimbursement, and Market Access Research",
   description:
-    "Deeper, methodology-aware analysis of reimbursement, policy design, market structure, and access dynamics.",
+    "Methodology-aware analysis of reimbursement, policy design, market structure, and access dynamics for teams making strategic decisions.",
   path: "/research",
   kicker: "Research",
   keywords: [
@@ -32,7 +32,7 @@ export default async function ResearchPage() {
             <div className="max-w-3xl">
               <p className="kicker">Research</p>
               <h1 className="hero-title page-title mt-5 max-w-[16ch]">
-                Deeper analysis on reimbursement, policy design, and market access
+                Deeper analysis for evidence-based policy and market-access decisions
               </h1>
               <p className="mt-5 max-w-2xl text-[1.04rem] leading-8 text-[var(--color-muted)]">
                 Research traces how policy design, reimbursement mechanics, payer behavior, and
@@ -138,7 +138,7 @@ export default async function ResearchPage() {
                 <p className="kicker">Need an applied read?</p>
                 <h2 className="section-title mt-4">Turn evidence into an action plan.</h2>
                 <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
-                  JL Policy Consulting helps teams translate research into reimbursement strategy,
+                  JL Policy Consulting helps teams convert research into reimbursement strategy,
                   market access planning, and decision support for policy-sensitive programs.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">

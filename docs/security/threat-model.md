@@ -11,6 +11,10 @@ Context questions:
 2. How many people can merge to `main` and edit `content/**/*.mdx`?
 3. Should CI security gates be strictly blocking for PR merge?
 
+Current resolution from this scope:
+1. `/api/og` remains public for crawler/social previews, but attack-volume control must be enforced at the platform edge (Vercel/WAF/API gateway) in addition to app-level controls.
+2. `/api/og` now uses shared edge cache-backed limiting via `consumeDistributedRateLimit` when `OG_RATE_LIMIT_BACKEND=edge-cache` (or unset in edge runtime), then falls back to in-memory in non-edge contexts; platform policy controls are still required for hard anti-abuse.
+
 ## Executive summary
 
 Top risk themes are: (1) public OG endpoint abuse and availability pressure, (2) content/MDX integrity risks from supply-chain or contributor compromise, and (3) CI/dependency supply-chain trust boundaries. Current controls improved baseline safety (input length checks, canonical host constraints, JSON-LD escaping), but additional hardening is required in headers, MDX sanitization policy, slug/path guards, and CI trust controls.

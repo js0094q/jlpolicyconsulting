@@ -4,9 +4,9 @@ import { createPageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata = createPageMetadata({
-  title: "Contact",
+  title: "Contact JL Policy Consulting",
   description:
-    "Contact JL Policy Consulting at Joseph.Stewart@JLPolicyConsulting.com for consulting engagements, strategic analysis, collaboration, or professional inquiries.",
+    "Use JL Policy Consulting for consulting engagements, strategic analysis, collaboration, and advisory inquiries.",
   path: "/contact",
   kicker: "Professional Contact",
   keywords: [
@@ -57,13 +57,13 @@ export default function ContactPage() {
                 href={`mailto:${siteConfig.email}`}
                 className="button-primary inline-flex items-center rounded-md px-7 py-3"
               >
-                Send Email
+                Send email
               </a>
               <Link
                 href="/consulting"
                 className="button-secondary inline-flex items-center rounded-md px-7 py-3"
               >
-                View Consulting
+                Review consulting scope
               </Link>
             </div>
           </div>
@@ -121,13 +121,13 @@ export default function ContactPage() {
                 href={`mailto:${siteConfig.email}`}
                 className="button-primary inline-flex items-center rounded-md px-7 py-3"
               >
-                Send Email
+                Send email
               </a>
               <Link
                 href="/consulting"
                 className="button-secondary inline-flex items-center rounded-md px-7 py-3"
               >
-                View Consulting
+                Review consulting scope
               </Link>
             </div>
           </div>

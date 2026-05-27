@@ -29,20 +29,22 @@ afterEach(() => {
 
 describe("og route guards", () => {
   it("rejects unsupported query parameters", async () => {
-    const response = GET(buildRequest("https://jlpolicyconsulting.com/api/og?foo=bar", "198.51.100.1"));
+    const response = await GET(buildRequest("https://jlpolicyconsulting.com/api/og?foo=bar", "198.51.100.1"));
     expect(response.status).toBe(400);
     expect(response.headers.get("Server-Timing")).toContain("og-total;dur=");
     expect(response.headers.get("X-RateLimit-Limit")).toBeTruthy();
   });
 
   it("rejects unsafe characters", async () => {
-    const response = GET(buildRequest("https://jlpolicyconsulting.com/api/og?title=%3Cscript%3E", "198.51.100.2"));
+    const response = await GET(
+      buildRequest("https://jlpolicyconsulting.com/api/og?title=%3Cscript%3E", "198.51.100.2"),
+    );
     expect(response.status).toBe(400);
     expect(response.headers.get("Server-Timing")).toContain("og-total;dur=");
   });
 
   it("allows crawler requests without first-party origin headers", async () => {
-    const response = GET(
+    const response = await GET(
       buildRequest(
         "https://crawler.example/api/og?title=Open%20Graph%20Preview",
         "198.51.100.3",
@@ -56,13 +58,13 @@ describe("og route guards", () => {
   });
 
   it("rejects duplicate query parameters", async () => {
-    const response = GET(buildRequest("https://jlpolicyconsulting.com/api/og?title=a&title=b", "198.51.100.4"));
+    const response = await GET(buildRequest("https://jlpolicyconsulting.com/api/og?title=a&title=b", "198.51.100.4"));
     expect(response.status).toBe(400);
     expect(await response.text()).toContain("Duplicate query parameter");
   });
 
   it("rejects URL schemes in text fields", async () => {
-    const response = GET(
+    const response = await GET(
       buildRequest("https://jlpolicyconsulting.com/api/og?title=https%3A%2F%2Fexample.com", "198.51.100.5"),
     );
     expect(response.status).toBe(400);
@@ -73,9 +75,9 @@ describe("og route guards", () => {
     process.env.OG_ROUTE_RATE_LIMIT_MAX_REQUESTS = "2";
     process.env.OG_ROUTE_RATE_LIMIT_WINDOW_MS = "60000";
 
-    const first = GET(buildRequest("https://jlpolicyconsulting.com/api/og?title=First", "198.51.100.6"));
-    const second = GET(buildRequest("https://jlpolicyconsulting.com/api/og?title=Second", "198.51.100.6"));
-    const third = GET(buildRequest("https://jlpolicyconsulting.com/api/og?title=Third", "198.51.100.6"));
+    const first = await GET(buildRequest("https://jlpolicyconsulting.com/api/og?title=First", "198.51.100.6"));
+    const second = await GET(buildRequest("https://jlpolicyconsulting.com/api/og?title=Second", "198.51.100.6"));
+    const third = await GET(buildRequest("https://jlpolicyconsulting.com/api/og?title=Third", "198.51.100.6"));
 
     expect(first.status).toBe(200);
     expect(second.status).toBe(200);
