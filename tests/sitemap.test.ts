@@ -12,6 +12,7 @@ describe("sitemap", () => {
     expect(urls.has(absoluteUrl("/consulting"))).toBe(true);
     expect(urls.has(absoluteUrl("/insights"))).toBe(true);
     expect(urls.has(absoluteUrl("/research"))).toBe(true);
+    expect(urls.has(absoluteUrl("/frameworks/provider-economics-launch-readiness"))).toBe(true);
     expect(urls.has(absoluteUrl("/contact"))).toBe(true);
   });
 });

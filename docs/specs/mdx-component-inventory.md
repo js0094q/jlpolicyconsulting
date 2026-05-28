@@ -64,8 +64,41 @@ The default editorial component set includes:
 - `Timeline`
 - `MethodologyNote`
 - `Callout`
+- `ProviderNetPositionFormula`
+- `CoverageVsEconomicsChart`
+- `BuyAndBillRiskStack`
+- `ReimbursementLaunchTimeline`
+- `ProviderEconomicsMathBlock`
 
 Optional future components may be added only if they solve a recurring editorial need.
+
+## Reimbursement Framework Components
+
+The reimbursement framework components are reusable visuals for provider economics, launch readiness,
+buy-and-bill risk, and product-agnostic reimbursement modeling. They should be used when the article
+needs to make reimbursement mechanics easier to inspect, not as decorative blocks.
+
+Use them for:
+
+- provider-administered therapy economics,
+- coding and billing readiness,
+- buy-and-bill risk explanation,
+- 340B or site-of-care economics,
+- launch readiness frameworks.
+
+Do not use them for:
+
+- unrelated policy commentary,
+- generic marketing sections,
+- content that does not need a formula, comparison, risk stack, timeline, or modeling block.
+
+Available components:
+
+- `ProviderNetPositionFormula`: visual formula for expected provider net position.
+- `CoverageVsEconomicsChart`: two-column comparison of payer coverage and provider economics questions.
+- `BuyAndBillRiskStack`: layered stack of financial risks in buy-and-bill workflows.
+- `ReimbursementLaunchTimeline`: generalized launch timeline from pre-approval planning through claims monitoring.
+- `ProviderEconomicsMathBlock`: product-agnostic formulas and variable definitions for provider economics modeling.
 
 ---
 
@@ -548,4 +581,3 @@ Final Rule
 The component system exists to make analysis easier to understand and easier to trust.
 
 It does not exist to make articles look more designed.
-

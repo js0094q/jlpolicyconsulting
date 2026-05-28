@@ -33,6 +33,11 @@ const STATIC_ROUTES: Array<{
     priority: 0.7,
   },
   {
+    path: "/frameworks/provider-economics-launch-readiness",
+    changeFrequency: "monthly",
+    priority: 0.65,
+  },
+  {
     path: "/contact",
     changeFrequency: "monthly",
     priority: 0.7,

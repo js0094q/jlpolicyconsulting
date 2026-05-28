@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 import matter from "gray-matter";
 
 const ROOT = process.cwd();
@@ -17,6 +18,7 @@ const ALLOWED_CATEGORIES = new Set([
   "Biosimilars and Generics",
   "Healthcare Data Analysis",
   "Market Access Strategy",
+  "Provider Economics",
   "Gross-to-Net Modeling",
   "Reimbursement",
 ]);
@@ -32,7 +34,11 @@ const FORBIDDEN_CONTENT_PATTERNS = [
   },
   {
     label: "javascript_url",
-    pattern: /\[[^\]]*]\(\s*javascript:/i,
+    pattern: /(?:href|src)?\s*=?\s*["'(]?\s*javascript:/i,
+  },
+  {
+    label: "unsafe_data_url",
+    pattern: /(?:href|src)\s*=\s*["']\s*data:/i,
   },
   {
     label: "mdx_import_export",
@@ -49,7 +55,7 @@ function parseHttpsUrl(value) {
   }
 }
 
-function validateDocument(filePath, source) {
+export function validateDocument(filePath, source) {
   const issues = [];
   const { data, content } = matter(source);
   const name = path.relative(ROOT, filePath);
@@ -141,7 +147,9 @@ async function main() {
   console.log(`Validated ${files.length} MDX files successfully.`);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

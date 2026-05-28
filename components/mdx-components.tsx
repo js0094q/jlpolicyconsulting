@@ -8,6 +8,11 @@ import { KeyTakeaways } from "@/components/content/KeyTakeaways";
 import { MethodologyNote } from "@/components/content/MethodologyNote";
 import { Timeline } from "@/components/content/Timeline";
 import { WhyItMatters } from "@/components/content/WhyItMatters";
+import { BuyAndBillRiskStack } from "@/components/reimbursement/BuyAndBillRiskStack";
+import { CoverageVsEconomicsChart } from "@/components/reimbursement/CoverageVsEconomicsChart";
+import { ProviderEconomicsMathBlock } from "@/components/reimbursement/ProviderEconomicsMathBlock";
+import { ProviderNetPositionFormula } from "@/components/reimbursement/ProviderNetPositionFormula";
+import { ReimbursementLaunchTimeline } from "@/components/reimbursement/ReimbursementLaunchTimeline";
 import { isSafeExternalHref } from "@/lib/url-safety";
 
 export const mdxComponents: MDXComponents = {
@@ -19,6 +24,11 @@ export const mdxComponents: MDXComponents = {
   Timeline,
   MethodologyNote,
   Callout,
+  ProviderNetPositionFormula,
+  CoverageVsEconomicsChart,
+  BuyAndBillRiskStack,
+  ReimbursementLaunchTimeline,
+  ProviderEconomicsMathBlock,
   h2: ({ children }) => <h2 className="mt-12 text-3xl leading-tight text-ink">{children}</h2>,
   h3: ({ children }) => <h3 className="mt-10 text-2xl leading-tight text-ink">{children}</h3>,
   p: ({ children }) => <p className="mt-5 font-serif text-[18px] leading-8 text-[var(--color-muted)]">{children}</p>,

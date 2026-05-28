@@ -3,7 +3,6 @@ import { headers } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import rehypeSanitize from "rehype-sanitize";
 import remarkGfm from "remark-gfm";
 import { Container } from "@/components/container";
 import { mdxComponents } from "@/components/mdx-components";
@@ -129,7 +128,6 @@ export default async function InsightDetailPage({ params }: InsightPageProps) {
             options={{
               mdxOptions: {
                 remarkPlugins: [remarkGfm],
-                rehypePlugins: [rehypeSanitize],
               },
             }}
           />

@@ -3,7 +3,6 @@ import { headers } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import rehypeSanitize from "rehype-sanitize";
 import remarkGfm from "remark-gfm";
 import { Container } from "@/components/container";
 import { mdxComponents } from "@/components/mdx-components";
@@ -95,6 +94,30 @@ export default async function ResearchDetailPage({ params }: ResearchPageProps) 
     },
     mainEntityOfPage: seo.canonical,
   };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteConfig.url,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Research",
+        item: `${siteConfig.url}/research`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: seo.canonical,
+      },
+    ],
+  };
 
   return (
     <article className="py-16 sm:py-20">
@@ -127,7 +150,6 @@ export default async function ResearchDetailPage({ params }: ResearchPageProps) 
             options={{
               mdxOptions: {
                 remarkPlugins: [remarkGfm],
-                rehypePlugins: [rehypeSanitize],
               },
             }}
           />
@@ -169,6 +191,11 @@ export default async function ResearchDetailPage({ params }: ResearchPageProps) 
         nonce={cspNonce}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }}
+      />
+      <script
+        nonce={cspNonce}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbSchema) }}
       />
     </article>
   );

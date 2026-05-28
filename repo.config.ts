@@ -10,6 +10,7 @@ export const ALLOWED_CATEGORIES = [
   "Biosimilars and Generics",
   "Healthcare Data Analysis",
   "Market Access Strategy",
+  "Provider Economics",
   "Gross-to-Net Modeling",
   "Reimbursement"
 ] as const;
